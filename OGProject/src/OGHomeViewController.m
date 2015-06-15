@@ -28,7 +28,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
+- (IBAction)callUpAction:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"pushMapViewController" sender:nil];
 }
 
 - (void)didReceiveMemoryWarning {

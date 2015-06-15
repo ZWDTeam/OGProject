@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8E5F88E4-EE81-44BE-9B4F-568AAE2BBFFF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>OGProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>217E28AEB528B575A65660BFFE51576F12C80B2E</key>
 		<string>https://github.com/ZWDTeam/OGProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OGProject.xcodeproj/project.xcworkspace</string>
+	<string>OGProject.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>217E28AEB528B575A65660BFFE51576F12C80B2E</key>

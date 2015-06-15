@@ -22,6 +22,11 @@
 		48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */; };
 		48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */; };
 		48CF9A401B2E7B2F003BBFBF /* zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A3F1B2E7B2F003BBFBF /* zan.png */; };
+		48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */; };
+		48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A481B2EB2CA003BBFBF /* OGMapViewController.m */; };
+		48CF9A4B1B2EB37B003BBFBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CF9A4A1B2EB37B003BBFBF /* MapKit.framework */; };
+		48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A4F1B2EB492003BBFBF /* DGMKAninotationView.m */; };
+		48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A521B2EC5E8003BBFBF /* LocationHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,15 @@
 		48CF9A3B1B2E78DF003BBFBF /* OGBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseTabBarController.h; sourceTree = "<group>"; };
 		48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseTabBarController.m; sourceTree = "<group>"; };
 		48CF9A3F1B2E7B2F003BBFBF /* zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zan.png; sourceTree = "<group>"; };
+		48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExternObject.h; sourceTree = "<group>"; };
+		48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGExternObject.m; sourceTree = "<group>"; };
+		48CF9A471B2EB2CA003BBFBF /* OGMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMapViewController.h; sourceTree = "<group>"; };
+		48CF9A481B2EB2CA003BBFBF /* OGMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMapViewController.m; sourceTree = "<group>"; };
+		48CF9A4A1B2EB37B003BBFBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		48CF9A4E1B2EB492003BBFBF /* DGMKAninotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMKAninotationView.h; sourceTree = "<group>"; };
+		48CF9A4F1B2EB492003BBFBF /* DGMKAninotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMKAninotationView.m; sourceTree = "<group>"; };
+		48CF9A511B2EC5E8003BBFBF /* LocationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHeaderView.h; sourceTree = "<group>"; };
+		48CF9A521B2EC5E8003BBFBF /* LocationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CF9A4B1B2EB37B003BBFBF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +128,7 @@
 		48CF99EA1B2E724E003BBFBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48CF9A4C1B2EB386003BBFBF /* framework */,
 				48CF9A151B2E73E1003BBFBF /* Source */,
 				48CF99F71B2E724E003BBFBF /* Images.xcassets */,
 				48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */,
@@ -177,6 +193,8 @@
 		48CF9A1B1B2E750C003BBFBF /* Communal */ = {
 			isa = PBXGroup;
 			children = (
+				48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */,
+				48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */,
 			);
 			name = Communal;
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 		48CF9A251B2E7611003BBFBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				48CF9A461B2EB2AE003BBFBF /* Map */,
 				48CF9A361B2E7706003BBFBF /* Login */,
 				48CF9A261B2E762B003BBFBF /* Home */,
 				48CF9A271B2E7638003BBFBF /* Collocation */,
@@ -241,6 +260,35 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		48CF9A461B2EB2AE003BBFBF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A4D1B2EB41C003BBFBF /* view */,
+				48CF9A471B2EB2CA003BBFBF /* OGMapViewController.h */,
+				48CF9A481B2EB2CA003BBFBF /* OGMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		48CF9A4C1B2EB386003BBFBF /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A4A1B2EB37B003BBFBF /* MapKit.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		48CF9A4D1B2EB41C003BBFBF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A511B2EC5E8003BBFBF /* LocationHeaderView.h */,
+				48CF9A521B2EC5E8003BBFBF /* LocationHeaderView.m */,
+				48CF9A4E1B2EB492003BBFBF /* DGMKAninotationView.h */,
+				48CF9A4F1B2EB492003BBFBF /* DGMKAninotationView.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,9 +395,13 @@
 			files = (
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
+				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
+				48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */,
 				48CF99ED1B2E724E003BBFBF /* main.m in Sources */,
+				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
 				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
+				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
@@ -479,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = OGProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = OGProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

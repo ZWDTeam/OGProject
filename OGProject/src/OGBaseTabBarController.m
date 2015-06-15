@@ -7,8 +7,10 @@
 //
 
 #import "OGBaseTabBarController.h"
+#import "OGBaseViewController.h"
+#import "OGExternObject.h"
 
-@interface OGBaseTabBarController ()
+@interface OGBaseTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -17,18 +19,31 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
+        //设置标题栏内容颜色
+        [[UITabBar appearance] setTintColor:OG_BASE_COLOR];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.delegate = self;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    if(!ex_islogin&&self.selectedIndex == 3){
+        UIStoryboard * stroyboard =[UIStoryboard storyboardWithName:@"OGLogin" bundle:[NSBundle mainBundle]];
+        
+        UINavigationController * navigationController = [stroyboard instantiateViewControllerWithIdentifier:@"OGLoginNavigationController"];
+        
+        [self presentViewController:navigationController animated:YES completion:nil];
+    }
 }
 
 /*

@@ -7,6 +7,7 @@
 //
 
 #import "OGBaseNavigationViewController.h"
+#import "OGBaseViewController.h"
 
 @interface OGBaseNavigationViewController ()
 
@@ -19,7 +20,10 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         //设置导航栏颜色
-        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:139.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f]];
+        [[UINavigationBar appearance] setBarTintColor:OG_BASE_COLOR];
+        
+        //设置内容颜色
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         
         //设置字体属性
         [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
