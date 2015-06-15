@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		48CF99ED1B2E724E003BBFBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF99EC1B2E724E003BBFBF /* main.m */; };
 		48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF99EF1B2E724E003BBFBF /* AppDelegate.m */; };
-		48CF99F31B2E724E003BBFBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF99F21B2E724E003BBFBF /* ViewController.m */; };
 		48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF99F41B2E724E003BBFBF /* Main.storyboard */; };
 		48CF99F81B2E724E003BBFBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CF99F71B2E724E003BBFBF /* Images.xcassets */; };
 		48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */; };
 		48CF9A071B2E724E003BBFBF /* OGProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A061B2E724E003BBFBF /* OGProjectTests.m */; };
+		48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A191B2E7434003BBFBF /* OGBaseViewController.m */; };
+		48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A201B2E757D003BBFBF /* OGBaseNavigationViewController.m */; };
+		48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A2B1B2E76CA003BBFBF /* OGHomeViewController.m */; };
+		48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A2E1B2E76D9003BBFBF /* OGCollocationViewController.m */; };
+		48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */; };
+		48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */; };
+		48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */; };
+		48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */; };
+		48CF9A401B2E7B2F003BBFBF /* zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A3F1B2E7B2F003BBFBF /* zan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +40,28 @@
 		48CF99EC1B2E724E003BBFBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48CF99EE1B2E724E003BBFBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48CF99EF1B2E724E003BBFBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48CF99F11B2E724E003BBFBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48CF99F21B2E724E003BBFBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48CF99F51B2E724E003BBFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48CF99F71B2E724E003BBFBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48CF99FA1B2E724E003BBFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48CF9A001B2E724E003BBFBF /* OGProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CF9A051B2E724E003BBFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CF9A061B2E724E003BBFBF /* OGProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGProjectTests.m; sourceTree = "<group>"; };
+		48CF9A181B2E7434003BBFBF /* OGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseViewController.h; sourceTree = "<group>"; };
+		48CF9A191B2E7434003BBFBF /* OGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseViewController.m; sourceTree = "<group>"; };
+		48CF9A1F1B2E757D003BBFBF /* OGBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseNavigationViewController.h; sourceTree = "<group>"; };
+		48CF9A201B2E757D003BBFBF /* OGBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseNavigationViewController.m; sourceTree = "<group>"; };
+		48CF9A2A1B2E76CA003BBFBF /* OGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGHomeViewController.h; sourceTree = "<group>"; };
+		48CF9A2B1B2E76CA003BBFBF /* OGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGHomeViewController.m; sourceTree = "<group>"; };
+		48CF9A2D1B2E76D9003BBFBF /* OGCollocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCollocationViewController.h; sourceTree = "<group>"; };
+		48CF9A2E1B2E76D9003BBFBF /* OGCollocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCollocationViewController.m; sourceTree = "<group>"; };
+		48CF9A301B2E76E6003BBFBF /* OGFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindViewController.h; sourceTree = "<group>"; };
+		48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindViewController.m; sourceTree = "<group>"; };
+		48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyselfViewController.h; sourceTree = "<group>"; };
+		48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyselfViewController.m; sourceTree = "<group>"; };
+		48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OGLogin.storyboard; sourceTree = "<group>"; };
+		48CF9A3B1B2E78DF003BBFBF /* OGBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseTabBarController.h; sourceTree = "<group>"; };
+		48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseTabBarController.m; sourceTree = "<group>"; };
+		48CF9A3F1B2E7B2F003BBFBF /* zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +103,8 @@
 		48CF99E91B2E724E003BBFBF /* OGProject */ = {
 			isa = PBXGroup;
 			children = (
-				48CF99EE1B2E724E003BBFBF /* AppDelegate.h */,
-				48CF99EF1B2E724E003BBFBF /* AppDelegate.m */,
-				48CF99F11B2E724E003BBFBF /* ViewController.h */,
-				48CF99F21B2E724E003BBFBF /* ViewController.m */,
-				48CF99F41B2E724E003BBFBF /* Main.storyboard */,
-				48CF99F71B2E724E003BBFBF /* Images.xcassets */,
-				48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */,
+				48CF9A3E1B2E7B13003BBFBF /* API */,
+				48CF9A161B2E7414003BBFBF /* src */,
 				48CF99EA1B2E724E003BBFBF /* Supporting Files */,
 			);
 			path = OGProject;
@@ -96,6 +113,13 @@
 		48CF99EA1B2E724E003BBFBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48CF9A151B2E73E1003BBFBF /* Source */,
+				48CF99F71B2E724E003BBFBF /* Images.xcassets */,
+				48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */,
+				48CF99EE1B2E724E003BBFBF /* AppDelegate.h */,
+				48CF99EF1B2E724E003BBFBF /* AppDelegate.m */,
+				48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */,
+				48CF99F41B2E724E003BBFBF /* Main.storyboard */,
 				48CF99EB1B2E724E003BBFBF /* Info.plist */,
 				48CF99EC1B2E724E003BBFBF /* main.m */,
 			);
@@ -117,6 +141,106 @@
 				48CF9A051B2E724E003BBFBF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48CF9A151B2E73E1003BBFBF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A3F1B2E7B2F003BBFBF /* zan.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		48CF9A161B2E7414003BBFBF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A171B2E7420003BBFBF /* Base */,
+				48CF9A1B1B2E750C003BBFBF /* Communal */,
+				48CF9A251B2E7611003BBFBF /* ViewControllers */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		48CF9A171B2E7420003BBFBF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A181B2E7434003BBFBF /* OGBaseViewController.h */,
+				48CF9A191B2E7434003BBFBF /* OGBaseViewController.m */,
+				48CF9A1F1B2E757D003BBFBF /* OGBaseNavigationViewController.h */,
+				48CF9A201B2E757D003BBFBF /* OGBaseNavigationViewController.m */,
+				48CF9A3B1B2E78DF003BBFBF /* OGBaseTabBarController.h */,
+				48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		48CF9A1B1B2E750C003BBFBF /* Communal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Communal;
+			sourceTree = "<group>";
+		};
+		48CF9A251B2E7611003BBFBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A361B2E7706003BBFBF /* Login */,
+				48CF9A261B2E762B003BBFBF /* Home */,
+				48CF9A271B2E7638003BBFBF /* Collocation */,
+				48CF9A281B2E7668003BBFBF /* Find */,
+				48CF9A291B2E767D003BBFBF /* Myself */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48CF9A261B2E762B003BBFBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A2A1B2E76CA003BBFBF /* OGHomeViewController.h */,
+				48CF9A2B1B2E76CA003BBFBF /* OGHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		48CF9A271B2E7638003BBFBF /* Collocation */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A2D1B2E76D9003BBFBF /* OGCollocationViewController.h */,
+				48CF9A2E1B2E76D9003BBFBF /* OGCollocationViewController.m */,
+			);
+			name = Collocation;
+			sourceTree = "<group>";
+		};
+		48CF9A281B2E7668003BBFBF /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A301B2E76E6003BBFBF /* OGFindViewController.h */,
+				48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		48CF9A291B2E767D003BBFBF /* Myself */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */,
+				48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */,
+			);
+			name = Myself;
+			sourceTree = "<group>";
+		};
+		48CF9A361B2E7706003BBFBF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		48CF9A3E1B2E7B13003BBFBF /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
 				48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */,
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
 				48CF99F81B2E724E003BBFBF /* Images.xcassets in Resources */,
+				48CF9A401B2E7B2F003BBFBF /* zan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CF99F31B2E724E003BBFBF /* ViewController.m in Sources */,
+				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
+				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
 				48CF99ED1B2E724E003BBFBF /* main.m in Sources */,
+				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
+				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
+				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
+				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
+				48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
