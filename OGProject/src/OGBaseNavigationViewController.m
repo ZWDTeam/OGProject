@@ -14,9 +14,22 @@
 
 @implementation OGBaseNavigationViewController
 
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        //设置导航栏颜色
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:139.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f]];
+        
+        //设置字体属性
+        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
+                                                               NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +46,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - 设置状态栏颜色
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return  UIStatusBarStyleLightContent;
+}
 
 @end
