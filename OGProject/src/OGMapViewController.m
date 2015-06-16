@@ -14,11 +14,19 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong , nonatomic)CLLocationManager * locationManager;
-
+@property (assign , nonatomic , getter = isUpdataAnnotations)BOOL updataAnnotations;
 
 @end
 
 @implementation OGMapViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.title = @"找美女";
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,29 +35,56 @@
     self.locationManager = [[CLLocationManager alloc]init];
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;//定位的精度级别
-    _locationManager.distanceFilter = 10;//最小更新距离
+    _locationManager.distanceFilter = 1000;//最小更新距离
     [_locationManager requestAlwaysAuthorization];//始终允许访问位置信息
     [_locationManager startUpdatingLocation];//开始定位
     
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
+    
+    _updataAnnotations = YES;
+}
+
+- (void)addLocations:(CLLocation *)firstLocation{
+    
+    CLLocationCoordinate2D cordinate = firstLocation.coordinate;
+
+    
+    if (self.isUpdataAnnotations) {
+        _updataAnnotations =NO;
+        
+        double x =0;
+        double y = 0;
+        for (int  i = 0;  i <10; i++) {
+            if (i%2) {
+                x = arc4random()%20/1000.0f;
+                y = arc4random()%13/1000.0f;
+            }else{
+                x = -(arc4random()%20/1000.0f);
+                y = -(arc4random()%13/1000.0f);
+            }
+            CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(cordinate.latitude+x, cordinate.longitude+y);
+            LocationHeaderView *pAnno = [[LocationHeaderView alloc] init];
+            pAnno.coordinate = coord;
+            pAnno.title = @"中国";
+            [self.mapView addAnnotation:pAnno];//添加大头针
+        }
+    }
+
 }
 
 #pragma mark - CLLocationManagerDelegate
 //返回定位信息
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    CLLocation * newLocation = [locations lastObject];
+    CLLocation * newLocation = [locations firstObject];
     CLLocationCoordinate2D cordinate = newLocation.coordinate;
     
-    LocationHeaderView *pAnno = [[LocationHeaderView alloc] init];
-    pAnno.coordinate = cordinate;
-    pAnno.title = @"中国";
-    [self.mapView addAnnotation:pAnno];//添加大头针
-    
+    //添加大头针
+    [self addLocations:newLocation];
     
     //放大地图到自身的经纬度位置。
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(cordinate, 10000, 10000);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(cordinate, 3000, 3000);
     [self.mapView setRegion:region];//设置定位区域
     
     //
@@ -78,7 +113,7 @@
 }
 
 
-/////
+#pragma mark - MKMapViewDelegate
 -(MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation {
     
     if (![annotation isKindOfClass:[LocationHeaderView class]]) {
@@ -106,11 +141,8 @@
 }
 
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
 
 @end

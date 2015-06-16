@@ -1,36 +1,29 @@
 //
-//  OGHomeViewController.m
+//  OGCollocationOnlyViewController.m
 //  OGProject
 //
-//  Created by 钟伟迪 on 15/6/15.
+//  Created by 钟伟迪 on 15/6/16.
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#import "OGHomeViewController.h"
+#import "OGCollocationOnlyViewController.h"
 #import "SGFocusImageFrame.h"
 #import "SGFocusImageItem.h"
+#import "OGCollocationFlowLayout.h"
+#import "OGCollocationCollectionViewCell.h"
 
-@interface OGHomeViewController ()<SGFocusImageFrameDelegate>
+NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell";
+
+@interface OGCollocationOnlyViewController ()<SGFocusImageFrameDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (strong , nonatomic) SGFocusImageFrame *bannerView;
 @property (strong , nonatomic) NSMutableArray * headerDatas;
-@property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
+@property (strong , nonatomic) UICollectionView * collectionView;
+
 
 @end
 
-@implementation OGHomeViewController
-
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.title = @"迪哥微博";
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页"
-                                                        image:[UIImage imageNamed:@"首页00"]
-                                                selectedImage:[UIImage imageNamed:@"首页01"]];
-    }
-    return self;
-    
-}
+@implementation OGCollocationOnlyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,8 +34,22 @@
     [_headerDatas addObject:array[0]];
     [_headerDatas insertObject:array[array.count-1] atIndex:0];
     
-    //加载轮播试图
+    OGCollocationFlowLayout * layout = [OGCollocationFlowLayout new];
+    
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.backgroundColor = [UIColor whiteColor];
+    _collectionView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    _collectionView.alwaysBounceVertical = YES;
+    
+    UINib * nib = [UINib nibWithNibName:collectionViewCellIdentifier bundle:[NSBundle mainBundle]];
+    [_collectionView registerNib:nib forCellWithReuseIdentifier:collectionViewCellIdentifier];
+    
+    [self.view addSubview:_collectionView];
+    
     [self bannerView];
+    
 }
 
 
@@ -62,47 +69,33 @@
                                                         imageItems:arrItemp
                                                             isAuto:YES
                                                                num:3.0];
-        [self.contentScrollView addSubview:self.bannerView];
+        [self.collectionView addSubview:self.bannerView];
         
     }
     return _bannerView;
 }
 
-#pragma mark - Action
-
-//找设计师
-- (IBAction)seekProjectorAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushMapViewController" sender:nil];
+#pragma mark - UITableViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 20;
 }
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-//看攻略
-- (IBAction)lookStrategyAction:(id)sender {
-}
-
-//找方案
-- (IBAction)seekSchemesAction:(id)sender {
+    OGCollocationCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellIdentifier forIndexPath:indexPath];
+    NSString * imageName = [NSString stringWithFormat:@"home%ld.jpg",indexPath.row+1];
+    cell.contentImageView.image = [UIImage imageNamed:imageName];
     
+    return cell;
 }
 
-//亲体验
-- (IBAction)experienceAction:(id)sender {
-    
-}
-
-//我是设计师
-- (IBAction)myProjectorAction:(id)sender {
-    
-}
 #pragma mark - SGFocusImageFrameDelegate
 - (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame tapGesItem:(NSInteger)index{
-    NSLog(@"%ld",index);
-}
 
-- (IBAction)callUpAction:(UIBarButtonItem *)sender {
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

@@ -14,16 +14,50 @@
                         <viewControllerLayoutGuide type="bottom" id="vDY-lD-S3B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mKx-mV-LgT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-Pk-e4W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RJa-Oa-k7K" id="6hp-Fx-rBi"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqO-Pk-e4W" firstAttribute="bottom" secondItem="mKx-mV-LgT" secondAttribute="bottomMargin" id="I6x-tH-u23"/>
+                            <constraint firstItem="pqO-Pk-e4W" firstAttribute="leading" secondItem="mKx-mV-LgT" secondAttribute="leadingMargin" constant="-16" id="M04-E8-1cg"/>
+                            <constraint firstItem="pqO-Pk-e4W" firstAttribute="top" secondItem="mKx-mV-LgT" secondAttribute="topMargin" id="gnV-7T-hDg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqO-Pk-e4W" secondAttribute="trailing" constant="-16" id="jqM-Jc-2L7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="w1D-m3-9sn"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="w1D-m3-9sn">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="QYv-DS-MQR">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="单品"/>
+                                <segment title="搭配"/>
+                            </segments>
+                            <connections>
+                                <action selector="selectedStyleAction:" destination="RJa-Oa-k7K" eventType="valueChanged" id="bLl-cS-jMd"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="分类.png" id="pYy-Py-ndS"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="pqO-Pk-e4W" id="fDC-xd-sF1"/>
+                        <outlet property="mySegmentedControl" destination="QYv-DS-MQR" id="egx-G7-aTD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU0-Dd-Fif" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979" y="444"/>
+            <point key="canvasLocation" x="978.5" y="517.5"/>
         </scene>
         <!--Find View Controller-->
         <scene sceneID="Eym-Ef-6C2">
@@ -34,12 +68,12 @@
                         <viewControllerLayoutGuide type="bottom" id="h2S-nk-DMt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c3W-a5-zYf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xBJ-eN-CKG"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhH-nT-8Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,12 +88,12 @@
                         <viewControllerLayoutGuide type="bottom" id="dgX-I5-3CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k1f-AW-I9Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9jR-HT-D8q"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H4-HV-PrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,25 +108,125 @@
                         <viewControllerLayoutGuide type="bottom" id="tnL-0S-PfF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IuM-0a-Ymb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1A-CJ-hKM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ne-n8-nQ0" customClass="OGHomeButton">
+                                        <rect key="frame" x="7" y="160" width="177" height="212"/>
+                                        <color key="backgroundColor" red="0.94466145830000003" green="0.0" blue="0.47773496240000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" image="找设计师.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seekProjectorAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="CoB-C7-49m"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找设计师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdB-Zv-RMe">
+                                        <rect key="frame" x="57" y="306" width="77" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJk-E0-2kM" customClass="OGHomeButton">
+                                        <rect key="frame" x="7" y="376" width="177" height="172"/>
+                                        <color key="backgroundColor" red="0.55026830808080807" green="0.061994426424419123" blue="0.40691014726507785" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" image="找方案.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seekSchemesAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="xYL-g4-pxp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找方案" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-gL-jUk">
+                                        <rect key="frame" x="62" y="495" width="67" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyK-93-mWt" customClass="OGHomeButton">
+                                        <rect key="frame" x="189" y="160" width="178" height="138"/>
+                                        <color key="backgroundColor" red="0.065273295487780228" green="0.39864846287974776" blue="0.64784564393939392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" image="看攻略.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lookStrategyAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="XCc-HA-1ph"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看攻略" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-pg-eP1">
+                                        <rect key="frame" x="240" y="256" width="77" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIp-nh-1eG" customClass="OGHomeButton">
+                                        <rect key="frame" x="189" y="301" width="178" height="138"/>
+                                        <color key="backgroundColor" red="0.53238985050539733" green="0.14096476789914586" blue="0.94466145830000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" image="亲体验.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="experienceAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="UmU-9L-aMD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqa-MW-jN8" customClass="OGHomeButton">
+                                        <rect key="frame" x="189" y="442" width="179" height="106"/>
+                                        <color key="backgroundColor" red="0.65050899620000002" green="0.095514276940000004" blue="0.088975269260000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" image="我是设计师.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="myProjectorAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="DY9-Wq-RXN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我是设计师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-4g-mhW">
+                                        <rect key="frame" x="233" y="510" width="91" height="25"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="亲体验" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJc-Ub-w3N">
+                                        <rect key="frame" x="240" y="394" width="77" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="top" secondItem="IuM-0a-Ymb" secondAttribute="topMargin" id="O4L-fg-3Gg"/>
+                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="bottom" secondItem="IuM-0a-Ymb" secondAttribute="bottomMargin" id="Xq3-le-M5I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1A-CJ-hKM" secondAttribute="trailing" constant="-16" id="kvQ-KH-u6A"/>
+                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="leading" secondItem="IuM-0a-Ymb" secondAttribute="leadingMargin" constant="-16" id="y6D-D1-CfI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ivP-lI-vCF">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="JM4-RL-kNH">
+                        <barButtonItem key="leftBarButtonItem" image="定位.png" id="UJT-m9-OFi"/>
+                        <barButtonItem key="rightBarButtonItem" image="电话.png" id="JM4-RL-kNH">
                             <connections>
                                 <action selector="callUpAction:" destination="xJ7-2V-jW4" id="fPn-y2-bPY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="contentScrollView" destination="m1A-CJ-hKM" id="yTT-LQ-KDJ"/>
                         <segue destination="qgJ-9u-1qN" kind="show" identifier="pushMapViewController" id="odq-vW-z1B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Abu-7V-lx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979" y="-218"/>
+            <point key="canvasLocation" x="978.5" y="-218.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="G4Y-XZ-mgb">
@@ -103,11 +237,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hve-mc-Fds"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bCa-RJ-pKx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="POK-dC-jb4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <outlet property="delegate" destination="qgJ-9u-1qN" id="YyV-Xr-ozJ"/>
                                 </connections>
@@ -122,7 +256,7 @@
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapView" destination="POK-dC-jb4" id="wfM-4i-SBz"/>
                     </connections>
@@ -136,7 +270,7 @@
             <objects>
                 <tabBarController id="X1p-qF-9md" customClass="OGBaseTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Og8-cO-0d3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -159,6 +293,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ds5-sg-qNT" customClass="OGBaseNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="fpP-p9-FMr"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MMZ-6R-VDv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -178,6 +313,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bwv-10-sWh" customClass="OGBaseNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 2" id="mqB-gt-0VT"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lrd-Y6-LKE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -197,6 +333,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ufo-70-qpb" customClass="OGBaseNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="QY3-Dp-LG6"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fY8-JT-AsU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -216,6 +353,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZUu-AT-mlf" customClass="OGBaseNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="AM0-ZC-uYf"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Wp-np-Lhg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -230,4 +368,14 @@
             <point key="canvasLocation" x="437" y="1780"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="亲体验.png" width="57" height="44"/>
+        <image name="分类.png" width="26" height="16"/>
+        <image name="定位.png" width="11" height="19"/>
+        <image name="我是设计师.png" width="39" height="36"/>
+        <image name="找方案.png" width="58" height="58"/>
+        <image name="找设计师.png" width="90" height="75"/>
+        <image name="电话.png" width="23" height="23"/>
+        <image name="看攻略.png" width="57" height="55"/>
+    </resources>
 </document>

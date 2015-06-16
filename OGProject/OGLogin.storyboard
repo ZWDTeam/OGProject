@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-91" y="421"/>
         </scene>
-        <!--View Controller-->
+        <!--登录-->
         <scene sceneID="5lm-2C-ifv">
             <objects>
                 <viewController id="kgN-g7-48J" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="saV-Z5-Ilb"/>
+                    <navigationItem key="navigationItem" title="登录" id="saV-Z5-Ilb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJJ-t6-BHB" userLabel="First Responder" sceneMemberID="firstResponder"/>

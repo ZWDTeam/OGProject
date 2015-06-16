@@ -19,8 +19,8 @@
     if (self) {
         self.title = @"发现";
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现"
-                                                        image:[UIImage imageNamed:@"zan"]
-                                                selectedImage:[UIImage imageNamed:@"zan"]];
+                                                        image:[UIImage imageNamed:@"发现00"]
+                                                selectedImage:[UIImage imageNamed:@"发现01"]];
     }
     return self;
     

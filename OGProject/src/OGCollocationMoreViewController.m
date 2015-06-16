@@ -1,35 +1,26 @@
 //
-//  OGBaseViewController.m
+//  OGCollocationMoreViewController.m
 //  OGProject
 //
-//  Created by 钟伟迪 on 15/6/15.
+//  Created by 钟伟迪 on 15/6/16.
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#import "OGBaseViewController.h"
+#import "OGCollocationMoreViewController.h"
 
-@interface OGBaseViewController ()
+@interface OGCollocationMoreViewController ()
 
 @end
 
-@implementation OGBaseViewController
-
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    }
-    return self;
-}
+@implementation OGCollocationMoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

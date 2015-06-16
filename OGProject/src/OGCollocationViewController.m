@@ -7,8 +7,12 @@
 //
 
 #import "OGCollocationViewController.h"
+#import "OGCollocationOnlyViewController.h"
+#import "OGCollocationMoreViewController.h"
 
-@interface OGCollocationViewController ()
+@interface OGCollocationViewController ()<UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedControl;
 
 @end
 
@@ -19,8 +23,8 @@
     if (self) {
         self.title = @"搭配购";
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"搭配购"
-                                                        image:[UIImage imageNamed:@"zan"]
-                                                selectedImage:[UIImage imageNamed:@"zan"]];
+                                                        image:[UIImage imageNamed:@"搭配购00"]
+                                                selectedImage:[UIImage imageNamed:@"搭配购01"]];
     }
     return self;
     
@@ -29,7 +33,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    OGCollocationOnlyViewController * onlyViewController = [[OGCollocationOnlyViewController alloc] init];
+    [self addChildViewController:onlyViewController];
+    [self.contentScrollView addSubview:onlyViewController.view];
+    
+    OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
+    [self addChildViewController:moreViewController];
+    CGRect rect = moreViewController.view.frame;
+    rect.origin.x = SCREEN_WIDTH;
+    moreViewController.view.frame = rect;
+    [self.contentScrollView addSubview:moreViewController.view];
+    
+    self.contentScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*2.0f, 0);
+    self.contentScrollView.pagingEnabled = YES;
+}
+
+#pragma mark - Action
+//切换类型
+- (IBAction)selectedStyleAction:(UISegmentedControl *)sender {
+    [self.contentScrollView setContentOffset:CGPointMake(sender.selectedSegmentIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
+}
+
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSInteger index = scrollView.contentOffset.x/SCREEN_WIDTH;
+    self.mySegmentedControl.selectedSegmentIndex = index;
 }
 
 - (void)didReceiveMemoryWarning {
