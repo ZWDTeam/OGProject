@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1p-qF-9md">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1p-qF-9md">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -53,6 +53,7 @@
                     <connections>
                         <outlet property="contentScrollView" destination="pqO-Pk-e4W" id="fDC-xd-sF1"/>
                         <outlet property="mySegmentedControl" destination="QYv-DS-MQR" id="egx-G7-aTD"/>
+                        <segue destination="3Q3-R0-inv" kind="show" identifier="detailView" id="3wv-Fv-Uhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU0-Dd-Fif" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,6 +278,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tih-yz-8Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500.5" y="-254.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HBZ-ik-Xha">
+            <objects>
+                <viewController id="3Q3-R0-inv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0N-iH-dc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="yTB-EL-s6n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HRT-Sn-kek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VqB-pX-G8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.5" y="517.5"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="iMV-5f-3y3">

@@ -98,14 +98,21 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
     // Dispose of any resources that can be recreated.
 }
 
-/*
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"detailView" sender:indexPath];
+//    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main.storyBoard" bundle:nil];
+//    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"填写ViewController在故事板中设置的identifier"];
+//    [self.navigationController pushViewController:vc animated:YES];
+
+}
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
