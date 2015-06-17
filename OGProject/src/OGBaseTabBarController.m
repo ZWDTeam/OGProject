@@ -37,6 +37,8 @@
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+  #if 0
     if(!ex_islogin&&self.selectedIndex == 3){
         UIStoryboard * stroyboard =[UIStoryboard storyboardWithName:@"OGLogin" bundle:[NSBundle mainBundle]];
         
@@ -44,6 +46,7 @@
         
         [self presentViewController:navigationController animated:YES completion:nil];
     }
+ #endif
 }
 
 /*

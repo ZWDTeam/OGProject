@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
+		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
+		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
+		482DF0991B31B00300D3A000 /* 15-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0961B31B00300D3A000 /* 15-1.png */; };
+		482DF09A1B31B00300D3A000 /* 15-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0971B31B00300D3A000 /* 15-2.png */; };
+		482DF09B1B31B00300D3A000 /* 15-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0981B31B00300D3A000 /* 15-3.png */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -87,6 +93,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
+		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
+		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
+		482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGFindTableViewCell.xib; sourceTree = "<group>"; };
+		482DF0961B31B00300D3A000 /* 15-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-1.png"; sourceTree = "<group>"; };
+		482DF0971B31B00300D3A000 /* 15-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-2.png"; sourceTree = "<group>"; };
+		482DF0981B31B00300D3A000 /* 15-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-3.png"; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -199,6 +212,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		482DF08C1B31A9D100D3A000 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				482DF0961B31B00300D3A000 /* 15-1.png */,
+				482DF0971B31B00300D3A000 /* 15-2.png */,
+				482DF0981B31B00300D3A000 /* 15-3.png */,
+				482DF08D1B31A9DB00D3A000 /* 评论@2x.png */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		482DF0941B31AEC600D3A000 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */,
+				482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */,
+				482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		482DF09C1B31B01600D3A000 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				48CF9A301B2E76E6003BBFBF /* OGFindViewController.h */,
+				48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
 		484376431B303ED9006D9D56 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +428,7 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				482DF08C1B31A9D100D3A000 /* other */,
 				484376941B307C14006D9D56 /* homeImage */,
 				4843766D1B3065E0006D9D56 /* tabbarButton */,
 				484376521B304333006D9D56 /* home */,
@@ -461,8 +505,8 @@
 		48CF9A281B2E7668003BBFBF /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				48CF9A301B2E76E6003BBFBF /* OGFindViewController.h */,
-				48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */,
+				482DF09C1B31B01600D3A000 /* viewController */,
+				482DF0941B31AEC600D3A000 /* view */,
 			);
 			name = Find;
 			sourceTree = "<group>";
@@ -608,10 +652,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482DF09B1B31B00300D3A000 /* 15-3.png in Resources */,
+				482DF09A1B31B00300D3A000 /* 15-2.png in Resources */,
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
 				484376791B3065F4006D9D56 /* 搭配购00@2x.png in Resources */,
 				484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */,
 				484376AE1B307C14006D9D56 /* home14.jpg in Resources */,
+				482DF0991B31B00300D3A000 /* 15-1.png in Resources */,
 				4843765A1B304A9C006D9D56 /* 找设计师@2x.png in Resources */,
 				484376811B3065F4006D9D56 /* 分类@2x.png in Resources */,
 				484376931B30769A006D9D56 /* OGCollocationCollectionViewCell.xib in Resources */,
@@ -639,6 +686,7 @@
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
+				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
 				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
 				484376AA1B307C14006D9D56 /* home10.jpg in Resources */,
 				4843767E1B3065F4006D9D56 /* 首页01@2x.png in Resources */,
@@ -651,6 +699,7 @@
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,
 				484376B81B307C14006D9D56 /* home5.jpg in Resources */,
+				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
 				48CF99F81B2E724E003BBFBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +720,7 @@
 			files = (
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
+				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
