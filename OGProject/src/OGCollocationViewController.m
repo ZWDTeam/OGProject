@@ -10,13 +10,19 @@
 #import "OGCollocationOnlyViewController.h"
 #import "OGCollocationMoreViewController.h"
 
-@interface OGCollocationViewController ()<UIScrollViewDelegate>
+@interface OGCollocationViewController ()<UIScrollViewDelegate,OGBaseViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedControl;
 
 @end
 
 @implementation OGCollocationViewController
+
+#pragma mark 实现传值协议方法
+-(void)BaseViewIndexDetail:(NSString *)index{
+    [self performSegueWithIdentifier:@"detailView" sender:index];
+    
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
@@ -37,6 +43,7 @@
     OGCollocationOnlyViewController * onlyViewController = [[OGCollocationOnlyViewController alloc] init];
     [self addChildViewController:onlyViewController];
     [self.contentScrollView addSubview:onlyViewController.view];
+    onlyViewController.detailDelegate = self;
     
     OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
     [self addChildViewController:moreViewController];
@@ -67,7 +74,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -75,6 +82,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

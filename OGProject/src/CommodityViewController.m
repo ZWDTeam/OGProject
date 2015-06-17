@@ -14,6 +14,17 @@
 
 @implementation CommodityViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.title = @"搭配购";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"方案详情"
+                                                        image:[UIImage imageNamed:@"搭配购00"]
+                                                selectedImage:[UIImage imageNamed:@"搭配购01"]];
+    }
+    return self;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

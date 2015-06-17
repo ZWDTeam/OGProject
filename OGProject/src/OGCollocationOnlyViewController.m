@@ -11,6 +11,7 @@
 #import "SGFocusImageItem.h"
 #import "OGCollocationFlowLayout.h"
 #import "OGCollocationCollectionViewCell.h"
+#import "OGCollocationViewController.h"
 
 NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell";
 
@@ -19,9 +20,7 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 @property (strong , nonatomic) SGFocusImageFrame *bannerView;
 @property (strong , nonatomic) NSMutableArray * headerDatas;
 @property (strong , nonatomic) UICollectionView * collectionView;
-@property (assign) id delegateDetail;
 
-- (void)returnDelegateDetail:(NSString*)delegateDetail;
 
 @end
 
@@ -103,23 +102,25 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"detailView" sender:indexPath];
+    [self.detailDelegate BaseViewIndexDetail:[NSString stringWithFormat:@"%@",indexPath]];
+    //页面跳转 省
+   // [self performSegueWithIdentifier:@"detailView" sender:indexPath];
 //    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main.storyBoard" bundle:nil];
 //    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"填写ViewController在故事板中设置的identifier"];
 //    [self.navigationController pushViewController:vc animated:YES];
 
 }
 
-- (void)returnDelegateDetail:(NSString*)delegateDetail;
-{
-
-}
+//- (void)returnDelegateDetail:(NSString*)delegateDetail;
+//{
+//
+//}
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    // Pass the selected object to the new view controller.
+//}
 
 
 @end

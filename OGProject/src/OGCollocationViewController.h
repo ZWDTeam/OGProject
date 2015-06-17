@@ -10,4 +10,5 @@
 
 @interface OGCollocationViewController : OGBaseViewController
 
+
 @end

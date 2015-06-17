@@ -8,6 +8,12 @@
 
 #import "OGBaseViewController.h"
 
+
+@protocol OGBaseViewControllerDelegate
+-(void)BaseViewIndexDetail:(NSString *)index;//1.1定义协议与方法
+@end
+
 @interface OGCollocationOnlyViewController : OGBaseViewController
 
+@property (retain,nonatomic) id <OGBaseViewControllerDelegate> detailDelegate;
 @end
