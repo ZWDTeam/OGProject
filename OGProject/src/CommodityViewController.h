@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class OGCommodityModel;
+
 @interface CommodityViewController : UIViewController
+
+@property (strong, nonatomic)OGCommodityModel * commodityInfo;
 
 @end

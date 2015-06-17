@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DCC63F51B31C11400DA0F5B /* CommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC63F41B31C11400DA0F5B /* CommodityViewController.m */; };
+		1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
 		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
 		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
@@ -108,6 +109,8 @@
 /* Begin PBXFileReference section */
 		1DCC63F31B31C11400DA0F5B /* CommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewController.h; sourceTree = "<group>"; };
 		1DCC63F41B31C11400DA0F5B /* CommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewController.m; sourceTree = "<group>"; };
+		1DCC63F71B31D46500DA0F5B /* OGCommodityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCommodityModel.h; sourceTree = "<group>"; };
+		1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCommodityModel.m; sourceTree = "<group>"; };
 		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
 		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
 		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
@@ -245,6 +248,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DCC63F61B31D41B00DA0F5B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC63F71B31D46500DA0F5B /* OGCommodityModel.h */,
+				1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +571,7 @@
 		48CF9A271B2E7638003BBFBF /* Collocation */ = {
 			isa = PBXGroup;
 			children = (
+				1DCC63F61B31D41B00DA0F5B /* model */,
 				4843768B1B307341006D9D56 /* view */,
 				484376841B306CBC006D9D56 /* viewController */,
 				48CF9A2D1B2E76D9003BBFBF /* OGCollocationViewController.h */,
@@ -798,6 +811,7 @@
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
 				482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */,
+				1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,

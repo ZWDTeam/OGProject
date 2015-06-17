@@ -9,6 +9,7 @@
 #import "OGCollocationViewController.h"
 #import "OGCollocationOnlyViewController.h"
 #import "OGCollocationMoreViewController.h"
+#import "CommodityViewController.h"
 
 @interface OGCollocationViewController ()<UIScrollViewDelegate,OGBaseViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
@@ -17,12 +18,6 @@
 @end
 
 @implementation OGCollocationViewController
-
-#pragma mark 实现传值协议方法
--(void)BaseViewIndexDetail:(NSString *)index{
-    [self performSegueWithIdentifier:@"detailView" sender:index];
-    
-}
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
@@ -74,13 +69,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark 实现传值协议方法
+-(void)BaseViewIndexDetail:(NSString *)index{
+    [self performSegueWithIdentifier:@"detailView" sender:index];
+    
+}
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    CommodityViewController *commodity = segue.destinationViewController;
+    commodity.commodityInfo = nil;
 }
 
 
