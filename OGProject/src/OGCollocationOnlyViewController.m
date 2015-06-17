@@ -19,7 +19,9 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 @property (strong , nonatomic) SGFocusImageFrame *bannerView;
 @property (strong , nonatomic) NSMutableArray * headerDatas;
 @property (strong , nonatomic) UICollectionView * collectionView;
+@property (assign) id delegateDetail;
 
+- (void)returnDelegateDetail:(NSString*)delegateDetail;
 
 @end
 
@@ -98,6 +100,7 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
     // Dispose of any resources that can be recreated.
 }
 
+
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"detailView" sender:indexPath];
@@ -107,6 +110,10 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 
 }
 
+- (void)returnDelegateDetail:(NSString*)delegateDetail;
+{
+
+}
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
