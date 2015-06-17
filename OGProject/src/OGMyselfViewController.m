@@ -7,8 +7,12 @@
 //
 
 #import "OGMyselfViewController.h"
+#import "MyselfHeaderView.h"
+#import "OGMyselfTableViewCell.h"
 
 @interface OGMyselfViewController ()
+
+@property (strong , nonatomic)MyselfHeaderView * headerView;
 
 @end
 
@@ -24,6 +28,13 @@
     }
     return self;
     
+}
+
+- (MyselfHeaderView *)headerView{
+    if (!_headerView) {
+        _headerView = [[[NSBundle mainBundle] loadNibNamed:@"MyselfHeaderView" owner:self options:nil] lastObject];
+    }
+    return _headerView;
 }
 
 

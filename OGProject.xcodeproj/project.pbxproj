@@ -13,6 +13,10 @@
 		482DF0991B31B00300D3A000 /* 15-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0961B31B00300D3A000 /* 15-1.png */; };
 		482DF09A1B31B00300D3A000 /* 15-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0971B31B00300D3A000 /* 15-2.png */; };
 		482DF09B1B31B00300D3A000 /* 15-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0981B31B00300D3A000 /* 15-3.png */; };
+		482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF09E1B31B57C00D3A000 /* MyselfHeaderView.m */; };
+		482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0A11B31B65200D3A000 /* MyselfHeaderView.xib */; };
+		482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */; };
+		482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -100,6 +104,12 @@
 		482DF0961B31B00300D3A000 /* 15-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-1.png"; sourceTree = "<group>"; };
 		482DF0971B31B00300D3A000 /* 15-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-2.png"; sourceTree = "<group>"; };
 		482DF0981B31B00300D3A000 /* 15-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-3.png"; sourceTree = "<group>"; };
+		482DF09D1B31B57C00D3A000 /* MyselfHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfHeaderView.h; sourceTree = "<group>"; };
+		482DF09E1B31B57C00D3A000 /* MyselfHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfHeaderView.m; sourceTree = "<group>"; };
+		482DF0A11B31B65200D3A000 /* MyselfHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyselfHeaderView.xib; sourceTree = "<group>"; };
+		482DF0A31B31BBC200D3A000 /* OGMyselfTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyselfTableViewCell.h; sourceTree = "<group>"; };
+		482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyselfTableViewCell.m; sourceTree = "<group>"; };
+		482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGMyselfTableViewCell.xib; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -240,6 +250,19 @@
 				48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */,
 			);
 			name = viewController;
+			sourceTree = "<group>";
+		};
+		482DF0A01B31B58400D3A000 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				482DF09D1B31B57C00D3A000 /* MyselfHeaderView.h */,
+				482DF09E1B31B57C00D3A000 /* MyselfHeaderView.m */,
+				482DF0A11B31B65200D3A000 /* MyselfHeaderView.xib */,
+				482DF0A31B31BBC200D3A000 /* OGMyselfTableViewCell.h */,
+				482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */,
+				482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		484376431B303ED9006D9D56 /* model */ = {
@@ -514,6 +537,7 @@
 		48CF9A291B2E767D003BBFBF /* Myself */ = {
 			isa = PBXGroup;
 			children = (
+				482DF0A01B31B58400D3A000 /* view */,
 				48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */,
 				48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */,
 			);
@@ -676,6 +700,7 @@
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
 				484376AB1B307C14006D9D56 /* home11.jpg in Resources */,
 				484376AD1B307C14006D9D56 /* home13.jpg in Resources */,
+				482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */,
 				484376801B3065F4006D9D56 /* 我的01@2x.png in Resources */,
 				484376AF1B307C14006D9D56 /* home15.jpg in Resources */,
 				484376BA1B307C14006D9D56 /* home7.jpg in Resources */,
@@ -685,6 +710,7 @@
 				484376B21B307C14006D9D56 /* home18.jpg in Resources */,
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
+				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
 				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
@@ -721,6 +747,7 @@
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
+				482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
@@ -735,6 +762,7 @@
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
 				484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
+				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
