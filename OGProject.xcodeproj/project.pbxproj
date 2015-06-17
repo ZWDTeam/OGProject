@@ -18,6 +18,10 @@
 		482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0A11B31B65200D3A000 /* MyselfHeaderView.xib */; };
 		482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */; };
 		482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */; };
+		482DF0AB1B31C26900D3A000 /* mm4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0AA1B31C26900D3A000 /* mm4.jpg */; };
+		482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0AC1B31C38000D3A000 /* 19-1性别-男.png */; };
+		482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0AD1B31C38000D3A000 /* 19-1性别-女.png */; };
+		482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0B01B31C42000D3A000 /* myself_sex@2x.png */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -113,6 +117,10 @@
 		482DF0A31B31BBC200D3A000 /* OGMyselfTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyselfTableViewCell.h; sourceTree = "<group>"; };
 		482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyselfTableViewCell.m; sourceTree = "<group>"; };
 		482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGMyselfTableViewCell.xib; sourceTree = "<group>"; };
+		482DF0AA1B31C26900D3A000 /* mm4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm4.jpg; sourceTree = "<group>"; };
+		482DF0AC1B31C38000D3A000 /* 19-1性别-男.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-1性别-男.png"; sourceTree = "<group>"; };
+		482DF0AD1B31C38000D3A000 /* 19-1性别-女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-1性别-女.png"; sourceTree = "<group>"; };
+		482DF0B01B31C42000D3A000 /* myself_sex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myself_sex@2x.png"; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -228,6 +236,9 @@
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				482DF0B01B31C42000D3A000 /* myself_sex@2x.png */,
+				482DF0AC1B31C38000D3A000 /* 19-1性别-男.png */,
+				482DF0AD1B31C38000D3A000 /* 19-1性别-女.png */,
 				482DF0961B31B00300D3A000 /* 15-1.png */,
 				482DF0971B31B00300D3A000 /* 15-2.png */,
 				482DF0981B31B00300D3A000 /* 15-3.png */,
@@ -454,6 +465,7 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				482DF0AA1B31C26900D3A000 /* mm4.jpg */,
 				482DF08C1B31A9D100D3A000 /* other */,
 				484376941B307C14006D9D56 /* homeImage */,
 				4843766D1B3065E0006D9D56 /* tabbarButton */,
@@ -693,6 +705,7 @@
 				484376931B30769A006D9D56 /* OGCollocationCollectionViewCell.xib in Resources */,
 				484376821B3065F4006D9D56 /* 返回.png in Resources */,
 				484376641B304D12006D9D56 /* 定位@2x.png in Resources */,
+				482DF0AB1B31C26900D3A000 /* mm4.jpg in Resources */,
 				484376B91B307C14006D9D56 /* home6.jpg in Resources */,
 				484376B01B307C14006D9D56 /* home16.jpg in Resources */,
 				484376BB1B307C14006D9D56 /* home8.jpg in Resources */,
@@ -716,6 +729,7 @@
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
+				482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */,
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
 				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
@@ -723,9 +737,11 @@
 				4843767E1B3065F4006D9D56 /* 首页01@2x.png in Resources */,
 				484376BC1B307C14006D9D56 /* home9.jpg in Resources */,
 				4843767B1B3065F4006D9D56 /* 发现00@2x.png in Resources */,
+				482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */,
 				4843767A1B3065F4006D9D56 /* 搭配购01@2x.png in Resources */,
 				484376661B304D12006D9D56 /* 亲体验@2x.png in Resources */,
 				484376631B304D12006D9D56 /* 电话@2x.png in Resources */,
+				482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */,
 				48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */,
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,

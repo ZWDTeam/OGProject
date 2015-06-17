@@ -10,22 +10,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-GF-wbZ">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mm4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-GF-wbZ">
                     <rect key="frame" x="147" y="28" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="0xs-Fc-TbF"/>
                         <constraint firstAttribute="width" constant="80" id="Xkt-it-s7C"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVf-1a-m6N">
-                    <rect key="frame" x="190" y="118" width="38" height="18"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myself_sex.png" translatesAutoresizingMaskIntoConstraints="NO" id="gVf-1a-m6N">
+                    <rect key="frame" x="190" y="127" width="38" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="Xjk-ck-Xug"/>
                         <constraint firstAttribute="width" constant="38" id="gx6-nh-0yh"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-kW-bHm">
-                    <rect key="frame" x="147" y="116" width="42" height="21"/>
+                    <rect key="frame" x="147" y="125" width="42" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="PEQ-ba-9c0"/>
                         <constraint firstAttribute="width" constant="42" id="TvD-3Y-cfq"/>
@@ -37,10 +37,10 @@
             </subviews>
             <color key="backgroundColor" red="0.92791351106266506" green="0.95616026053371961" blue="0.99220722853535348" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="pZU-kW-bHm" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="8" id="E33-FM-utZ"/>
+                <constraint firstItem="pZU-kW-bHm" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="17" id="E33-FM-utZ"/>
                 <constraint firstItem="pZU-kW-bHm" firstAttribute="leading" secondItem="Dhw-GF-wbZ" secondAttribute="leading" id="HSu-9K-apn"/>
                 <constraint firstAttribute="centerX" secondItem="Dhw-GF-wbZ" secondAttribute="centerX" id="I7j-GE-L2G"/>
-                <constraint firstItem="gVf-1a-m6N" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="10" id="bUU-VV-fhx"/>
+                <constraint firstItem="gVf-1a-m6N" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="19" id="bUU-VV-fhx"/>
                 <constraint firstItem="gVf-1a-m6N" firstAttribute="leading" secondItem="pZU-kW-bHm" secondAttribute="trailing" constant="1" id="w5Y-YE-atb"/>
                 <constraint firstAttribute="centerY" secondItem="Dhw-GF-wbZ" secondAttribute="centerY" constant="17" id="xQJ-5n-Y9j"/>
             </constraints>
@@ -53,4 +53,8 @@
             <point key="canvasLocation" x="43.5" y="406"/>
         </view>
     </objects>
+    <resources>
+        <image name="mm4.jpg" width="480" height="800"/>
+        <image name="myself_sex.png" width="47" height="20"/>
+    </resources>
 </document>

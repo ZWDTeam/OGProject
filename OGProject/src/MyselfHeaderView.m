@@ -25,10 +25,11 @@
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     
     CGRect imageRect = _headerImageView.frame;
-    imageRect.origin.x -=4;
-    imageRect.origin.y -=4;
-    imageRect.size.height +=8;
-    imageRect.size.width +=8;
+    CGFloat space = 6.0f;
+    imageRect.origin.x -=space;
+    imageRect.origin.y -=space;
+    imageRect.size.height +=space*2;
+    imageRect.size.width += space*2;
 
     CGContextAddEllipseInRect(context, imageRect);
     CGContextStrokePath(context);
