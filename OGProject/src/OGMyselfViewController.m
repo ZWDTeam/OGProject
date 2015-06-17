@@ -70,6 +70,31 @@
     return 70.0f;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:@"pushMyAttentionView" sender:indexPath];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"pushMyRepositoryView" sender:indexPath];
+
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"pushMyNeedView" sender:indexPath];
+
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"pushSetingView" sender:indexPath];
+
+            break;
+            
+        default:
+            break;
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

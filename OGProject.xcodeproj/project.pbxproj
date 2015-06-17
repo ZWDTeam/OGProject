@@ -22,6 +22,10 @@
 		482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0AC1B31C38000D3A000 /* 19-1性别-男.png */; };
 		482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0AD1B31C38000D3A000 /* 19-1性别-女.png */; };
 		482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0B01B31C42000D3A000 /* myself_sex@2x.png */; };
+		482DF0B51B31C7B700D3A000 /* OGMyAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0B41B31C7B700D3A000 /* OGMyAttentionViewController.m */; };
+		482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0B71B31C89F00D3A000 /* OGMYRepositoryViewController.m */; };
+		482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */; };
+		482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -121,6 +125,14 @@
 		482DF0AC1B31C38000D3A000 /* 19-1性别-男.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-1性别-男.png"; sourceTree = "<group>"; };
 		482DF0AD1B31C38000D3A000 /* 19-1性别-女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-1性别-女.png"; sourceTree = "<group>"; };
 		482DF0B01B31C42000D3A000 /* myself_sex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myself_sex@2x.png"; sourceTree = "<group>"; };
+		482DF0B31B31C7B700D3A000 /* OGMyAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyAttentionViewController.h; sourceTree = "<group>"; };
+		482DF0B41B31C7B700D3A000 /* OGMyAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyAttentionViewController.m; sourceTree = "<group>"; };
+		482DF0B61B31C89F00D3A000 /* OGMYRepositoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMYRepositoryViewController.h; sourceTree = "<group>"; };
+		482DF0B71B31C89F00D3A000 /* OGMYRepositoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMYRepositoryViewController.m; sourceTree = "<group>"; };
+		482DF0B91B31C8C400D3A000 /* OGMyNeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyNeedViewController.h; sourceTree = "<group>"; };
+		482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyNeedViewController.m; sourceTree = "<group>"; };
+		482DF0BC1B31C8E600D3A000 /* OGSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSetingViewController.h; sourceTree = "<group>"; };
+		482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSetingViewController.m; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -277,6 +289,21 @@
 				482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		482DF0B21B31C6A400D3A000 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				482DF0B31B31C7B700D3A000 /* OGMyAttentionViewController.h */,
+				482DF0B41B31C7B700D3A000 /* OGMyAttentionViewController.m */,
+				482DF0B61B31C89F00D3A000 /* OGMYRepositoryViewController.h */,
+				482DF0B71B31C89F00D3A000 /* OGMYRepositoryViewController.m */,
+				482DF0B91B31C8C400D3A000 /* OGMyNeedViewController.h */,
+				482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */,
+				482DF0BC1B31C8E600D3A000 /* OGSetingViewController.h */,
+				482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */,
+			);
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 		484376431B303ED9006D9D56 /* model */ = {
@@ -554,6 +581,7 @@
 		48CF9A291B2E767D003BBFBF /* Myself */ = {
 			isa = PBXGroup;
 			children = (
+				482DF0B21B31C6A400D3A000 /* viewControllers */,
 				482DF0A01B31B58400D3A000 /* view */,
 				48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */,
 				48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */,
@@ -765,6 +793,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */,
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
@@ -774,10 +803,13 @@
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
 				48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */,
 				484376871B306D0B006D9D56 /* OGCollocationOnlyViewController.m in Sources */,
+				482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */,
 				48CF99ED1B2E724E003BBFBF /* main.m in Sources */,
+				482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */,
 				4843768A1B306D38006D9D56 /* OGCollocationMoreViewController.m in Sources */,
 				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
 				4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */,
+				482DF0B51B31C7B700D3A000 /* OGMyAttentionViewController.m in Sources */,
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
 				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
