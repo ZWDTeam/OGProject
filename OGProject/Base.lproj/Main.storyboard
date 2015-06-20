@@ -120,11 +120,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="dw9-Em-Ef4" id="jaH-AM-c8y"/>
-                        <segue destination="UIR-bM-hVK" kind="show" identifier="pushMyAttentionView" id="icY-RP-Nc5"/>
                         <segue destination="Lwu-be-QA9" kind="show" identifier="pushMyRepositoryView" id="bhJ-cx-w7j"/>
                         <segue destination="jMd-Rf-bnd" kind="show" identifier="pushMyNeedView" id="984-eq-4Ki"/>
                         <segue destination="TVz-ng-QYA" kind="show" identifier="pushSetingView" id="k5k-Je-7VJ"/>
                         <segue destination="cCV-B8-OAT" kind="show" identifier="pushUserInfoView" id="hds-VE-tB7"/>
+                        <segue destination="Hcj-zQ-199" kind="show" identifier="pushMyAttentionView" id="gry-Me-S8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H4-HV-PrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,105 +200,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1A-CJ-hKM">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kPh-FF-fvb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ne-n8-nQ0" customClass="OGHomeButton">
-                                        <rect key="frame" x="7" y="160" width="177" height="212"/>
-                                        <color key="backgroundColor" red="0.94466145830000003" green="0.0" blue="0.47773496240000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
-                                        <state key="normal" image="找设计师.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="seekProjectorAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="CoB-C7-49m"/>
-                                            <segue destination="92l-1A-A2T" kind="show" identifier="pushStylistView" id="oDV-ab-l5h"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找设计师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdB-Zv-RMe">
-                                        <rect key="frame" x="57" y="306" width="77" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJk-E0-2kM" customClass="OGHomeButton">
-                                        <rect key="frame" x="7" y="376" width="177" height="172"/>
-                                        <color key="backgroundColor" red="0.55026830808080807" green="0.061994426424419123" blue="0.40691014726507785" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
-                                        <state key="normal" image="找方案.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="seekSchemesAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="xYL-g4-pxp"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="找方案" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-gL-jUk">
-                                        <rect key="frame" x="62" y="495" width="67" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyK-93-mWt" customClass="OGHomeButton">
-                                        <rect key="frame" x="189" y="160" width="178" height="138"/>
-                                        <color key="backgroundColor" red="0.065273295487780228" green="0.39864846287974776" blue="0.64784564393939392" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
-                                        <state key="normal" image="看攻略.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lookStrategyAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="XCc-HA-1ph"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看攻略" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-pg-eP1">
-                                        <rect key="frame" x="240" y="256" width="77" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIp-nh-1eG" customClass="OGHomeButton">
-                                        <rect key="frame" x="189" y="301" width="178" height="138"/>
-                                        <color key="backgroundColor" red="0.53238985050539733" green="0.14096476789914586" blue="0.94466145830000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
-                                        <state key="normal" image="亲体验.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="experienceAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="UmU-9L-aMD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqa-MW-jN8" customClass="OGHomeButton">
-                                        <rect key="frame" x="189" y="442" width="179" height="106"/>
-                                        <color key="backgroundColor" red="0.65050899620000002" green="0.095514276940000004" blue="0.088975269260000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
-                                        <state key="normal" image="我是设计师.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="myProjectorAction:" destination="xJ7-2V-jW4" eventType="touchUpInside" id="DY9-Wq-RXN"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我是设计师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-4g-mhW">
-                                        <rect key="frame" x="233" y="510" width="91" height="25"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="亲体验" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJc-Ub-w3N">
-                                        <rect key="frame" x="240" y="394" width="77" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </scrollView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J3E-Au-gc1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xJ7-2V-jW4" id="Z72-e9-vAS"/>
+                                    <outlet property="delegate" destination="xJ7-2V-jW4" id="vjm-uA-H97"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="top" secondItem="IuM-0a-Ymb" secondAttribute="topMargin" id="O4L-fg-3Gg"/>
-                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="bottom" secondItem="IuM-0a-Ymb" secondAttribute="bottomMargin" id="Xq3-le-M5I"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="m1A-CJ-hKM" secondAttribute="trailing" constant="-16" id="kvQ-KH-u6A"/>
-                            <constraint firstItem="m1A-CJ-hKM" firstAttribute="leading" secondItem="IuM-0a-Ymb" secondAttribute="leadingMargin" constant="-16" id="y6D-D1-CfI"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ivP-lI-vCF">
                         <barButtonItem key="leftBarButtonItem" image="定位.png" id="UJT-m9-OFi"/>
@@ -310,16 +228,17 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="contentScrollView" destination="m1A-CJ-hKM" id="yTT-LQ-KDJ"/>
+                        <outlet property="myCollectionView" destination="kPh-FF-fvb" id="qVA-HL-QdV"/>
                         <segue destination="qgJ-9u-1qN" kind="show" identifier="pushMapViewController" id="odq-vW-z1B"/>
                         <segue destination="Ye9-Qk-tKb" kind="show" identifier="pushLookStrategy" id="Fc1-27-uqE"/>
                         <segue destination="1Zn-Ua-8oy" kind="show" identifier="pushSchemeView" id="QYm-pH-bjU"/>
                         <segue destination="o8K-oc-LAe" kind="show" identifier="pushExperience" id="yeM-C9-zBR"/>
+                        <segue destination="92l-1A-A2T" kind="show" identifier="pushStylistView" id="u7F-KI-hpS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Abu-7V-lx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978.5" y="-254.5"/>
+            <point key="canvasLocation" x="994.5" y="-290.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="G4Y-XZ-mgb">
@@ -344,7 +263,7 @@
                         <constraints>
                             <constraint firstItem="POK-dC-jb4" firstAttribute="leading" secondItem="bCa-RJ-pKx" secondAttribute="leadingMargin" constant="-16" id="4FY-5A-kDt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="POK-dC-jb4" secondAttribute="trailing" constant="-16" id="Ibm-6D-gGk"/>
-                            <constraint firstItem="hve-mc-Fds" firstAttribute="top" secondItem="POK-dC-jb4" secondAttribute="bottom" id="R4o-Ln-em0"/>
+                            <constraint firstItem="POK-dC-jb4" firstAttribute="bottom" secondItem="bCa-RJ-pKx" secondAttribute="bottomMargin" id="WM2-Bm-n0c"/>
                             <constraint firstItem="POK-dC-jb4" firstAttribute="top" secondItem="bCa-RJ-pKx" secondAttribute="topMargin" id="g8Q-mz-cUb"/>
                         </constraints>
                     </view>
@@ -371,6 +290,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRs-P9-B49" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,6 +310,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04x-Hv-2Jq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -426,9 +347,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="48Q-0g-RiS" firstAttribute="bottom" secondItem="HP9-pt-T9a" secondAttribute="bottomMargin" id="1Qo-7U-gHR"/>
                             <constraint firstItem="48Q-0g-RiS" firstAttribute="leading" secondItem="HP9-pt-T9a" secondAttribute="leadingMargin" constant="-16" id="1fb-Jc-qrj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="48Q-0g-RiS" secondAttribute="trailing" constant="-16" id="QYb-2a-eEh"/>
-                            <constraint firstItem="Pih-sa-soA" firstAttribute="top" secondItem="48Q-0g-RiS" secondAttribute="bottom" id="cpL-B4-Bm8"/>
                             <constraint firstItem="48Q-0g-RiS" firstAttribute="top" secondItem="HP9-pt-T9a" secondAttribute="topMargin" id="oss-NZ-ed9"/>
                         </constraints>
                     </view>
@@ -505,6 +426,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="rightBarBtn" destination="NTF-LW-mWM" id="lhJ-Az-Nld"/>
@@ -621,7 +543,7 @@
         <!--User Info View Controller-->
         <scene sceneID="CEX-Vc-gff">
             <objects>
-                <viewController id="cCV-B8-OAT" customClass="OGUserInfoViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="cCV-B8-OAT" customClass="OGUserInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="55q-S0-EDu"/>
                         <viewControllerLayoutGuide type="bottom" id="YrZ-ne-9rj"/>
@@ -649,52 +571,28 @@
             <point key="canvasLocation" x="1962.5" y="1113.5"/>
         </scene>
         <!--My Attention View Controller-->
-        <scene sceneID="1sX-f6-Eh1">
+        <scene sceneID="k8Z-ij-fJ8">
             <objects>
-                <viewController id="bTU-nW-4Dm" customClass="OGMyAttentionViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Hcj-zQ-199" customClass="OGMyAttentionViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KNf-29-cwu"/>
-                        <viewControllerLayoutGuide type="bottom" id="axg-7U-8Rb"/>
+                        <viewControllerLayoutGuide type="top" id="XIV-Pi-8fN"/>
+                        <viewControllerLayoutGuide type="bottom" id="uok-2w-tIH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pmr-GS-ji0">
+                    <view key="view" contentMode="scaleToFill" id="psA-hp-gkT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="exb-Ts-xss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orx-ei-xqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962.5" y="1921.5"/>
-        </scene>
-        <!--My Attention View Controller-->
-        <scene sceneID="HSU-vN-7Xp">
-            <objects>
-                <viewController id="UIR-bM-hVK" customClass="OGMyAttentionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wph-xR-8KA"/>
-                        <viewControllerLayoutGuide type="bottom" id="KqD-v4-LRR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XaY-hh-eT0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n1m-aU-IC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1962.5" y="1921.5"/>
+            <point key="canvasLocation" x="1985" y="2097"/>
         </scene>
     </scenes>
     <resources>
-        <image name="亲体验.png" width="57" height="44"/>
         <image name="分类.png" width="26" height="16"/>
         <image name="定位.png" width="11" height="19"/>
-        <image name="我是设计师.png" width="39" height="36"/>
-        <image name="找方案.png" width="58" height="58"/>
-        <image name="找设计师.png" width="90" height="75"/>
         <image name="电话.png" width="23" height="23"/>
-        <image name="看攻略.png" width="57" height="55"/>
     </resources>
 </document>

@@ -20,6 +20,14 @@ NSString * const collectionCellIdentifier = @"OGLookStrategyCollectionViewCell";
 
 @implementation LookStrategyViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.title = @"看攻略";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _array = @[@{@"title":@"中式复古风",

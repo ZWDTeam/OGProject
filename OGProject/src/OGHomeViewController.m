@@ -7,14 +7,22 @@
 //
 
 #import "OGHomeViewController.h"
-#import "SGFocusImageFrame.h"
-#import "SGFocusImageItem.h"
+#import "OGHomeCollectionViewCell.h"
+#import "OGHomeLayout.h"
+#import "OGCollectionReusableView.h"
 
-@interface OGHomeViewController ()<SGFocusImageFrameDelegate>
+NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
-@property (strong , nonatomic) SGFocusImageFrame *bannerView;
-@property (strong , nonatomic) NSMutableArray * headerDatas;
-@property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
+#define iPhone_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
+
+
+@interface OGHomeViewController ()
+
+@property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
+
+@property (strong , nonatomic)NSMutableArray * array;
+
+@property (strong , nonatomic)NSArray * items;
 
 @end
 
@@ -27,6 +35,18 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页"
                                                         image:[UIImage imageNamed:@"首页00"]
                                                 selectedImage:[UIImage imageNamed:@"首页01"]];
+        
+        _array = [@[[NSValue valueWithCGSize:CGSizeMake(iPhone_scale(150), iPhone_scale(180))],
+                    [NSValue valueWithCGSize:CGSizeMake(iPhone_scale(150), iPhone_scale(115))],
+                    [NSValue valueWithCGSize:CGSizeMake(iPhone_scale(150), iPhone_scale(115))],
+                    [NSValue valueWithCGSize:CGSizeMake(iPhone_scale(150), iPhone_scale(150))],
+                    [NSValue valueWithCGSize:CGSizeMake(iPhone_scale(150), iPhone_scale(95))]
+                    ] mutableCopy];
+        
+        
+        _items = @[@"找设计师",@"看攻略",@"亲体验",@"找方案",@"我是设计师"];
+
+        
     }
     return self;
     
@@ -35,75 +55,116 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString * pathString = [[NSBundle mainBundle] pathForResource:@"homeHeaderModel" ofType:@"plist"];
-    NSArray * array = [NSArray arrayWithContentsOfFile:pathString];
-    _headerDatas  = [[NSMutableArray alloc] initWithArray:array];
-    [_headerDatas addObject:array[0]];
-    [_headerDatas insertObject:array[array.count-1] atIndex:0];
     
-    //加载轮播试图
-    [self bannerView];
+    OGHomeLayout *flowLayout = [OGHomeLayout new];
+    
+    [_myCollectionView setCollectionViewLayout:flowLayout];
+    
+    UINib * nib = [UINib nibWithNibName:cellIdentifer bundle:[NSBundle mainBundle]];
+    [_myCollectionView registerNib:nib forCellWithReuseIdentifier:cellIdentifer];
+    
+    [_myCollectionView registerClass:[OGCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"OGCollectionReusableView"];
+    
+
 }
 
 
-- (SGFocusImageFrame *)bannerView{
-    if (!_bannerView) {
-        NSMutableArray *arrItemp=[NSMutableArray new];
-        for (int i = 0 ; i < _headerDatas.count; i++)
-        {
-            SGFocusImageItem *item = [[SGFocusImageItem alloc] initWithTitle:_headerDatas[i][@"title"]
-                                                                       image:_headerDatas[i][@"imageString"]
-                                                                         tag:i-1];
-            [arrItemp addObject:item];
-        }
-        CGRect rect = CGRectMake(0, 0, SCREEN_WIDTH, 311.0f/2.0f);
-        self.bannerView = [[SGFocusImageFrame alloc] initWithFrame:rect
-                                                          delegate:self
-                                                        imageItems:arrItemp
-                                                            isAuto:YES
-                                                               num:3.0];
-        [self.contentScrollView addSubview:self.bannerView];
-        
+#pragma -mark UICollectionViewDelegate
+//每个section的item个数
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return _array.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionViews cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+    OGHomeCollectionViewCell *cell = (OGHomeCollectionViewCell *)[collectionViews dequeueReusableCellWithReuseIdentifier:@"OGHomeCollectionViewCell" forIndexPath:indexPath];
+    
+    cell.titleLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    
+    cell.backgroundColor=[UIColor colorWithWhite:1.0 alpha:0.5];
+    
+    cell.imageView.image= [UIImage imageNamed:_items[indexPath.row]];
+    
+    cell.titleLabel.text = _items[indexPath.row];
+    
+    return cell;
+}
+
+#pragma  mark - UICollectionViewDelegateFlowLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    return CGSizeMake(320, 150);
+}
+
+#pragma mark - UICollectionViewDataSource
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    OGCollectionReusableView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"OGCollectionReusableView" forIndexPath:indexPath];
+    headView.backgroundColor = [UIColor redColor];
+    return headView;
+}
+
+//定义每个UICollectionView 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSValue * sizeValue = _array[indexPath.row];
+    
+    CGSize size = [sizeValue  CGSizeValue];
+    
+    return size;
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(5,5, 5,5);
+}
+
+
+#pragma mark - UICollectionViewDelegate
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0://找设计师
+            
+            [self performSegueWithIdentifier:@"pushMapViewController" sender:nil];
+            break;
+        case 1://看攻略
+
+            [self performSegueWithIdentifier:@"pushLookStrategy" sender:nil];
+            break;
+        case 2://亲体验
+            
+            [self performSegueWithIdentifier:@"pushExperience" sender:nil];
+            break;
+
+        case 3://找方案
+            
+            [self performSegueWithIdentifier:@"pushSchemeView" sender:nil];
+            break;
+
+        case 4://我是设计师
+
+            [self performSegueWithIdentifier:@"pushStylistView" sender:nil];
+            break;
+            
+        default:
+            break;
     }
-    return _bannerView;
 }
 
-#pragma mark - Action
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
-//找设计师
-- (IBAction)seekProjectorAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushMapViewController" sender:nil];
+    _myCollectionView.contentSize = CGSizeMake(0, 0);
 }
 
-//看攻略
-- (IBAction)lookStrategyAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushLookStrategy" sender:nil];
-
-}
-
-//找方案
-- (IBAction)seekSchemesAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushSchemeView" sender:nil];
-}
-
-//亲体验
-- (IBAction)experienceAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushExperience" sender:nil];
-    
-}
-
-//我是设计师
-- (IBAction)myProjectorAction:(id)sender {
-    [self performSegueWithIdentifier:@"pushStylistView" sender:nil];
-    
-}
-#pragma mark - SGFocusImageFrameDelegate
-- (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame tapGesItem:(NSInteger)index{
-    NSLog(@"%ld",index);
-}
-
+#pragma  mark - Action
 - (IBAction)callUpAction:(UIBarButtonItem *)sender {
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

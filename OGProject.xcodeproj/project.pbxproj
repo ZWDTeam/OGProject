@@ -95,6 +95,10 @@
 		48B4E50B1B3542D30035A162 /* OGForgetFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E50A1B3542D30035A162 /* OGForgetFirstViewController.m */; };
 		48B4E50E1B3542E40035A162 /* OGForgetLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E50D1B3542E40035A162 /* OGForgetLastViewController.m */; };
 		48B4E5111B3547B80035A162 /* OGUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */; };
+		48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5211B3587920035A162 /* OGHomeLayout.m */; };
+		48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5241B3587F80035A162 /* OGHomeCollectionViewCell.m */; };
+		48B4E5271B3587F80035A162 /* OGHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B4E5251B3587F80035A162 /* OGHomeCollectionViewCell.xib */; };
+		48B4E52A1B3588710035A162 /* OGCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5291B3588710035A162 /* OGCollectionReusableView.m */; };
 		48CF99ED1B2E724E003BBFBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF99EC1B2E724E003BBFBF /* main.m */; };
 		48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF99EF1B2E724E003BBFBF /* AppDelegate.m */; };
 		48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF99F41B2E724E003BBFBF /* Main.storyboard */; };
@@ -247,6 +251,13 @@
 		48B4E50D1B3542E40035A162 /* OGForgetLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGForgetLastViewController.m; sourceTree = "<group>"; };
 		48B4E50F1B3547B80035A162 /* OGUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGUserInfoViewController.h; sourceTree = "<group>"; };
 		48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGUserInfoViewController.m; sourceTree = "<group>"; };
+		48B4E5201B3587920035A162 /* OGHomeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGHomeLayout.h; sourceTree = "<group>"; };
+		48B4E5211B3587920035A162 /* OGHomeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGHomeLayout.m; sourceTree = "<group>"; };
+		48B4E5231B3587F80035A162 /* OGHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		48B4E5241B3587F80035A162 /* OGHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		48B4E5251B3587F80035A162 /* OGHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		48B4E5281B3588710035A162 /* OGCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCollectionReusableView.h; sourceTree = "<group>"; };
+		48B4E5291B3588710035A162 /* OGCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCollectionReusableView.m; sourceTree = "<group>"; };
 		48CF99E71B2E724E003BBFBF /* OGProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OGProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CF99EB1B2E724E003BBFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CF99EC1B2E724E003BBFBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -386,8 +397,15 @@
 		484376441B303EE0006D9D56 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				48B4E5281B3588710035A162 /* OGCollectionReusableView.h */,
+				48B4E5291B3588710035A162 /* OGCollectionReusableView.m */,
+				48B4E5231B3587F80035A162 /* OGHomeCollectionViewCell.h */,
+				48B4E5241B3587F80035A162 /* OGHomeCollectionViewCell.m */,
+				48B4E5251B3587F80035A162 /* OGHomeCollectionViewCell.xib */,
 				4843766A1B306435006D9D56 /* OGHomeButton.h */,
 				4843766B1B306435006D9D56 /* OGHomeButton.m */,
+				48B4E5201B3587920035A162 /* OGHomeLayout.h */,
+				48B4E5211B3587920035A162 /* OGHomeLayout.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -938,6 +956,7 @@
 				484376B01B307C14006D9D56 /* home16.jpg in Resources */,
 				484376BB1B307C14006D9D56 /* home8.jpg in Resources */,
 				484376671B304D12006D9D56 /* 我是设计师@2x.png in Resources */,
+				48B4E5271B3587F80035A162 /* OGHomeCollectionViewCell.xib in Resources */,
 				48B4E4DE1B3513010035A162 /* OGLookSchemeTableViewCell.xib in Resources */,
 				484376AC1B307C14006D9D56 /* home12.jpg in Resources */,
 				4843767D1B3065F4006D9D56 /* 首页00@2x.png in Resources */,
@@ -1002,6 +1021,7 @@
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
+				48B4E52A1B3588710035A162 /* OGCollectionReusableView.m in Sources */,
 				482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */,
 				1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
@@ -1029,6 +1049,7 @@
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
 				484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
+				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
 				48B4E4F91B35419D0035A162 /* OGIAmStylistViewController.m in Sources */,
 				48B4E4F11B353D180035A162 /* OGLookStrategyLayout.m in Sources */,
@@ -1037,6 +1058,7 @@
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
 				1DCC63F51B31C11400DA0F5B /* CommodityViewController.m in Sources */,
 				48B4E5021B3542540035A162 /* OGRegisterSecondViewController.m in Sources */,
+				48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
 				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
