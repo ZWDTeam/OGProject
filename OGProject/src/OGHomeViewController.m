@@ -88,11 +88,13 @@
 
 //亲体验
 - (IBAction)experienceAction:(id)sender {
+    [self performSegueWithIdentifier:@"pushExperience" sender:nil];
     
 }
 
 //我是设计师
 - (IBAction)myProjectorAction:(id)sender {
+    [self performSegueWithIdentifier:@"pushStylistView" sender:nil];
     
 }
 #pragma mark - SGFocusImageFrameDelegate
