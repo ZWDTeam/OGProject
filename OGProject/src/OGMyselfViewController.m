@@ -10,7 +10,7 @@
 #import "MyselfHeaderView.h"
 #import "OGMyselfTableViewCell.h"
 
-@interface OGMyselfViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface OGMyselfViewController ()<UITableViewDataSource,UITableViewDelegate,MyselfHeaderViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong , nonatomic)MyselfHeaderView * headerView;
@@ -42,11 +42,15 @@
 - (MyselfHeaderView *)headerView{
     if (!_headerView) {
         _headerView = [[[NSBundle mainBundle] loadNibNamed:@"MyselfHeaderView" owner:self options:nil] lastObject];
+        _headerView.delegate =self;
     }
     return _headerView;
 }
 
-
+#pragma mark - MyselfHeaderViewDelegate
+- (void)selectedHeaderView:(MyselfHeaderView *)headerView{
+    [self performSegueWithIdentifier:@"pushUserInfoView" sender:headerView];
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

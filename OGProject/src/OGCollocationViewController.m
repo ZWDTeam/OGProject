@@ -37,13 +37,18 @@
     
     OGCollocationOnlyViewController * onlyViewController = [[OGCollocationOnlyViewController alloc] init];
     [self addChildViewController:onlyViewController];
+    CGRect rect = onlyViewController.view.frame;
+    rect.size.height -= 64;
+    onlyViewController.view.frame = rect;
+
     [self.contentScrollView addSubview:onlyViewController.view];
     onlyViewController.detailDelegate = self;
     
     OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
     [self addChildViewController:moreViewController];
-    CGRect rect = moreViewController.view.frame;
+    rect = moreViewController.view.frame;
     rect.origin.x = SCREEN_WIDTH;
+    rect.size.height -= 64;
     moreViewController.view.frame = rect;
     [self.contentScrollView addSubview:moreViewController.view];
     
@@ -75,11 +80,8 @@
     
 }
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    CommodityViewController *commodity = segue.destinationViewController;
-    commodity.commodityInfo = nil;
+
 }
 
 

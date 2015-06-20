@@ -51,6 +51,9 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
     
     [self bannerView];
     
+    [self.view addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+
+    
 }
 
 
@@ -76,7 +79,14 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
     return _bannerView;
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"frame"]) {
+        self.collectionView.frame = self.view.bounds;
+    }
+}
+
+#pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 20;
 }
@@ -89,38 +99,38 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.detailDelegate BaseViewIndexDetail:[NSString stringWithFormat:@"%@",indexPath]];
+    //页面跳转 省
+    // [self performSegueWithIdentifier:@"detailView" sender:indexPath];
+    //    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main.storyBoard" bundle:nil];
+    //    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"填写ViewController在故事板中设置的identifier"];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
+
 #pragma mark - SGFocusImageFrameDelegate
 - (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame tapGesItem:(NSInteger)index{
 
 }
 
+- (void)dealloc{
+    [self.view removeObserver:self forKeyPath:@"frame"];
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self.detailDelegate BaseViewIndexDetail:[NSString stringWithFormat:@"%@",indexPath]];
-    //页面跳转 省
-   // [self performSegueWithIdentifier:@"detailView" sender:indexPath];
-//    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main.storyBoard" bundle:nil];
-//    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"填写ViewController在故事板中设置的identifier"];
-//    [self.navigationController pushViewController:vc animated:YES];
-
-}
-
-//- (void)returnDelegateDetail:(NSString*)delegateDetail;
-//{
-//
-//}
 #pragma mark - Navigation
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    // Get the new view controller using [segue destinationViewController].
-//    // Pass the selected object to the new view controller.
-//}
+
 
 
 @end

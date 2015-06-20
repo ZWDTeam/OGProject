@@ -77,11 +77,13 @@
 
 //看攻略
 - (IBAction)lookStrategyAction:(id)sender {
+    [self performSegueWithIdentifier:@"pushLookStrategy" sender:nil];
+
 }
 
 //找方案
 - (IBAction)seekSchemesAction:(id)sender {
-    
+    [self performSegueWithIdentifier:@"pushSchemeView" sender:nil];
 }
 
 //亲体验

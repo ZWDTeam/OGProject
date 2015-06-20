@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class MyselfHeaderView;
+
+@protocol MyselfHeaderViewDelegate <NSObject>
+
+@optional
+- (void)selectedHeaderView:(MyselfHeaderView *)headerView;
+
+@end
+
 @interface MyselfHeaderView : UIView
 
 @property (weak, nonatomic) IBOutlet UIImageView *sexImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
+@property (weak , nonatomic) id <MyselfHeaderViewDelegate>delegate;
+
 @end

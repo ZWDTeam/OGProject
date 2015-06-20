@@ -35,7 +35,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.92791351106266506" green="0.95616026053371961" blue="0.99220722853535348" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="pZU-kW-bHm" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="17" id="E33-FM-utZ"/>
                 <constraint firstItem="pZU-kW-bHm" firstAttribute="leading" secondItem="Dhw-GF-wbZ" secondAttribute="leading" id="HSu-9K-apn"/>

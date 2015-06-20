@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OGLookStrategyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="239"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="239"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9-1图1.png" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-iz-ESA">
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="190"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cz2-j6-n6H">
+                        <rect key="frame" x="26" y="21" width="244" height="148"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美式瑞丽风" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-Pu-c0W">
+                        <rect key="frame" x="80" y="196" width="137" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="mIN-Ap-NvG"/>
+                            <constraint firstAttribute="width" constant="137" id="yJy-vJ-4lm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="tBx-iz-ESA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="21S-eP-i3H"/>
+                <constraint firstItem="tBx-iz-ESA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2uC-FC-bmk"/>
+                <constraint firstItem="Cz2-j6-n6H" firstAttribute="centerX" secondItem="tBx-iz-ESA" secondAttribute="centerX" id="Jdl-95-PLb"/>
+                <constraint firstItem="Cz2-j6-n6H" firstAttribute="width" secondItem="tBx-iz-ESA" secondAttribute="width" multiplier="0.825" id="djy-9O-s2s"/>
+                <constraint firstItem="Cz2-j6-n6H" firstAttribute="centerY" secondItem="tBx-iz-ESA" secondAttribute="centerY" id="eBr-Qi-Fgu"/>
+                <constraint firstAttribute="centerX" secondItem="Mb5-Pu-c0W" secondAttribute="centerX" id="imq-aH-GIn"/>
+                <constraint firstAttribute="trailing" secondItem="tBx-iz-ESA" secondAttribute="trailing" id="plg-ql-6KO"/>
+                <constraint firstItem="Mb5-Pu-c0W" firstAttribute="top" secondItem="tBx-iz-ESA" secondAttribute="bottom" constant="6" id="sbh-Dr-29O"/>
+                <constraint firstItem="Cz2-j6-n6H" firstAttribute="height" secondItem="tBx-iz-ESA" secondAttribute="height" multiplier="0.78" id="xHE-y1-6OT"/>
+                <constraint firstAttribute="bottom" secondItem="Mb5-Pu-c0W" secondAttribute="bottom" constant="20" id="zAv-lA-sbq"/>
+            </constraints>
+            <size key="customSize" width="296" height="239"/>
+            <connections>
+                <outlet property="headImageView" destination="Cz2-j6-n6H" id="Cly-qL-WZ5"/>
+                <outlet property="titleLabel" destination="Mb5-Pu-c0W" id="ThT-gs-Yqp"/>
+            </connections>
+            <point key="canvasLocation" x="375" y="318.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="9-1图1.png" width="343" height="277"/>
+    </resources>
+</document>

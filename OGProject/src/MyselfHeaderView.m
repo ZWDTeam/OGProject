@@ -13,6 +13,16 @@
 - (void)awakeFromNib{
     self.headerImageView.layer.cornerRadius = CGRectGetHeight(self.headerImageView.frame)/2.0f;
     self.headerImageView.layer.masksToBounds = YES;
+    self.headerImageView.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapheaderImageView:)];
+    [self.headerImageView addGestureRecognizer:tap];
+}
+
+- (void)tapheaderImageView:(UITapGestureRecognizer *)tap{
+    if ([self.delegate respondsToSelector:@selector(selectedHeaderView:)]) {
+        [self.delegate selectedHeaderView:self];
+    }
 }
 
 

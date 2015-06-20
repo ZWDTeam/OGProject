@@ -24,7 +24,7 @@
         <!--登录-->
         <scene sceneID="5lm-2C-ifv">
             <objects>
-                <viewController id="kgN-g7-48J" sceneMemberID="viewController">
+                <viewController id="kgN-g7-48J" customClass="OGLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f6l-Ju-Q09"/>
                         <viewControllerLayoutGuide type="bottom" id="Vgf-8m-8tK"/>
@@ -36,10 +36,118 @@
                     </view>
                     <navigationItem key="navigationItem" title="登录" id="saV-Z5-Ilb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="Jeg-nK-05k" kind="show" id="y8a-9u-RMN"/>
+                        <segue destination="zhn-mD-YgT" kind="show" id="jdH-U5-bho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJJ-t6-BHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="328" y="421"/>
+        </scene>
+        <!--Forget First View Controller-->
+        <scene sceneID="fhC-sf-QZN">
+            <objects>
+                <viewController id="Jeg-nK-05k" customClass="OGForgetFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fcT-kO-agh"/>
+                        <viewControllerLayoutGuide type="bottom" id="7du-pb-3mm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Idz-Gb-mkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="WT0-Q9-sK3" kind="show" id="Me4-vl-fci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2s-4u-0fE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.5" y="593.5"/>
+        </scene>
+        <!--Forget Last View Controller-->
+        <scene sceneID="xwB-01-95h">
+            <objects>
+                <viewController id="WT0-Q9-sK3" customClass="OGForgetLastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CsP-Ig-9vm"/>
+                        <viewControllerLayoutGuide type="bottom" id="v08-Oc-QHx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0J-af-riQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kC4-39-Ox0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.5" y="593.5"/>
+        </scene>
+        <!--Register First View Controller-->
+        <scene sceneID="JKk-Fx-zEX">
+            <objects>
+                <viewController id="zhn-mD-YgT" customClass="OGRegisterFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R5U-IW-Y4u"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvi-cu-WUO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bUs-Ok-rYl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="s6Q-da-3cm" kind="show" id="MJ7-4r-d7W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b73-CC-m76" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.5" y="-264.5"/>
+        </scene>
+        <!--Register Second View Controller-->
+        <scene sceneID="g8V-i4-go3">
+            <objects>
+                <viewController id="s6Q-da-3cm" customClass="OGRegisterSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JNM-Bq-BMD"/>
+                        <viewControllerLayoutGuide type="bottom" id="vhe-t5-iuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dag-Le-c4F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Ziv-ig-1uz" kind="show" id="Nrm-hq-siL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTU-Xc-mEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="-264"/>
+        </scene>
+        <!--Register Last View Controller-->
+        <scene sceneID="aTZ-B4-zJe">
+            <objects>
+                <viewController id="Ziv-ig-1uz" customClass="OGRegisterLastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GKZ-QM-Dkx"/>
+                        <viewControllerLayoutGuide type="bottom" id="l5S-yZ-12o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zTm-rq-3kB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSR-Qy-Sjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.5" y="-264.5"/>
         </scene>
     </scenes>
 </document>
