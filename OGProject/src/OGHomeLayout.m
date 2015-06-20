@@ -18,6 +18,8 @@
     
     self.sectionInset=UIEdgeInsetsMake(5,7, 5,7);
     
+    
+    
     self.delegate = (id <OGHomeLayoutDelegate> )self.collectionView.delegate;
     
     CGSize size = self.collectionView.frame.size;
@@ -26,6 +28,7 @@
     
 }
 
+//重新规划布局
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath  withIndex:(int)index
 {
     CGSize itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
@@ -71,6 +74,7 @@
     UICollectionViewLayoutAttributes * headerAttribute = [[super layoutAttributesForElementsInRect:rect] lastObject];
     
     if ([self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]) {
+        
         CGSize size = [self.delegate collectionView:self.collectionView layout:self.collectionView.collectionViewLayout referenceSizeForHeaderInSection:headerAttribute.indexPath.section];
         
         leftY =self.sectionInset.top + size.height;
@@ -90,6 +94,11 @@
     }
     
     return attributes;
+}
+
+//调整contentSize的范围
+- (CGSize)collectionViewContentSize{
+    return CGSizeMake(0, (leftY> rightY ? leftY:rightY)+self.sectionInset.bottom);
 }
 
 

@@ -16,7 +16,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 #define iPhone_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
 
 
-@interface OGHomeViewController ()
+@interface OGHomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
@@ -117,7 +117,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5,5, 5,5);
+    return UIEdgeInsetsMake(0,0, 0,0);
 }
 
 
@@ -154,17 +154,13 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-
-    _myCollectionView.contentSize = CGSizeMake(0, 0);
+    
 }
 
 #pragma  mark - Action
 - (IBAction)callUpAction:(UIBarButtonItem *)sender {
     
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
