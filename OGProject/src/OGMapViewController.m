@@ -9,6 +9,7 @@
 #import "OGMapViewController.h"
 #import "LocationHeaderView.h"
 #import "DGMKAninotationView.h"
+#import "OGMapShowTypeView.h"
 
 @interface OGMapViewController ()<CLLocationManagerDelegate,MKMapViewDelegate>
 
@@ -25,7 +26,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.title = @"找美女";
+        self.title = @"找设计师";
         NSString * path = [[NSBundle mainBundle] pathForResource:@"LoctionUserModel" ofType:@"plist"];
         _allPeoples = [NSArray arrayWithContentsOfFile:path];
         
@@ -49,6 +50,16 @@
     
     
     _updataAnnotations = YES;
+    
+    OGMapShowTypeView * mapShowTypeView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OGMapShowTypeView class]) owner:self options:nil] lastObject];
+    [mapShowTypeView addTarget:self action:@selector(selectedShowType:)];
+    mapShowTypeView.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
+    [self.view addSubview:mapShowTypeView];
+}
+
+
+- (void)selectedShowType:(OGMapShowTypeView *)view{
+    NSLog(@"%ld",view.selectedIndex);
 }
 
 - (void)addLocations:(CLLocation *)firstLocation{

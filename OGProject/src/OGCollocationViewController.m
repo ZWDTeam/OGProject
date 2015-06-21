@@ -77,7 +77,6 @@
 #pragma mark 实现传值协议方法
 -(void)BaseViewIndexDetail:(NSString *)index{
     [self performSegueWithIdentifier:@"detailView" sender:index];
-    
 }
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

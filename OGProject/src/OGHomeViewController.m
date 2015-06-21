@@ -31,7 +31,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.title = @"迪哥微博";
+        self.title = @"欧工软装";
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页"
                                                         image:[UIImage imageNamed:@"首页00"]
                                                 selectedImage:[UIImage imageNamed:@"首页01"]];
@@ -87,8 +87,6 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionViews cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
     OGHomeCollectionViewCell *cell = (OGHomeCollectionViewCell *)[collectionViews dequeueReusableCellWithReuseIdentifier:@"OGHomeCollectionViewCell" forIndexPath:indexPath];
     
     cell.imageView.image= [UIImage imageNamed:_items[indexPath.row][@"title"]];
