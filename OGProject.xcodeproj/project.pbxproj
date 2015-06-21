@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC3E1AF1B367A2900ED09B3 /* 2-1进入.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1AE1B367A2900ED09B3 /* 2-1进入.png */; };
+		1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B01B367A4300ED09B3 /* 11-banner.png */; };
+		1DC3E1B31B367DEF00ED09B3 /* 4-赞.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */; };
 		1DCC63F51B31C11400DA0F5B /* CommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC63F41B31C11400DA0F5B /* CommodityViewController.m */; };
 		1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
@@ -132,6 +135,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DC3E1AE1B367A2900ED09B3 /* 2-1进入.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1进入.png"; sourceTree = "<group>"; };
+		1DC3E1B01B367A4300ED09B3 /* 11-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-banner.png"; sourceTree = "<group>"; };
+		1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-赞.png"; sourceTree = "<group>"; };
 		1DCC63F31B31C11400DA0F5B /* CommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewController.h; sourceTree = "<group>"; };
 		1DCC63F41B31C11400DA0F5B /* CommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewController.m; sourceTree = "<group>"; };
 		1DCC63F71B31D46500DA0F5B /* OGCommodityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCommodityModel.h; sourceTree = "<group>"; };
@@ -317,6 +323,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DC3E1AD1B3679EB00ED09B3 /* collocationImage */ = {
+			isa = PBXGroup;
+			children = (
+				1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */,
+				1DC3E1B01B367A4300ED09B3 /* 11-banner.png */,
+				1DC3E1AE1B367A2900ED09B3 /* 2-1进入.png */,
+			);
+			name = collocationImage;
+			sourceTree = "<group>";
+		};
 		1DCC63F61B31D41B00DA0F5B /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +729,7 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1DC3E1AD1B3679EB00ED09B3 /* collocationImage */,
 				48B4E4E31B3530690035A162 /* 9-1图1.png */,
 				48B4E4DF1B3515800035A162 /* 3-1查看.png */,
 				48B4E4E01B3515800035A162 /* 3-1评论.png */,
@@ -963,6 +980,7 @@
 				484376931B30769A006D9D56 /* OGCollocationCollectionViewCell.xib in Resources */,
 				48B4E4E41B3530690035A162 /* 9-1图1.png in Resources */,
 				484376821B3065F4006D9D56 /* 返回.png in Resources */,
+				1DC3E1AF1B367A2900ED09B3 /* 2-1进入.png in Resources */,
 				484376641B304D12006D9D56 /* 定位@2x.png in Resources */,
 				482DF0AB1B31C26900D3A000 /* mm4.jpg in Resources */,
 				484376B91B307C14006D9D56 /* home6.jpg in Resources */,
@@ -974,6 +992,7 @@
 				484376AC1B307C14006D9D56 /* home12.jpg in Resources */,
 				4843767D1B3065F4006D9D56 /* 首页00@2x.png in Resources */,
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
+				1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */,
 				484376B51B307C14006D9D56 /* home20.jpg in Resources */,
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
@@ -1006,6 +1025,7 @@
 				482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */,
 				48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */,
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
+				1DC3E1B31B367DEF00ED09B3 /* 4-赞.png in Resources */,
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,
 				484376B81B307C14006D9D56 /* home5.jpg in Resources */,
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,

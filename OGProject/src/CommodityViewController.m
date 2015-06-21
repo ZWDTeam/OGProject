@@ -10,6 +10,7 @@
 #import "OGCommodityModel.h"
 
 @interface CommodityViewController ()
+- (IBAction)pushCommentView:(id)sender;
 
 @end
 
@@ -55,4 +56,7 @@
 }
 */
 
+- (IBAction)pushCommentView:(id)sender {
+    [self performSegueWithIdentifier:@"pushComments" sender:nil];
+}
 @end
