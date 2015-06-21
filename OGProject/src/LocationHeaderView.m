@@ -10,14 +10,13 @@
 
 @implementation LocationHeaderView
 
-- (id)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
-        UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mm4.jpg"]];
-        imageView.frame = CGRectMake(0, 0, 60, 60);
-        [self addSubview:imageView];
+-(id) initWithCoordinate:(CLLocationCoordinate2D) coords
+{
+    if (self = [super init]) {
+        _coordinate = coords;
     }
     return self;
 }
+
 
 @end

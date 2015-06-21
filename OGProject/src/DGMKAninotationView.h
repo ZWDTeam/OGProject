@@ -17,6 +17,8 @@
 
 @property (strong , nonatomic)UIImageView * headerImageView;
 
+@property (strong , nonatomic)UILabel * titleLabel;
+
 @end
 
 @interface DGAnnotationContentView : UIView;

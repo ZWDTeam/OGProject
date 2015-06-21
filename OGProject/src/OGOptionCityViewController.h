@@ -8,6 +8,8 @@
 
 #import "OGBaseViewController.h"
 
+#import <MapKit/MapKit.h>
+
 @interface OGOptionCityViewController : OGBaseViewController
 
 @end

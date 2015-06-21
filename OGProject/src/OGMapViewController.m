@@ -16,6 +16,8 @@
 @property (strong , nonatomic)CLLocationManager * locationManager;
 @property (assign , nonatomic , getter = isUpdataAnnotations)BOOL updataAnnotations;
 
+@property (strong , nonatomic)NSArray * allPeoples;
+
 @end
 
 @implementation OGMapViewController
@@ -24,6 +26,9 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"找美女";
+        NSString * path = [[NSBundle mainBundle] pathForResource:@"LoctionUserModel" ofType:@"plist"];
+        _allPeoples = [NSArray arrayWithContentsOfFile:path];
+        
     }
     return self;
 }
@@ -41,6 +46,7 @@
     
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
+    
     
     _updataAnnotations = YES;
 }
@@ -66,7 +72,8 @@
             CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(cordinate.latitude+x, cordinate.longitude+y);
             LocationHeaderView *pAnno = [[LocationHeaderView alloc] init];
             pAnno.coordinate = coord;
-            pAnno.title = @"中国";
+            pAnno.title = @"标题";
+            pAnno.subtitle = @"子标题";
             pAnno.tag = i;
             [self.mapView addAnnotation:pAnno];//添加大头针
         }
@@ -122,13 +129,21 @@
     }
     
     static NSString * identifier = @"Cell";
+    NSInteger index = [(LocationHeaderView *)annotation tag];
+
     
     DGMKAninotationView *newAnnotation= (DGMKAninotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    NSString * sex = _allPeoples[index][@"sex"];
+    
     if (newAnnotation == nil) {
-        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[self annotationColor]];
+        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[self annotationColor:sex]];
     }
-    newAnnotation.headerImageView.image = [UIImage imageNamed:@"mm4.jpg"];
-    newAnnotation.tag = [(LocationHeaderView *)annotation tag];
+    
+    
+    newAnnotation.headerImageView.image =[UIImage imageNamed:_allPeoples[index][@"image"]];
+    newAnnotation.tag = index;
+    
+    newAnnotation.titleLabel.text = _allPeoples[index][@"name"];
     return newAnnotation;
 }
 
@@ -136,14 +151,12 @@
     NSLog(@"%ld",view.tag);
 }
 
-- (UIColor *)annotationColor{
-    NSArray * array = @[[UIColor redColor],[UIColor orangeColor],[UIColor grayColor],
-                        [UIColor blackColor],[UIColor greenColor],[UIColor blueColor],
-                        [UIColor cyanColor],[UIColor yellowColor],[UIColor magentaColor]];
-    
-    NSInteger index  = arc4random()%9;
-    
-    return array[index];
+- (UIColor *)annotationColor:(NSString *)sex{
+    if ([sex isEqualToString:@"男"]) {
+        return [UIColor colorWithRed:87.0f/255.0f green:112.0f/255.0f blue:176.0f/255.0f alpha:1.0f];
+    }else{
+        return [UIColor colorWithRed:245.0f/255.0f green:79.0f/255.0f blue:261.0f/255.0f alpha:1.0f];
+    }
    
 }
 

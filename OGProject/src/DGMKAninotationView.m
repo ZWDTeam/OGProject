@@ -32,6 +32,17 @@
     _headerImageView.layer.masksToBounds = YES;
     _headerImageView.layer.cornerRadius = _headerImageView.frame.size.width/2.0f;
     
+    
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 65, 13)];
+    _titleLabel.layer.cornerRadius = _titleLabel.frame.size.height/2.0f;
+    _titleLabel.center = CGPointMake(rect.size.width/2.0f, -10);
+    _titleLabel.backgroundColor = color;
+    _titleLabel.layer.masksToBounds = YES;
+    _titleLabel.textColor = [UIColor whiteColor];
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.font = [UIFont systemFontOfSize:11];
+    [self addSubview:_titleLabel];
+    
     return self;
 }
 
