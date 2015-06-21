@@ -67,6 +67,7 @@
             LocationHeaderView *pAnno = [[LocationHeaderView alloc] init];
             pAnno.coordinate = coord;
             pAnno.title = @"中国";
+            pAnno.tag = i;
             [self.mapView addAnnotation:pAnno];//添加大头针
         }
     }
@@ -124,10 +125,10 @@
     
     DGMKAninotationView *newAnnotation= (DGMKAninotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (newAnnotation == nil) {
-        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[UIColor grayColor]];
+        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[self annotationColor]];
     }
     newAnnotation.headerImageView.image = [UIImage imageNamed:@"mm4.jpg"];
-    
+    newAnnotation.tag = [(LocationHeaderView *)annotation tag];
     return newAnnotation;
 }
 
@@ -135,6 +136,16 @@
     NSLog(@"%ld",view.tag);
 }
 
+- (UIColor *)annotationColor{
+    NSArray * array = @[[UIColor redColor],[UIColor orangeColor],[UIColor grayColor],
+                        [UIColor blackColor],[UIColor greenColor],[UIColor blueColor],
+                        [UIColor cyanColor],[UIColor yellowColor],[UIColor magentaColor]];
+    
+    NSInteger index  = arc4random()%9;
+    
+    return array[index];
+   
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

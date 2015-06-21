@@ -44,7 +44,16 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
                     ] mutableCopy];
         
         
-        _items = @[@"找设计师",@"看攻略",@"亲体验",@"找方案",@"我是设计师"];
+        _items = @[@{@"title" :@"找设计师",
+                     @"color" :[UIColor colorWithRed:89.0f/255.0f green:105.0f/255.0f blue:174.0f/255.0f alpha:1.0f]},
+                   @{@"title" :@"看攻略",
+                     @"color" :[UIColor colorWithRed:255.0f/255.0f green:70.0f/255.0f blue:151.0f/255.0f alpha:1.0f]},
+                   @{@"title" :@"亲体验",
+                     @"color" :[UIColor colorWithRed:161.0f/255.0f green:132.0f/255.0f blue:190.0f/255.0f alpha:1.0f]},
+                   @{@"title" :@"找方案",
+                     @"color" :[UIColor colorWithRed:241.0f/255.0f green:202.0f/255.0f blue:75.0f/255.0f alpha:1.0f]},
+                   @{@"title" :@"我是设计师",
+                     @"color" :[UIColor colorWithRed:247.0f/255.0f green:85.0f/255.0f blue:13.0f/255.0f alpha:1.0f]}];
 
         
     }
@@ -82,13 +91,11 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
     
     OGHomeCollectionViewCell *cell = (OGHomeCollectionViewCell *)[collectionViews dequeueReusableCellWithReuseIdentifier:@"OGHomeCollectionViewCell" forIndexPath:indexPath];
     
-    cell.titleLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    cell.imageView.image= [UIImage imageNamed:_items[indexPath.row][@"title"]];
     
-    cell.backgroundColor=[UIColor colorWithWhite:1.0 alpha:0.5];
+    cell.titleLabel.text = _items[indexPath.row][@"title"];
     
-    cell.imageView.image= [UIImage imageNamed:_items[indexPath.row]];
-    
-    cell.titleLabel.text = _items[indexPath.row];
+    cell.contentBkView.backgroundColor = _items[indexPath.row][@"color"];
     
     return cell;
 }

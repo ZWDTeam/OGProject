@@ -75,6 +75,7 @@
 		484376BA1B307C14006D9D56 /* home7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 484376A61B307C14006D9D56 /* home7.jpg */; };
 		484376BB1B307C14006D9D56 /* home8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 484376A71B307C14006D9D56 /* home8.jpg */; };
 		484376BC1B307C14006D9D56 /* home9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 484376A81B307C14006D9D56 /* home9.jpg */; };
+		484C340C1B366DFD0031306D /* OGOptionCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C340B1B366DFD0031306D /* OGOptionCityViewController.m */; };
 		48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4CE1B3508D30035A162 /* VPTribeSegmentedControl.m */; };
 		48B4E4D61B3511680035A162 /* OGLooSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4D51B3511680035A162 /* OGLooSchemeViewController.m */; };
 		48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4DB1B3512B00035A162 /* OGLookSchemeTableViewCell.m */; };
@@ -216,6 +217,8 @@
 		484376A61B307C14006D9D56 /* home7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home7.jpg; sourceTree = "<group>"; };
 		484376A71B307C14006D9D56 /* home8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home8.jpg; sourceTree = "<group>"; };
 		484376A81B307C14006D9D56 /* home9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home9.jpg; sourceTree = "<group>"; };
+		484C340A1B366DFD0031306D /* OGOptionCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGOptionCityViewController.h; sourceTree = "<group>"; };
+		484C340B1B366DFD0031306D /* OGOptionCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGOptionCityViewController.m; sourceTree = "<group>"; };
 		48B4E4CD1B3508D30035A162 /* VPTribeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTribeSegmentedControl.h; sourceTree = "<group>"; };
 		48B4E4CE1B3508D30035A162 /* VPTribeSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTribeSegmentedControl.m; sourceTree = "<group>"; };
 		48B4E4D41B3511680035A162 /* OGLooSchemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLooSchemeViewController.h; sourceTree = "<group>"; };
@@ -514,6 +517,15 @@
 			path = homeImage;
 			sourceTree = "<group>";
 		};
+		484C34091B366DD60031306D /* LocationCity */ = {
+			isa = PBXGroup;
+			children = (
+				484C340A1B366DFD0031306D /* OGOptionCityViewController.h */,
+				484C340B1B366DFD0031306D /* OGOptionCityViewController.m */,
+			);
+			name = LocationCity;
+			sourceTree = "<group>";
+		};
 		48B4E4CC1B3508B90035A162 /* DGSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +538,7 @@
 		48B4E4D01B350D2C0035A162 /* childers */ = {
 			isa = PBXGroup;
 			children = (
+				484C34091B366DD60031306D /* LocationCity */,
 				48B4E4F61B35414C0035A162 /* I'm Stylist */,
 				48B4E4F51B35413E0035A162 /* experience */,
 				48B4E4E81B3530AC0035A162 /* LookStrategy */,
@@ -1040,6 +1053,7 @@
 				4843768A1B306D38006D9D56 /* OGCollocationMoreViewController.m in Sources */,
 				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
 				4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */,
+				484C340C1B366DFD0031306D /* OGOptionCityViewController.m in Sources */,
 				482DF0B51B31C7B700D3A000 /* OGMyAttentionViewController.m in Sources */,
 				48B4E4D61B3511680035A162 /* OGLooSchemeViewController.m in Sources */,
 				48B4E50B1B3542D30035A162 /* OGForgetFirstViewController.m in Sources */,

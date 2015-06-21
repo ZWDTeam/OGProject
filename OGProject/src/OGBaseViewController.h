@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 //工程主调颜色
-#define OG_BASE_COLOR  [UIColor colorWithRed:139.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
+#define OG_BASE_COLOR  [UIColor colorWithRed:181.0f/255.0f green:22.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
 
 //屏幕宽高
 #define  SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
