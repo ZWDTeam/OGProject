@@ -9,13 +9,15 @@
 #import "OGLooSchemeViewController.h"
 #import "OGLookSchemeTableViewCell.h"
 #import "VPTribeSegmentedControl.h"
+#import "OGSchemeMenuView.h"
 
-@interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate,OGSchemeMenuViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong , nonatomic)NSMutableArray * schemes;
 @property (strong , nonatomic)VPTribeSegmentedControl * segmentedControl;
 @property (weak, nonatomic) IBOutlet VPTribeSegmentedControl *tpyeSegmentedControl;
 @property (weak, nonatomic) IBOutlet UIButton *rightBarBtn;
+@property (strong , nonatomic)OGSchemeMenuView * menuView;
 
 @end
 
@@ -49,6 +51,15 @@
     return _segmentedControl;
 }
 
+- (OGSchemeMenuView *)menuView{
+    if (!_menuView) {
+        _menuView =  [[OGSchemeMenuView alloc] initWithDelegate:self withItems:nil];
+        _menuView.origin = CGPointMake(0, 104);
+
+    }
+    return _menuView;
+}
+
 
 #pragma mark - segmentedControl Action
 //切换类型
@@ -59,10 +70,41 @@
 //切换排序方式
 - (void)exchaneSortType:(VPTribeSegmentedControl *)segmentedControl{
 
+    switch (segmentedControl.selectedIndex) {
+        case 0:
+            self.menuView.items = @[@"全部",@"现代",@"简介",@"韩式",@"地中海",@"欧式"];
+            break;
+        case 1:
+            self.menuView.items = @[@"一居室",@"别墅",@"复式楼",@"客厅",@"两居室"];
+
+            break;
+        case 2:
+            self.menuView.items = @[@"红色",@"黑色",@"灰色",@"彩色",@"粉色",@"蓝色",@"棕色",@"白色"];
+
+            break;
+        case 3:
+            self.menuView.items = @[@"<=4万",@"4万～10万",@"10万～15万",@"15万～20万",@">=20万"];
+
+            break;
+
+
+            
+        default:
+            break;
+    }
+    
+    [_menuView showInView:self.view];
+
 }
+
 
 - (IBAction)sendNeed:(UIButton *)sender {
     
+}
+
+#pragma mark - OGSchemeMenuViewDelegate
+- (void)selectedMenuView:(OGSchemeMenuView *)menuView withIndexPath:(NSIndexPath *)indexPath{
+    [self.menuView dismiss];
 }
 
 #pragma  mark - UITableViewDataSource
