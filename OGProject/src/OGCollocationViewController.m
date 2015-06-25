@@ -9,9 +9,8 @@
 #import "OGCollocationViewController.h"
 #import "OGCollocationOnlyViewController.h"
 #import "OGCollocationMoreViewController.h"
-#import "CommodityViewController.h"
 
-@interface OGCollocationViewController ()<UIScrollViewDelegate,OGBaseViewControllerDelegate>
+@interface OGCollocationViewController ()<UIScrollViewDelegate,OGCollocationOnlyViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedControl;
 
@@ -42,7 +41,7 @@
     onlyViewController.view.frame = rect;
 
     [self.contentScrollView addSubview:onlyViewController.view];
-    onlyViewController.detailDelegate = self;
+    onlyViewController.delegate = self;
     
     OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
     [self addChildViewController:moreViewController];
@@ -62,6 +61,8 @@
     [self.contentScrollView setContentOffset:CGPointMake(sender.selectedSegmentIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
 }
 
+- (IBAction)typeClassAction:(id)sender {
+}
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -74,9 +75,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark 实现传值协议方法
--(void)BaseViewIndexDetail:(NSString *)index{
-    [self performSegueWithIdentifier:@"detailView" sender:index];
+#pragma mark - OGCollocationOnlyViewControllerDelegate
+-(void)selectedWithInfo:(id)info viewController:(OGBaseViewController *)viewController{
+    [self performSegueWithIdentifier:@"pushDetailView" sender:nil];
+
 }
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

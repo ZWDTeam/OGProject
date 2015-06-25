@@ -102,13 +102,10 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 #pragma mark - UICollectionViewDelegate
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.detailDelegate BaseViewIndexDetail:[NSString stringWithFormat:@"%@",indexPath]];
-    //页面跳转 省
-    // [self performSegueWithIdentifier:@"detailView" sender:indexPath];
-    //    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main.storyBoard" bundle:nil];
-    //    UIViewController *vc = [story instantiateViewControllerWithIdentifier:@"填写ViewController在故事板中设置的identifier"];
-    //    [self.navigationController pushViewController:vc animated:YES];
-    
+
+    if ([self.delegate respondsToSelector:@selector(selectedWithInfo:viewController:)]) {
+        [self.delegate selectedWithInfo:nil viewController:self];
+    }
 }
 
 

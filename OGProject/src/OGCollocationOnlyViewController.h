@@ -9,11 +9,12 @@
 #import "OGBaseViewController.h"
 
 
-@protocol OGBaseViewControllerDelegate
--(void)BaseViewIndexDetail:(NSString *)index;//1.1定义协议与方法
+@protocol OGCollocationOnlyViewControllerDelegate <NSObject>
+@optional
+-(void)selectedWithInfo:(id)info viewController:(OGBaseViewController *)viewController;
 @end
 
 @interface OGCollocationOnlyViewController : OGBaseViewController
 
-@property (retain,nonatomic) id <OGBaseViewControllerDelegate> detailDelegate;
+@property (retain,nonatomic) id <OGCollocationOnlyViewControllerDelegate> delegate;
 @end

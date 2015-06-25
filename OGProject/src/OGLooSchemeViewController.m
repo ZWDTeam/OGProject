@@ -11,13 +11,15 @@
 #import "VPTribeSegmentedControl.h"
 #import "OGSchemeMenuView.h"
 
-@interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate,OGSchemeMenuViewDelegate>
+@interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate,OGSchemeMenuViewDelegate,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong , nonatomic)UITableView * tableView1;
 @property (strong , nonatomic)NSMutableArray * schemes;
 @property (strong , nonatomic)VPTribeSegmentedControl * segmentedControl;
 @property (weak, nonatomic) IBOutlet VPTribeSegmentedControl *tpyeSegmentedControl;
 @property (weak, nonatomic) IBOutlet UIButton *rightBarBtn;
 @property (strong , nonatomic)OGSchemeMenuView * menuView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -39,6 +41,15 @@
     self.rightBarBtn.layer.borderWidth = 1.0f;
     self.rightBarBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     
+    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH *2.0f, 0);
+    
+    
+    CGRect rect = _scrollView.bounds;
+    rect.origin.x = SCREEN_WIDTH;
+    _tableView1 = [[UITableView alloc] initWithFrame:rect];
+    _tableView1.delegate =self;
+    _tableView1.dataSource =self;
+    [self.scrollView addSubview:_tableView1];
 }
 
 - (VPTribeSegmentedControl *)segmentedControl{
@@ -54,17 +65,22 @@
 - (OGSchemeMenuView *)menuView{
     if (!_menuView) {
         _menuView =  [[OGSchemeMenuView alloc] initWithDelegate:self withItems:nil];
-        _menuView.origin = CGPointMake(0, 104);
-
+        _menuView.origin = CGPointMake(0, 98);
     }
     return _menuView;
 }
 
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;{
+    NSInteger index = scrollView.contentOffset.x/SCREEN_WIDTH;
+    _segmentedControl.selectedIndex = index;
+}
+
 #pragma mark - segmentedControl Action
 //切换类型
 - (void)exchangeContent:(VPTribeSegmentedControl *)segmentedControl{
-
+    [self.scrollView setContentOffset:CGPointMake(segmentedControl.selectedIndex * SCREEN_WIDTH, 0) animated:YES];
 }
 
 //切换排序方式
@@ -97,9 +113,9 @@
 
 }
 
-
+//发布需求
 - (IBAction)sendNeed:(UIButton *)sender {
-    
+    [self performSegueWithIdentifier:@"PushSendHelpView" sender:nil];
 }
 
 #pragma mark - OGSchemeMenuViewDelegate
@@ -136,6 +152,10 @@
     return 188.0f;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"pushSchemeDetailView" sender:indexPath];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
