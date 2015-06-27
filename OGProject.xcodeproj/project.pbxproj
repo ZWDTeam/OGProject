@@ -227,6 +227,9 @@
 		4AB7A3941B3D507300AD58CC /* 2-2图6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A38C1B3D507300AD58CC /* 2-2图6.png */; };
 		4AB7A3951B3D507300AD58CC /* 2-2图7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A38D1B3D507300AD58CC /* 2-2图7.png */; };
 		4AB7A3961B3D507300AD58CC /* 2-2图8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A38E1B3D507300AD58CC /* 2-2图8.png */; };
+		4AD9ED9B1B3E57D500BEF770 /* OGLookCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9ED9A1B3E57D500BEF770 /* OGLookCommentViewController.m */; };
+		4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9ED9F1B3E585700BEF770 /* OGLookCommentView.m */; };
+		4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -549,6 +552,13 @@
 		4AB7A38C1B3D507300AD58CC /* 2-2图6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2图6.png"; sourceTree = "<group>"; };
 		4AB7A38D1B3D507300AD58CC /* 2-2图7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2图7.png"; sourceTree = "<group>"; };
 		4AB7A38E1B3D507300AD58CC /* 2-2图8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2图8.png"; sourceTree = "<group>"; };
+		4AD9ED991B3E57D500BEF770 /* OGLookCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLookCommentViewController.h; sourceTree = "<group>"; };
+		4AD9ED9A1B3E57D500BEF770 /* OGLookCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLookCommentViewController.m; sourceTree = "<group>"; };
+		4AD9ED9E1B3E585700BEF770 /* OGLookCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLookCommentView.h; sourceTree = "<group>"; };
+		4AD9ED9F1B3E585700BEF770 /* OGLookCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLookCommentView.m; sourceTree = "<group>"; };
+		4AD9EDA11B3E586E00BEF770 /* OGLookCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLookCommentTableViewCell.h; sourceTree = "<group>"; };
+		4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLookCommentTableViewCell.m; sourceTree = "<group>"; };
+		4AD9EDA41B3E593800BEF770 /* OGProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OGProject-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -907,6 +917,7 @@
 		48B4E4D01B350D2C0035A162 /* childers */ = {
 			isa = PBXGroup;
 			children = (
+				4AD9ED981B3E57AB00BEF770 /* LookCommet */,
 				484C34091B366DD60031306D /* LocationCity */,
 				48B4E4F61B35414C0035A162 /* I'm Stylist */,
 				48B4E4F51B35413E0035A162 /* experience */,
@@ -1104,6 +1115,7 @@
 		48CF99EA1B2E724E003BBFBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AD9EDA41B3E593800BEF770 /* OGProject-Prefix.pch */,
 				48CF9A4C1B2EB386003BBFBF /* framework */,
 				48CF9A151B2E73E1003BBFBF /* Source */,
 				48CF99F71B2E724E003BBFBF /* Images.xcassets */,
@@ -1347,6 +1359,35 @@
 				4AB7A38E1B3D507300AD58CC /* 2-2图8.png */,
 			);
 			name = designerHome;
+			sourceTree = "<group>";
+		};
+		4AD9ED981B3E57AB00BEF770 /* LookCommet */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9ED9D1B3E582200BEF770 /* viewController */,
+				4AD9ED9C1B3E580900BEF770 /* view */,
+			);
+			name = LookCommet;
+			sourceTree = "<group>";
+		};
+		4AD9ED9C1B3E580900BEF770 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9ED9E1B3E585700BEF770 /* OGLookCommentView.h */,
+				4AD9ED9F1B3E585700BEF770 /* OGLookCommentView.m */,
+				4AD9EDA11B3E586E00BEF770 /* OGLookCommentTableViewCell.h */,
+				4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4AD9ED9D1B3E582200BEF770 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9ED991B3E57D500BEF770 /* OGLookCommentViewController.h */,
+				4AD9ED9A1B3E57D500BEF770 /* OGLookCommentViewController.m */,
+			);
+			name = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1601,6 +1642,7 @@
 				48A592C51B398EC300392151 /* OGSchemeTableViewCell.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
+				4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
 				48B4E5111B3547B80035A162 /* OGUserInfoViewController.m in Sources */,
 				48A593081B39B1CC00392151 /* NSArray+MASAdditions.m in Sources */,
@@ -1634,6 +1676,7 @@
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
 				48B4E4ED1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.m in Sources */,
 				48BF3A1E1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.m in Sources */,
+				4AD9ED9B1B3E57D500BEF770 /* OGLookCommentViewController.m in Sources */,
 				48BF3A3F1B3B15300024DA3A /* OGSendHelpTableViewCell1.m in Sources */,
 				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
@@ -1643,6 +1686,7 @@
 				485FB4281B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
 				484C34681B36B2F20031306D /* OGMapShowTypeView.m in Sources */,
+				4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
@@ -1751,7 +1795,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1866,7 +1911,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1879,7 +1925,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

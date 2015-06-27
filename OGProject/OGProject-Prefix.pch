@@ -1,0 +1,80 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//打印命令
+//在DEBUG模式下载才会显示打印信息。
+//请务必使用此宏定义来打印调试信息
+#ifdef DEBUG
+# define WWLog(format, ...) NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define WWLog(...);
+#endif
+
+
+
+
+//屏幕适配系数-x
+#define kPercenX_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
+
+#define iphone_rect_scale(x,y,w,h) CGRectMake(kPercenX_scale(x), kPercenX_scale(y), kPercenX_scale(w), kPercenX_scale(h))
+
+#define iphone_size_scale(w,h) CGSizeMake(kPercenX_scale(w), kPercenX_scale(h))
+
+
+
+
+//设备屏幕高度
+#ifndef MainView_Height
+#define MainView_Height    [UIScreen mainScreen].bounds.size.height
+#endif
+
+//设备屏幕宽度
+#ifndef MainView_Width
+#define MainView_Width    [UIScreen mainScreen].bounds.size.width
+#endif
+
+//是否为ios7
+#ifndef isIos7
+#define isIos7              ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0?YES:NO)
+#endif
+
+//如果为ios7，则返回20的冗余
+#ifndef IOS7_Y
+#define IOS7_Y              ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0?20:0)
+#endif
+
+//程序常用字体 颜色定义
+#define Font_title [UIFont systemFont:kPercenX_scale(16)]
+
+#define Font_small [UIFont systemFont:kPercenX_scale(11)]
+#define Font_middle [UIFont systemFont:kPercenX_scale(13)]
+
+//Function Color
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+
+//浅灰
+#define Color_Brey_BG RGBCOLOR(241,246,249)
+
+//文字-黑色
+#define Color_Black_Text RGBCOLOR(250,250,250)
+
+//文字-深灰色
+
+#define Color_Grey_Text RGBCOLOR(151,153,154)
+
+
