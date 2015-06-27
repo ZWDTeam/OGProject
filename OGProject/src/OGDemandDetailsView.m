@@ -35,7 +35,8 @@
         
     {
         [self setBackgroundColor:[UIColor whiteColor]];
-        scrollViewDetail = [[UIScrollView alloc]initWithFrame:self.frame];;
+        scrollViewDetail = [[UIScrollView alloc]initWithFrame:self.frame];
+        scrollViewDetail.alwaysBounceVertical = YES;
         
         [self addSubview:scrollViewDetail];
         //灰色小条
