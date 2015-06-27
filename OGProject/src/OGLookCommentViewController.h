@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGLookCommentView.h"
 
-@interface OGLookCommentViewController : UIViewController
+@interface OGLookCommentViewController : UIViewController<submitCommentDelegate>
 
 @end

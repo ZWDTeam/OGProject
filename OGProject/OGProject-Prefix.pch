@@ -58,23 +58,29 @@
 #endif
 
 //程序常用字体 颜色定义
-#define Font_title [UIFont systemFont:kPercenX_scale(16)]
+#define Font_title  [UIFont systemFontOfSize:kPercenX_scale(16)]
 
-#define Font_small [UIFont systemFont:kPercenX_scale(11)]
-#define Font_middle [UIFont systemFont:kPercenX_scale(13)]
+#define Font_small  [UIFont systemFontOfSize:kPercenX_scale(11)]
+#define Font_middle [UIFont systemFontOfSize:kPercenX_scale(12)]
 
 //Function Color
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 
 
 //浅灰
-#define Color_Brey_BG RGBCOLOR(241,246,249)
+#define Color_Brey_BG    RGBCOLOR(241,246,249)
+
+//控件背景灰
+#define Color_Brey_UIBG    RGBCOLOR(238,239,241)
+
 
 //文字-黑色
-#define Color_Black_Text RGBCOLOR(250,250,250)
+#define Color_Black_Text RGBCOLOR(0,0,0)
+
+#define Color_L_Black_Text RGBCOLOR(133,134,135)
 
 //文字-深灰色
 
-#define Color_Grey_Text RGBCOLOR(151,153,154)
+#define Color_Grey_Text  RGBCOLOR(151,153,154)
 
 

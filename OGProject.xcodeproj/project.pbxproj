@@ -230,6 +230,8 @@
 		4AD9ED9B1B3E57D500BEF770 /* OGLookCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9ED9A1B3E57D500BEF770 /* OGLookCommentViewController.m */; };
 		4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9ED9F1B3E585700BEF770 /* OGLookCommentView.m */; };
 		4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */; };
+		4AD9EDA61B3E5BC600BEF770 /* 3-1头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */; };
+		4AD9EDA81B3E63C100BEF770 /* registerTextFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -559,6 +561,8 @@
 		4AD9EDA11B3E586E00BEF770 /* OGLookCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLookCommentTableViewCell.h; sourceTree = "<group>"; };
 		4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLookCommentTableViewCell.m; sourceTree = "<group>"; };
 		4AD9EDA41B3E593800BEF770 /* OGProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OGProject-Prefix.pch"; sourceTree = "<group>"; };
+		4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-1头像.png"; sourceTree = "<group>"; };
+		4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerTextFieldBG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,6 +606,8 @@
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */,
+				4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */,
 				4AB7A3821B3D111000AD58CC /* 2-2a.png */,
 				4AB7A3831B3D111000AD58CC /* 2-2b.png */,
 				4AB7A3801B3D0E1200AD58CC /* 2-2头像.png */,
@@ -1601,11 +1607,13 @@
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
 				48A5928F1B39877100392151 /* mm13.jpg in Resources */,
 				48B4E4E21B3515800035A162 /* 3-1评论.png in Resources */,
+				4AD9EDA81B3E63C100BEF770 /* registerTextFieldBG.png in Resources */,
 				48A592921B39877100392151 /* mm16.jpg in Resources */,
 				48A592B41B39878300392151 /* gg10.jpg in Resources */,
 				48A592BD1B39878300392151 /* gg19.jpg in Resources */,
 				48BF3A401B3B15300024DA3A /* OGSendHelpTableViewCell1.xib in Resources */,
 				48A5928B1B39877100392151 /* mm9.jpg in Resources */,
+				4AD9EDA61B3E5BC600BEF770 /* 3-1头像.png in Resources */,
 				48CF99F81B2E724E003BBFBF /* Images.xcassets in Resources */,
 				48B4E4E11B3515800035A162 /* 3-1查看.png in Resources */,
 				48A592B01B39878300392151 /* gg6.jpg in Resources */,

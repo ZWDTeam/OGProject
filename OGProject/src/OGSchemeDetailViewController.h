@@ -7,7 +7,7 @@
 //
 
 #import "OGBaseViewController.h"
-
+#import "OGLookCommentViewController.h"
 @interface OGSchemeDetailViewController : OGBaseViewController
 
 @end
