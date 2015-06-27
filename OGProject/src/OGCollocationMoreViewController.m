@@ -7,17 +7,118 @@
 //
 
 #import "OGCollocationMoreViewController.h"
+#import "SGFocusImageFrame.h"
+#import "SGFocusImageItem.h"
+#import "OGCollocationFlowLayout.h"
+#import "OGCollocationCollectionViewCell.h"
+#import "OGCollocationViewController.h"
 
-@interface OGCollocationMoreViewController ()
+NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionViewCell";
 
+
+@interface OGCollocationMoreViewController ()<SGFocusImageFrameDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (strong , nonatomic) SGFocusImageFrame *bannerView;
+@property (strong , nonatomic) NSMutableArray * headerDatas;
+@property (strong , nonatomic) UICollectionView * collectionView;
 @end
 
 @implementation OGCollocationMoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSString * pathString = [[NSBundle mainBundle] pathForResource:@"homeHeaderModel" ofType:@"plist"];
+    NSArray * array = [NSArray arrayWithContentsOfFile:pathString];
+    _headerDatas  = [[NSMutableArray alloc] initWithArray:array];
+    [_headerDatas addObject:array[0]];
+    [_headerDatas insertObject:array[array.count-1] atIndex:0];
+    
+    OGCollocationFlowLayout * layout = [OGCollocationFlowLayout new];
+    
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.backgroundColor = [UIColor whiteColor];
+    _collectionView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    _collectionView.alwaysBounceVertical = YES;
+    
+    UINib * nib = [UINib nibWithNibName:collectionViewMoreCellIdentifier bundle:[NSBundle mainBundle]];
+    [_collectionView registerNib:nib forCellWithReuseIdentifier:collectionViewMoreCellIdentifier];
+    
+    [self.view addSubview:_collectionView];
+    
+    [self bannerView];
+    
+    [self.view addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+    
+    
 }
+
+
+- (SGFocusImageFrame *)bannerView{
+    if (!_bannerView) {
+        NSMutableArray *arrItemp=[NSMutableArray new];
+        for (int i = 0 ; i < _headerDatas.count; i++)
+        {
+            SGFocusImageItem *item = [[SGFocusImageItem alloc] initWithTitle:_headerDatas[i][@"title"]
+                                                                       image:_headerDatas[i][@"imageString"]
+                                                                         tag:i-1];
+            [arrItemp addObject:item];
+        }
+        CGRect rect = CGRectMake(0, 0, SCREEN_WIDTH, 311.0f/2.0f);
+        self.bannerView = [[SGFocusImageFrame alloc] initWithFrame:rect
+                                                          delegate:self
+                                                        imageItems:arrItemp
+                                                            isAuto:YES
+                                                               num:3.0];
+        [self.collectionView addSubview:self.bannerView];
+        
+    }
+    return _bannerView;
+}
+
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"frame"]) {
+        self.collectionView.frame = self.view.bounds;
+    }
+}
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 20;
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    OGCollocationCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewMoreCellIdentifier forIndexPath:indexPath];
+    NSString * imageName = [NSString stringWithFormat:@"home%ld.jpg",indexPath.row+1];
+    cell.contentImageView.image = [UIImage imageNamed:imageName];
+    
+    return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if ([self.delegate respondsToSelector:@selector(selectedWithInfo:viewController:)]) {
+        [self.delegate selectedWithInfo:nil viewController:self];
+    }
+}
+
+
+
+#pragma mark - SGFocusImageFrameDelegate
+- (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame tapGesItem:(NSInteger)index{
+    
+}
+
+- (void)dealloc{
+    [self.view removeObserver:self forKeyPath:@"frame"];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

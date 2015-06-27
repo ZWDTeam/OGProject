@@ -9,10 +9,12 @@
 #import "OGCollocationViewController.h"
 #import "OGCollocationOnlyViewController.h"
 #import "OGCollocationMoreViewController.h"
+#import "VPTribeSegmentedControl.h"
 
-@interface OGCollocationViewController ()<UIScrollViewDelegate,OGCollocationOnlyViewControllerDelegate>
+@interface OGCollocationViewController ()<UIScrollViewDelegate,OGCollocationOnlyViewControllerDelegate,OGCollocationMoreViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedControl;
+@property (strong , nonatomic)VPTribeSegmentedControl * segmentedControl;
+
 
 @end
 
@@ -25,11 +27,22 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"搭配购"
                                                         image:[UIImage imageNamed:@"搭配购00"]
                                                 selectedImage:[UIImage imageNamed:@"搭配购01"]];
+        self.navigationItem.titleView = self.segmentedControl;
     }
     return self;
     
 }
 
+
+- (VPTribeSegmentedControl *)segmentedControl{
+    if (!_segmentedControl) {
+        _segmentedControl = [[VPTribeSegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 200, 45) withItems:@[@"单品",@"搭配"]];
+        _segmentedControl.tintColor = [UIColor orangeColor];
+        [_segmentedControl addTarget:self action:@selector(exchangeContent:)];
+        
+    }
+    return _segmentedControl;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +57,7 @@
     onlyViewController.delegate = self;
     
     OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
+    moreViewController.delegate =self;
     [self addChildViewController:moreViewController];
     rect = moreViewController.view.frame;
     rect.origin.x = SCREEN_WIDTH;
@@ -55,10 +69,15 @@
     self.contentScrollView.pagingEnabled = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
+}
+
 #pragma mark - Action
 //切换类型
-- (IBAction)selectedStyleAction:(UISegmentedControl *)sender {
-    [self.contentScrollView setContentOffset:CGPointMake(sender.selectedSegmentIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
+- (void)exchangeContent:(VPTribeSegmentedControl *)sender {
+    [self.contentScrollView setContentOffset:CGPointMake(sender.selectedIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
 }
 
 - (IBAction)typeClassAction:(id)sender {
@@ -67,7 +86,7 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger index = scrollView.contentOffset.x/SCREEN_WIDTH;
-    self.mySegmentedControl.selectedSegmentIndex = index;
+    self.segmentedControl.selectedIndex = index;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +96,13 @@
 
 #pragma mark - OGCollocationOnlyViewControllerDelegate
 -(void)selectedWithInfo:(id)info viewController:(OGBaseViewController *)viewController{
-    [self performSegueWithIdentifier:@"pushDetailView" sender:nil];
+    if (self.segmentedControl.selectedIndex == 0) {
+        [self performSegueWithIdentifier:@"pushSchemeUnit" sender:info];
+
+    }else{
+        [self performSegueWithIdentifier:@"pushScheme" sender:info];
+
+    }
 
 }
 #pragma mark - Navigation

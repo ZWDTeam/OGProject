@@ -11,6 +11,9 @@
 #import "OGHomeLayout.h"
 #import "OGCollectionReusableView.h"
 #import "OGDemandDetailsViewController.h"
+#import "OGMapViewController.h"
+
+
 NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 #define iPhone_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
@@ -136,25 +139,25 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
     switch (indexPath.row) {
         case 0://找设计师
             
-            [self performSegueWithIdentifier:@"pushMapViewController" sender:nil];
+            [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
             break;
         case 1://看攻略
 
-            [self performSegueWithIdentifier:@"pushLookStrategy" sender:nil];
+            [self performSegueWithIdentifier:@"pushLookStrategy" sender:indexPath];
             break;
         case 2://亲体验
             
-            [self performSegueWithIdentifier:@"pushExperience" sender:nil];
+            [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
             break;
 
         case 3://找方案
             
-            [self performSegueWithIdentifier:@"pushSchemeView" sender:nil];
+            [self performSegueWithIdentifier:@"pushSchemeView" sender:indexPath];
             break;
 
         case 4://我是设计师
 
-            [self performSegueWithIdentifier:@"pushStylistView" sender:nil];
+            [self performSegueWithIdentifier:@"pushStylistView" sender:indexPath];
             break;
             
         default:
@@ -168,21 +171,29 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 #pragma  mark - Action
 - (IBAction)callUpAction:(UIBarButtonItem *)sender {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://400"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"pushMapViewController"]) {
+        OGMapViewController * viewController = [segue destinationViewController];
+        NSIndexPath * indexPath = (NSIndexPath *)sender;
+        
+        if (indexPath.row == 0) {
+            viewController.showType = MapShowTypePeople;
+        }else if (indexPath.row ==2)
+            viewController.showType = MapShowTypeHouse;
+
+    }
 }
-*/
+
 
 @end

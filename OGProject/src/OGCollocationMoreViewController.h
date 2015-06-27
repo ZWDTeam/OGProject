@@ -8,6 +8,14 @@
 
 #import "OGBaseViewController.h"
 
+@protocol OGCollocationMoreViewControllerDelegate <NSObject>
+@optional
+-(void)selectedWithInfo:(id)info viewController:(OGBaseViewController *)viewController;
+@end
+
+
 @interface OGCollocationMoreViewController : OGBaseViewController
+
+@property (retain,nonatomic) id <OGCollocationMoreViewControllerDelegate> delegate;
 
 @end

@@ -19,6 +19,8 @@
 
 @property (strong , nonatomic)NSArray * allPeoples;
 
+@property (strong , nonatomic)UILabel * houseLabel;
+
 @end
 
 @implementation OGMapViewController
@@ -51,12 +53,35 @@
     
     _updataAnnotations = YES;
     
-    OGMapShowTypeView * mapShowTypeView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OGMapShowTypeView class]) owner:self options:nil] lastObject];
-    [mapShowTypeView addTarget:self action:@selector(selectedShowType:)];
-    mapShowTypeView.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
-    [self.view addSubview:mapShowTypeView];
+    
+    if (_showType == MapShowTypePeople) {
+        OGMapShowTypeView * mapShowTypeView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OGMapShowTypeView class]) owner:self options:nil] lastObject];
+        [mapShowTypeView addTarget:self action:@selector(selectedShowType:)];
+        mapShowTypeView.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
+        [self.view addSubview:mapShowTypeView];
+
+    }else{
+        self.houseLabel.text = @"查看附近的体验馆";
+    }
     
 }
+
+
+- (UILabel *)houseLabel{
+    if (!_houseLabel) {
+        _houseLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 240, 75)];
+        _houseLabel.textColor = [UIColor whiteColor];
+        _houseLabel.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
+        _houseLabel.font = [UIFont boldSystemFontOfSize:18];
+        _houseLabel.textAlignment = NSTextAlignmentCenter;
+        _houseLabel.backgroundColor = [self annotationColor:@"男"];
+        _houseLabel.layer.cornerRadius = CGRectGetHeight(_houseLabel.frame)/2.0f;
+        _houseLabel.layer.masksToBounds = YES;
+        [self.view addSubview:_houseLabel];
+    }
+    return _houseLabel;
+}
+
 
 - (void)selectedShowType:(OGMapShowTypeView *)view{
     NSLog(@"%ld",view.selectedIndex);
@@ -160,9 +185,12 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     NSLog(@"%ld",view.tag);
-    
-    OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
-    [self.navigationController pushViewController:DesignerVC animated:YES];
+    if (_showType == MapShowTypePeople) {
+        OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
+        [self.navigationController pushViewController:DesignerVC animated:YES];
+    }else{
+        [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
+    }
 
 }
 
@@ -172,8 +200,9 @@
     }else{
         return [UIColor colorWithRed:245.0f/255.0f green:79.0f/255.0f blue:261.0f/255.0f alpha:1.0f];
     }
-   
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
