@@ -10,7 +10,7 @@
 #import "OGHomeCollectionViewCell.h"
 #import "OGHomeLayout.h"
 #import "OGCollectionReusableView.h"
-
+#import "OGDemandDetailsViewController.h"
 NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 #define iPhone_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
@@ -74,8 +74,12 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
     
     [_myCollectionView registerClass:[OGCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"OGCollectionReusableView"];
     
+    
+
+    
 
 }
+
 
 
 #pragma -mark UICollectionViewDelegate

@@ -7,7 +7,7 @@
 //
 
 #import "OGIAmStylistViewController.h"
-
+#import "OGDemandDetailsViewController.h"
 @interface OGIAmStylistViewController ()
 
 @end
@@ -25,8 +25,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+#warning 测试按钮
+    UIButton * btnTest = [[UIButton alloc]initWithFrame:CGRectMake(100, 400, 100, 100)];
+    [btnTest setBackgroundColor:[UIColor redColor]];
+    [btnTest setTitle:@"进入需求详情" forState:UIControlStateNormal];
+    [btnTest addTarget:self action:@selector(goDtial) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnTest];
 }
 
+-(void)goDtial{
+    OGDemandDetailsViewController * DetailVC = [[OGDemandDetailsViewController alloc]init];
+    [self.navigationController pushViewController:DetailVC animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

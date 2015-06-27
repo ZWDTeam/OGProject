@@ -59,6 +59,9 @@
 
 //程序常用字体 颜色定义
 #define Font_title  [UIFont systemFontOfSize:kPercenX_scale(16)]
+#define Font_title_middle  [UIFont systemFontOfSize:kPercenX_scale(14)]
+
+#define Font_title_small  [UIFont systemFontOfSize:kPercenX_scale(14)]
 
 #define Font_small  [UIFont systemFontOfSize:kPercenX_scale(11)]
 #define Font_middle [UIFont systemFontOfSize:kPercenX_scale(12)]
@@ -73,11 +76,17 @@
 //控件背景灰
 #define Color_Brey_UIBG    RGBCOLOR(238,239,241)
 
+//控件背景橙色
+#define Color_Orange_UIBG    RGBCOLOR(255,93,0)
+
+
 
 //文字-黑色
 #define Color_Black_Text RGBCOLOR(0,0,0)
 
 #define Color_L_Black_Text RGBCOLOR(133,134,135)
+
+#define Color_Red_Text RGBCOLOR(255,0,0)
 
 //文字-深灰色
 
