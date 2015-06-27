@@ -14,6 +14,8 @@
 
 @implementation OGLookCommentViewController{
     OGLookCommentView * commentView;
+    
+    NSMutableArray * arrayTableViewData;
 }
 
 - (void)viewDidLoad {
@@ -33,14 +35,26 @@
     NSDictionary * dicTemp1 = [NSDictionary dictionaryWithObjectsAndKeys:@"3-1头像.png",@"pic",@"追求完美的男人",@"userName",@"2013-08-01 12:11",@"time",@"今天天气真好，我又要去追求我的完美了。要知道，我是一个追求完美的男人，凡人啊，颤抖吧",@"comment", nil];
     NSDictionary * dicTemp2 = [NSDictionary dictionaryWithObjectsAndKeys:@"3-1头像.png",@"pic",@"勇敢的少年",@"userName",@"2013-08-01 12:11",@"time",@"勇敢的少年啊，快去创造奇迹吧，我可是一个有首领之傲的召唤师",@"comment", nil];
 
-    NSArray * arrTemp = [NSArray arrayWithObjects:dicTemp1,dicTemp2, nil];
+    arrayTableViewData = [NSMutableArray arrayWithObjects:dicTemp1,dicTemp2, nil];
     
     //刷新界面
-    [commentView reloadTableViewWithArray:arrTemp];
+    [commentView reloadTableViewWithArray:arrayTableViewData];
 }
 
 -(void)submitCommentWithContext:(NSString *)strContext{
-    NSLog(@"%@",strContext);
+    //获得时间戳
+    NSDateFormatter *formatter =[[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString *currentTime = [formatter stringFromDate:[NSDate date]];
+    
+    
+    NSDictionary * dicTemp = [NSDictionary dictionaryWithObjectsAndKeys:@"3-1头像.png",@"pic",@"勇敢的少年",@"userName",currentTime,@"time",strContext,@"comment", nil];
+    
+    [arrayTableViewData addObject:dicTemp];
+    
+    //刷新界面
+    [commentView reloadTableViewWithArray:arrayTableViewData];
+
 }
 
 

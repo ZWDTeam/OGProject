@@ -118,9 +118,12 @@
     CGRect labelRect = [cell.labelCommentText.text boundingRectWithSize:size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)  attributes:[NSDictionary dictionaryWithObject:cell.labelCommentText.font forKey:NSFontAttributeName] context:nil];
     cell.labelCommentText.frame = CGRectMake(cell.labelCommentText.frame.origin.x, cell.labelCommentText.frame.origin.y, labelRect.size.width, labelRect.size.height);
     
+    NSInteger height  = CGRectGetMaxY(cell.labelCommentText.frame)+10;
+    
+    if (height<90) height=90;
     
 
-    [cell setFrame:CGRectMake(0, 0, MainView_Width, CGRectGetMaxY(cell.labelCommentText.frame)+10)];
+    [cell setFrame:CGRectMake(0, 0, MainView_Width, height)];
     return cell;
 }
 
