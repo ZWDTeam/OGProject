@@ -47,7 +47,7 @@
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
     NSString *currentTime = [formatter stringFromDate:[NSDate date]];
     
-    
+    //组数据
     NSDictionary * dicTemp = [NSDictionary dictionaryWithObjectsAndKeys:@"3-1头像.png",@"pic",@"勇敢的少年",@"userName",currentTime,@"time",strContext,@"comment", nil];
     
     [arrayTableViewData addObject:dicTemp];
@@ -86,7 +86,7 @@
     UITextField * tfTemp = (UITextField *)[commentView.viewSubmitComment viewWithTag:10001];
     
     if ([tfTemp isFirstResponder]) {
-        [self get:MainView_Height-kbSize.height-60];
+        [self get:MainView_Height-kbSize.height-54];
         
     }
     

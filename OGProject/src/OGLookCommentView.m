@@ -149,6 +149,7 @@
     
     [self.delegate submitCommentWithContext:tfComment.text];
     
+    tfComment.text = @"";
     [self get:CGRectGetMaxY(tableViewComment.frame)];
 
     
