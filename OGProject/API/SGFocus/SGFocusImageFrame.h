@@ -33,7 +33,9 @@
 - (id)initWithFrame:(CGRect)frame delegate:(id<SGFocusImageFrameDelegate>)delegate imageItems:(NSArray *)items num:(double)countNum;
 - (void)scrollToIndex:(NSInteger)aIndex;
 
-@property (nonatomic, assign) id<SGFocusImageFrameDelegate> delegate;
+@property (nonatomic, retain) id<SGFocusImageFrameDelegate> delegate;
 @property (nonatomic, assign) double conutNum;
+
+@property (assign , nonatomic)CGFloat ITEM_WIDTH;
 
 @end

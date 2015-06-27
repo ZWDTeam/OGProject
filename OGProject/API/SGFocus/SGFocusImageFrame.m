@@ -11,7 +11,6 @@
 //#import "BCNetWorkingRequest.h"
 #import "ScrollPageControl.h"
 #import <objc/runtime.h>
-#define ITEM_WIDTH     [UIScreen mainScreen].bounds.size.width
 
 @interface SGFocusImageFrame () {
     UIScrollView *_scrollView;
@@ -79,6 +78,13 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     return [self initWithFrame:frame delegate:delegate imageItems:items isAuto:YES num:countNum];
 }
 
+- (CGFloat)ITEM_WIDTH{
+    if (_ITEM_WIDTH ==0) {
+        _ITEM_WIDTH = [UIScreen mainScreen].bounds.size.width;
+    }
+    return _ITEM_WIDTH;
+}
+
 - (void)dealloc
 {
     objc_setAssociatedObject(self, (const void *)SG_FOCUS_ITEM_ASS_KEY, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -98,7 +104,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     float space = 0;
     CGSize size = CGSizeMake(320, 0);
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(self.frame.size.width - imageItems.count*12, self.frame.size.height -40, imageItems.count *12, 10) ];
-    _pageControl.center = CGPointMake(ITEM_WIDTH/2.0f, _pageControl.center.y);
+    _pageControl.center = CGPointMake(self.ITEM_WIDTH/2.0f, _pageControl.center.y);
     _pageControl.userInteractionEnabled = NO;
     _pageControl.numberOfPages = imageItems.count;
     
@@ -160,7 +166,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     [tapGestureRecognize release];
     if ([imageItems count]>1)
     {
-        [_scrollView setContentOffset:CGPointMake(ITEM_WIDTH, 0) animated:NO] ;
+        [_scrollView setContentOffset:CGPointMake(self.ITEM_WIDTH, 0) animated:NO] ;
         if (_isAutoPlay)
         {
             [self performSelector:@selector(switchFocusImageItems) withObject:nil afterDelay:_conutNum];
@@ -177,7 +183,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     
     CGFloat targetX = _scrollView.contentOffset.x + _scrollView.frame.size.width;
     NSArray *imageItems = objc_getAssociatedObject(self, (const void *)SG_FOCUS_ITEM_ASS_KEY);
-    targetX = (int)(targetX/ITEM_WIDTH) * ITEM_WIDTH;
+    targetX = (int)(targetX/self.ITEM_WIDTH) * self.ITEM_WIDTH;
     [self moveToTargetPosition:targetX];
     
     if ([imageItems count]>1 && _isAutoPlay)
@@ -214,8 +220,8 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     NSArray *imageItems = objc_getAssociatedObject(self, (const void *)SG_FOCUS_ITEM_ASS_KEY);
     if ([imageItems count]>=3)
     {
-        if (targetX >= ITEM_WIDTH * ([imageItems count] -1)) {
-            targetX = ITEM_WIDTH;
+        if (targetX >= self.ITEM_WIDTH * ([imageItems count] -1)) {
+            targetX = self.ITEM_WIDTH;
             [_scrollView setContentOffset:CGPointMake(targetX, 0) animated:NO];
             
             
@@ -223,11 +229,11 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
         }
         else if(targetX <= 0)
         {
-            targetX = ITEM_WIDTH *([imageItems count]-2);
+            targetX = self.ITEM_WIDTH *([imageItems count]-2);
             [_scrollView setContentOffset:CGPointMake(targetX, 0) animated:NO];
         }
     }
-    NSInteger page = (_scrollView.contentOffset.x+ITEM_WIDTH/2.0) / ITEM_WIDTH;
+    NSInteger page = (_scrollView.contentOffset.x+self.ITEM_WIDTH/2.0) / self.ITEM_WIDTH;
     //    NSLog(@"%f %d",_scrollView.contentOffset.x,page);
     if ([imageItems count] > 1)
     {
@@ -255,7 +261,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     if (!decelerate)
     {
         CGFloat targetX = _scrollView.contentOffset.x + _scrollView.frame.size.width;
-        targetX = (int)(targetX/ITEM_WIDTH) * ITEM_WIDTH;
+        targetX = (int)(targetX/self.ITEM_WIDTH) * self.ITEM_WIDTH;
         [self moveToTargetPosition:targetX];
     }
 }
@@ -270,7 +276,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
         {
             aIndex = [imageItems count]-3;
         }
-        [self moveToTargetPosition:ITEM_WIDTH*(aIndex+1)];
+        [self moveToTargetPosition:self.ITEM_WIDTH*(aIndex+1)];
     }else
     {
         [self moveToTargetPosition:0];

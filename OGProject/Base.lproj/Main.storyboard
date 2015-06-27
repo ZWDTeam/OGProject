@@ -436,11 +436,76 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="48Q-0g-RiS" id="EyT-aZ-rW3"/>
+                        <segue destination="jKD-IP-tAp" kind="show" identifier="StrategyClassViewController" id="B2x-M9-Stv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uo-GM-g8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1536.5" y="-1470.5"/>
+        </scene>
+        <!--Strategy Class View Controller-->
+        <scene sceneID="K8C-kV-eK5">
+            <objects>
+                <viewController id="jKD-IP-tAp" customClass="OGStrategyClassViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jfc-Ow-IyX"/>
+                        <viewControllerLayoutGuide type="bottom" id="kKf-Yd-gpS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vTQ-T7-Np8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-nb-8ZF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jKD-IP-tAp" id="lTK-Qy-Fk9"/>
+                                    <outlet property="delegate" destination="jKD-IP-tAp" id="6ty-2n-IUB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="mm1-nb-8ZF" id="9D3-L4-EeR"/>
+                        <segue destination="eXF-bo-fh2" kind="show" identifier="OGStrategyDetailViewController" id="be1-gJ-TO5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRQ-oP-UFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110.5" y="-1470.5"/>
+        </scene>
+        <!--Strategy Detail View Controller-->
+        <scene sceneID="gYd-x9-bm5">
+            <objects>
+                <viewController id="eXF-bo-fh2" customClass="OGStrategyDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t6J-sE-DID"/>
+                        <viewControllerLayoutGuide type="bottom" id="fiw-Xu-0Xg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ltw-rO-nh6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="26v-PB-rE7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eXF-bo-fh2" id="h8F-a5-cU1"/>
+                                    <outlet property="delegate" destination="eXF-bo-fh2" id="El7-tU-uaG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="26v-PB-rE7" id="mn8-GF-42B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnH-dE-m1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2722.5" y="-1470.5"/>
         </scene>
         <!--Loo Scheme View Controller-->
         <scene sceneID="4Ey-br-h13">

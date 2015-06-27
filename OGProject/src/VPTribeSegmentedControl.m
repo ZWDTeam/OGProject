@@ -47,6 +47,20 @@ _Pragma("clang diagnostic pop") \
     return self;
 }
 
+- (CALayer *)btmLayer{
+    if (!_btmLayer&&_isShowButtomLine) {
+        _btmLayer = [CALayer layer];
+        _btmLayer.bounds = CGRectMake(0, 0, self.frame.size.width/_items.count, 4.0f);
+        _btmLayer.anchorPoint = CGPointMake(0, 1);//锚点
+        _btmLayer.backgroundColor = self.tintColor.CGColor;
+        _btmLayer.position = CGPointMake(0, self.frame.size.height);
+        [self.layer addSublayer:_btmLayer];
+    }
+    return _btmLayer;
+}
+
+
+
 - (void)setItems:(NSArray *)items{
     _items = items;
     CGFloat width = self.frame.size.width/items.count;
@@ -71,13 +85,13 @@ _Pragma("clang diagnostic pop") \
 
 - (void)setTintColor:(UIColor *)tintColor{
     _tintColor = tintColor;
-    _btmLayer.backgroundColor = tintColor.CGColor;
+    self.btmLayer.backgroundColor = tintColor.CGColor;
 }
 
 - (void)setFrame:(CGRect)frame{
     [super setFrame:frame];
-    _btmLayer.bounds = CGRectMake(0, 0, _btmLayer.frame.size.width, 3.0f);
-    _btmLayer.position = CGPointMake(0, frame.size.height);
+    self.btmLayer.bounds = CGRectMake(0, 0, self.btmLayer.frame.size.width, 3.0f);
+    self.btmLayer.position = CGPointMake(0, frame.size.height);
 }
 
 - (void)selectedIndex:(UIButton *)sender{
@@ -98,7 +112,7 @@ _Pragma("clang diagnostic pop") \
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
     _selectedIndex = selectedIndex;
-    _btmLayer.position = CGPointMake((self.frame.size.width/_numberOfSegments)*selectedIndex, _btmLayer.position.y);
+    self.btmLayer.position = CGPointMake((self.frame.size.width/_numberOfSegments)*selectedIndex, self.btmLayer.position.y);
     
     for (UIButton * btn in self.subviews) {
         if (btn.tag == selectedIndex) {
@@ -107,7 +121,6 @@ _Pragma("clang diagnostic pop") \
            if (_isExchangeItemColor)[btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         }
     }
-    
 }
 
 - (void)drawRect:(CGRect)rect {

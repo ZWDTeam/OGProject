@@ -84,6 +84,14 @@
 		484C346F1B36B43D0031306D /* mapBtnWoman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484C346C1B36B43D0031306D /* mapBtnWoman@2x.png */; };
 		484C34701B36B43D0031306D /* mapBtnCompany@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484C346D1B36B43D0031306D /* mapBtnCompany@2x.png */; };
 		484C34731B37EE950031306D /* OGSchemeMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C34721B37EE950031306D /* OGSchemeMenuView.m */; };
+		485FB4211B3DA2E60010C4F1 /* OGStrategyClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4201B3DA2E60010C4F1 /* OGStrategyClassViewController.m */; };
+		485FB4241B3DA79D0010C4F1 /* OGStrategyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4231B3DA79D0010C4F1 /* OGStrategyDetailViewController.m */; };
+		485FB4281B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4261B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m */; };
+		485FB4291B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB4271B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib */; };
+		485FB42D1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB42B1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m */; };
+		485FB42E1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB42C1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib */; };
+		485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */; };
+		485FB4331B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */; };
 		48A5926D1B3986E600392151 /* LoctionUserModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A5926C1B3986E600392151 /* LoctionUserModel.plist */; };
 		48A592831B39877100392151 /* mm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A5926F1B39877100392151 /* mm1.jpg */; };
 		48A592841B39877100392151 /* mm2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592701B39877100392151 /* mm2.jpg */; };
@@ -328,6 +336,19 @@
 		484C346D1B36B43D0031306D /* mapBtnCompany@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapBtnCompany@2x.png"; sourceTree = "<group>"; };
 		484C34711B37EE950031306D /* OGSchemeMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSchemeMenuView.h; sourceTree = "<group>"; };
 		484C34721B37EE950031306D /* OGSchemeMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSchemeMenuView.m; sourceTree = "<group>"; };
+		485FB41F1B3DA2E60010C4F1 /* OGStrategyClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyClassViewController.h; sourceTree = "<group>"; };
+		485FB4201B3DA2E60010C4F1 /* OGStrategyClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyClassViewController.m; sourceTree = "<group>"; };
+		485FB4221B3DA79D0010C4F1 /* OGStrategyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyDetailViewController.h; sourceTree = "<group>"; };
+		485FB4231B3DA79D0010C4F1 /* OGStrategyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyDetailViewController.m; sourceTree = "<group>"; };
+		485FB4251B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyCommentTableViewCell.h; sourceTree = "<group>"; };
+		485FB4261B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyCommentTableViewCell.m; sourceTree = "<group>"; };
+		485FB4271B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGStrategyCommentTableViewCell.xib; sourceTree = "<group>"; };
+		485FB42A1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyTitleTableViewCell.h; sourceTree = "<group>"; };
+		485FB42B1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyTitleTableViewCell.m; sourceTree = "<group>"; };
+		485FB42C1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGStrategyTitleTableViewCell.xib; sourceTree = "<group>"; };
+		485FB42F1B3DB5730010C4F1 /* OGStrategyImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyImageTableViewCell.h; sourceTree = "<group>"; };
+		485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyImageTableViewCell.m; sourceTree = "<group>"; };
+		485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGStrategyImageTableViewCell.xib; sourceTree = "<group>"; };
 		48A5926C1B3986E600392151 /* LoctionUserModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoctionUserModel.plist; sourceTree = "<group>"; };
 		48A5926F1B39877100392151 /* mm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm1.jpg; sourceTree = "<group>"; };
 		48A592701B39877100392151 /* mm2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm2.jpg; sourceTree = "<group>"; };
@@ -963,6 +984,10 @@
 				48B4E4E91B353B4F0035A162 /* view */,
 				48B4E4E51B3530A80035A162 /* LookStrategyViewController.h */,
 				48B4E4E61B3530A80035A162 /* LookStrategyViewController.m */,
+				485FB41F1B3DA2E60010C4F1 /* OGStrategyClassViewController.h */,
+				485FB4201B3DA2E60010C4F1 /* OGStrategyClassViewController.m */,
+				485FB4221B3DA79D0010C4F1 /* OGStrategyDetailViewController.h */,
+				485FB4231B3DA79D0010C4F1 /* OGStrategyDetailViewController.m */,
 			);
 			name = LookStrategy;
 			sourceTree = "<group>";
@@ -975,6 +1000,15 @@
 				48B4E4EC1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.xib */,
 				48B4E4EF1B353D180035A162 /* OGLookStrategyLayout.h */,
 				48B4E4F01B353D180035A162 /* OGLookStrategyLayout.m */,
+				485FB4251B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.h */,
+				485FB4261B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m */,
+				485FB4271B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib */,
+				485FB42A1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.h */,
+				485FB42B1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m */,
+				485FB42C1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib */,
+				485FB42F1B3DB5730010C4F1 /* OGStrategyImageTableViewCell.h */,
+				485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */,
+				485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -1403,6 +1437,7 @@
 				484C346F1B36B43D0031306D /* mapBtnWoman@2x.png in Resources */,
 				4AB7A3911B3D507300AD58CC /* 2-2图3.png in Resources */,
 				48A592961B39877100392151 /* mm20.jpg in Resources */,
+				485FB42E1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib in Resources */,
 				482DF09B1B31B00300D3A000 /* 15-3.png in Resources */,
 				482DF09A1B31B00300D3A000 /* 15-2.png in Resources */,
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
@@ -1454,11 +1489,13 @@
 				4AB7A38F1B3D507300AD58CC /* 2-2图1.png in Resources */,
 				48A5928C1B39877100392151 /* mm10.jpg in Resources */,
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
+				485FB4291B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib in Resources */,
 				48A592BE1B39878300392151 /* gg20.jpg in Resources */,
 				48A592AB1B39878300392151 /* gg1.jpg in Resources */,
 				4AB7A3921B3D507300AD58CC /* 2-2图4.png in Resources */,
 				48BF3A331B3AFC900024DA3A /* OGUnitCollectionViewCell.xib in Resources */,
 				1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */,
+				485FB4331B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib in Resources */,
 				484376B51B307C14006D9D56 /* home20.jpg in Resources */,
 				4AB7A3901B3D507300AD58CC /* 2-2图2.png in Resources */,
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
@@ -1557,6 +1594,7 @@
 				48BF3A271B3AF8FE0024DA3A /* OGTableSectionView.m in Sources */,
 				48B4E52A1B3588710035A162 /* OGCollectionReusableView.m in Sources */,
 				48A593061B39B1CC00392151 /* MASViewAttribute.m in Sources */,
+				485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */,
 				482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */,
 				48A5930A1B39B1CC00392151 /* View+MASAdditions.m in Sources */,
 				1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */,
@@ -1571,6 +1609,7 @@
 				4A962E601B3CF873002C87CA /* OGDesignerHomeViewController.m in Sources */,
 				48B4E4FC1B3541BC0035A162 /* OGLoginViewController.m in Sources */,
 				48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */,
+				485FB42D1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m in Sources */,
 				48BF3A441B3B15430024DA3A /* OGSendHelpTableViewCell2.m in Sources */,
 				48BF3A361B3B12600024DA3A /* OGSendHelpViewController.m in Sources */,
 				48A592DB1B399F5900392151 /* DGExpandheader.m in Sources */,
@@ -1601,6 +1640,7 @@
 				48BF3A2E1B3AFBEF0024DA3A /* OGUnitCollectionView.m in Sources */,
 				48BF3A231B3AF2480024DA3A /* OGSchemeUnitTableViewCell2.m in Sources */,
 				484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */,
+				485FB4281B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
 				484C34681B36B2F20031306D /* OGMapShowTypeView.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
@@ -1613,12 +1653,14 @@
 				48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */,
 				48B4E4F41B3541340035A162 /* OGExperienceViewController.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
+				485FB4211B3DA2E60010C4F1 /* OGStrategyClassViewController.m in Sources */,
 				48A592E91B39B0CF00392151 /* OGSchemeHeaderView.m in Sources */,
 				48B4E5021B3542540035A162 /* OGRegisterSecondViewController.m in Sources */,
 				48A593051B39B1CC00392151 /* MASLayoutConstraint.m in Sources */,
 				48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
+				485FB4241B3DA79D0010C4F1 /* OGStrategyDetailViewController.m in Sources */,
 				48A593071B39B1CC00392151 /* MASViewConstraint.m in Sources */,
 				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
 				48B4E4E71B3530A80035A162 /* LookStrategyViewController.m in Sources */,

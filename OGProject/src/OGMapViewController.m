@@ -56,17 +56,6 @@
     mapShowTypeView.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
     [self.view addSubview:mapShowTypeView];
     
-    
-    UIButton * btnTest = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
-    [btnTest setTitle:@"desiginer" forState:UIControlStateNormal];
-    [btnTest setBackgroundColor:[UIColor redColor]];
-    [btnTest addTarget:self action:@selector(goDesiginer) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btnTest];
-}
-
--(void)goDesiginer {
-    OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
-    [self.navigationController pushViewController:DesignerVC animated:YES];
 }
 
 - (void)selectedShowType:(OGMapShowTypeView *)view{
@@ -171,6 +160,10 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     NSLog(@"%ld",view.tag);
+    
+    OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
+    [self.navigationController pushViewController:DesignerVC animated:YES];
+
 }
 
 - (UIColor *)annotationColor:(NSString *)sex{

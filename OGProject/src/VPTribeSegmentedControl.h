@@ -20,6 +20,8 @@
 
 @property (assign , nonatomic)BOOL isExchangeItemColor;
 
+@property (assign , nonatomic)BOOL isShowButtomLine;
+
 - (id)initWithFrame:(CGRect)frame withItems:(NSArray *)items;
 
 - (void)addTarget:(id)target action:(SEL)action;

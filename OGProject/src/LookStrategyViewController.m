@@ -67,6 +67,11 @@ NSString * const collectionCellIdentifier = @"OGLookStrategyCollectionViewCell";
 }
 
 
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"StrategyClassViewController" sender:indexPath];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

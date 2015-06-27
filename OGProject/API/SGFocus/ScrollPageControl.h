@@ -12,6 +12,7 @@
     UIImage*_activeImage;
     UIImage*_inactiveImage;
     NSArray *_usedToRetainOriginalSubview;
+    
 }
 
 @end

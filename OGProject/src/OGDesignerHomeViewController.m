@@ -67,8 +67,6 @@
     self.btnSubscribe.layer.masksToBounds= YES;
     self.btnSubscribe.layer.cornerRadius =  3;
     
-    
-    
 
     [self setDesignerWorksPic];
     [self setProductStyleBoard];
