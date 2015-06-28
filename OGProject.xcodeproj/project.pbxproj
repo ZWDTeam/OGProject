@@ -1673,7 +1673,6 @@
 				48A592E41B39A94700392151 /* OGSchemeImagesTableViewCell.xib in Resources */,
 				48A592941B39877100392151 /* mm18.jpg in Resources */,
 				4AB7A38F1B3D507300AD58CC /* 2-2图1.png in Resources */,
-				4A0596791B40263300F3035D /* 11-图3.png in Resources */,
 				4866851E1B3EF81300D28493 /* 10-地址.png in Resources */,
 				48A5928C1B39877100392151 /* mm10.jpg in Resources */,
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
@@ -1735,7 +1734,6 @@
 				48A592871B39877100392151 /* mm5.jpg in Resources */,
 				4843767A1B3065F4006D9D56 /* 搭配购01@2x.png in Resources */,
 				4866851B1B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib in Resources */,
-				4A0596701B40261100F3035D /* 9-分享.png in Resources */,
 				484376661B304D12006D9D56 /* 亲体验@2x.png in Resources */,
 				48A592AC1B39878300392151 /* gg2.jpg in Resources */,
 				484376631B304D12006D9D56 /* 电话@2x.png in Resources */,
@@ -1873,6 +1871,7 @@
 				48A592C11B398E4700392151 /* OGSchemeDetailViewController.m in Sources */,
 				48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */,
 				4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */,
+
 				4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
