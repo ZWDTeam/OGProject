@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1p-qF-9md">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1p-qF-9md">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -35,17 +35,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="w1D-m3-9sn">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="QYv-DS-MQR">
-                            <rect key="frame" x="113" y="7" width="150" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="单品"/>
-                                <segment title="搭配"/>
-                            </segments>
-                            <connections>
-                                <action selector="selectedStyleAction:" destination="RJa-Oa-k7K" eventType="valueChanged" id="bLl-cS-jMd"/>
-                            </connections>
-                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" image="分类.png" id="pYy-Py-ndS">
                             <connections>
                                 <action selector="typeClassAction:" destination="RJa-Oa-k7K" id="cVC-9n-ams"/>
@@ -56,8 +45,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="contentScrollView" destination="pqO-Pk-e4W" id="fDC-xd-sF1"/>
-                        <outlet property="mySegmentedControl" destination="QYv-DS-MQR" id="egx-G7-aTD"/>
                         <segue destination="NcH-Pb-sUW" kind="show" identifier="pushDetailView" id="2Yc-Ql-mf9"/>
+                        <segue destination="RAk-Mb-gZr" kind="show" identifier="pushScheme" id="2Tp-ic-065"/>
+                        <segue destination="JuN-Pf-mRo" kind="show" identifier="pushSchemeUnit" id="2xR-bQ-suk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU0-Dd-Fif" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,6 +81,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="VZm-ad-nBr" id="Ig0-xV-EiS"/>
+                        <segue destination="qgJ-9u-1qN" kind="show" identifier="pushMapViewController" id="PzQ-7N-C8B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhH-nT-8Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -303,11 +294,43 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapView" destination="POK-dC-jb4" id="wfM-4i-SBz"/>
+                        <segue destination="iDE-EH-c17" kind="show" identifier="OGExperienceDetailViewController" id="oet-FF-x0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tih-yz-8Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1536.5" y="-642.5"/>
+        </scene>
+        <!--Experience Detail View Controller-->
+        <scene sceneID="Fgm-ud-b32">
+            <objects>
+                <viewController id="iDE-EH-c17" customClass="OGExperienceDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Tk-8y-LmE"/>
+                        <viewControllerLayoutGuide type="bottom" id="7WM-vu-9Eo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uoe-Wx-teE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ltA-zX-j4O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iDE-EH-c17" id="tJx-Hx-IXy"/>
+                                    <outlet property="delegate" destination="iDE-EH-c17" id="IjZ-vS-RCr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ltA-zX-j4O" id="Jf7-QT-JiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZe-kX-DT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2235" y="-644"/>
         </scene>
         <!--发布需求-->
         <scene sceneID="tTJ-rH-nOw">
@@ -322,7 +345,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="U2B-UO-Hp1">
-                                <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="fGv-1Z-i65" id="A7l-RU-WFc"/>
@@ -354,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iA-AZ-gig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="-565"/>
+            <point key="canvasLocation" x="2996.5" y="-549.5"/>
         </scene>
         <!--Experience View Controller-->
         <scene sceneID="aTF-tM-ege">
@@ -581,7 +604,7 @@
         <!--Scheme Detail View Controller-->
         <scene sceneID="v00-01-2ip">
             <objects>
-                <viewController id="RAk-Mb-gZr" customClass="OGSchemeDetailViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="RAk-Mb-gZr" customClass="OGSchemeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lDf-N9-UKq"/>
                         <viewControllerLayoutGuide type="bottom" id="wbc-Lo-d87"/>
@@ -601,12 +624,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wbc-Lo-d87" firstAttribute="top" secondItem="Iid-KV-glQ" secondAttribute="bottom" id="A7q-OA-9ra"/>
                             <constraint firstItem="Iid-KV-glQ" firstAttribute="leading" secondItem="pX7-Ip-IpI" secondAttribute="leadingMargin" constant="-16" id="OZs-R4-A3h"/>
+                            <constraint firstItem="Iid-KV-glQ" firstAttribute="bottom" secondItem="pX7-Ip-IpI" secondAttribute="bottomMargin" id="X0b-7L-j6e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Iid-KV-glQ" secondAttribute="trailing" constant="-16" id="fqZ-6l-kng"/>
                             <constraint firstItem="Iid-KV-glQ" firstAttribute="top" secondItem="pX7-Ip-IpI" secondAttribute="topMargin" id="hsb-zA-eyt"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="Iid-KV-glQ" id="wvF-E2-5PS"/>
@@ -620,7 +644,7 @@
         <!--Scheme Unit View Controller-->
         <scene sceneID="EaG-vm-r9H">
             <objects>
-                <viewController id="JuN-Pf-mRo" customClass="OGSchemeUnitViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="JuN-Pf-mRo" customClass="OGSchemeUnitViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9fg-cr-pvx"/>
                         <viewControllerLayoutGuide type="bottom" id="L6w-JF-ovr"/>
@@ -642,10 +666,11 @@
                         <constraints>
                             <constraint firstItem="ATk-nE-MVY" firstAttribute="leading" secondItem="Ytr-zc-1JB" secondAttribute="leadingMargin" constant="-16" id="2eE-qe-5uJ"/>
                             <constraint firstItem="ATk-nE-MVY" firstAttribute="top" secondItem="Ytr-zc-1JB" secondAttribute="topMargin" id="80G-cy-zYb"/>
-                            <constraint firstItem="L6w-JF-ovr" firstAttribute="top" secondItem="ATk-nE-MVY" secondAttribute="bottom" id="bCo-Yk-dZ6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ATk-nE-MVY" secondAttribute="trailing" constant="-16" id="eWX-Xn-Hf6"/>
+                            <constraint firstItem="ATk-nE-MVY" firstAttribute="bottom" secondItem="Ytr-zc-1JB" secondAttribute="bottomMargin" id="hW0-vO-FnD"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="ATk-nE-MVY" id="nEI-RA-f9b"/>
@@ -844,4 +869,9 @@
         <image name="定位.png" width="11" height="19"/>
         <image name="电话.png" width="23" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Tp-ic-065"/>
+        <segue reference="oW6-qZ-S3h"/>
+        <segue reference="odq-vW-z1B"/>
+    </inferredMetricsTieBreakers>
 </document>

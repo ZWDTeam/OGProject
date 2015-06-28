@@ -92,6 +92,13 @@
 		485FB42E1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB42C1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib */; };
 		485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */; };
 		485FB4331B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */; };
+		4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4866850E1B3EF20500D28493 /* OGExperienceDetailViewController.m */; };
+		486685151B3EF47B00D28493 /* OGExprienceTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 486685131B3EF47B00D28493 /* OGExprienceTableViewCell1.m */; };
+		486685161B3EF47B00D28493 /* OGExprienceTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486685141B3EF47B00D28493 /* OGExprienceTableViewCell1.xib */; };
+		4866851A1B3EF4BF00D28493 /* OGExprienceTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 486685181B3EF4BF00D28493 /* OGExprienceTableViewCell2.m */; };
+		4866851B1B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486685191B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib */; };
+		4866851E1B3EF81300D28493 /* 10-地址.png in Resources */ = {isa = PBXBuildFile; fileRef = 4866851C1B3EF81300D28493 /* 10-地址.png */; };
+		4866851F1B3EF81300D28493 /* 10-电话.png in Resources */ = {isa = PBXBuildFile; fileRef = 4866851D1B3EF81300D28493 /* 10-电话.png */; };
 		48A5926D1B3986E600392151 /* LoctionUserModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48A5926C1B3986E600392151 /* LoctionUserModel.plist */; };
 		48A592831B39877100392151 /* mm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A5926F1B39877100392151 /* mm1.jpg */; };
 		48A592841B39877100392151 /* mm2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592701B39877100392151 /* mm2.jpg */; };
@@ -212,8 +219,19 @@
 		48CF9A4B1B2EB37B003BBFBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CF9A4A1B2EB37B003BBFBF /* MapKit.framework */; };
 		48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A4F1B2EB492003BBFBF /* DGMKAninotationView.m */; };
 		48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A521B2EC5E8003BBFBF /* LocationHeaderView.m */; };
-		4A962E601B3CF873002C87CA /* OGDesignerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A962E5E1B3CF873002C87CA /* OGDesignerHomeViewController.m */; };
-		4A962E611B3CF873002C87CA /* OGDesignerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A962E5F1B3CF873002C87CA /* OGDesignerHomeViewController.xib */; };
+		4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0596591B40250C00F3035D /* OGDemandDetailsViewController.m */; };
+		4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A05965C1B40257E00F3035D /* OGDesignCircleTableViewCell.m */; };
+		4A0596621B40257E00F3035D /* OGDesignCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A05965E1B40257E00F3035D /* OGDesignCircleView.m */; };
+		4A0596631B40257E00F3035D /* OGDesignCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0596601B40257E00F3035D /* OGDesignCircleViewController.m */; };
+		4A0596671B40259B00F3035D /* OGDesignerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0596651B40259B00F3035D /* OGDesignerHomeViewController.m */; };
+		4A0596681B40259B00F3035D /* OGDesignerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596661B40259B00F3035D /* OGDesignerHomeViewController.xib */; };
+		4A05966F1B40261100F3035D /* 9-查看.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966C1B40261100F3035D /* 9-查看.png */; };
+		4A0596701B40261100F3035D /* 9-分享.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966D1B40261100F3035D /* 9-分享.png */; };
+		4A0596711B40261100F3035D /* 9-评论.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966E1B40261100F3035D /* 9-评论.png */; };
+		4A0596731B40261C00F3035D /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596721B40261C00F3035D /* search.png */; };
+		4A0596771B40263300F3035D /* 11-图1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596741B40263300F3035D /* 11-图1.png */; };
+		4A0596781B40263300F3035D /* 11-图2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596751B40263300F3035D /* 11-图2.png */; };
+		4A0596791B40263300F3035D /* 11-图3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596761B40263300F3035D /* 11-图3.png */; };
 		4AB7A37D1B3D0BDD00AD58CC /* 8-大头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A37C1B3D0BDD00AD58CC /* 8-大头像.png */; };
 		4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A37E1B3D0C6C00AD58CC /* 2-1性别.png */; };
 		4AB7A3811B3D0E1200AD58CC /* 2-2头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A3801B3D0E1200AD58CC /* 2-2头像.png */; };
@@ -232,7 +250,6 @@
 		4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA21B3E586E00BEF770 /* OGLookCommentTableViewCell.m */; };
 		4AD9EDA61B3E5BC600BEF770 /* 3-1头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */; };
 		4AD9EDA81B3E63C100BEF770 /* registerTextFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */; };
-		4AD9EDAE1B3EAA8C00BEF770 /* OGDemandDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDAD1B3EAA8C00BEF770 /* OGDemandDetailsViewController.m */; };
 		4AD9EDB11B3EAAA500BEF770 /* OGDemandDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */; };
 		4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB21B3EBF6800BEF770 /* 4-1.png */; };
 		4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */; };
@@ -358,6 +375,16 @@
 		485FB42F1B3DB5730010C4F1 /* OGStrategyImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyImageTableViewCell.h; sourceTree = "<group>"; };
 		485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyImageTableViewCell.m; sourceTree = "<group>"; };
 		485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGStrategyImageTableViewCell.xib; sourceTree = "<group>"; };
+		4866850D1B3EF20500D28493 /* OGExperienceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExperienceDetailViewController.h; sourceTree = "<group>"; };
+		4866850E1B3EF20500D28493 /* OGExperienceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGExperienceDetailViewController.m; sourceTree = "<group>"; };
+		486685121B3EF47B00D28493 /* OGExprienceTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExprienceTableViewCell1.h; sourceTree = "<group>"; };
+		486685131B3EF47B00D28493 /* OGExprienceTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGExprienceTableViewCell1.m; sourceTree = "<group>"; };
+		486685141B3EF47B00D28493 /* OGExprienceTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGExprienceTableViewCell1.xib; sourceTree = "<group>"; };
+		486685171B3EF4BF00D28493 /* OGExprienceTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExprienceTableViewCell2.h; sourceTree = "<group>"; };
+		486685181B3EF4BF00D28493 /* OGExprienceTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGExprienceTableViewCell2.m; sourceTree = "<group>"; };
+		486685191B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGExprienceTableViewCell2.xib; sourceTree = "<group>"; };
+		4866851C1B3EF81300D28493 /* 10-地址.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-地址.png"; sourceTree = "<group>"; };
+		4866851D1B3EF81300D28493 /* 10-电话.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-电话.png"; sourceTree = "<group>"; };
 		48A5926C1B3986E600392151 /* LoctionUserModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoctionUserModel.plist; sourceTree = "<group>"; };
 		48A5926F1B39877100392151 /* mm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm1.jpg; sourceTree = "<group>"; };
 		48A592701B39877100392151 /* mm2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm2.jpg; sourceTree = "<group>"; };
@@ -542,9 +569,24 @@
 		48CF9A4F1B2EB492003BBFBF /* DGMKAninotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGMKAninotationView.m; sourceTree = "<group>"; };
 		48CF9A511B2EC5E8003BBFBF /* LocationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHeaderView.h; sourceTree = "<group>"; };
 		48CF9A521B2EC5E8003BBFBF /* LocationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHeaderView.m; sourceTree = "<group>"; };
-		4A962E5D1B3CF873002C87CA /* OGDesignerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignerHomeViewController.h; sourceTree = "<group>"; };
-		4A962E5E1B3CF873002C87CA /* OGDesignerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDesignerHomeViewController.m; sourceTree = "<group>"; };
-		4A962E5F1B3CF873002C87CA /* OGDesignerHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGDesignerHomeViewController.xib; sourceTree = "<group>"; };
+		4A0596581B40250C00F3035D /* OGDemandDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDemandDetailsViewController.h; sourceTree = "<group>"; };
+		4A0596591B40250C00F3035D /* OGDemandDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsViewController.m; sourceTree = "<group>"; };
+		4A05965B1B40257E00F3035D /* OGDesignCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignCircleTableViewCell.h; sourceTree = "<group>"; };
+		4A05965C1B40257E00F3035D /* OGDesignCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDesignCircleTableViewCell.m; sourceTree = "<group>"; };
+		4A05965D1B40257E00F3035D /* OGDesignCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignCircleView.h; sourceTree = "<group>"; };
+		4A05965E1B40257E00F3035D /* OGDesignCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDesignCircleView.m; sourceTree = "<group>"; };
+		4A05965F1B40257E00F3035D /* OGDesignCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignCircleViewController.h; sourceTree = "<group>"; };
+		4A0596601B40257E00F3035D /* OGDesignCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDesignCircleViewController.m; sourceTree = "<group>"; };
+		4A0596641B40259B00F3035D /* OGDesignerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignerHomeViewController.h; sourceTree = "<group>"; };
+		4A0596651B40259B00F3035D /* OGDesignerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDesignerHomeViewController.m; sourceTree = "<group>"; };
+		4A0596661B40259B00F3035D /* OGDesignerHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGDesignerHomeViewController.xib; sourceTree = "<group>"; };
+		4A05966C1B40261100F3035D /* 9-查看.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-查看.png"; sourceTree = "<group>"; };
+		4A05966D1B40261100F3035D /* 9-分享.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-分享.png"; sourceTree = "<group>"; };
+		4A05966E1B40261100F3035D /* 9-评论.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-评论.png"; sourceTree = "<group>"; };
+		4A0596721B40261C00F3035D /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		4A0596741B40263300F3035D /* 11-图1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-图1.png"; sourceTree = "<group>"; };
+		4A0596751B40263300F3035D /* 11-图2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-图2.png"; sourceTree = "<group>"; };
+		4A0596761B40263300F3035D /* 11-图3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-图3.png"; sourceTree = "<group>"; };
 		4AB7A37C1B3D0BDD00AD58CC /* 8-大头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-大头像.png"; sourceTree = "<group>"; };
 		4AB7A37E1B3D0C6C00AD58CC /* 2-1性别.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1性别.png"; sourceTree = "<group>"; };
 		4AB7A3801B3D0E1200AD58CC /* 2-2头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2头像.png"; sourceTree = "<group>"; };
@@ -567,8 +609,6 @@
 		4AD9EDA41B3E593800BEF770 /* OGProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OGProject-Prefix.pch"; sourceTree = "<group>"; };
 		4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-1头像.png"; sourceTree = "<group>"; };
 		4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerTextFieldBG.png; sourceTree = "<group>"; };
-		4AD9EDAC1B3EAA8C00BEF770 /* OGDemandDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDemandDetailsViewController.h; sourceTree = "<group>"; };
-		4AD9EDAD1B3EAA8C00BEF770 /* OGDemandDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsViewController.m; sourceTree = "<group>"; };
 		4AD9EDAF1B3EAAA500BEF770 /* OGDemandDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDemandDetailsView.h; sourceTree = "<group>"; };
 		4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsView.m; sourceTree = "<group>"; };
 		4AD9EDB21B3EBF6800BEF770 /* 4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-1.png"; sourceTree = "<group>"; };
@@ -616,6 +656,12 @@
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				4A0596741B40263300F3035D /* 11-图1.png */,
+				4A0596751B40263300F3035D /* 11-图2.png */,
+				4A0596761B40263300F3035D /* 11-图3.png */,
+				4A05966C1B40261100F3035D /* 9-查看.png */,
+				4A05966D1B40261100F3035D /* 9-分享.png */,
+				4A05966E1B40261100F3035D /* 9-评论.png */,
 				4AD9EDA71B3E63C100BEF770 /* registerTextFieldBG.png */,
 				4AD9EDA51B3E5BC600BEF770 /* 3-1头像.png */,
 				4AB7A3821B3D111000AD58CC /* 2-2a.png */,
@@ -713,6 +759,9 @@
 			children = (
 				48CF9A2A1B2E76CA003BBFBF /* OGHomeViewController.h */,
 				48CF9A2B1B2E76CA003BBFBF /* OGHomeViewController.m */,
+				4A0596641B40259B00F3035D /* OGDesignerHomeViewController.h */,
+				4A0596651B40259B00F3035D /* OGDesignerHomeViewController.m */,
+				4A0596661B40259B00F3035D /* OGDesignerHomeViewController.xib */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -819,6 +868,30 @@
 				484C340B1B366DFD0031306D /* OGOptionCityViewController.m */,
 			);
 			name = LocationCity;
+			sourceTree = "<group>";
+		};
+		486685101B3EF2CA00D28493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				486685121B3EF47B00D28493 /* OGExprienceTableViewCell1.h */,
+				486685131B3EF47B00D28493 /* OGExprienceTableViewCell1.m */,
+				486685141B3EF47B00D28493 /* OGExprienceTableViewCell1.xib */,
+				486685171B3EF4BF00D28493 /* OGExprienceTableViewCell2.h */,
+				486685181B3EF4BF00D28493 /* OGExprienceTableViewCell2.m */,
+				486685191B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		486685111B3EF2CF00D28493 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48B4E4F21B3541340035A162 /* OGExperienceViewController.h */,
+				48B4E4F31B3541340035A162 /* OGExperienceViewController.m */,
+				4866850D1B3EF20500D28493 /* OGExperienceDetailViewController.h */,
+				4866850E1B3EF20500D28493 /* OGExperienceDetailViewController.m */,
+			);
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 		48A5926E1B39876100392151 /* mapImage */ = {
@@ -934,6 +1007,7 @@
 		48B4E4D01B350D2C0035A162 /* childers */ = {
 			isa = PBXGroup;
 			children = (
+				4A0596691B4025BC00F3035D /* DesignCircle */,
 				4AD9ED981B3E57AB00BEF770 /* LookCommet */,
 				484C34091B366DD60031306D /* LocationCity */,
 				48B4E4F61B35414C0035A162 /* I'm Stylist */,
@@ -1044,8 +1118,8 @@
 		48B4E4F51B35413E0035A162 /* experience */ = {
 			isa = PBXGroup;
 			children = (
-				48B4E4F21B3541340035A162 /* OGExperienceViewController.h */,
-				48B4E4F31B3541340035A162 /* OGExperienceViewController.m */,
+				486685111B3EF2CF00D28493 /* viewControllers */,
+				486685101B3EF2CA00D28493 /* Views */,
 			);
 			name = experience;
 			sourceTree = "<group>";
@@ -1167,6 +1241,8 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4866851C1B3EF81300D28493 /* 10-地址.png */,
+				4866851D1B3EF81300D28493 /* 10-电话.png */,
 				4AD9EDB21B3EBF6800BEF770 /* 4-1.png */,
 				4AB7A3861B3D506100AD58CC /* designerHome */,
 				48A5926E1B39876100392151 /* mapImage */,
@@ -1177,6 +1253,7 @@
 				48B4E4E31B3530690035A162 /* 9-1图1.png */,
 				48B4E4DF1B3515800035A162 /* 3-1查看.png */,
 				48B4E4E01B3515800035A162 /* 3-1评论.png */,
+				4A0596721B40261C00F3035D /* search.png */,
 				482DF0AA1B31C26900D3A000 /* mm4.jpg */,
 				482DF08C1B31A9D100D3A000 /* other */,
 				484376941B307C14006D9D56 /* homeImage */,
@@ -1339,11 +1416,39 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		4A0596691B4025BC00F3035D /* DesignCircle */ = {
+			isa = PBXGroup;
+			children = (
+				4A05966B1B4025CE00F3035D /* viewController */,
+				4A05966A1B4025C900F3035D /* view */,
+			);
+			name = DesignCircle;
+			sourceTree = "<group>";
+		};
+		4A05966A1B4025C900F3035D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4A05965B1B40257E00F3035D /* OGDesignCircleTableViewCell.h */,
+				4A05965C1B40257E00F3035D /* OGDesignCircleTableViewCell.m */,
+				4A05965D1B40257E00F3035D /* OGDesignCircleView.h */,
+				4A05965E1B40257E00F3035D /* OGDesignCircleView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4A05966B1B4025CE00F3035D /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A05965F1B40257E00F3035D /* OGDesignCircleViewController.h */,
+				4A0596601B40257E00F3035D /* OGDesignCircleViewController.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
 		4A962E5A1B3CF7D4002C87CA /* FindDesigner */ = {
 			isa = PBXGroup;
 			children = (
 				4A962E5B1B3CF800002C87CA /* model */,
-				4A962E5C1B3CF807002C87CA /* viewControl */,
 			);
 			name = FindDesigner;
 			sourceTree = "<group>";
@@ -1353,16 +1458,6 @@
 			children = (
 			);
 			name = model;
-			sourceTree = "<group>";
-		};
-		4A962E5C1B3CF807002C87CA /* viewControl */ = {
-			isa = PBXGroup;
-			children = (
-				4A962E5D1B3CF873002C87CA /* OGDesignerHomeViewController.h */,
-				4A962E5E1B3CF873002C87CA /* OGDesignerHomeViewController.m */,
-				4A962E5F1B3CF873002C87CA /* OGDesignerHomeViewController.xib */,
-			);
-			name = viewControl;
 			sourceTree = "<group>";
 		};
 		4AB7A3861B3D506100AD58CC /* designerHome */ = {
@@ -1430,8 +1525,8 @@
 		4AD9EDAB1B3EAA6F00BEF770 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				4AD9EDAC1B3EAA8C00BEF770 /* OGDemandDetailsViewController.h */,
-				4AD9EDAD1B3EAA8C00BEF770 /* OGDemandDetailsViewController.m */,
+				4A0596581B40250C00F3035D /* OGDemandDetailsViewController.h */,
+				4A0596591B40250C00F3035D /* OGDemandDetailsViewController.m */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -1529,12 +1624,14 @@
 				482DF09A1B31B00300D3A000 /* 15-2.png in Resources */,
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
 				48A592B71B39878300392151 /* gg13.jpg in Resources */,
+				486685161B3EF47B00D28493 /* OGExprienceTableViewCell1.xib in Resources */,
 				48BF3A1F1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.xib in Resources */,
 				484376791B3065F4006D9D56 /* 搭配购00@2x.png in Resources */,
 				484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */,
 				48BF3A241B3AF2480024DA3A /* OGSchemeUnitTableViewCell2.xib in Resources */,
 				48A592911B39877100392151 /* mm15.jpg in Resources */,
 				484376AE1B307C14006D9D56 /* home14.jpg in Resources */,
+				4A0596681B40259B00F3035D /* OGDesignerHomeViewController.xib in Resources */,
 				48A592B51B39878300392151 /* gg11.jpg in Resources */,
 				48A592B31B39878300392151 /* gg9.jpg in Resources */,
 				482DF0991B31B00300D3A000 /* 15-1.png in Resources */,
@@ -1563,6 +1660,7 @@
 				484376BB1B307C14006D9D56 /* home8.jpg in Resources */,
 				48A592861B39877100392151 /* mm4.jpg in Resources */,
 				4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */,
+				4A0596711B40261100F3035D /* 9-评论.png in Resources */,
 				484376671B304D12006D9D56 /* 我是设计师@2x.png in Resources */,
 				48B4E5271B3587F80035A162 /* OGHomeCollectionViewCell.xib in Resources */,
 				48A592AD1B39878300392151 /* gg3.jpg in Resources */,
@@ -1575,9 +1673,12 @@
 				48A592E41B39A94700392151 /* OGSchemeImagesTableViewCell.xib in Resources */,
 				48A592941B39877100392151 /* mm18.jpg in Resources */,
 				4AB7A38F1B3D507300AD58CC /* 2-2图1.png in Resources */,
+				4A0596791B40263300F3035D /* 11-图3.png in Resources */,
+				4866851E1B3EF81300D28493 /* 10-地址.png in Resources */,
 				48A5928C1B39877100392151 /* mm10.jpg in Resources */,
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
 				485FB4291B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib in Resources */,
+				4A0596771B40263300F3035D /* 11-图1.png in Resources */,
 				4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */,
 				48A592BE1B39878300392151 /* gg20.jpg in Resources */,
 				48A592AB1B39878300392151 /* gg1.jpg in Resources */,
@@ -1593,7 +1694,7 @@
 				484376AD1B307C14006D9D56 /* home13.jpg in Resources */,
 				482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */,
 				484376801B3065F4006D9D56 /* 我的01@2x.png in Resources */,
-				4A962E611B3CF873002C87CA /* OGDesignerHomeViewController.xib in Resources */,
+				4A0596731B40261C00F3035D /* search.png in Resources */,
 				484376AF1B307C14006D9D56 /* home15.jpg in Resources */,
 				484376BA1B307C14006D9D56 /* home7.jpg in Resources */,
 				48BF3A451B3B15430024DA3A /* OGSendHelpTableViewCell2.xib in Resources */,
@@ -1612,6 +1713,7 @@
 				48A592D21B399C6E00392151 /* OGSchemeTableViewCell.xib in Resources */,
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
+				4866851F1B3EF81300D28493 /* 10-电话.png in Resources */,
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
 				48A5928D1B39877100392151 /* mm11.jpg in Resources */,
 				482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */,
@@ -1627,14 +1729,18 @@
 				484376BC1B307C14006D9D56 /* home9.jpg in Resources */,
 				4843767B1B3065F4006D9D56 /* 发现00@2x.png in Resources */,
 				482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */,
+				4A0596781B40263300F3035D /* 11-图2.png in Resources */,
 				4AB7A37D1B3D0BDD00AD58CC /* 8-大头像.png in Resources */,
 				484C346A1B36B30B0031306D /* OGMapShowTypeView.xib in Resources */,
 				48A592871B39877100392151 /* mm5.jpg in Resources */,
 				4843767A1B3065F4006D9D56 /* 搭配购01@2x.png in Resources */,
+				4866851B1B3EF4BF00D28493 /* OGExprienceTableViewCell2.xib in Resources */,
+				4A0596701B40261100F3035D /* 9-分享.png in Resources */,
 				484376661B304D12006D9D56 /* 亲体验@2x.png in Resources */,
 				48A592AC1B39878300392151 /* gg2.jpg in Resources */,
 				484376631B304D12006D9D56 /* 电话@2x.png in Resources */,
 				4AB7A3841B3D111000AD58CC /* 2-2a.png in Resources */,
+				4A05966F1B40261100F3035D /* 9-查看.png in Resources */,
 				48A592881B39877100392151 /* mm6.jpg in Resources */,
 				48A592D41B399D6E00392151 /* OGSchemeSecondTableViewCell.xib in Resources */,
 				482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */,
@@ -1690,16 +1796,16 @@
 				48A5930A1B39B1CC00392151 /* View+MASAdditions.m in Sources */,
 				1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */,
 				48A592C51B398EC300392151 /* OGSchemeTableViewCell.m in Sources */,
+				4866851A1B3EF4BF00D28493 /* OGExprienceTableViewCell2.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
 				48B4E5111B3547B80035A162 /* OGUserInfoViewController.m in Sources */,
+				4A0596671B40259B00F3035D /* OGDesignerHomeViewController.m in Sources */,
 				48A593081B39B1CC00392151 /* NSArray+MASAdditions.m in Sources */,
 				48A593041B39B1CC00392151 /* MASConstraintMaker.m in Sources */,
-				4AD9EDAE1B3EAA8C00BEF770 /* OGDemandDetailsViewController.m in Sources */,
 				48BF3A171B3AEDFB0024DA3A /* OGSchemeUnitViewController.m in Sources */,
-				4A962E601B3CF873002C87CA /* OGDesignerHomeViewController.m in Sources */,
 				48B4E4FC1B3541BC0035A162 /* OGLoginViewController.m in Sources */,
 				48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */,
 				485FB42D1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m in Sources */,
@@ -1727,18 +1833,22 @@
 				48BF3A321B3AFC900024DA3A /* OGUnitCollectionViewCell.m in Sources */,
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
 				48B4E4ED1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.m in Sources */,
+				486685151B3EF47B00D28493 /* OGExprienceTableViewCell1.m in Sources */,
 				48BF3A1E1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.m in Sources */,
 				4AD9ED9B1B3E57D500BEF770 /* OGLookCommentViewController.m in Sources */,
 				48BF3A3F1B3B15300024DA3A /* OGSendHelpTableViewCell1.m in Sources */,
 				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
+				4A0596621B40257E00F3035D /* OGDesignCircleView.m in Sources */,
 				48BF3A2E1B3AFBEF0024DA3A /* OGUnitCollectionView.m in Sources */,
 				48BF3A231B3AF2480024DA3A /* OGSchemeUnitTableViewCell2.m in Sources */,
 				484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */,
 				485FB4281B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m in Sources */,
+				4A0596631B40257E00F3035D /* OGDesignCircleViewController.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
 				484C34681B36B2F20031306D /* OGMapShowTypeView.m in Sources */,
 				4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */,
+				4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
@@ -1762,6 +1872,8 @@
 				48B4E4E71B3530A80035A162 /* LookStrategyViewController.m in Sources */,
 				48A592C11B398E4700392151 /* OGSchemeDetailViewController.m in Sources */,
 				48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */,
+				4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */,
+				4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

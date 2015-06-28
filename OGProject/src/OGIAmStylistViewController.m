@@ -8,6 +8,7 @@
 
 #import "OGIAmStylistViewController.h"
 #import "OGDemandDetailsViewController.h"
+#import "OGDesignCircleViewController.h"
 @interface OGIAmStylistViewController ()
 
 @end
@@ -33,12 +34,26 @@
     [btnTest addTarget:self action:@selector(goDtial) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btnTest];
+    
+    UIButton * btnTest01 = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
+    [btnTest01 setBackgroundColor:[UIColor redColor]];
+    [btnTest01 setTitle:@"进入设计圈" forState:UIControlStateNormal];
+    [btnTest01 addTarget:self action:@selector(goDesigner) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnTest01];
 }
 
 -(void)goDtial{
     OGDemandDetailsViewController * DetailVC = [[OGDemandDetailsViewController alloc]init];
     [self.navigationController pushViewController:DetailVC animated:YES];
 }
+
+-(void)goDesigner{
+    OGDesignCircleViewController * DesignCircleVC = [[OGDesignCircleViewController alloc]init];
+    [self.navigationController pushViewController:DesignCircleVC animated:YES];
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

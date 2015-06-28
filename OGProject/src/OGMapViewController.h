@@ -11,6 +11,16 @@
 #import "OGBaseViewController.h"
 #import "OGDesignerHomeViewController.h"
 
+typedef NS_ENUM(NSInteger, MapShowType){
+
+    MapShowTypePeople = 0, //显示设计师
+    MapShowTypeHouse   //显示体验馆
+    
+};
+
 @interface OGMapViewController : OGBaseViewController
+
+
+@property (assign , nonatomic)MapShowType showType;
 
 @end
