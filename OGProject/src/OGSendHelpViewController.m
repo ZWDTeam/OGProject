@@ -167,6 +167,7 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.contentTedtField.text  =self.model.area;
+            cell.accessoryView = [self accessoryLabel];
 
 
         }
@@ -230,6 +231,14 @@
     }
     
     return cell;
+}
+
+- (UILabel *)accessoryLabel{
+    UILabel * l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
+    l.text = @"mm";
+    l.textColor = [UIColor orangeColor];
+    l.font = [UIFont systemFontOfSize:15];
+    return l;
 }
 
 

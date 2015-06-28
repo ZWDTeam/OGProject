@@ -29,10 +29,35 @@
                                                 selectedImage:[UIImage imageNamed:@"我的01"]];
         
         _items = @[@"我的关注",@"我的收藏",@"我的需求",@"设置"];
+        
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelectedIndex:) name:tabbar_selectedIndex_notification object:nil];
+        
     }
     return self;
     
 }
+
+#pragma mark - 点击tabbar触发通知
+- (void)tabBarSelectedIndex:(NSNumber *)selectedIndex{
+    if (ex_identityType == OGIdentityTypeUser) {
+        _items = @[@"我的关注",@"我的收藏",@"我的需求",@"设置"];
+    }else if (ex_identityType == OGIdentityTypeStylist){
+        _items = @[@"我的作品",@"我的订单",@"我的关注",@"我的收藏",@"设置"];
+    }
+}
+
+- (NSArray *)items{
+    if (ex_identityType == OGIdentityTypeUser) {
+        
+        _items = @[@"我的关注",@"我的收藏",@"我的需求",@"设置"];
+    }else{
+        _items = @[@"我的作品",@"我的订单",@"我的关注",@"我的收藏",@"设置"];
+    }
+    
+    return _items;
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,12 +74,13 @@
 
 #pragma mark - MyselfHeaderViewDelegate
 - (void)selectedHeaderView:(MyselfHeaderView *)headerView{
+
     [self performSegueWithIdentifier:@"pushUserInfoView" sender:headerView];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _items.count;
+    return self.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -64,7 +90,7 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.titleLabel.text = _items[indexPath.row];
+    cell.titleLabel.text = self.items[indexPath.row];
     
     return cell;
 }
@@ -75,6 +101,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (ex_identityType == OGIdentityTypeStylist && indexPath.row ==4) {
+        [self performSegueWithIdentifier:@"pushSetingView" sender:indexPath];
+        return;
+    }
+    
+    if (indexPath.row <2) {
+        
+        return;
+    }
+    
     switch (indexPath.row) {
         case 0:
             [self performSegueWithIdentifier:@"pushMyAttentionView" sender:indexPath];
@@ -98,6 +135,11 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

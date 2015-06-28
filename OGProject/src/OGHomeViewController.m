@@ -77,12 +77,27 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
     
     [_myCollectionView registerClass:[OGCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"OGCollectionReusableView"];
     
+    if (!ex_identityType) {
+        [self performSelector:@selector(optionCity:) withObject:self afterDelay:0.1];
+    }
     
-
-    
-
 }
 
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if (ex_locationCity) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:ex_locationCity style:UIBarButtonItemStylePlain target:self action:@selector(optionCity:)];
+        
+    }else{
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"定位"] style:UIBarButtonItemStylePlain target:self action:@selector(optionCity:)];
+    }
+}
+
+#pragma mark - 选择城市
+- (void)optionCity:(UIBarButtonItem *)item{
+    [self performSegueWithIdentifier:@"optionCity" sender:nil];
+}
 
 
 #pragma -mark UICollectionViewDelegate

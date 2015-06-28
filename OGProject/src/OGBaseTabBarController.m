@@ -38,7 +38,7 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
     
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:tabbar_selectedIndex_notification object:@(self.selectedIndex)];
     
     
   #if 0

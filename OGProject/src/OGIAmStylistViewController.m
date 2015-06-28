@@ -51,7 +51,6 @@
 -(void)goDesigner{
     OGDesignCircleViewController * DesignCircleVC = [[OGDesignCircleViewController alloc]init];
     [self.navigationController pushViewController:DesignCircleVC animated:YES];
-
 }
 
 - (void)didReceiveMemoryWarning {

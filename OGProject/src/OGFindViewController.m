@@ -9,6 +9,7 @@
 #import "OGFindViewController.h"
 #import "OGFindTableViewCell.h"
 #import "OGMapViewController.h"
+#import "OGDesignCircleViewController.h"
 
 @interface OGFindViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,19 +28,43 @@
                                                         image:[UIImage imageNamed:@"发现00"]
                                                 selectedImage:[UIImage imageNamed:@"发现01"]];
         
-        _items = @[@{@"title":@"附近的设计师",
-                     @"image":@"15-1"},
-                   @{@"title":@"附近的体验馆",
-                     @"image":@"15-3"}];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelectedIndex:) name:tabbar_selectedIndex_notification object:nil];
     }
     return self;
     
 }
 
+- (NSArray *)items{
+    if (ex_identityType == OGIdentityTypeUser) {
+        
+        _items = @[@{@"title":@"附近的设计师",
+                     @"image":@"15-1"},
+                   @{@"title":@"附近的体验馆",
+                     @"image":@"15-3"}];
+    }else{
+        _items = @[@{@"title":@"设计圈",
+                   @"image":@"15-设计圈"},
+                 @{@"title":@"淘订单",
+                   @"image":@"15-淘订单"}];
+    }
+    
+    return _items;
+
+}
+
+#pragma mark - 点击tabbar触发通知
+- (void)tabBarSelectedIndex:(NSNumber *)selectedIndex{
+    if (ex_identityType == OGIdentityTypeUser) {
+        
+    }else if (ex_identityType == OGIdentityTypeStylist){
+    
+    }
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return _items.count;
+    return self.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -49,8 +74,8 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.headerImageView.image = [UIImage imageNamed:_items[indexPath.row][@"image"]];
-    cell.titleLabel.text = _items[indexPath.row][@"title"];
+    cell.headerImageView.image = [UIImage imageNamed:self.items[indexPath.row][@"image"]];
+    cell.titleLabel.text = self.items[indexPath.row][@"title"];
     
     return cell;
 }
@@ -61,7 +86,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
+    if (ex_identityType == OGIdentityTypeUser) {
+        [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
+    }else{
+        if (indexPath.row == 0) {
+            OGDesignCircleViewController * DesignCircleVC = [[OGDesignCircleViewController alloc]init];
+            [self.navigationController pushViewController:DesignCircleVC animated:YES];
+        }else{
+            [self performSegueWithIdentifier:@"OGTaoOrderFormViewController" sender:indexPath];
+        }
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -87,6 +122,10 @@
             viewController.showType = MapShowTypeHouse;
         
     }
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

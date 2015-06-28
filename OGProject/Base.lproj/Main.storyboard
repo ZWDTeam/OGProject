@@ -82,6 +82,7 @@
                     <connections>
                         <outlet property="tableView" destination="VZm-ad-nBr" id="Ig0-xV-EiS"/>
                         <segue destination="qgJ-9u-1qN" kind="show" identifier="pushMapViewController" id="PzQ-7N-C8B"/>
+                        <segue destination="bnO-wE-dZz" kind="show" identifier="OGTaoOrderFormViewController" id="ZHZ-wx-UVT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhH-nT-8Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,11 +253,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ivP-lI-vCF">
-                        <barButtonItem key="leftBarButtonItem" image="定位.png" id="UJT-m9-OFi">
-                            <connections>
-                                <segue destination="Ena-va-Lxe" kind="show" identifier="pushOptionCity" id="RUI-N0-v24"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="电话.png" id="JM4-RL-kNH">
                             <connections>
                                 <action selector="callUpAction:" destination="xJ7-2V-jW4" id="fPn-y2-bPY"/>
@@ -271,6 +267,7 @@
                         <segue destination="1Zn-Ua-8oy" kind="show" identifier="pushSchemeView" id="QYm-pH-bjU"/>
                         <segue destination="o8K-oc-LAe" kind="show" identifier="pushExperience" id="yeM-C9-zBR"/>
                         <segue destination="92l-1A-A2T" kind="show" identifier="pushStylistView" id="u7F-KI-hpS"/>
+                        <segue destination="Ena-va-Lxe" kind="show" identifier="optionCity" id="E72-Tv-lo2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Abu-7V-lx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -860,6 +857,43 @@
             </objects>
             <point key="canvasLocation" x="436.5" y="2067.5"/>
         </scene>
+        <!--Tao Order FormOG View Controller-->
+        <scene sceneID="KQn-cb-e3m">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="bnO-wE-dZz" customClass="OGTaoOrderFormOGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3aD-S9-mjt"/>
+                        <viewControllerLayoutGuide type="bottom" id="j0U-kB-ARm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZEt-Ue-kGs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ht-r3-1AN" customClass="VPTribeSegmentedControl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="35"/>
+                                <color key="backgroundColor" red="0.18890072599999999" green="0.18890072599999999" blue="0.18890072599999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oQv-Qb-aVc">
+                                <rect key="frame" x="0.0" y="99" width="375" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bnO-wE-dZz" id="8N7-wg-OK0"/>
+                                    <outlet property="delegate" destination="bnO-wE-dZz" id="x1F-wI-DNX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="oQv-Qb-aVc" id="383-Bg-QtU"/>
+                        <outlet property="tpyeSegmentedControl" destination="0Ht-r3-1AN" id="WY3-2v-Ct8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJ5-tc-ioR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578.5" y="1299.5"/>
+        </scene>
         <!--User Info View Controller-->
         <scene sceneID="CEX-Vc-gff">
             <objects>
@@ -921,12 +955,11 @@
     </scenes>
     <resources>
         <image name="分类.png" width="26" height="16"/>
-        <image name="定位.png" width="11" height="19"/>
         <image name="电话.png" width="23" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Tp-ic-065"/>
+        <segue reference="6Kq-hO-rgl"/>
         <segue reference="oW6-qZ-S3h"/>
-        <segue reference="odq-vW-z1B"/>
+        <segue reference="PzQ-7N-C8B"/>
     </inferredMetricsTieBreakers>
 </document>

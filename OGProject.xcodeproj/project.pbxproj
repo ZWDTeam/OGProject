@@ -44,6 +44,15 @@
 		483B31901B401D550051474C /* OGUserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B318E1B401D550051474C /* OGUserInfoTableViewCell.m */; };
 		483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483B318F1B401D550051474C /* OGUserInfoTableViewCell.xib */; };
 		483B31951B401EF00051474C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31941B401EF00051474C /* UserModel.m */; };
+		483B31991B4033540051474C /* 15-设计圈.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31971B4033540051474C /* 15-设计圈.png */; };
+		483B319A1B4033540051474C /* 15-淘订单.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31981B4033540051474C /* 15-淘订单.png */; };
+		483B319D1B4034810051474C /* OGTaoOrderFormOGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B319C1B4034810051474C /* OGTaoOrderFormOGViewController.m */; };
+		483B31A01B4034A20051474C /* OGTaoOrderFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B319F1B4034A20051474C /* OGTaoOrderFormTableViewCell.m */; };
+		483B31A21B4035250051474C /* OGTaoOrderFormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A11B4035250051474C /* OGTaoOrderFormTableViewCell.xib */; };
+		483B31A41B4035540051474C /* 7-抢单.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A31B4035540051474C /* 7-抢单.png */; };
+		483B31A61B40355C0051474C /* 7-图.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A51B40355C0051474C /* 7-图.png */; };
+		483B31A81B40357C0051474C /* 11-添加图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A71B40357C0051474C /* 11-添加图片.png */; };
+		483B31AB1B40392F0051474C /* OrderFormInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31AA1B40392F0051474C /* OrderFormInfo.m */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -241,12 +250,10 @@
 		4A0596671B40259B00F3035D /* OGDesignerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0596651B40259B00F3035D /* OGDesignerHomeViewController.m */; };
 		4A0596681B40259B00F3035D /* OGDesignerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596661B40259B00F3035D /* OGDesignerHomeViewController.xib */; };
 		4A05966F1B40261100F3035D /* 9-查看.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966C1B40261100F3035D /* 9-查看.png */; };
-		4A0596701B40261100F3035D /* 9-分享.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966D1B40261100F3035D /* 9-分享.png */; };
 		4A0596711B40261100F3035D /* 9-评论.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05966E1B40261100F3035D /* 9-评论.png */; };
 		4A0596731B40261C00F3035D /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596721B40261C00F3035D /* search.png */; };
 		4A0596771B40263300F3035D /* 11-图1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596741B40263300F3035D /* 11-图1.png */; };
 		4A0596781B40263300F3035D /* 11-图2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596751B40263300F3035D /* 11-图2.png */; };
-		4A0596791B40263300F3035D /* 11-图3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0596761B40263300F3035D /* 11-图3.png */; };
 		4AB7A37D1B3D0BDD00AD58CC /* 8-大头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A37C1B3D0BDD00AD58CC /* 8-大头像.png */; };
 		4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A37E1B3D0C6C00AD58CC /* 2-1性别.png */; };
 		4AB7A3811B3D0E1200AD58CC /* 2-2头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7A3801B3D0E1200AD58CC /* 2-2头像.png */; };
@@ -342,6 +349,18 @@
 		483B318F1B401D550051474C /* OGUserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGUserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		483B31931B401EF00051474C /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		483B31941B401EF00051474C /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		483B31971B4033540051474C /* 15-设计圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-设计圈.png"; sourceTree = "<group>"; };
+		483B31981B4033540051474C /* 15-淘订单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-淘订单.png"; sourceTree = "<group>"; };
+		483B319B1B4034810051474C /* OGTaoOrderFormOGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGTaoOrderFormOGViewController.h; sourceTree = "<group>"; };
+		483B319C1B4034810051474C /* OGTaoOrderFormOGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGTaoOrderFormOGViewController.m; sourceTree = "<group>"; };
+		483B319E1B4034A20051474C /* OGTaoOrderFormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGTaoOrderFormTableViewCell.h; sourceTree = "<group>"; };
+		483B319F1B4034A20051474C /* OGTaoOrderFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGTaoOrderFormTableViewCell.m; sourceTree = "<group>"; };
+		483B31A11B4035250051474C /* OGTaoOrderFormTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGTaoOrderFormTableViewCell.xib; sourceTree = "<group>"; };
+		483B31A31B4035540051474C /* 7-抢单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-抢单.png"; sourceTree = "<group>"; };
+		483B31A51B40355C0051474C /* 7-图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-图.png"; sourceTree = "<group>"; };
+		483B31A71B40357C0051474C /* 11-添加图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-添加图片.png"; sourceTree = "<group>"; };
+		483B31A91B40392F0051474C /* OrderFormInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFormInfo.h; sourceTree = "<group>"; };
+		483B31AA1B40392F0051474C /* OrderFormInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFormInfo.m; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -733,6 +752,9 @@
 				482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */,
 				482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */,
 				482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */,
+				483B319E1B4034A20051474C /* OGTaoOrderFormTableViewCell.h */,
+				483B319F1B4034A20051474C /* OGTaoOrderFormTableViewCell.m */,
+				483B31A11B4035250051474C /* OGTaoOrderFormTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -742,6 +764,8 @@
 			children = (
 				48CF9A301B2E76E6003BBFBF /* OGFindViewController.h */,
 				48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */,
+				483B319B1B4034810051474C /* OGTaoOrderFormOGViewController.h */,
+				483B319C1B4034810051474C /* OGTaoOrderFormOGViewController.m */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -837,6 +861,15 @@
 				483B31941B401EF00051474C /* UserModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		483B31AC1B4039380051474C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				483B31A91B40392F0051474C /* OrderFormInfo.h */,
+				483B31AA1B40392F0051474C /* OrderFormInfo.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		484376431B303ED9006D9D56 /* model */ = {
@@ -1352,6 +1385,11 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				483B31A71B40357C0051474C /* 11-添加图片.png */,
+				483B31A51B40355C0051474C /* 7-图.png */,
+				483B31A31B4035540051474C /* 7-抢单.png */,
+				483B31971B4033540051474C /* 15-设计圈.png */,
+				483B31981B4033540051474C /* 15-淘订单.png */,
 				4866851C1B3EF81300D28493 /* 10-地址.png */,
 				4866851D1B3EF81300D28493 /* 10-电话.png */,
 				4AD9EDB21B3EBF6800BEF770 /* 4-1.png */,
@@ -1456,6 +1494,7 @@
 		48CF9A281B2E7668003BBFBF /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				483B31AC1B4039380051474C /* model */,
 				482DF09C1B31B01600D3A000 /* viewController */,
 				482DF0941B31AEC600D3A000 /* view */,
 			);
@@ -1742,6 +1781,7 @@
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
 				48A592B71B39878300392151 /* gg13.jpg in Resources */,
 				486685161B3EF47B00D28493 /* OGExprienceTableViewCell1.xib in Resources */,
+				483B31A61B40355C0051474C /* 7-图.png in Resources */,
 				48BF3A1F1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.xib in Resources */,
 				484376791B3065F4006D9D56 /* 搭配购00@2x.png in Resources */,
 				484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */,
@@ -1772,6 +1812,7 @@
 				484376B91B307C14006D9D56 /* home6.jpg in Resources */,
 				48A592891B39877100392151 /* mm7.jpg in Resources */,
 				484376B01B307C14006D9D56 /* home16.jpg in Resources */,
+				483B31A41B4035540051474C /* 7-抢单.png in Resources */,
 				48A5928E1B39877100392151 /* mm12.jpg in Resources */,
 				48A592B11B39878300392151 /* gg7.jpg in Resources */,
 				484376BB1B307C14006D9D56 /* home8.jpg in Resources */,
@@ -1786,6 +1827,8 @@
 				48A592841B39877100392151 /* mm2.jpg in Resources */,
 				4843767D1B3065F4006D9D56 /* 首页00@2x.png in Resources */,
 				48A592BB1B39878300392151 /* gg17.jpg in Resources */,
+				483B319A1B4033540051474C /* 15-淘订单.png in Resources */,
+				483B31A21B4035250051474C /* OGTaoOrderFormTableViewCell.xib in Resources */,
 				48A592851B39877100392151 /* mm3.jpg in Resources */,
 				48A592E41B39A94700392151 /* OGSchemeImagesTableViewCell.xib in Resources */,
 				48A592941B39877100392151 /* mm18.jpg in Resources */,
@@ -1806,9 +1849,11 @@
 				4AB7A3901B3D507300AD58CC /* 2-2图2.png in Resources */,
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
+				483B31A81B40357C0051474C /* 11-添加图片.png in Resources */,
 				484376AB1B307C14006D9D56 /* home11.jpg in Resources */,
 				483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */,
 				484376AD1B307C14006D9D56 /* home13.jpg in Resources */,
+				483B31991B4033540051474C /* 15-设计圈.png in Resources */,
 				482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */,
 				484376801B3065F4006D9D56 /* 我的01@2x.png in Resources */,
 				4A0596731B40261C00F3035D /* search.png in Resources */,
@@ -1902,6 +1947,7 @@
 				482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */,
 				483B318C1B3FE57C0051474C /* UINavigationBar+Awesome.m in Sources */,
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
+				483B31AB1B40392F0051474C /* OrderFormInfo.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
 				48BF3A491B3B17FF0024DA3A /* OGSendHelpModel.m in Sources */,
@@ -1931,6 +1977,7 @@
 				485FB42D1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.m in Sources */,
 				48BF3A441B3B15430024DA3A /* OGSendHelpTableViewCell2.m in Sources */,
 				48BF3A361B3B12600024DA3A /* OGSendHelpViewController.m in Sources */,
+				483B319D1B4034810051474C /* OGTaoOrderFormOGViewController.m in Sources */,
 				48A592DB1B399F5900392151 /* DGExpandheader.m in Sources */,
 				4AD9EDB11B3EAAA500BEF770 /* OGDemandDetailsView.m in Sources */,
 				484376871B306D0B006D9D56 /* OGCollocationOnlyViewController.m in Sources */,
@@ -1982,6 +2029,7 @@
 				48B4E4F11B353D180035A162 /* OGLookStrategyLayout.m in Sources */,
 				48A593021B39B1CC00392151 /* MASCompositeConstraint.m in Sources */,
 				48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */,
+				483B31A01B4034A20051474C /* OGTaoOrderFormTableViewCell.m in Sources */,
 				48B4E4F41B3541340035A162 /* OGExperienceViewController.m in Sources */,
 				483B31841B3FD2D50051474C /* MRCircularProgressView.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
@@ -2001,7 +2049,6 @@
 				48A592C11B398E4700392151 /* OGSchemeDetailViewController.m in Sources */,
 				48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */,
 				4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */,
-
 				4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */,
 				483B31831B3FD2D50051474C /* MRActivityIndicatorView.m in Sources */,
 				483B31821B3FD2D50051474C /* UIImage+MRImageEffects.m in Sources */,
@@ -2093,6 +2140,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
@@ -2209,6 +2257,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
@@ -2223,6 +2272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";

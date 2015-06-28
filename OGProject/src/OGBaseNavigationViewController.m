@@ -21,7 +21,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         //设置导航栏颜色
-//        [[UINavigationBar appearance] setBarTintColor:OG_BASE_COLOR];
+        [[UINavigationBar appearance] setBarTintColor:OG_BASE_COLOR];
         
         //设置内容颜色
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

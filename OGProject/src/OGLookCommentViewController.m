@@ -106,5 +106,9 @@
     [UIView commitAnimations];//设置调整界面的动画效果
 }
 
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 @end

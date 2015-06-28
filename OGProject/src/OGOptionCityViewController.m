@@ -49,7 +49,7 @@
     _selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     _citys = @[@"北京市",@"上海市",@"广州市",@"深圳市",@"杭州市",@"成都市"];
     
-    _currentCity = @"请保证手机已开启定位服务";
+    _currentCity = @"正在定位...";
 }
 
 
@@ -126,7 +126,19 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     _selectedIndexPath = indexPath;
+    if (indexPath.row ==0 &&indexPath.section ==0) {
+        if ([_currentCity isEqualToString:@"正在定位..."]) {
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请确保手机已开启定位" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
+            [alertView show];
+            return;
+        }
+        
+        ex_locationCity = _currentCity;
+    }else{
+        ex_locationCity  =_citys[indexPath.row];
+    }
     
+    [self.navigationController popViewControllerAnimated:YES];
     [tableView reloadData];
     
 

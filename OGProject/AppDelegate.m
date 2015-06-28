@@ -26,6 +26,8 @@
     ex_userInfo.area = @"152 mm";
     ex_userInfo.address = @"岳麓区涉外花园";
     
+    ex_identityType = OGIdentityTypeUser;
+    
     return YES;
 }
 

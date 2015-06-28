@@ -20,5 +20,7 @@ OGIdentityType ex_identityType;
 
 UserModel * ex_userInfo;
 
+NSString * ex_locationCity;
+
 
 @end

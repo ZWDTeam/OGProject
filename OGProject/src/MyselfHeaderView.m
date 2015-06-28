@@ -34,6 +34,8 @@
     CGContextSetLineWidth(context, 2.0f);
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     
+    
+    
     CGRect imageRect = _headerImageView.frame;
     CGFloat space = 6.0f;
     imageRect.origin.x -=space;
