@@ -18,7 +18,7 @@
 
 @property (strong , nonatomic)NSString * style;//装修风格
 
-@property (strong , nonatomic)NSString * typeImage;//户型图片
+@property (strong , nonatomic)UIImage * typeImage;//户型图片
 
 @property (strong , nonatomic)NSString * villgeName;//小区民称
 

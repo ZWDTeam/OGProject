@@ -11,13 +11,17 @@
 @implementation OGSendHelpTableViewCell1
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.contentTedtField.textColor = [UIColor grayColor];
+    self.contentTedtField.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    [self.delegate textFieldDidEndEditing:textField withCell:self];
 }
 
 @end

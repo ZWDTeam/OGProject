@@ -10,4 +10,8 @@
 
 @interface OGSendHelpViewController : OGBaseViewController
 
+@property (strong , nonatomic)NSIndexPath * selectedIndexPath;
+
+- (void)updataSelectdIndexPathWithText:(NSString *)text;
+
 @end

@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OGSendHelpTableViewCell1 : UITableViewCell
+@class OGSendHelpTableViewCell1;
+
+@protocol OGSendHelpTableViewCell1Delegate <NSObject>
+
+- (void)textFieldDidEndEditing:(UITextField *)textField withCell:(OGSendHelpTableViewCell1 *)cell;
+
+@end
+
+@interface OGSendHelpTableViewCell1 : UITableViewCell<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *contentTedtField;
+
+@property (weak , nonatomic)id <OGSendHelpTableViewCell1Delegate>delegate;
 
 @end

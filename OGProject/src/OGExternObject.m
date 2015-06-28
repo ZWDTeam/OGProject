@@ -16,4 +16,9 @@ NSString * ex_account;
 
 NSString * ex_password;
 
+OGIdentityType ex_identityType;
+
+UserModel * ex_userInfo;
+
+
 @end

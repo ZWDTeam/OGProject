@@ -16,7 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    ex_userInfo = [UserModel new];
+    ex_userInfo.headerImage = [UIImage imageNamed:@"gg4.jpg"];
+    ex_userInfo.nickName = @"HD";
+    ex_userInfo.sex = @"男";
+    ex_userInfo.city = @"湖南 - 长沙";
+    ex_userInfo.style = @"清晰";
+    ex_userInfo.type = @"三十两厅";
+    ex_userInfo.area = @"152 mm";
+    ex_userInfo.address = @"岳麓区涉外花园";
+    
     return YES;
 }
 

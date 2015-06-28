@@ -29,6 +29,21 @@
 		482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0B71B31C89F00D3A000 /* OGMYRepositoryViewController.m */; };
 		482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */; };
 		482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */; };
+		483B31641B3FB8760051474C /* OGSendTypeOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */; };
+		483B31671B3FBF640051474C /* PhotoOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31661B3FBF640051474C /* PhotoOptional.m */; };
+		483B31811B3FD2D50051474C /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B316C1B3FD2D50051474C /* MRBlurView.m */; };
+		483B31821B3FD2D50051474C /* UIImage+MRImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B316E1B3FD2D50051474C /* UIImage+MRImageEffects.m */; };
+		483B31831B3FD2D50051474C /* MRActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31711B3FD2D50051474C /* MRActivityIndicatorView.m */; };
+		483B31841B3FD2D50051474C /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31731B3FD2D50051474C /* MRCircularProgressView.m */; };
+		483B31851B3FD2D50051474C /* MRIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31751B3FD2D50051474C /* MRIconView.m */; };
+		483B31861B3FD2D50051474C /* MRNavigationBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31771B3FD2D50051474C /* MRNavigationBarProgressView.m */; };
+		483B31871B3FD2D50051474C /* MRProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31791B3FD2D50051474C /* MRProgressOverlayView.m */; };
+		483B31881B3FD2D50051474C /* MRMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B317D1B3FD2D50051474C /* MRMessageInterceptor.m */; };
+		483B31891B3FD2D50051474C /* MRWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31801B3FD2D50051474C /* MRWeakProxy.m */; };
+		483B318C1B3FE57C0051474C /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B318B1B3FE57C0051474C /* UINavigationBar+Awesome.m */; };
+		483B31901B401D550051474C /* OGUserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B318E1B401D550051474C /* OGUserInfoTableViewCell.m */; };
+		483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483B318F1B401D550051474C /* OGUserInfoTableViewCell.xib */; };
+		483B31951B401EF00051474C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31941B401EF00051474C /* UserModel.m */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -296,6 +311,37 @@
 		482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyNeedViewController.m; sourceTree = "<group>"; };
 		482DF0BC1B31C8E600D3A000 /* OGSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSetingViewController.h; sourceTree = "<group>"; };
 		482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSetingViewController.m; sourceTree = "<group>"; };
+		483B31621B3FB8760051474C /* OGSendTypeOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSendTypeOptionViewController.h; sourceTree = "<group>"; };
+		483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSendTypeOptionViewController.m; sourceTree = "<group>"; };
+		483B31651B3FBF640051474C /* PhotoOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoOptional.h; sourceTree = "<group>"; };
+		483B31661B3FBF640051474C /* PhotoOptional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoOptional.m; sourceTree = "<group>"; };
+		483B316B1B3FD2D50051474C /* MRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBlurView.h; sourceTree = "<group>"; };
+		483B316C1B3FD2D50051474C /* MRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBlurView.m; sourceTree = "<group>"; };
+		483B316D1B3FD2D50051474C /* UIImage+MRImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MRImageEffects.h"; sourceTree = "<group>"; };
+		483B316E1B3FD2D50051474C /* UIImage+MRImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MRImageEffects.m"; sourceTree = "<group>"; };
+		483B31701B3FD2D50051474C /* MRActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRActivityIndicatorView.h; sourceTree = "<group>"; };
+		483B31711B3FD2D50051474C /* MRActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRActivityIndicatorView.m; sourceTree = "<group>"; };
+		483B31721B3FD2D50051474C /* MRCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCircularProgressView.h; sourceTree = "<group>"; };
+		483B31731B3FD2D50051474C /* MRCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCircularProgressView.m; sourceTree = "<group>"; };
+		483B31741B3FD2D50051474C /* MRIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRIconView.h; sourceTree = "<group>"; };
+		483B31751B3FD2D50051474C /* MRIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRIconView.m; sourceTree = "<group>"; };
+		483B31761B3FD2D50051474C /* MRNavigationBarProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNavigationBarProgressView.h; sourceTree = "<group>"; };
+		483B31771B3FD2D50051474C /* MRNavigationBarProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNavigationBarProgressView.m; sourceTree = "<group>"; };
+		483B31781B3FD2D50051474C /* MRProgressOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgressOverlayView.h; sourceTree = "<group>"; };
+		483B31791B3FD2D50051474C /* MRProgressOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProgressOverlayView.m; sourceTree = "<group>"; };
+		483B317A1B3FD2D50051474C /* MRProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgress.h; sourceTree = "<group>"; };
+		483B317C1B3FD2D50051474C /* MRMessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessageInterceptor.h; sourceTree = "<group>"; };
+		483B317D1B3FD2D50051474C /* MRMessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessageInterceptor.m; sourceTree = "<group>"; };
+		483B317E1B3FD2D50051474C /* MRProgressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgressHelper.h; sourceTree = "<group>"; };
+		483B317F1B3FD2D50051474C /* MRWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWeakProxy.h; sourceTree = "<group>"; };
+		483B31801B3FD2D50051474C /* MRWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWeakProxy.m; sourceTree = "<group>"; };
+		483B318A1B3FE57C0051474C /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		483B318B1B3FE57C0051474C /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		483B318D1B401D550051474C /* OGUserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGUserInfoTableViewCell.h; sourceTree = "<group>"; };
+		483B318E1B401D550051474C /* OGUserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGUserInfoTableViewCell.m; sourceTree = "<group>"; };
+		483B318F1B401D550051474C /* OGUserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGUserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		483B31931B401EF00051474C /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		483B31941B401EF00051474C /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -709,6 +755,9 @@
 				482DF0A31B31BBC200D3A000 /* OGMyselfTableViewCell.h */,
 				482DF0A41B31BBC200D3A000 /* OGMyselfTableViewCell.m */,
 				482DF0A51B31BBC200D3A000 /* OGMyselfTableViewCell.xib */,
+				483B318D1B401D550051474C /* OGUserInfoTableViewCell.h */,
+				483B318E1B401D550051474C /* OGUserInfoTableViewCell.m */,
+				483B318F1B401D550051474C /* OGUserInfoTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -728,6 +777,66 @@
 				48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */,
 			);
 			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		483B31691B3FD2C60051474C /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				483B316A1B3FD2D50051474C /* Blur */,
+				483B316F1B3FD2D50051474C /* Components */,
+				483B317A1B3FD2D50051474C /* MRProgress.h */,
+				483B317B1B3FD2D50051474C /* Utils */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		483B316A1B3FD2D50051474C /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				483B316B1B3FD2D50051474C /* MRBlurView.h */,
+				483B316C1B3FD2D50051474C /* MRBlurView.m */,
+				483B316D1B3FD2D50051474C /* UIImage+MRImageEffects.h */,
+				483B316E1B3FD2D50051474C /* UIImage+MRImageEffects.m */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
+		483B316F1B3FD2D50051474C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				483B31701B3FD2D50051474C /* MRActivityIndicatorView.h */,
+				483B31711B3FD2D50051474C /* MRActivityIndicatorView.m */,
+				483B31721B3FD2D50051474C /* MRCircularProgressView.h */,
+				483B31731B3FD2D50051474C /* MRCircularProgressView.m */,
+				483B31741B3FD2D50051474C /* MRIconView.h */,
+				483B31751B3FD2D50051474C /* MRIconView.m */,
+				483B31761B3FD2D50051474C /* MRNavigationBarProgressView.h */,
+				483B31771B3FD2D50051474C /* MRNavigationBarProgressView.m */,
+				483B31781B3FD2D50051474C /* MRProgressOverlayView.h */,
+				483B31791B3FD2D50051474C /* MRProgressOverlayView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		483B317B1B3FD2D50051474C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				483B317C1B3FD2D50051474C /* MRMessageInterceptor.h */,
+				483B317D1B3FD2D50051474C /* MRMessageInterceptor.m */,
+				483B317E1B3FD2D50051474C /* MRProgressHelper.h */,
+				483B317F1B3FD2D50051474C /* MRWeakProxy.h */,
+				483B31801B3FD2D50051474C /* MRWeakProxy.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		483B31921B401EE00051474C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				483B31931B401EF00051474C /* UserModel.h */,
+				483B31941B401EF00051474C /* UserModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		484376431B303ED9006D9D56 /* model */ = {
@@ -1039,6 +1148,8 @@
 				48BF3A161B3AEDFB0024DA3A /* OGSchemeUnitViewController.m */,
 				48BF3A341B3B12600024DA3A /* OGSendHelpViewController.h */,
 				48BF3A351B3B12600024DA3A /* OGSendHelpViewController.m */,
+				483B31621B3FB8760051474C /* OGSendTypeOptionViewController.h */,
+				483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1266,6 +1377,8 @@
 		48CF9A161B2E7414003BBFBF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				483B31921B401EE00051474C /* Model */,
+				483B31691B3FD2C60051474C /* HUD */,
 				48A5930B1B39B40F00392151 /* category */,
 				48CF9A171B2E7420003BBFBF /* Base */,
 				48CF9A1B1B2E750C003BBFBF /* Communal */,
@@ -1277,6 +1390,8 @@
 		48CF9A171B2E7420003BBFBF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				483B318A1B3FE57C0051474C /* UINavigationBar+Awesome.h */,
+				483B318B1B3FE57C0051474C /* UINavigationBar+Awesome.m */,
 				48CF9A181B2E7434003BBFBF /* OGBaseViewController.h */,
 				48CF9A191B2E7434003BBFBF /* OGBaseViewController.m */,
 				48CF9A1F1B2E757D003BBFBF /* OGBaseNavigationViewController.h */,
@@ -1290,6 +1405,8 @@
 		48CF9A1B1B2E750C003BBFBF /* Communal */ = {
 			isa = PBXGroup;
 			children = (
+				483B31651B3FBF640051474C /* PhotoOptional.h */,
+				483B31661B3FBF640051474C /* PhotoOptional.m */,
 				48A592D51B399F4000392151 /* DGExpandheader */,
 				48B4E4CC1B3508B90035A162 /* DGSegmentControl */,
 				48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */,
@@ -1690,6 +1807,7 @@
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
 				484376AB1B307C14006D9D56 /* home11.jpg in Resources */,
+				483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */,
 				484376AD1B307C14006D9D56 /* home13.jpg in Resources */,
 				482DF0A71B31BBC200D3A000 /* OGMyselfTableViewCell.xib in Resources */,
 				484376801B3065F4006D9D56 /* 我的01@2x.png in Resources */,
@@ -1782,6 +1900,7 @@
 			files = (
 				48B4E4FF1B3542280035A162 /* OGRegisterFirstViewController.m in Sources */,
 				482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */,
+				483B318C1B3FE57C0051474C /* UINavigationBar+Awesome.m in Sources */,
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
 				48CF9A1A1B2E7434003BBFBF /* OGBaseViewController.m in Sources */,
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
@@ -1790,9 +1909,12 @@
 				48B4E52A1B3588710035A162 /* OGCollectionReusableView.m in Sources */,
 				48A593061B39B1CC00392151 /* MASViewAttribute.m in Sources */,
 				485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */,
+				483B31851B3FD2D50051474C /* MRIconView.m in Sources */,
 				482DF0A61B31BBC200D3A000 /* OGMyselfTableViewCell.m in Sources */,
 				48A5930A1B39B1CC00392151 /* View+MASAdditions.m in Sources */,
 				1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */,
+				483B31861B3FD2D50051474C /* MRNavigationBarProgressView.m in Sources */,
+				483B31951B401EF00051474C /* UserModel.m in Sources */,
 				48A592C51B398EC300392151 /* OGSchemeTableViewCell.m in Sources */,
 				4866851A1B3EF4BF00D28493 /* OGExprienceTableViewCell2.m in Sources */,
 				48CF99F01B2E724E003BBFBF /* AppDelegate.m in Sources */,
@@ -1815,21 +1937,25 @@
 				48B4E50E1B3542E40035A162 /* OGForgetLastViewController.m in Sources */,
 				48B4E5051B3542620035A162 /* OGRegisterLastViewController.m in Sources */,
 				482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */,
+				483B31671B3FBF640051474C /* PhotoOptional.m in Sources */,
 				48A593091B39B1CC00392151 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				48CF99ED1B2E724E003BBFBF /* main.m in Sources */,
 				482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */,
 				48A593031B39B1CC00392151 /* MASConstraint.m in Sources */,
 				48A5930E1B39B46100392151 /* OGPriceLabel.m in Sources */,
 				48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */,
+				483B31891B3FD2D50051474C /* MRWeakProxy.m in Sources */,
 				4843768A1B306D38006D9D56 /* OGCollocationMoreViewController.m in Sources */,
 				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
 				4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */,
 				484C340C1B366DFD0031306D /* OGOptionCityViewController.m in Sources */,
+				483B31871B3FD2D50051474C /* MRProgressOverlayView.m in Sources */,
 				482DF0B51B31C7B700D3A000 /* OGMyAttentionViewController.m in Sources */,
 				48B4E4D61B3511680035A162 /* OGLooSchemeViewController.m in Sources */,
 				48B4E50B1B3542D30035A162 /* OGForgetFirstViewController.m in Sources */,
 				48BF3A321B3AFC900024DA3A /* OGUnitCollectionViewCell.m in Sources */,
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
+				483B31881B3FD2D50051474C /* MRMessageInterceptor.m in Sources */,
 				48B4E4ED1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.m in Sources */,
 				486685151B3EF47B00D28493 /* OGExprienceTableViewCell1.m in Sources */,
 				48BF3A1E1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.m in Sources */,
@@ -1841,6 +1967,7 @@
 				48BF3A2E1B3AFBEF0024DA3A /* OGUnitCollectionView.m in Sources */,
 				48BF3A231B3AF2480024DA3A /* OGSchemeUnitTableViewCell2.m in Sources */,
 				484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */,
+				483B31811B3FD2D50051474C /* MRBlurView.m in Sources */,
 				485FB4281B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.m in Sources */,
 				4A0596631B40257E00F3035D /* OGDesignCircleViewController.m in Sources */,
 				48CF9A531B2EC5E8003BBFBF /* LocationHeaderView.m in Sources */,
@@ -1856,6 +1983,7 @@
 				48A593021B39B1CC00392151 /* MASCompositeConstraint.m in Sources */,
 				48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */,
 				48B4E4F41B3541340035A162 /* OGExperienceViewController.m in Sources */,
+				483B31841B3FD2D50051474C /* MRCircularProgressView.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
 				485FB4211B3DA2E60010C4F1 /* OGStrategyClassViewController.m in Sources */,
 				48A592E91B39B0CF00392151 /* OGSchemeHeaderView.m in Sources */,
@@ -1865,7 +1993,9 @@
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
 				485FB4241B3DA79D0010C4F1 /* OGStrategyDetailViewController.m in Sources */,
+				483B31901B401D550051474C /* OGUserInfoTableViewCell.m in Sources */,
 				48A593071B39B1CC00392151 /* MASViewConstraint.m in Sources */,
+				483B31641B3FB8760051474C /* OGSendTypeOptionViewController.m in Sources */,
 				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
 				48B4E4E71B3530A80035A162 /* LookStrategyViewController.m in Sources */,
 				48A592C11B398E4700392151 /* OGSchemeDetailViewController.m in Sources */,
@@ -1873,6 +2003,8 @@
 				4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */,
 
 				4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */,
+				483B31831B3FD2D50051474C /* MRActivityIndicatorView.m in Sources */,
+				483B31821B3FD2D50051474C /* UIImage+MRImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

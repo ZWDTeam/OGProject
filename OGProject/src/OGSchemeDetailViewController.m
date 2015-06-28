@@ -37,25 +37,9 @@
     view.headerImageView.image = [UIImage imageNamed:@"mm14.jpg"];
     
   _header = [DGExpandheader expandWithScrollView:_tableView expandView:view];
-
-    UIButton * btntest = [[UIButton alloc]init];
-    
-    [btntest setTitle:@"test" forState:UIControlStateNormal];
-    [btntest setBackgroundColor:[UIColor redColor]];
-    [btntest setFrame:CGRectMake(100, 400, 100, 100)];
-    
-    [btntest addTarget:self action:@selector(goComment) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:btntest];
     
     
 //    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-}
-
--(void)goComment{
-    OGLookCommentViewController * commentVC = [[OGLookCommentViewController alloc]init];
-    
-    [self.navigationController pushViewController:commentVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -138,6 +122,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row ==2) {
+        OGLookCommentViewController * commentVC = [[OGLookCommentViewController alloc]init];
+        
+        [self.navigationController pushViewController:commentVC animated:YES];
+        return;
+    }
+    
     if (indexPath.row >=3) {
         [self performSegueWithIdentifier:@"pushNnitViewController" sender:indexPath];
     }

@@ -11,6 +11,7 @@
 #import "OGSchemeUnitTableViewCell2.h"
 #import "OGTableSectionView.h"
 #import "OGUnitCollectionView.h"
+#import "OGLookCommentViewController.h"
 
 @interface OGSchemeUnitViewController ()<UITableViewDataSource,UITableViewDelegate,OGUnitCollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -133,6 +134,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        OGLookCommentViewController * commentVC = [[OGLookCommentViewController alloc]init];
+        
+        [self.navigationController pushViewController:commentVC animated:YES];
+
+    }
    
 }
 

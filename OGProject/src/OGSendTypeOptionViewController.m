@@ -1,59 +1,62 @@
 //
-//  OGSetingViewController.m
+//  OGSendTypeOptionViewController.m
 //  OGProject
 //
-//  Created by 钟伟迪 on 15/6/17.
+//  Created by 钟伟迪 on 15/6/28.
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#import "OGSetingViewController.h"
+#import "OGSendTypeOptionViewController.h"
+#import "OGSendHelpViewController.h"
 
-@interface OGSetingViewController ()<UITableViewDataSource , UITableViewDelegate>
+@interface OGSendTypeOptionViewController ()<UITableViewDataSource,UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong , nonatomic)NSArray * items;
 
 @end
 
-@implementation OGSetingViewController
+@implementation OGSendTypeOptionViewController
+
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.title = @"设置";
-        
-        _items = @[@"意见反馈",@"关于欧工软装",@"给欧工软装评分"];
+        self.title = @"选择分类";
+        _items = @[@"一居室",@"别墅",@"复式楼",@"客厅",@"两居室"];
     }
     return self;
 }
 
 
-#pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _items.count;
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.items.count;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString * identifier = @"cell";
+static NSString * identifier = @"cell";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
+    if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.textColor = [UIColor grayColor];
     }
-    cell.textLabel.text = _items[indexPath.row];
+    cell.textLabel.text = self.items[indexPath.row];
     
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController popViewControllerAnimated:YES];
+    [self.sendhelpController updataSelectdIndexPathWithText:self.items[indexPath.row]];
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

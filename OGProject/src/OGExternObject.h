@@ -7,6 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserModel.h"
+
+typedef NS_ENUM(NSInteger, OGIdentityType) {
+    OGIdentityTypeUser,//用户
+    OGIdentityTypeStylist//设计师
+};
 
 @interface OGExternObject : NSObject
 
@@ -18,5 +24,14 @@ extern NSString * ex_account;
 
 //密码
 extern NSString * ex_password;
+
+//账户类型
+extern OGIdentityType ex_identityType;
+
+//定位地址
+extern NSString * ex_locationCity;
+
+//用户信息
+extern UserModel * ex_userInfo;
 
 @end
