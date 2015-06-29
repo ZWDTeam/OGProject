@@ -41,6 +41,7 @@
 		483B06B21B41AE2200FDBBEF /* 首页轮播1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06AF1B41AE2200FDBBEF /* 首页轮播1.jpg */; };
 		483B06B31B41AE2200FDBBEF /* 首页轮播2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06B01B41AE2200FDBBEF /* 首页轮播2.jpg */; };
 		483B06B41B41AE2200FDBBEF /* 首页轮播3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06B11B41AE2200FDBBEF /* 首页轮播3.jpg */; };
+		483B06B71B41AECF00FDBBEF /* ConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B06B61B41AECF00FDBBEF /* ConfigFile.m */; };
 		483B31641B3FB8760051474C /* OGSendTypeOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */; };
 		483B31671B3FBF640051474C /* PhotoOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31661B3FBF640051474C /* PhotoOptional.m */; };
 		483B31811B3FD2D50051474C /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B316C1B3FD2D50051474C /* MRBlurView.m */; };
@@ -345,6 +346,8 @@
 		483B06AF1B41AE2200FDBBEF /* 首页轮播1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播1.jpg"; sourceTree = "<group>"; };
 		483B06B01B41AE2200FDBBEF /* 首页轮播2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播2.jpg"; sourceTree = "<group>"; };
 		483B06B11B41AE2200FDBBEF /* 首页轮播3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播3.jpg"; sourceTree = "<group>"; };
+		483B06B51B41AECF00FDBBEF /* ConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigFile.h; sourceTree = "<group>"; };
+		483B06B61B41AECF00FDBBEF /* ConfigFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigFile.m; sourceTree = "<group>"; };
 		483B31621B3FB8760051474C /* OGSendTypeOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSendTypeOptionViewController.h; sourceTree = "<group>"; };
 		483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSendTypeOptionViewController.m; sourceTree = "<group>"; };
 		483B31651B3FBF640051474C /* PhotoOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoOptional.h; sourceTree = "<group>"; };
@@ -1568,6 +1571,8 @@
 		48CF9A3E1B2E7B13003BBFBF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				483B06B51B41AECF00FDBBEF /* ConfigFile.h */,
+				483B06B61B41AECF00FDBBEF /* ConfigFile.m */,
 				48A592EA1B39B1CC00392151 /* Masonry */,
 				484376481B303F84006D9D56 /* SGFocus */,
 			);
@@ -2073,6 +2078,7 @@
 				4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */,
 				4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
+				483B06B71B41AECF00FDBBEF /* ConfigFile.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				1DBE4E501B419B7D009DB23C /* OGRegisterLastViewController.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
