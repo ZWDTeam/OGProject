@@ -276,6 +276,7 @@
 		4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB21B3EBF6800BEF770 /* 4-1.png */; };
 		4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */; };
 		4ADEA6951B41128000FFA61D /* 9-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEA6941B41128000FFA61D /* 9-share.png */; };
+		4ADEA6981B41567E00FFA61D /* WWCommentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -680,6 +681,8 @@
 		4AD9EDB21B3EBF6800BEF770 /* 4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-1.png"; sourceTree = "<group>"; };
 		4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-户型图.png"; sourceTree = "<group>"; };
 		4ADEA6941B41128000FFA61D /* 9-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-share.png"; sourceTree = "<group>"; };
+		4ADEA6961B41567E00FFA61D /* WWCommentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCommentLabel.h; sourceTree = "<group>"; };
+		4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCommentLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1591,6 +1594,8 @@
 				4A05965C1B40257E00F3035D /* OGDesignCircleTableViewCell.m */,
 				4A05965D1B40257E00F3035D /* OGDesignCircleView.h */,
 				4A05965E1B40257E00F3035D /* OGDesignCircleView.m */,
+				4ADEA6961B41567E00FFA61D /* WWCommentLabel.h */,
+				4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -2043,6 +2048,7 @@
 				48A593051B39B1CC00392151 /* MASLayoutConstraint.m in Sources */,
 				48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
+				4ADEA6981B41567E00FFA61D /* WWCommentLabel.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
 				485FB4241B3DA79D0010C4F1 /* OGStrategyDetailViewController.m in Sources */,
 				483B31901B401D550051474C /* OGUserInfoTableViewCell.m in Sources */,

@@ -271,7 +271,7 @@
     for (int i = 0; i<arrayCommentList.count; i++) {
         NSDictionary * dicComment = arrayCommentList[i];
         
-        [cell.viewComment addSubview: [self createrCommentViewWithUserName:dicComment[@"commentUserName"] commentContext:dicComment[@"commentContext"]]];
+        [cell.viewComment addSubview: [self createrCommentViewWithUserName:dicComment[@"commentUserName"] commentContext:dicComment[@"commentContext"] WithCommentId:[dicComment[@"commentId"] intValue]]];
     }
     
     if (postionY==10) {
@@ -322,7 +322,7 @@
 }
 
 //function  用于制作评论label
--(UILabel *)createrCommentViewWithUserName:(NSString *)strUserName commentContext:(NSString *)strCommentContext{
+-(WWCommentLabel *)createrCommentViewWithUserName:(NSString *)strUserName commentContext:(NSString *)strCommentContext WithCommentId:(int)index{
     NSString * strTemp = [NSString stringWithFormat:@"%@：%@",strUserName,strCommentContext];
     
     
@@ -330,7 +330,7 @@
     [str addAttribute:NSForegroundColorAttributeName value:Color_Blue_Text range:NSMakeRange(0,strUserName.length+1)];
     
     
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(kPercenX_scale(10), postionY, kPercenX_scale(280), 20)];
+    WWCommentLabel * label = [[WWCommentLabel alloc]initWithFrame:CGRectMake(kPercenX_scale(10), postionY, kPercenX_scale(280), 20)];
     [label setFont:Font_middle];
     [label setTextColor:Color_Grey_Text];
     [label setNumberOfLines:0];
@@ -341,9 +341,16 @@
     
     postionY = CGRectGetMaxY(label.frame)+6;
     
+    label.highlightedColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
+    label.shouldUnderline = YES;
+    [label addTarget:self action:@selector(labelClicked:)withTag:index];
+    [label setTag:index];
+    
     return label;
 }
-
+-(void)labelClicked:(UIControl*)sender{
+    [self.delegate commentSelectWithCommentId:sender.tag];
+}
 
 //刷新单行cell
 -(void)reloadTableRows:(NSInteger)index withNewData:(NSDictionary *)dicTemp{

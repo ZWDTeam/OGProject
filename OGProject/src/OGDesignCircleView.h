@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-
+#import "WWCommentLabel.h"
 @protocol CircleViewDelegate <NSObject>
 
 @required
@@ -18,6 +18,8 @@
 -(void)browseWithIndex:(NSInteger)index;
 -(void)commentWithIndex:(NSInteger)index context:(NSString *)strContext;
 
+
+-(void)commentSelectWithCommentId:(NSInteger)index;
 @end
 
 @interface OGDesignCircleView : UIView<UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>

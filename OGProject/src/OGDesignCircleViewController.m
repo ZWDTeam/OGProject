@@ -35,13 +35,13 @@
     
     //评论模拟
     NSDictionary * dicTemp01 = [NSDictionary dictionaryWithObjectsAndKeys: @"勇敢的少年",@"commentUserName",
-                                @"今天的天气真是好，我又要踏上我的冒险，去村民家里找装备啦，要知道，我的目标可是星辰大海哟~",@"commentContext",nil];
+                                @"今天的天气真是好，我又要踏上我的冒险，去村民家里找装备啦，要知道，我的征途是星辰大海哟！~",@"commentContext",@"123",@"commentId",nil];
     
     NSDictionary * dicTemp02 = [NSDictionary dictionaryWithObjectsAndKeys: @"追求完美的男人",@"commentUserName",
-                                @"完美是谁？你是完美么？",@"commentContext",nil];
+                                @"完美是谁？你是完美么？",@"commentContext",@"234",@"commentId",nil];
     
     NSDictionary * dicTemp03 = [NSDictionary dictionaryWithObjectsAndKeys: @"Lily",@"commentUserName",
-                                @"人穷尽一生追寻另一个人类,\r\n共度一生的事,\r\n我一直无法理解,\r\n或许我自己太有意思，无需他人陪伴,\r\n所以 我祝你们在对方身上得到的快乐,\r\n与我给自己的一样多",@"commentContext",nil];
+                                @"人穷尽一生追寻另一个人类,\r\n共度一生的事,\r\n我一直无法理解,\r\n或许我自己太有意思，无需他人陪伴,\r\n所以 我祝你们在对方身上得到的快乐,\r\n与我给自己的一样多",@"commentContext",@"345",@"commentId",nil];
 
     NSArray * arrayComment = [[NSArray alloc]initWithObjects:dicTemp01,dicTemp02, dicTemp03,nil];
     
@@ -138,7 +138,7 @@
         
         NSMutableArray * arrayTemp = [NSMutableArray arrayWithArray:dicTemp[@"commentList"]];
         NSDictionary * newComment = [NSDictionary dictionaryWithObjectsAndKeys:@"钟伟迪",@"commentUserName",
-                                     strContext,@"commentContext", nil];
+                                     strContext,@"commentContext",@"456",@"commentId", nil];
         [arrayTemp addObject:newComment];
         [dicTemp setObject:arrayTemp forKey:@"commentList"];
         
@@ -146,6 +146,11 @@
         [DesignCircleView reloadTableRows:index withNewData:dicTemp];
     }
     
+}
+
+//评论点击方法
+-(void)commentSelectWithCommentId:(NSInteger)index{
+    WWLog(@"点击的评论id --%ld",(long)index);
 }
 
 
