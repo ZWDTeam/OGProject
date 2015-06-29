@@ -341,7 +341,7 @@
     
     postionY = CGRectGetMaxY(label.frame)+6;
     
-    label.highlightedColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
+    label.highlightedColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
     label.shouldUnderline = YES;
     [label addTarget:self action:@selector(labelClicked:)withTag:index];
     [label setTag:index];
