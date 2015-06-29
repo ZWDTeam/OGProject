@@ -41,10 +41,10 @@
     [self addSubview:view];
     
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(@(0));
-        make.left.mas_equalTo(@0);
-        make.height.mas_equalTo(@70);
-        make.right.mas_equalTo(@0);
+        make.bottom.mas_equalTo(@(0));//和底部保持0
+        make.left.mas_equalTo(@0);//和左边保持0
+        make.height.mas_equalTo(@70);//高保持70
+        make.right.mas_equalTo(@0);//右边保持0
     }];
 
     
