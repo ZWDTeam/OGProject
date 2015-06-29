@@ -275,6 +275,7 @@
 		4AD9EDB11B3EAAA500BEF770 /* OGDemandDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */; };
 		4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB21B3EBF6800BEF770 /* 4-1.png */; };
 		4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */; };
+		4ADEA6951B41128000FFA61D /* 9-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEA6941B41128000FFA61D /* 9-share.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -678,6 +679,7 @@
 		4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsView.m; sourceTree = "<group>"; };
 		4AD9EDB21B3EBF6800BEF770 /* 4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-1.png"; sourceTree = "<group>"; };
 		4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-户型图.png"; sourceTree = "<group>"; };
+		4ADEA6941B41128000FFA61D /* 9-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-share.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -722,6 +724,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0596741B40263300F3035D /* 11-图1.png */,
+				4ADEA6941B41128000FFA61D /* 9-share.png */,
 				4A0596751B40263300F3035D /* 11-图2.png */,
 				4A0596761B40263300F3035D /* 11-图3.png */,
 				4A05966C1B40261100F3035D /* 9-查看.png */,
@@ -1784,6 +1787,7 @@
 				483B31A61B40355C0051474C /* 7-图.png in Resources */,
 				48BF3A1F1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.xib in Resources */,
 				484376791B3065F4006D9D56 /* 搭配购00@2x.png in Resources */,
+				4ADEA6951B41128000FFA61D /* 9-share.png in Resources */,
 				484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */,
 				48BF3A241B3AF2480024DA3A /* OGSchemeUnitTableViewCell2.xib in Resources */,
 				48A592911B39877100392151 /* mm15.jpg in Resources */,

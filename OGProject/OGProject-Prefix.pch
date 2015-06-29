@@ -90,6 +90,9 @@
 
 #define Color_Red_Text RGBCOLOR(255,0,0)
 
+
+#define Color_Blue_Text RGBCOLOR(0,174,141)
+
 //文字-深灰色
 
 #define Color_Grey_Text  RGBCOLOR(151,153,154)

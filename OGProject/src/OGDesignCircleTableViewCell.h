@@ -23,7 +23,16 @@
 @property (strong) UIButton * btnBrowse;
 @property (strong) UIButton * btnComment;
 
+@property (strong) UILabel * labelBorwse;
+@property (strong) UILabel * labelComment;
+
+
 //图片底view
 @property (strong) UIView * viewPic;
 
+
+//评论view
+@property (strong) UIView * viewComment;
+
+@property (strong) UIImageView * imgGrey;
 @end

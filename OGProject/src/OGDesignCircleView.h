@@ -16,7 +16,7 @@
 
 -(void)shareWithIndex:(NSInteger)index;
 -(void)browseWithIndex:(NSInteger)index;
--(void)commentWithIndex:(NSInteger)index;
+-(void)commentWithIndex:(NSInteger)index context:(NSString *)strContext;
 
 @end
 
@@ -26,8 +26,16 @@
 
 -(id)initDesignCircleView;
 
-@property (nonatomic,assign) id<CircleViewDelegate> delegate;
+/**
+ *  刷新列表单行--主要用于评论
+ *
+ *  @param index   rows
+ *  @param dicTemp data
+ */
+-(void)reloadTableRows:(NSInteger)index withNewData:(NSDictionary *)dicTemp;
 
+@property (nonatomic,assign) id<CircleViewDelegate> delegate;
+@property (strong) NSMutableArray * arrTableData;
 
 
 /**
@@ -36,5 +44,8 @@
  *  @param array 数据源
  */
 -(void)reloadTableViewWithArray:(NSArray *)array;
+
+
+@property (strong)UIView * viewSubmitComment;
 
 @end

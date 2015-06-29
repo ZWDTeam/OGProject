@@ -13,13 +13,14 @@
 {
     UITextField * tfSearch;
     UIView * viewMask;
-    
-    
     UITableView * tableViewDesignerMsg;
-    
-    NSMutableArray * arrTableData;
+    CGFloat postionY;
+    UITextField * tfComment;
+    NSInteger commentId;
 }
 @synthesize delegate = _delegate;
+@synthesize viewSubmitComment = _viewSubmitComment;
+@synthesize arrTableData = _arrTableData;
 -(id)initDesignCircleView{
     self = [super initWithFrame:CGRectMake(0, 0, MainView_Width, MainView_Height)];
     
@@ -43,34 +44,85 @@
         
         [imgSearch addSubview:tfSearch];
         
+        //列表创建
+        tableViewDesignerMsg = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imgSearch.frame), MainView_Width, MainView_Height-CGRectGetMaxY(imgSearch.frame))];
+        [tableViewDesignerMsg setDelegate:self];
+        [tableViewDesignerMsg setDataSource:self];
+        tableViewDesignerMsg.separatorStyle = UITableViewCellSelectionStyleNone;
+        [tableViewDesignerMsg setAllowsSelection:NO];
+        
+        [self addSubview:tableViewDesignerMsg];
+        
+        
+        //遮罩
         viewMask = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imgSearch.frame), MainView_Width, MainView_Height)];
         [viewMask setBackgroundColor:[UIColor clearColor]];
         UITapGestureRecognizer * tapMissKeyboard = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(misskerboard)];
         [viewMask addGestureRecognizer:tapMissKeyboard];
         [viewMask setHidden:YES];
+        [viewMask setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.7]];
         
         [self addSubview:viewMask];
         
+        //输入框创建
         
-        //列表创建
-        tableViewDesignerMsg = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imgSearch.frame), MainView_Width, MainView_Height-CGRectGetMaxY(imgSearch.frame))];
-        [tableViewDesignerMsg setDelegate:self];
-        [tableViewDesignerMsg setDataSource:self];
-        //去掉分割线
-        //tableViewDesignerMsg.separatorStyle = UITableViewCellSelectionStyleNone;
+        self.viewSubmitComment = [[UIView alloc]init];
+        [self.viewSubmitComment setBackgroundColor:Color_Brey_UIBG];
+        [self.viewSubmitComment setFrame:CGRectMake(0, MainView_Height-55, MainView_Width, 55)];
+        [self.viewSubmitComment setUserInteractionEnabled:YES];
+        [self.viewSubmitComment setHidden:YES];
+        [self addSubview:self.viewSubmitComment];
         
-        //设置table只读
-        [tableViewDesignerMsg setAllowsSelection:NO];
+        
+        
+        UIImageView * imgTfBg = [[UIImageView alloc]init];
+        [imgTfBg setImage:[UIImage imageNamed:@"registerTextFieldBG.png"]];
+        [imgTfBg setFrame:CGRectMake(kPercenX_scale(5), 11, kPercenX_scale(270), 33)];
+        [imgTfBg setUserInteractionEnabled:YES];
+        
+        [self.viewSubmitComment addSubview:imgTfBg];
+        
+        
+        tfComment = [[UITextField alloc]init];
+        
+        [tfComment setFrame:CGRectMake(4, 6, kPercenX_scale(265), 21)];
+        [tfComment setPlaceholder:@"请输入评论"];
+        [tfComment setBorderStyle:UITextBorderStyleNone];
+        [tfComment setDelegate:self];
+        tfComment.tag = 90001;
+        
+        [imgTfBg addSubview:tfComment];
+        
+        
+        UIButton * btnSubmit = [[UIButton alloc]init];
+        
+        [btnSubmit setFrame:CGRectMake(kPercenX_scale(280),11 , 36, 33)];
+        [btnSubmit setTitle:@"评论" forState:UIControlStateNormal];
+        [btnSubmit setTitleColor:Color_Black_Text forState:UIControlStateNormal];
+        [btnSubmit addTarget:self action:@selector(submitComment)forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        [self.viewSubmitComment addSubview:btnSubmit];
+        
 
-        
-        [self addSubview:tableViewDesignerMsg];
         
     }
     return self;
 }
 
+
+#pragma mark - 评论提交
+-(void)submitComment{
+    [self.delegate commentWithIndex:commentId context:tfComment.text];
+    self.viewSubmitComment.hidden = YES;
+    [self misskerboard];
+}
+
 -(void)misskerboard{
     tfSearch.text = @"";
+    tfComment.text = @"";
+    viewMask.hidden = YES;
+    
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
@@ -88,20 +140,31 @@
         textField.text = @"";
     }
     
+    if (textField.tag == 90001) {
+        [self submitComment];
+        
+    }
+    
     return YES;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    if (textField.tag == 10001) {
+    if (textField.tag == 10001||textField.tag == 90001) {
         viewMask.hidden = NO;
     }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    viewMask.hidden = YES;
+    self.viewSubmitComment.hidden = YES;
+
 }
 
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return arrTableData.count;
+    return _arrTableData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -109,20 +172,24 @@
     
     OGDesignCircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    if(cell == nil) {
+    if(!cell) {
         cell = [[OGDesignCircleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     else
     {
-        //删除cell的所有子视图
-        while ([cell.viewPic.subviews lastObject] != nil)
-        {
-            [(UIView*)[cell.viewPic.subviews lastObject] removeFromSuperview];
+        //避免重用机制的干扰
+        while ([cell.viewComment.subviews lastObject] != nil) {
+            [(UIView *)[cell.viewComment.subviews lastObject] removeFromSuperview];
         }
+        
+        while ([cell.viewPic.subviews lastObject] != nil) {
+            [(UIView *)[cell.viewPic.subviews lastObject] removeFromSuperview];
+        }
+       
     }
 
     
-    NSDictionary * dicTemp = arrTableData[indexPath.row];
+    NSDictionary * dicTemp = _arrTableData[indexPath.row];
     
     [cell.imguserPic setImage:[UIImage imageNamed:dicTemp[@"userPic"]]];
     [cell.labelUserName setText:dicTemp[@"userName"]];
@@ -131,28 +198,26 @@
     
     
     //计算姓名宽度
-    CGRect nameRect = [self getTextFrameWithText:dicTemp[@"userName"] withSize:iphone_size_scale(100, 1000) withFont:Font_title_middle];
+    CGRect nameRect = [self getTextFrameWithText:dicTemp[@"userName"] withSize:iphone_size_scale(150, 1000) withFont:Font_title_middle];
+    [cell.labelUserName setFrame:CGRectMake(cell.labelUserName.frame.origin.x, cell.labelUserName.frame.origin.y, nameRect.size.width, 15)];
+    [cell.imgUserSex setFrame:CGRectMake(CGRectGetMaxX(cell.labelUserName.frame)+kPercenX_scale(4),CGRectGetMinY(cell.labelUserName.frame), kPercenX_scale(9), kPercenX_scale(13)) ];
     
-    [cell.labelUserName setFrame:CGRectMake(cell.labelUserName.frame.origin.x, cell.labelUserName.frame.origin.y, nameRect.size.width, nameRect.size.height)];
     
-    UIImageView * userSex = [[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(cell.labelUserName.frame)+kPercenX_scale(4),CGRectGetMinY(cell.labelUserName.frame)+2, kPercenX_scale(9), kPercenX_scale(13)) ];
-    
+    //性别
     //1是女 2是男
     if ([dicTemp[@"userSex"]isEqualToString:@"1"]) {
-        [userSex setImage:[UIImage imageNamed:@"2-1性别.png"]];
+        [cell.imgUserSex setImage:[UIImage imageNamed:@"2-1性别.png"]];
     }
     else
     {
-        [userSex setImage:[UIImage imageNamed:@"2-1性别.png"]];
+        [cell.imgUserSex setImage:[UIImage imageNamed:@"2-1性别.png"]];
     }
-    
-    [cell addSubview:userSex];
     
     
     //vip标记
-    UIImageView * imgVipLevel = [[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(userSex.frame)+kPercenX_scale(4), CGRectGetMinY(userSex.frame), 17, 13)];
-    [imgVipLevel setImage:[UIImage imageNamed:dicTemp[@"vipLevel"]]];
-    [cell addSubview:imgVipLevel];
+    [cell.imgUserVipLevel setFrame:CGRectMake(CGRectGetMaxX(cell.imgUserSex.frame)+kPercenX_scale(4), CGRectGetMinY(cell.imgUserSex.frame), 17, 13)];
+    [cell.imgUserVipLevel setImage:[UIImage imageNamed:dicTemp[@"vipLevel"]]];
+    [cell addSubview:cell.imgUserVipLevel];
     
     
     //内容
@@ -160,6 +225,8 @@
     CGRect contextRect = [self getTextFrameWithText:dicTemp[@"context"] withSize:iphone_size_scale(300, 1000) withFont:Font_middle];
     [cell.labelContext setFrame:CGRectMake(cell.labelContext.frame.origin.x, cell.labelContext.frame.origin.y, contextRect.size.width, contextRect.size.height)];
     
+    
+#pragma matk - 图片创建
     //图片
     NSArray * arrayTemp = dicTemp[@"CirclePic"];
     
@@ -178,66 +245,46 @@
 
     }
     
+    
 #pragma share
-    UIButton * btnShare = [[UIButton alloc]initWithFrame:CGRectMake(kPercenX_scale(10), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
-    [btnShare setImage:[UIImage imageNamed:@"9-分享.png"] forState:UIControlStateNormal];
-    btnShare.layer.masksToBounds= YES;
-    btnShare.layer.cornerRadius =  14;
-    btnShare.layer.borderColor = Color_Grey_Text.CGColor;
-    btnShare.layer.borderWidth = 1;
-    btnShare.contentEdgeInsets = UIEdgeInsetsMake(8,15,8,27);
-    
-    [btnShare setTag:10000+indexPath.row];
-    [btnShare addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [cell addSubview:btnShare];
-    
+    [cell.btnShare setFrame:CGRectMake(kPercenX_scale(10), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
+    [cell.btnShare setTag:10000+indexPath.row];
+    [cell.btnShare addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
     
 #pragma comment
-    UIButton * btnComment = [[UIButton alloc]initWithFrame:CGRectMake(kPercenX_scale(260), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
-    [btnComment setTintColor:Color_Grey_Text];
-    [btnComment setImage:[UIImage imageNamed:@"9-评论.png"] forState:UIControlStateNormal];
-    btnComment.layer.masksToBounds= YES;
-    btnComment.layer.cornerRadius =  14;
-    btnComment.layer.borderColor = Color_Grey_Text.CGColor;
-    btnComment.layer.borderWidth = 1;
-    btnComment.contentEdgeInsets = UIEdgeInsetsMake(9,12,7,27);
-    
-    [btnComment setTag:30000+indexPath.row];
-    [btnComment addTarget:self action:@selector(comment:) forControlEvents:UIControlEventTouchUpInside];
-
-    
-    [cell addSubview:btnComment];
-    
-    UILabel * labelComment = [[UILabel alloc]initWithFrame:CGRectMake(30, 9, 20, 10)];
-    [labelComment setTextColor:Color_Grey_Text];
-    [labelComment setFont:Font_small];
-    [labelComment setText:dicTemp[@"comment"]];
-    [btnComment addSubview:labelComment];
+    [cell.btnComment setFrame:CGRectMake(kPercenX_scale(260), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
+    [cell.btnComment setTag:30000+indexPath.row];
+    [cell.btnComment addTarget:self action:@selector(comment:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.labelComment setText:dicTemp[@"comment"]];
 
 #pragma browse
-    UIButton * btnBrowse = [[UIButton alloc]initWithFrame:CGRectMake(kPercenX_scale(205), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
-    [btnBrowse setTintColor:Color_Grey_Text];
-    [btnBrowse setImage:[UIImage imageNamed:@"9-查看.png"] forState:UIControlStateNormal];
-    btnBrowse.layer.masksToBounds= YES;
-    btnBrowse.layer.cornerRadius =  14;
-    btnBrowse.layer.borderColor = Color_Grey_Text.CGColor;
-    btnBrowse.layer.borderWidth = 1;
-    btnBrowse.contentEdgeInsets = UIEdgeInsetsMake(9,10,9,27);
-    
-    [btnBrowse setTag:20000+indexPath.row];
-    [btnBrowse addTarget:self action:@selector(browse:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.btnBrowse setFrame:CGRectMake(kPercenX_scale(205), CGRectGetMaxY(cell.viewPic.frame), 55, 30)];
+    [cell.btnBrowse setTag:20000+indexPath.row];
+    [cell.btnBrowse addTarget:self action:@selector(browse:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.labelBorwse setText:dicTemp[@"browse"]];
 
-
+#pragma mark - 评论创建
+    postionY = 10;
     
-    [cell addSubview:btnBrowse];
+    NSArray * arrayCommentList = dicTemp[@"commentList"];
     
-    UILabel * labelBrowse = [[UILabel alloc]initWithFrame:CGRectMake(30, 9, 20, 10)];
-    [labelBrowse setTextColor:Color_Grey_Text];
-    [labelBrowse setFont:Font_small];
-    [labelBrowse setText:dicTemp[@"browse"]];
-    [btnBrowse addSubview:labelBrowse];
-
+    for (int i = 0; i<arrayCommentList.count; i++) {
+        NSDictionary * dicComment = arrayCommentList[i];
+        
+        [cell.viewComment addSubview: [self createrCommentViewWithUserName:dicComment[@"commentUserName"] commentContext:dicComment[@"commentContext"]]];
+    }
+    
+    if (postionY==10) {
+        postionY = 0;
+    }
+    [cell.viewComment setFrame:CGRectMake(kPercenX_scale(10), CGRectGetMaxY(cell.btnBrowse.frame)+15, kPercenX_scale(300), postionY)];
+    
+    
+    //灰色条子
+    [cell.imgGrey setFrame:CGRectMake(0, CGRectGetMaxY(cell.viewComment.frame)+10, MainView_Width, 8)];
+    
+#pragma mark - 重设cell的高度
+    [cell setFrame:CGRectMake(0, 0, MainView_Width, CGRectGetMaxY(cell.imgGrey.frame))];
     
     
     return cell;
@@ -245,10 +292,9 @@
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    UITableViewCell *cell = [self tableView:tableViewDesignerMsg cellForRowAtIndexPath:indexPath];
-//    return cell.frame.size.height;
+    UITableViewCell *cell = [self tableView:tableViewDesignerMsg cellForRowAtIndexPath:indexPath];
+    return cell.frame.size.height;
     
-    return 300;
 }
 
 
@@ -261,15 +307,54 @@
 }
 
 -(void)comment:(UIButton *)btn{
-    [self.delegate commentWithIndex:btn.tag-30000];
+    [tfComment becomeFirstResponder];
+    
+    commentId = btn.tag-30000;
+    self.viewSubmitComment.hidden = NO;
 }
 
 -(void)reloadTableViewWithArray:(NSArray *)array{
-    arrTableData = [NSMutableArray arrayWithArray:array];
+    _arrTableData = [NSMutableArray arrayWithArray:array];
 }
 
 -(CGRect)getTextFrameWithText:(NSString *)strContext withSize:(CGSize)size withFont:(UIFont*)font{
        return [strContext boundingRectWithSize:size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)  attributes:[NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName] context:nil];
+}
+
+//function  用于制作评论label
+-(UILabel *)createrCommentViewWithUserName:(NSString *)strUserName commentContext:(NSString *)strCommentContext{
+    NSString * strTemp = [NSString stringWithFormat:@"%@：%@",strUserName,strCommentContext];
+    
+    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:strTemp];
+    [str addAttribute:NSForegroundColorAttributeName value:Color_Blue_Text range:NSMakeRange(0,strUserName.length+1)];
+    
+    
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(kPercenX_scale(10), postionY, kPercenX_scale(280), 20)];
+    [label setFont:Font_middle];
+    [label setTextColor:Color_Grey_Text];
+    [label setNumberOfLines:0];
+    [label setAttributedText:str];
+    
+    CGRect contextRect = [self getTextFrameWithText:strTemp withSize:iphone_size_scale(280, 1000) withFont:Font_middle];
+    [label setFrame:CGRectMake(label.frame.origin.x, label.frame.origin.y, contextRect.size.width, contextRect.size.height)];
+    
+    postionY = CGRectGetMaxY(label.frame)+6;
+    
+    return label;
+}
+
+
+//刷新单行cell
+-(void)reloadTableRows:(NSInteger)index withNewData:(NSDictionary *)dicTemp{
+    [self.arrTableData removeObjectAtIndex:index];
+    [self.arrTableData insertObject:dicTemp atIndex:index];
+    
+    NSIndexPath *indexPath_1=[NSIndexPath indexPathForRow:index inSection:0];
+    NSArray *indexArray=[NSArray arrayWithObject:indexPath_1];
+    
+    [tableViewDesignerMsg reloadRowsAtIndexPaths:indexArray withRowAnimation:UITableViewRowAnimationAutomatic];
+
 }
 
 @end
