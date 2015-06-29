@@ -44,7 +44,10 @@
                                 @"人穷尽一生追寻另一个人类,\r\n共度一生的事,\r\n我一直无法理解,\r\n或许我自己太有意思，无需他人陪伴,\r\n所以 我祝你们在对方身上得到的快乐,\r\n与我给自己的一样多",@"commentContext",@"345",@"commentId",nil];
 
     NSArray * arrayComment = [[NSArray alloc]initWithObjects:dicTemp01,dicTemp02, dicTemp03,nil];
+
     
+    
+    //人物信息模拟
     NSDictionary * dicTemp = [[NSDictionary alloc]initWithObjectsAndKeys:@"8-大头像",@"userPic",
                               @"Cindy",@"userName",
                               @"欧工国际设计公司",@"userCompany",
@@ -56,7 +59,6 @@
                               @"18",@"browse",
                               @"41",@"comment",
                               arrayComment,@"commentList",nil];
-    
     
     
     
@@ -96,6 +98,8 @@
                                 arrayComment,@"commentList",
                                 nil];
 
+    
+    //总数据拼接
     
     NSArray * arrTemp = [NSArray arrayWithObjects:dicTemp,dicTemp05,dicTemp06,dicTemp07, nil];
     
