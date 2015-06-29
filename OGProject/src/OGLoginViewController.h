@@ -9,5 +9,6 @@
 #import "OGBaseViewController.h"
 
 @interface OGLoginViewController : OGBaseViewController
+@property (weak, nonatomic) IBOutlet UIButton *registerButtn;
 
 @end
