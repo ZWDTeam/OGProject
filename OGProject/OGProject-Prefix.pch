@@ -14,6 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "OGExternObject.h"
+    #import "OGBaseImageView.h"
 #endif
 
 //打印命令
@@ -36,7 +37,9 @@
 
 #define iphone_size_scale(w,h) CGSizeMake(kPercenX_scale(w), kPercenX_scale(h))
 
-
+//主字体大小
+#define main_text_font 17
+#define detail_text_font 16
 
 
 //设备屏幕高度

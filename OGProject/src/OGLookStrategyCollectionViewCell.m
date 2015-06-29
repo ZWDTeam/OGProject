@@ -11,7 +11,8 @@
 @implementation OGLookStrategyCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.headImageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.headImageView.clipsToBounds = YES;
 }
 
 @end
