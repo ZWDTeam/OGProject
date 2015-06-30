@@ -33,6 +33,7 @@
 		4825B03C1B42F3DF001A0D8B /* first2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0381B42F3DF001A0D8B /* first2.png */; };
 		4825B03D1B42F3DF001A0D8B /* first3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0391B42F3DF001A0D8B /* first3.png */; };
 		4825B03E1B42F3DF001A0D8B /* first4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B03A1B42F3DF001A0D8B /* first4.png */; };
+		4825B0411B42F5B8001A0D8B /* ConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825B0401B42F5B8001A0D8B /* ConfigFile.m */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
 		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
 		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
@@ -341,6 +342,8 @@
 		4825B0381B42F3DF001A0D8B /* first2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first2.png; sourceTree = "<group>"; };
 		4825B0391B42F3DF001A0D8B /* first3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first3.png; sourceTree = "<group>"; };
 		4825B03A1B42F3DF001A0D8B /* first4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first4.png; sourceTree = "<group>"; };
+		4825B03F1B42F5B8001A0D8B /* ConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigFile.h; sourceTree = "<group>"; };
+		4825B0401B42F5B8001A0D8B /* ConfigFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigFile.m; sourceTree = "<group>"; };
 		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
 		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
 		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
@@ -1421,6 +1424,8 @@
 		48CF99E91B2E724E003BBFBF /* OGProject */ = {
 			isa = PBXGroup;
 			children = (
+				4825B03F1B42F5B8001A0D8B /* ConfigFile.h */,
+				4825B0401B42F5B8001A0D8B /* ConfigFile.m */,
 				48CF9A3E1B2E7B13003BBFBF /* API */,
 				48CF9A161B2E7414003BBFBF /* src */,
 				48CF99EA1B2E724E003BBFBF /* Supporting Files */,
@@ -2129,6 +2134,7 @@
 				484C34681B36B2F20031306D /* OGMapShowTypeView.m in Sources */,
 				4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */,
 				4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */,
+				4825B0411B42F5B8001A0D8B /* ConfigFile.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
