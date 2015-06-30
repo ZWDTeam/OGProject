@@ -16,6 +16,19 @@
 		4825B0131B42EF8C001A0D8B /* 首页轮播3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */; };
 		4825B0161B42F00B001A0D8B /* GuidanceScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825B0151B42F00B001A0D8B /* GuidanceScrollView.m */; };
 		4825B01C1B42F190001A0D8B /* OGCollecationClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825B01B1B42F190001A0D8B /* OGCollecationClassifyViewController.m */; };
+		4825B01E1B42F2FB001A0D8B /* OGSchemeModel1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4825B01D1B42F2FB001A0D8B /* OGSchemeModel1.plist */; };
+		4825B02B1B42F322001A0D8B /* 方案1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B01F1B42F322001A0D8B /* 方案1.jpeg */; };
+		4825B02C1B42F322001A0D8B /* 方案2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0201B42F322001A0D8B /* 方案2.jpeg */; };
+		4825B02D1B42F322001A0D8B /* 方案3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0211B42F322001A0D8B /* 方案3.jpeg */; };
+		4825B02E1B42F322001A0D8B /* 方案4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0221B42F322001A0D8B /* 方案4.jpeg */; };
+		4825B02F1B42F322001A0D8B /* 方案5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0231B42F322001A0D8B /* 方案5.jpeg */; };
+		4825B0301B42F322001A0D8B /* 方案6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0241B42F322001A0D8B /* 方案6.jpeg */; };
+		4825B0311B42F322001A0D8B /* 方案7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0251B42F322001A0D8B /* 方案7.jpeg */; };
+		4825B0321B42F322001A0D8B /* 方案8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0261B42F322001A0D8B /* 方案8.jpeg */; };
+		4825B0331B42F322001A0D8B /* 方案9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0271B42F322001A0D8B /* 方案9.jpeg */; };
+		4825B0341B42F322001A0D8B /* 方案10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0281B42F322001A0D8B /* 方案10.jpeg */; };
+		4825B0351B42F322001A0D8B /* 方案11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0291B42F322001A0D8B /* 方案11.jpeg */; };
+		4825B0361B42F322001A0D8B /* 方案12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B02A1B42F322001A0D8B /* 方案12.jpeg */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
 		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
 		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
@@ -307,6 +320,19 @@
 		4825B0151B42F00B001A0D8B /* GuidanceScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceScrollView.m; sourceTree = "<group>"; };
 		4825B01A1B42F190001A0D8B /* OGCollecationClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCollecationClassifyViewController.h; sourceTree = "<group>"; };
 		4825B01B1B42F190001A0D8B /* OGCollecationClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCollecationClassifyViewController.m; sourceTree = "<group>"; };
+		4825B01D1B42F2FB001A0D8B /* OGSchemeModel1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OGSchemeModel1.plist; sourceTree = "<group>"; };
+		4825B01F1B42F322001A0D8B /* 方案1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案1.jpeg"; sourceTree = "<group>"; };
+		4825B0201B42F322001A0D8B /* 方案2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案2.jpeg"; sourceTree = "<group>"; };
+		4825B0211B42F322001A0D8B /* 方案3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案3.jpeg"; sourceTree = "<group>"; };
+		4825B0221B42F322001A0D8B /* 方案4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案4.jpeg"; sourceTree = "<group>"; };
+		4825B0231B42F322001A0D8B /* 方案5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案5.jpeg"; sourceTree = "<group>"; };
+		4825B0241B42F322001A0D8B /* 方案6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案6.jpeg"; sourceTree = "<group>"; };
+		4825B0251B42F322001A0D8B /* 方案7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案7.jpeg"; sourceTree = "<group>"; };
+		4825B0261B42F322001A0D8B /* 方案8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案8.jpeg"; sourceTree = "<group>"; };
+		4825B0271B42F322001A0D8B /* 方案9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案9.jpeg"; sourceTree = "<group>"; };
+		4825B0281B42F322001A0D8B /* 方案10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案10.jpeg"; sourceTree = "<group>"; };
+		4825B0291B42F322001A0D8B /* 方案11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案11.jpeg"; sourceTree = "<group>"; };
+		4825B02A1B42F322001A0D8B /* 方案12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案12.jpeg"; sourceTree = "<group>"; };
 		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
 		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
 		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
@@ -738,6 +764,18 @@
 		4825B00D1B42EF7D001A0D8B /* shuJu */ = {
 			isa = PBXGroup;
 			children = (
+				4825B01F1B42F322001A0D8B /* 方案1.jpeg */,
+				4825B0201B42F322001A0D8B /* 方案2.jpeg */,
+				4825B0211B42F322001A0D8B /* 方案3.jpeg */,
+				4825B0221B42F322001A0D8B /* 方案4.jpeg */,
+				4825B0231B42F322001A0D8B /* 方案5.jpeg */,
+				4825B0241B42F322001A0D8B /* 方案6.jpeg */,
+				4825B0251B42F322001A0D8B /* 方案7.jpeg */,
+				4825B0261B42F322001A0D8B /* 方案8.jpeg */,
+				4825B0271B42F322001A0D8B /* 方案9.jpeg */,
+				4825B0281B42F322001A0D8B /* 方案10.jpeg */,
+				4825B0291B42F322001A0D8B /* 方案11.jpeg */,
+				4825B02A1B42F322001A0D8B /* 方案12.jpeg */,
 				4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */,
 				4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */,
 				4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */,
@@ -1343,6 +1381,7 @@
 		48BF3A461B3B17DE0024DA3A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				4825B01D1B42F2FB001A0D8B /* OGSchemeModel1.plist */,
 				48BF3A471B3B17FF0024DA3A /* OGSendHelpModel.h */,
 				48BF3A481B3B17FF0024DA3A /* OGSendHelpModel.m */,
 			);
@@ -1804,6 +1843,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4825B02F1B42F322001A0D8B /* 方案5.jpeg in Resources */,
 				4AB7A3811B3D0E1200AD58CC /* 2-2头像.png in Resources */,
 				48A5928A1B39877100392151 /* mm8.jpg in Resources */,
 				48A592B21B39878300392151 /* gg8.jpg in Resources */,
@@ -1836,9 +1876,11 @@
 				48A592B81B39878300392151 /* gg14.jpg in Resources */,
 				484376931B30769A006D9D56 /* OGCollocationCollectionViewCell.xib in Resources */,
 				48B4E4E41B3530690035A162 /* 9-1图1.png in Resources */,
+				4825B0361B42F322001A0D8B /* 方案12.jpeg in Resources */,
 				48A592B61B39878300392151 /* gg12.jpg in Resources */,
 				484376821B3065F4006D9D56 /* 返回.png in Resources */,
 				1DC3E1AF1B367A2900ED09B3 /* 2-1进入.png in Resources */,
+				4825B01E1B42F2FB001A0D8B /* OGSchemeModel1.plist in Resources */,
 				48BF3A2B1B3AF9210024DA3A /* OGTableSectionView.xib in Resources */,
 				484376641B304D12006D9D56 /* 定位@2x.png in Resources */,
 				48A5926D1B3986E600392151 /* LoctionUserModel.plist in Resources */,
@@ -1888,6 +1930,7 @@
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
 				483B31A81B40357C0051474C /* 11-添加图片.png in Resources */,
+				4825B0331B42F322001A0D8B /* 方案9.jpeg in Resources */,
 				484376AB1B307C14006D9D56 /* home11.jpg in Resources */,
 				483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */,
 				484376AD1B307C14006D9D56 /* home13.jpg in Resources */,
@@ -1906,19 +1949,27 @@
 				48A592AE1B39878300392151 /* gg4.jpg in Resources */,
 				48A592931B39877100392151 /* mm17.jpg in Resources */,
 				484376681B304D12006D9D56 /* 找方案@2x.png in Resources */,
+				4825B02C1B42F322001A0D8B /* 方案2.jpeg in Resources */,
 				48A592AF1B39878300392151 /* gg5.jpg in Resources */,
 				484376B21B307C14006D9D56 /* home18.jpg in Resources */,
+				4825B0351B42F322001A0D8B /* 方案11.jpeg in Resources */,
+				4825B0301B42F322001A0D8B /* 方案6.jpeg in Resources */,
 				4AB7A3931B3D507300AD58CC /* 2-2图5.png in Resources */,
+				4825B02D1B42F322001A0D8B /* 方案3.jpeg in Resources */,
 				4AB7A3961B3D507300AD58CC /* 2-2图8.png in Resources */,
 				48A592D21B399C6E00392151 /* OGSchemeTableViewCell.xib in Resources */,
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
 				4866851F1B3EF81300D28493 /* 10-电话.png in Resources */,
+				4825B02E1B42F322001A0D8B /* 方案4.jpeg in Resources */,
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
+				4825B0311B42F322001A0D8B /* 方案7.jpeg in Resources */,
+				4825B0341B42F322001A0D8B /* 方案10.jpeg in Resources */,
 				48A5928D1B39877100392151 /* mm11.jpg in Resources */,
 				482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */,
 				4825B0121B42EF8C001A0D8B /* 首页轮播2.jpg in Resources */,
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
+				4825B02B1B42F322001A0D8B /* 方案1.jpeg in Resources */,
 				4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
 				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
@@ -1943,6 +1994,7 @@
 				4A05966F1B40261100F3035D /* 9-查看.png in Resources */,
 				48A592881B39877100392151 /* mm6.jpg in Resources */,
 				48A592D41B399D6E00392151 /* OGSchemeSecondTableViewCell.xib in Resources */,
+				4825B0321B42F322001A0D8B /* 方案8.jpeg in Resources */,
 				482DF0AF1B31C38000D3A000 /* 19-1性别-女.png in Resources */,
 				48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */,
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
