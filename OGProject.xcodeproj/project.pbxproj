@@ -11,6 +11,11 @@
 		1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B01B367A4300ED09B3 /* 11-banner.png */; };
 		1DC3E1B31B367DEF00ED09B3 /* 4-赞.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */; };
 		1DCC63F91B31D46500DA0F5B /* OGCommodityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */; };
+		4825B0111B42EF8C001A0D8B /* 首页轮播1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */; };
+		4825B0121B42EF8C001A0D8B /* 首页轮播2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */; };
+		4825B0131B42EF8C001A0D8B /* 首页轮播3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */; };
+		4825B0161B42F00B001A0D8B /* GuidanceScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825B0151B42F00B001A0D8B /* GuidanceScrollView.m */; };
+		4825B01C1B42F190001A0D8B /* OGCollecationClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825B01B1B42F190001A0D8B /* OGCollecationClassifyViewController.m */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
 		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
 		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
@@ -295,6 +300,13 @@
 		1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-赞.png"; sourceTree = "<group>"; };
 		1DCC63F71B31D46500DA0F5B /* OGCommodityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCommodityModel.h; sourceTree = "<group>"; };
 		1DCC63F81B31D46500DA0F5B /* OGCommodityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCommodityModel.m; sourceTree = "<group>"; };
+		4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播1.jpg"; sourceTree = "<group>"; };
+		4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播2.jpg"; sourceTree = "<group>"; };
+		4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播3.jpg"; sourceTree = "<group>"; };
+		4825B0141B42F00B001A0D8B /* GuidanceScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceScrollView.h; sourceTree = "<group>"; };
+		4825B0151B42F00B001A0D8B /* GuidanceScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceScrollView.m; sourceTree = "<group>"; };
+		4825B01A1B42F190001A0D8B /* OGCollecationClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCollecationClassifyViewController.h; sourceTree = "<group>"; };
+		4825B01B1B42F190001A0D8B /* OGCollecationClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGCollecationClassifyViewController.m; sourceTree = "<group>"; };
 		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
 		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
 		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
@@ -723,6 +735,16 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		4825B00D1B42EF7D001A0D8B /* shuJu */ = {
+			isa = PBXGroup;
+			children = (
+				4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */,
+				4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */,
+				4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */,
+			);
+			name = shuJu;
+			sourceTree = "<group>";
+		};
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -962,6 +984,8 @@
 		484376841B306CBC006D9D56 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				4825B01A1B42F190001A0D8B /* OGCollecationClassifyViewController.h */,
+				4825B01B1B42F190001A0D8B /* OGCollecationClassifyViewController.m */,
 				484376851B306D0B006D9D56 /* OGCollocationOnlyViewController.h */,
 				484376861B306D0B006D9D56 /* OGCollocationOnlyViewController.m */,
 				484376881B306D38006D9D56 /* OGCollocationMoreViewController.h */,
@@ -1391,6 +1415,7 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4825B00D1B42EF7D001A0D8B /* shuJu */,
 				483B31A71B40357C0051474C /* 11-添加图片.png */,
 				483B31A51B40355C0051474C /* 7-图.png */,
 				483B31A31B4035540051474C /* 7-抢单.png */,
@@ -1449,6 +1474,8 @@
 		48CF9A1B1B2E750C003BBFBF /* Communal */ = {
 			isa = PBXGroup;
 			children = (
+				4825B0141B42F00B001A0D8B /* GuidanceScrollView.h */,
+				4825B0151B42F00B001A0D8B /* GuidanceScrollView.m */,
 				483B31651B3FBF640051474C /* PhotoOptional.h */,
 				483B31661B3FBF640051474C /* PhotoOptional.m */,
 				48A592D51B399F4000392151 /* DGExpandheader */,
@@ -1805,6 +1832,7 @@
 				48A592BA1B39878300392151 /* gg16.jpg in Resources */,
 				484C34701B36B43D0031306D /* mapBtnCompany@2x.png in Resources */,
 				484376811B3065F4006D9D56 /* 分类@2x.png in Resources */,
+				4825B0131B42EF8C001A0D8B /* 首页轮播3.jpg in Resources */,
 				48A592B81B39878300392151 /* gg14.jpg in Resources */,
 				484376931B30769A006D9D56 /* OGCollocationCollectionViewCell.xib in Resources */,
 				48B4E4E41B3530690035A162 /* 9-1图1.png in Resources */,
@@ -1828,6 +1856,7 @@
 				48A592861B39877100392151 /* mm4.jpg in Resources */,
 				4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */,
 				4A0596711B40261100F3035D /* 9-评论.png in Resources */,
+				4825B0111B42EF8C001A0D8B /* 首页轮播1.jpg in Resources */,
 				484376671B304D12006D9D56 /* 我是设计师@2x.png in Resources */,
 				48B4E5271B3587F80035A162 /* OGHomeCollectionViewCell.xib in Resources */,
 				48A592AD1B39878300392151 /* gg3.jpg in Resources */,
@@ -1888,6 +1917,7 @@
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
 				48A5928D1B39877100392151 /* mm11.jpg in Resources */,
 				482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */,
+				4825B0121B42EF8C001A0D8B /* 首页轮播2.jpg in Resources */,
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
 				4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
@@ -2000,6 +2030,7 @@
 				48A593031B39B1CC00392151 /* MASConstraint.m in Sources */,
 				48A5930E1B39B46100392151 /* OGPriceLabel.m in Sources */,
 				48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */,
+				4825B01C1B42F190001A0D8B /* OGCollecationClassifyViewController.m in Sources */,
 				483B31891B3FD2D50051474C /* MRWeakProxy.m in Sources */,
 				4843768A1B306D38006D9D56 /* OGCollocationMoreViewController.m in Sources */,
 				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
@@ -2049,6 +2080,7 @@
 				48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,
 				4ADEA6981B41567E00FFA61D /* WWCommentLabel.m in Sources */,
+				4825B0161B42F00B001A0D8B /* GuidanceScrollView.m in Sources */,
 				484376921B30769A006D9D56 /* OGCollocationCollectionViewCell.m in Sources */,
 				485FB4241B3DA79D0010C4F1 /* OGStrategyDetailViewController.m in Sources */,
 				483B31901B401D550051474C /* OGUserInfoTableViewCell.m in Sources */,
