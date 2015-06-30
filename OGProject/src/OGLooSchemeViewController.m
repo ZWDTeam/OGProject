@@ -95,7 +95,7 @@
 
 - (VPTribeSegmentedControl *)segmentedControl{
     if (!_segmentedControl) {
-        _segmentedControl = [[VPTribeSegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 200, 45) withItems:@[@"配图设计",@"样板图"]];
+        _segmentedControl = [[VPTribeSegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 200, 45) withItems:@[@"搭配设计",@"样板图"]];
         _segmentedControl.tintColor = [UIColor orangeColor];
         [_segmentedControl addTarget:self action:@selector(exchangeContent:)];
         
@@ -181,6 +181,7 @@
     OGLookSchemeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     NSDictionary * dic ;
     if (self.segmentedControl.selectedIndex ==0) {
@@ -203,7 +204,7 @@
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 188.0f;
+    return 340.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

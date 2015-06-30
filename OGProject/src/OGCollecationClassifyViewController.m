@@ -11,6 +11,9 @@
 @interface OGCollecationClassifyViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong , nonatomic)NSArray * items;
+@property (strong , nonatomic)NSArray * sections;
+
 @end
 
 @implementation OGCollecationClassifyViewController
@@ -18,12 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _sections = @[@"风格",@"空间"];
+    
+    _items = @[@[@"简约",@"美式",@"地中海",@"中式",@"混搭"],
+               @[@"玄关",@"餐厅",@"客厅",@"卧室",@"阳台",@"厨房"]];
 }
 
 #pragma mark - UITableViewDelegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+   return  _items.count;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 10;
+    return [_items[section] count];
 }
 
 
@@ -33,8 +45,17 @@ static NSString * identifier = @"cell";
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    
+    cell.textLabel.text = _items[indexPath.section][indexPath.row];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 65;
 }
 
 - (void)didReceiveMemoryWarning {

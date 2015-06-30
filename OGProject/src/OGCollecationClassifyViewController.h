@@ -8,6 +8,7 @@
 
 #import "OGBaseViewController.h"
 
+
 @interface OGCollecationClassifyViewController : OGBaseViewController
 
 @end

@@ -59,6 +59,7 @@
     }else if (ex_identityType == OGIdentityTypeStylist){
     
     }
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
