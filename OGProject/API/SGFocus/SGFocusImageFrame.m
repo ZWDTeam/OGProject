@@ -109,7 +109,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
     _pageControl.numberOfPages = imageItems.count;
     
     titleLable = [[UILabel alloc] initWithFrame:CGRectMake(0 , self.frame.size.height - 25, self.frame.size.width, 25)];
-    titleLable.backgroundColor =[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.5];
+    titleLable.backgroundColor =[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.3];
     titleLable.textColor =[UIColor whiteColor];
     titleLable.font =[UIFont systemFontOfSize:15];
     

@@ -30,8 +30,6 @@
 @property (strong , nonatomic)OGSchemeMenuView * menuView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property (strong , nonatomic)NSArray * items;
-
 @property (strong , nonatomic)NSArray *arr;
 
 @property (strong , nonatomic)NSArray * arr1;
@@ -65,16 +63,6 @@
     _tableView1.delegate =self;
     _tableView1.dataSource =self;
     [self.scrollView addSubview:_tableView1];
-}
-
-
-- (NSArray *)items{
-    
-    if (self.segmentedControl.selectedIndex ==0) {
-        return self.arr;
-    }else{
-        return self.arr1;
-    }
 }
 
 - (NSArray *)arr{

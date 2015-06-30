@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OGCollocationCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;

@@ -91,6 +91,8 @@
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
+            cell.oldPriceLabel.text = _info[@"oldPrice"];
+            cell.newsPriceLabel.text = _info[@"price"];
             return cell;
             
         }
@@ -105,6 +107,7 @@
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             }
+            cell.commentCountLabel.text = _info[@"commentCount"];
             return cell;
 
         }

@@ -18,9 +18,18 @@
 
 @implementation OGCollecationClassifyViewController
 
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.title =@"分类";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     
     _sections = @[@"风格",@"空间"];
     
@@ -55,7 +64,7 @@ static NSString * identifier = @"cell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 65;
+    return 55;
 }
 
 - (void)didReceiveMemoryWarning {
