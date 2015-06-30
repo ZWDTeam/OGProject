@@ -48,12 +48,15 @@
 - (IBAction)publicLogin:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     ex_identityType = OGIdentityTypeUser;
+    [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
+
     
     
 }
 - (IBAction)stylistLogin:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     ex_identityType = OGIdentityTypeStylist;
+    [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
 }
 - (IBAction)pushRegisterViewController:(id)sender {
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请选择账号类型" delegate:self cancelButtonTitle:@"我是设计师" otherButtonTitles:@"我是用户", nil];

@@ -67,7 +67,7 @@
 
 - (NSArray *)arr{
     if (!_arr) {
-        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"OGSchemeModel1" ofType:@"plist"];
+        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"OGSchemeModel" ofType:@"plist"];
         _arr = [NSArray arrayWithContentsOfFile:stringPath];
     }
     return _arr;

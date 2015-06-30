@@ -15,7 +15,7 @@
 #import "OGCollocationViewController.h"
 
 #define title @"title"
-#define headerImage @"headerImage"
+#define headerImage @"headImage"
 #define lookCount @"lookCount"
 #define commentCount @"commentCount"
 #define type @"type"
@@ -71,7 +71,7 @@ NSString *const collectionViewCellIdentifier = @"OGCollocationCollectionViewCell
 
 - (NSArray *)arr{
     if (!_arr) {
-        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"OGSchemeModel1" ofType:@"plist"];
+        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"colloctionOnlyModel" ofType:@"plist"];
         _arr = [NSArray arrayWithContentsOfFile:stringPath];
     }
     return _arr;

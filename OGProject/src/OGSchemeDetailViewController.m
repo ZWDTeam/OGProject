@@ -34,7 +34,7 @@
     [super viewDidLoad];
     
     VPStretchBaseView * view = [[[NSBundle mainBundle] loadNibNamed:@"VPStretchBaseView" owner:self options:nil] lastObject];
-    view.headerImageView.image = [UIImage imageNamed:@"mm14.jpg"];
+    view.headerImageView.image = [UIImage imageNamed:self.info[@"image"]];
     
   _header = [DGExpandheader expandWithScrollView:_tableView expandView:view];
     
@@ -65,6 +65,10 @@
 
             }
 
+            cell.oldPriceLabel.text = @"12W";
+            cell.newsPriceLabel.text =self.info[@"price"];
+            cell.styleLabel.text = self.info[@"style"];
+            cell.typeLabel.text = self.info[@"type"];
             return cell;
 
         }

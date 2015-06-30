@@ -178,8 +178,14 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
             break;
 
         case 4://我是设计师
+        {
+            UIStoryboard * stroyboard =[UIStoryboard storyboardWithName:@"OGLogin" bundle:[NSBundle mainBundle]];
+            
+            UINavigationController * navigationController = [stroyboard instantiateViewControllerWithIdentifier:@"OGLoginNavigationController"];
+            
+            [self presentViewController:navigationController animated:YES completion:nil];
 
-            [self performSegueWithIdentifier:@"pushStylistView" sender:indexPath];
+        }
             break;
             
         default:

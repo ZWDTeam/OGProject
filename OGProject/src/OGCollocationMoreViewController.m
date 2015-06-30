@@ -115,7 +115,7 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
     
     OGCollocationCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewMoreCellIdentifier forIndexPath:indexPath];
     NSDictionary * dic = self.arr[indexPath.row];
-    cell.headerImageView.image =[UIImage imageNamed:dic[headerImage]];
+    cell.headerImageView.image =[UIImage imageNamed:dic[imageName]];
     cell.titleLabel.text = [NSString stringWithFormat:@"%@  %@",dic[style],dic[type]];
     cell.commentLabel.text = dic[commentCount];
     return cell;

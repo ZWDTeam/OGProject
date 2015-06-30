@@ -13,11 +13,6 @@
 }
 
 
-
-- (void)setText:(NSString *)text{
-    [self setValue:text forKey:@"text"];
-}
-
 - (void)drawRect:(CGRect)rect{
     
      CGRect textRect = [self.text boundingRectWithSize:CGSizeMake(320, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil];
@@ -26,8 +21,8 @@
     CGContextSetStrokeColorWithColor(context, [UIColor grayColor].CGColor);
     CGContextSetLineWidth(context, 1);
     
-    CGContextMoveToPoint(context, 0, rect.size.height/2.0f-6);
-    CGContextAddLineToPoint(context, textRect.size.width,  rect.size.height/2.0f-3);
+    CGContextMoveToPoint(context, 0, rect.size.height/2.0f-3);
+    CGContextAddLineToPoint(context, textRect.size.width,  rect.size.height/2.0f);
     
     CGContextStrokePath(context);
     

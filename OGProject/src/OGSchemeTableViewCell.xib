@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12万" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbI-gb-hcx" customClass="OGPriceLabel">
-                                <rect key="frame" x="268" y="57" width="91" height="21"/>
+                                <rect key="frame" x="268" y="59" width="91" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -96,6 +96,13 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="areaLabel" destination="uRf-00-Ofs" id="vsj-55-wPi"/>
+                <outlet property="newsPriceLabel" destination="Ku8-Xi-HA5" id="ZNK-cw-1EQ"/>
+                <outlet property="oldPriceLabel" destination="TbI-gb-hcx" id="Eb7-k7-H5M"/>
+                <outlet property="styleLabel" destination="StW-qe-MzK" id="CF3-p0-HKB"/>
+                <outlet property="typeLabel" destination="bZJ-B4-8EN" id="OXy-5D-SAY"/>
+            </connections>
             <point key="canvasLocation" x="301.5" y="396"/>
         </tableViewCell>
     </objects>

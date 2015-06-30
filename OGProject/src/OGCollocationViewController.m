@@ -115,7 +115,7 @@
     if ([segue.identifier isEqualToString:@"pushScheme"]) {
         OGSchemeDetailViewController * v = (OGSchemeDetailViewController*)viewController;
         v.info =sender;
-    }else{
+    }else if([segue.identifier isEqualToString:@"pushSchemeUnit"]){
         OGSchemeUnitViewController * v = (OGSchemeUnitViewController *)viewController;
         v.info =sender;
     }

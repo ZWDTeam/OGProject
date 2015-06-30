@@ -14,9 +14,10 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ps3-cd-2yK">
                         <rect key="frame" x="8" y="8" width="359" height="277"/>
+                        <color key="backgroundColor" red="0.83447758839999997" green="0.83447758839999997" blue="0.83447758839999997" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1查看.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-X4-OnO">
-                        <rect key="frame" x="306" y="269" width="17" height="11"/>
+                        <rect key="frame" x="305" y="268" width="17" height="11"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWu-B8-Ko7">
                         <rect key="frame" x="8" y="293" width="281" height="21"/>
@@ -40,25 +41,25 @@
                         <rect key="frame" x="327" y="293" width="40" height="40"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBK-3Y-fkK">
-                        <rect key="frame" x="15" y="264" width="168" height="18"/>
+                        <rect key="frame" x="14" y="263" width="168" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="104" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40l-Yc-Bgw">
-                        <rect key="frame" x="266" y="267" width="35" height="15"/>
+                        <rect key="frame" x="265" y="266" width="35" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1055" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr1-iG-mjU">
-                        <rect key="frame" x="328" y="267" width="35" height="15"/>
+                        <rect key="frame" x="327" y="266" width="35" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1评论.png" translatesAutoresizingMaskIntoConstraints="NO" id="6mC-b4-OwN">
-                        <rect key="frame" x="245" y="268" width="14" height="12"/>
+                        <rect key="frame" x="244" y="267" width="14" height="12"/>
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
