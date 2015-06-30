@@ -44,7 +44,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
      //用户头像
-        self.imguserPic = [[OGBaseImageView alloc]initWithFrame:iphone_rect_scale(10, 10, 35, 35)];
+        self.imguserPic = [[UIImageView alloc]initWithFrame:iphone_rect_scale(10, 10, 35, 35)];
         [self addSubview:self.imguserPic];
         
         //用户名字
@@ -55,11 +55,11 @@
         [self addSubview:self.labelUserName];
         
         
-        self.imgUserSex = [[OGBaseImageView alloc]init];
+        self.imgUserSex = [[UIImageView alloc]init];
         [self addSubview:self.imgUserSex];
         
         
-        self.imgUserVipLevel = [[OGBaseImageView alloc]init];
+        self.imgUserVipLevel = [[UIImageView alloc]init];
         [self addSubview:self.imgUserVipLevel];
         
         self.labelUserCompany = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.labelUserName.frame), CGRectGetMaxY(self.labelUserName.frame)+7, 200, 10)];

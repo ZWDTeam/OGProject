@@ -9,32 +9,14 @@
 #import "OGForgetFirstViewController.h"
 
 @interface OGForgetFirstViewController ()
-- (IBAction)pushForgetLast:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *havetYzmBtn;
-@property (weak, nonatomic) IBOutlet UIButton *rightBarBtn;
 
 @end
 
 @implementation OGForgetFirstViewController
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.title = @"找回密码";
-    }
-    return self;
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.havetYzmBtn.layer.cornerRadius =6.0f;
-    self.havetYzmBtn.layer.masksToBounds = YES;
-    
-
-    self.rightBarBtn.layer.cornerRadius = CGRectGetHeight(self.rightBarBtn.frame)/2.0f;
-    self.rightBarBtn.layer.borderWidth = 1.0f;
-    self.rightBarBtn.layer.borderColor = [UIColor whiteColor].CGColor;
-
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,8 +34,4 @@
 }
 */
 
-- (IBAction)pushForgetLast:(id)sender {
-
-    [self performSegueWithIdentifier:@"pushForgetLast" sender:nil];
-}
 @end

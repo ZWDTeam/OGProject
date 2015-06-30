@@ -75,7 +75,11 @@
             </constraints>
             <size key="customSize" width="172" height="132"/>
             <connections>
+                <outlet property="askPriceLabel" destination="tCj-L2-n9N" id="x2H-aB-A8Y"/>
+                <outlet property="commentLabel" destination="cGv-LO-Xa7" id="YOC-Jl-dHb"/>
                 <outlet property="contentImageView" destination="Wec-uc-4Dy" id="lCh-sn-ED2"/>
+                <outlet property="headerImageView" destination="Wec-uc-4Dy" id="caZ-FC-8s1"/>
+                <outlet property="titleLabel" destination="Atv-EW-Y6U" id="YDJ-Cg-jev"/>
             </connections>
             <point key="canvasLocation" x="332" y="367"/>
         </collectionViewCell>

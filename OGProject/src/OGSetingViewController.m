@@ -49,6 +49,11 @@
     return 70;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self performSegueWithIdentifier:@"pushCoupleBack" sender:indexPath];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

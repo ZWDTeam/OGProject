@@ -11,7 +11,7 @@
 @implementation OGCollocationCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+
 }
 
 @end

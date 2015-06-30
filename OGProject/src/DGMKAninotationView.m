@@ -25,7 +25,7 @@
     
     self.backgroundColor = [UIColor clearColor];
     
-    _headerImageView = [OGBaseImageView new];
+    _headerImageView = [UIImageView new];
     CGFloat bounds = 2.0f;
     _headerImageView.frame = CGRectMake(bounds, bounds, rect.size.width-bounds*2, rect.size.width-bounds*2);
     [self addSubview:_headerImageView];
@@ -40,7 +40,7 @@
     _titleLabel.layer.masksToBounds = YES;
     _titleLabel.textColor = [UIColor whiteColor];
     _titleLabel.textAlignment = NSTextAlignmentCenter;
-    _titleLabel.font = [UIFont systemFontOfSize:12];
+    _titleLabel.font = [UIFont systemFontOfSize:11];
     [self addSubview:_titleLabel];
     
     return self;

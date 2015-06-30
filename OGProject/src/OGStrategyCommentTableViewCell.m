@@ -14,7 +14,7 @@
 - (void)awakeFromNib {
     _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(75, 35, SCREEN_WIDTH - 90, 30)];
     _contentLabel.textColor = [UIColor grayColor];
-    _contentLabel.font =[UIFont systemFontOfSize:detail_text_font];
+    _contentLabel.font =[UIFont systemFontOfSize:15];
     _contentLabel.numberOfLines = 0;
     [self addSubview:_contentLabel];
     

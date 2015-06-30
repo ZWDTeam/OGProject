@@ -15,9 +15,6 @@
     self.userImageView.layer.cornerRadius = CGRectGetHeight(self.userImageView.frame)/2.0f;
     self.userImageView.layer.masksToBounds = YES;
     
-    _headerImageView.contentMode = UIViewContentModeScaleAspectFill;
-    _headerImageView.clipsToBounds = YES;
-    
     CGRect rect = _headerImageView.frame;
     rect.origin.y = rect.size.height -25;
     rect.size.height = 25;

@@ -78,9 +78,11 @@
 //切换类型
 - (void)exchangeContent:(VPTribeSegmentedControl *)sender {
     [self.contentScrollView setContentOffset:CGPointMake(sender.selectedIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
+    
 }
 
 - (IBAction)typeClassAction:(id)sender {
+    
 }
 
 #pragma mark - UIScrollViewDelegate

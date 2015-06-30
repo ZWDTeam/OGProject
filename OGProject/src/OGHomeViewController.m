@@ -12,11 +12,9 @@
 #import "OGCollectionReusableView.h"
 #import "OGDemandDetailsViewController.h"
 #import "OGMapViewController.h"
-#import "GuidanceScrollView.h"
+
 
 NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
-
-#define  locationCityKey @"locationCityKey"
 
 #define iPhone_scale(value) (value /(320.0f/[UIScreen mainScreen].bounds.size.width))
 
@@ -36,7 +34,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.title = @"软装到家";
+        self.title = @"欧工软装";
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页"
                                                         image:[UIImage imageNamed:@"首页00"]
                                                 selectedImage:[UIImage imageNamed:@"首页01"]];
@@ -59,9 +57,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
                      @"color" :[UIColor colorWithRed:241.0f/255.0f green:202.0f/255.0f blue:75.0f/255.0f alpha:1.0f]},
                    @{@"title" :@"我是设计师",
                      @"color" :[UIColor colorWithRed:247.0f/255.0f green:85.0f/255.0f blue:13.0f/255.0f alpha:1.0f]}];
-        
-        
-        ex_locationCity = [[NSUserDefaults standardUserDefaults] valueForKey:locationCityKey];
+
         
     }
     return self;
@@ -81,10 +77,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
     
     [_myCollectionView registerClass:[OGCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"OGCollectionReusableView"];
     
-    [GuidanceScrollView showGuidanceScrooll];
-    
-    
-    if (!ex_locationCity) {
+    if (!ex_identityType) {
         [self performSelector:@selector(optionCity:) withObject:self afterDelay:0.1];
     }
     
@@ -193,7 +186,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 #pragma  mark - Action
 - (IBAction)callUpAction:(UIBarButtonItem *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://4000-888-186"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://400"]];
 }
 
 - (void)didReceiveMemoryWarning {

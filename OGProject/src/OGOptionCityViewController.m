@@ -6,9 +6,6 @@
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#define  locationCityKey @"locationCityKey"
-
-
 #import "OGOptionCityViewController.h"
 
 @interface OGOptionCityViewController ()<UITableViewDataSource,UITableViewDelegate,CLLocationManagerDelegate>
@@ -110,27 +107,18 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];    
     }
     
+    if (indexPath.row == 0 &&indexPath.section == 0) {
+        cell.textLabel.text = _currentCity;
+    }else{
+        cell.textLabel.text = _citys[indexPath.row];
+
+    }
+    
     if (indexPath.row ==_selectedIndexPath.row && indexPath.section == _selectedIndexPath.section) {
         cell.accessoryView = [self cellAccessoryView];
     }else{
         cell.accessoryView = nil;
     }
-    
-    if (indexPath.row == 0 &&indexPath.section == 0) {
-        cell.textLabel.text = _currentCity;
-    }else{
-        cell.textLabel.text = _citys[indexPath.row];
-        if ([ex_locationCity isEqualToString:_citys[indexPath.row]]) {
-            cell.accessoryView = [self cellAccessoryView];
-        }else{
-            cell.accessoryView = nil;
-        }
-
-    }
-    
-
-    
-    
     
     return cell;
 }
@@ -149,10 +137,6 @@
     }else{
         ex_locationCity  =_citys[indexPath.row];
     }
-    
-    NSUserDefaults * userDefualts = [NSUserDefaults standardUserDefaults];
-    [userDefualts setValue:ex_locationCity forKey:locationCityKey];
-    [userDefualts synchronize];
     
     [self.navigationController popViewControllerAnimated:YES];
     [tableView reloadData];

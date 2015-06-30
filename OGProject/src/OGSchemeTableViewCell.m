@@ -33,7 +33,7 @@
         
         _detailTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100, 10, 80, 20)];
         _detailTitleLabel.text = @"12人已评论";
-        _detailTitleLabel.font = [UIFont systemFontOfSize:13];
+        _detailTitleLabel.font = [UIFont systemFontOfSize:12];
         _detailTitleLabel.textColor = [UIColor orangeColor];
         [self.contentView addSubview:_detailTitleLabel];
     }

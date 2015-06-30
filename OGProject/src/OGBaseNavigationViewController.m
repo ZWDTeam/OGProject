@@ -27,7 +27,7 @@
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         
         //设置字体属性
-        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:19],
+        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
                                                                NSForegroundColorAttributeName: [UIColor whiteColor]}];
     }
     return self;

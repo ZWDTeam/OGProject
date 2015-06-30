@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface OGDesignCircleTableViewCell : UITableViewCell
-@property (strong) OGBaseImageView * imguserPic;
-@property (strong) OGBaseImageView * imgUserVipLevel;
-@property (strong) OGBaseImageView * imgUserSex;
+@property (strong) UIImageView * imguserPic;
+@property (strong) UIImageView * imgUserVipLevel;
+@property (strong) UIImageView * imgUserSex;
 
 @property (strong) UILabel * labelUserName;
 @property (strong) UILabel * labelUserCompany;

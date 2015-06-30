@@ -6,17 +6,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="lEZ-Z1-yhK" customClass="OGLookSchemeTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="lEZ-Z1-yhK" customClass="OGLookSchemeTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lEZ-Z1-yhK" id="1zp-Ay-8oo">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+<<<<<<< HEAD
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ps3-cd-2yK" customClass="OGBaseImageView">
+                        <rect key="frame" x="8" y="5" width="359" height="130"/>
+=======
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ps3-cd-2yK">
                         <rect key="frame" x="8" y="0.0" width="359" height="130"/>
+>>>>>>> origin/master
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1查看.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-X4-OnO">
-                        <rect key="frame" x="306" y="114" width="17" height="11"/>
+                        <rect key="frame" x="306" y="118" width="17" height="11"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWu-B8-Ko7">
                         <rect key="frame" x="8" y="138" width="281" height="21"/>
@@ -40,25 +45,25 @@
                         <rect key="frame" x="327" y="138" width="40" height="40"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBK-3Y-fkK">
-                        <rect key="frame" x="15" y="109" width="168" height="18"/>
+                        <rect key="frame" x="15" y="113" width="168" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="104" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40l-Yc-Bgw">
-                        <rect key="frame" x="266" y="112" width="35" height="15"/>
+                        <rect key="frame" x="266" y="116" width="35" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1055" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr1-iG-mjU">
-                        <rect key="frame" x="328" y="112" width="35" height="15"/>
+                        <rect key="frame" x="328" y="116" width="35" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1评论.png" translatesAutoresizingMaskIntoConstraints="NO" id="6mC-b4-OwN">
-                        <rect key="frame" x="245" y="113" width="14" height="12"/>
+                        <rect key="frame" x="245" y="117" width="14" height="12"/>
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
