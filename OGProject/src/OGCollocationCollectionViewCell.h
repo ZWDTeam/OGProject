@@ -9,14 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface OGCollocationCollectionViewCell : UICollectionViewCell
-<<<<<<< HEAD
-@property (weak, nonatomic) IBOutlet OGBaseImageView *contentImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;
-=======
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
->>>>>>> origin/master
-
 @property (weak, nonatomic) IBOutlet UILabel *askPriceLabel;
 @end
