@@ -15,7 +15,7 @@
 
 @property (strong , nonatomic)DGAnnotationContentView * contentView;
 
-@property (strong , nonatomic)OGBaseImageView * headerImageView;
+@property (strong , nonatomic)UIImageView * headerImageView;
 
 @property (strong , nonatomic)UILabel * titleLabel;
 

@@ -37,7 +37,7 @@
         [tfSearch setBorderStyle:UITextBorderStyleNone];
         [tfSearch setPlaceholder:@"搜索感兴趣的话题"];
         [tfSearch setFrame:iphone_rect_scale(60, 12, 220, 25)];
-        [tfSearch setValue:[UIFont boldSystemFontOfSize:detail_text_font] forKeyPath:@"_placeholderLabel.font"];
+        [tfSearch setValue:[UIFont boldSystemFontOfSize:15] forKeyPath:@"_placeholderLabel.font"];
         [tfSearch setDelegate:self];
         [tfSearch setReturnKeyType:UIReturnKeySearch];
         [tfSearch setTag:10001];

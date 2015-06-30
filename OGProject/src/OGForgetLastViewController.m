@@ -9,40 +9,14 @@
 #import "OGForgetLastViewController.h"
 
 @interface OGForgetLastViewController ()
-@property (weak, nonatomic) IBOutlet UIView *passwordView;
-@property (weak, nonatomic) IBOutlet UIView *passwordAgainView;
-@property (weak, nonatomic) IBOutlet UIButton *changePasswordBtn;
-@property (weak, nonatomic) IBOutlet UITextField *passwordLbl;
-@property (weak, nonatomic) IBOutlet UITextField *passwordAgainTxt;
-
-- (IBAction)finishChange:(id)sender;
 
 @end
 
 @implementation OGForgetLastViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.title = @"找回密码";
-    }
-    return self;
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.passwordView.layer.cornerRadius =6.0f;
-    self.passwordView.layer.masksToBounds = YES;
-    
-    self.passwordAgainView.layer.cornerRadius =6.0f;
-    self.passwordAgainView.layer.masksToBounds = YES;
-    self.passwordAgainTxt.secureTextEntry = YES;
-    
-    self.changePasswordBtn.layer.cornerRadius =6.0f;
-    self.changePasswordBtn.layer.masksToBounds = YES;
-    
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,11 +34,4 @@
 }
 */
 
-- (IBAction)finishChange:(id)sender {
-//    if (([self.passwordAgainTxt.text isEqualToString:self.passwordLbl.text]) && (self.passwordLbl.text.length>0)) {
-//          [self.navigationController popToRootViewControllerAnimated:YES];
-//    }
-    [self.navigationController popToRootViewControllerAnimated:YES];
-
-}
 @end

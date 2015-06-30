@@ -9,36 +9,14 @@
 #import "OGRegisterLastViewController.h"
 
 @interface OGRegisterLastViewController ()
-- (IBAction)finishRegister:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *passwordView;
-@property (weak, nonatomic) IBOutlet UIView *passwordAgainView;
-@property (weak, nonatomic) IBOutlet UIView *nameView;
 
 @end
 
 @implementation OGRegisterLastViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.title = @"注册(3/3)";
-    }
-    return self;
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.passwordAgainView.layer.masksToBounds= YES;
-    self.passwordAgainView.layer.cornerRadius =  3;
-    
-    self.passwordView.layer.masksToBounds= YES;
-    self.passwordView.layer.cornerRadius =  3;
-    
-    self.nameView.layer.masksToBounds= YES;
-    self.nameView.layer.cornerRadius =  3;
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,7 +34,4 @@
 }
 */
 
-- (IBAction)finishRegister:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
 @end

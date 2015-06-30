@@ -45,7 +45,7 @@
         
         
         
-        OGBaseImageView * imgTfBg = [[OGBaseImageView alloc]init];
+        UIImageView * imgTfBg = [[UIImageView alloc]init];
         [imgTfBg setImage:[UIImage imageNamed:@"registerTextFieldBG.png"]];
         [imgTfBg setFrame:CGRectMake(kPercenX_scale(5), 11, kPercenX_scale(270), 33)];
         [imgTfBg setUserInteractionEnabled:YES];

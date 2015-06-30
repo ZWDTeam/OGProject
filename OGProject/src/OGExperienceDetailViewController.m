@@ -69,7 +69,7 @@
         _footView.userInteractionEnabled = NO;
         _footView.scrollEnabled = NO;
         _footView.textColor = [UIColor grayColor];
-        _footView.font = [UIFont systemFontOfSize:main_text_font];
+        _footView.font = [UIFont systemFontOfSize:17];
     }
     return _footView;
 }
