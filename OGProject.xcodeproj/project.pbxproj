@@ -29,6 +29,10 @@
 		4825B0341B42F322001A0D8B /* 方案10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0281B42F322001A0D8B /* 方案10.jpeg */; };
 		4825B0351B42F322001A0D8B /* 方案11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0291B42F322001A0D8B /* 方案11.jpeg */; };
 		4825B0361B42F322001A0D8B /* 方案12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B02A1B42F322001A0D8B /* 方案12.jpeg */; };
+		4825B03B1B42F3DF001A0D8B /* first1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0371B42F3DF001A0D8B /* first1.png */; };
+		4825B03C1B42F3DF001A0D8B /* first2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0381B42F3DF001A0D8B /* first2.png */; };
+		4825B03D1B42F3DF001A0D8B /* first3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0391B42F3DF001A0D8B /* first3.png */; };
+		4825B03E1B42F3DF001A0D8B /* first4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4825B03A1B42F3DF001A0D8B /* first4.png */; };
 		482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 482DF08D1B31A9DB00D3A000 /* 评论@2x.png */; };
 		482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */; };
 		482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DF0911B31AEC000D3A000 /* OGFindTableViewCell.xib */; };
@@ -333,6 +337,10 @@
 		4825B0281B42F322001A0D8B /* 方案10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案10.jpeg"; sourceTree = "<group>"; };
 		4825B0291B42F322001A0D8B /* 方案11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案11.jpeg"; sourceTree = "<group>"; };
 		4825B02A1B42F322001A0D8B /* 方案12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "方案12.jpeg"; sourceTree = "<group>"; };
+		4825B0371B42F3DF001A0D8B /* first1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first1.png; sourceTree = "<group>"; };
+		4825B0381B42F3DF001A0D8B /* first2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first2.png; sourceTree = "<group>"; };
+		4825B0391B42F3DF001A0D8B /* first3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first3.png; sourceTree = "<group>"; };
+		4825B03A1B42F3DF001A0D8B /* first4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first4.png; sourceTree = "<group>"; };
 		482DF08D1B31A9DB00D3A000 /* 评论@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "评论@2x.png"; sourceTree = "<group>"; };
 		482DF08F1B31AEC000D3A000 /* OGFindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGFindTableViewCell.h; sourceTree = "<group>"; };
 		482DF0901B31AEC000D3A000 /* OGFindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindTableViewCell.m; sourceTree = "<group>"; };
@@ -764,6 +772,10 @@
 		4825B00D1B42EF7D001A0D8B /* shuJu */ = {
 			isa = PBXGroup;
 			children = (
+				4825B0371B42F3DF001A0D8B /* first1.png */,
+				4825B0381B42F3DF001A0D8B /* first2.png */,
+				4825B0391B42F3DF001A0D8B /* first3.png */,
+				4825B03A1B42F3DF001A0D8B /* first4.png */,
 				4825B01F1B42F322001A0D8B /* 方案1.jpeg */,
 				4825B0201B42F322001A0D8B /* 方案2.jpeg */,
 				4825B0211B42F322001A0D8B /* 方案3.jpeg */,
@@ -1918,6 +1930,7 @@
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
 				485FB4291B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib in Resources */,
 				4A0596771B40263300F3035D /* 11-图1.png in Resources */,
+				4825B03E1B42F3DF001A0D8B /* first4.png in Resources */,
 				4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */,
 				48A592BE1B39878300392151 /* gg20.jpg in Resources */,
 				48A592AB1B39878300392151 /* gg1.jpg in Resources */,
@@ -1930,6 +1943,7 @@
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
 				483B31A81B40357C0051474C /* 11-添加图片.png in Resources */,
+				4825B03B1B42F3DF001A0D8B /* first1.png in Resources */,
 				4825B0331B42F322001A0D8B /* 方案9.jpeg in Resources */,
 				484376AB1B307C14006D9D56 /* home11.jpg in Resources */,
 				483B31911B401D550051474C /* OGUserInfoTableViewCell.xib in Resources */,
@@ -1961,10 +1975,12 @@
 				484376B11B307C14006D9D56 /* home17.jpg in Resources */,
 				484376B31B307C14006D9D56 /* home19.jpg in Resources */,
 				4866851F1B3EF81300D28493 /* 10-电话.png in Resources */,
+				4825B03C1B42F3DF001A0D8B /* first2.png in Resources */,
 				4825B02E1B42F322001A0D8B /* 方案4.jpeg in Resources */,
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
 				4825B0311B42F322001A0D8B /* 方案7.jpeg in Resources */,
 				4825B0341B42F322001A0D8B /* 方案10.jpeg in Resources */,
+				4825B03D1B42F3DF001A0D8B /* first3.png in Resources */,
 				48A5928D1B39877100392151 /* mm11.jpg in Resources */,
 				482DF0B11B31C42000D3A000 /* myself_sex@2x.png in Resources */,
 				4825B0121B42EF8C001A0D8B /* 首页轮播2.jpg in Resources */,
