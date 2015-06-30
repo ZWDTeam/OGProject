@@ -68,7 +68,7 @@ _Pragma("clang diagnostic pop") \
     for (int i = 0; i < items.count; i++) {
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(x, 0, width, self.frame.size.height - 4.0f);
-        button.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+        button.titleLabel.font = [UIFont systemFontOfSize:detail_text_font];
         if ([items[i] isKindOfClass:[NSString class]]) {
             [button setTitle:items[i] forState:UIControlStateNormal];
         }else if ([items[i] isKindOfClass:[UIImage class]]){

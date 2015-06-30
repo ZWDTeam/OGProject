@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBE4E3E1B4186F3009DB23C /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE4E3D1B4186F3009DB23C /* OGLogin.storyboard */; };
+		1DBE4E451B419A8C009DB23C /* OGForgetLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE4E441B419A8C009DB23C /* OGForgetLastViewController.m */; };
+		1DBE4E481B419AE3009DB23C /* OGForgetFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE4E471B419AE3009DB23C /* OGForgetFirstViewController.m */; };
+		1DBE4E4F1B419B7D009DB23C /* OGRegisterFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE4E4A1B419B7D009DB23C /* OGRegisterFirstViewController.m */; };
+		1DBE4E501B419B7D009DB23C /* OGRegisterLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE4E4C1B419B7D009DB23C /* OGRegisterLastViewController.m */; };
+		1DBE4E511B419B7D009DB23C /* OGRegisterSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE4E4E1B419B7D009DB23C /* OGRegisterSecondViewController.m */; };
+		1DBE4E531B419C8F009DB23C /* 1-勾选.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE4E521B419C8F009DB23C /* 1-勾选.png */; };
 		1DC3E1AF1B367A2900ED09B3 /* 2-1进入.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1AE1B367A2900ED09B3 /* 2-1进入.png */; };
 		1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B01B367A4300ED09B3 /* 11-banner.png */; };
 		1DC3E1B31B367DEF00ED09B3 /* 4-赞.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */; };
@@ -29,6 +36,12 @@
 		482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0B71B31C89F00D3A000 /* OGMYRepositoryViewController.m */; };
 		482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */; };
 		482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */; };
+		483B06AA1B41ADAF00FDBBEF /* OGBaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B06A91B41ADAF00FDBBEF /* OGBaseImageView.m */; };
+		483B06AD1B41ADE000FDBBEF /* GuidanceScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B06AC1B41ADE000FDBBEF /* GuidanceScrollView.m */; };
+		483B06B21B41AE2200FDBBEF /* 首页轮播1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06AF1B41AE2200FDBBEF /* 首页轮播1.jpg */; };
+		483B06B31B41AE2200FDBBEF /* 首页轮播2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06B01B41AE2200FDBBEF /* 首页轮播2.jpg */; };
+		483B06B41B41AE2200FDBBEF /* 首页轮播3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 483B06B11B41AE2200FDBBEF /* 首页轮播3.jpg */; };
+		483B06B71B41AECF00FDBBEF /* ConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B06B61B41AECF00FDBBEF /* ConfigFile.m */; };
 		483B31641B3FB8760051474C /* OGSendTypeOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */; };
 		483B31671B3FBF640051474C /* PhotoOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31661B3FBF640051474C /* PhotoOptional.m */; };
 		483B31811B3FD2D50051474C /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B316C1B3FD2D50051474C /* MRBlurView.m */; };
@@ -198,11 +211,6 @@
 		48B4E4F41B3541340035A162 /* OGExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4F31B3541340035A162 /* OGExperienceViewController.m */; };
 		48B4E4F91B35419D0035A162 /* OGIAmStylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4F81B35419D0035A162 /* OGIAmStylistViewController.m */; };
 		48B4E4FC1B3541BC0035A162 /* OGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4FB1B3541BC0035A162 /* OGLoginViewController.m */; };
-		48B4E4FF1B3542280035A162 /* OGRegisterFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4FE1B3542280035A162 /* OGRegisterFirstViewController.m */; };
-		48B4E5021B3542540035A162 /* OGRegisterSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5011B3542540035A162 /* OGRegisterSecondViewController.m */; };
-		48B4E5051B3542620035A162 /* OGRegisterLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5041B3542620035A162 /* OGRegisterLastViewController.m */; };
-		48B4E50B1B3542D30035A162 /* OGForgetFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E50A1B3542D30035A162 /* OGForgetFirstViewController.m */; };
-		48B4E50E1B3542E40035A162 /* OGForgetLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E50D1B3542E40035A162 /* OGForgetLastViewController.m */; };
 		48B4E5111B3547B80035A162 /* OGUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */; };
 		48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5211B3587920035A162 /* OGHomeLayout.m */; };
 		48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E5241B3587F80035A162 /* OGHomeCollectionViewCell.m */; };
@@ -236,7 +244,6 @@
 		48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A2E1B2E76D9003BBFBF /* OGCollocationViewController.m */; };
 		48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */; };
 		48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */; };
-		48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */; };
 		48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */; };
 		48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */; };
 		48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A481B2EB2CA003BBFBF /* OGMapViewController.m */; };
@@ -290,6 +297,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DBE4E3D1B4186F3009DB23C /* OGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OGLogin.storyboard; sourceTree = "<group>"; };
+		1DBE4E431B419A8C009DB23C /* OGForgetLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGForgetLastViewController.h; sourceTree = "<group>"; };
+		1DBE4E441B419A8C009DB23C /* OGForgetLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGForgetLastViewController.m; sourceTree = "<group>"; };
+		1DBE4E461B419AE3009DB23C /* OGForgetFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGForgetFirstViewController.h; sourceTree = "<group>"; };
+		1DBE4E471B419AE3009DB23C /* OGForgetFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGForgetFirstViewController.m; sourceTree = "<group>"; };
+		1DBE4E491B419B7D009DB23C /* OGRegisterFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterFirstViewController.h; sourceTree = "<group>"; };
+		1DBE4E4A1B419B7D009DB23C /* OGRegisterFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterFirstViewController.m; sourceTree = "<group>"; };
+		1DBE4E4B1B419B7D009DB23C /* OGRegisterLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterLastViewController.h; sourceTree = "<group>"; };
+		1DBE4E4C1B419B7D009DB23C /* OGRegisterLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterLastViewController.m; sourceTree = "<group>"; };
+		1DBE4E4D1B419B7D009DB23C /* OGRegisterSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterSecondViewController.h; sourceTree = "<group>"; };
+		1DBE4E4E1B419B7D009DB23C /* OGRegisterSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterSecondViewController.m; sourceTree = "<group>"; };
+		1DBE4E521B419C8F009DB23C /* 1-勾选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-勾选.png"; path = "../src/1-勾选.png"; sourceTree = "<group>"; };
 		1DC3E1AE1B367A2900ED09B3 /* 2-1进入.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1进入.png"; sourceTree = "<group>"; };
 		1DC3E1B01B367A4300ED09B3 /* 11-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-banner.png"; sourceTree = "<group>"; };
 		1DC3E1B21B367DEF00ED09B3 /* 4-赞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-赞.png"; sourceTree = "<group>"; };
@@ -320,6 +339,15 @@
 		482DF0BA1B31C8C400D3A000 /* OGMyNeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyNeedViewController.m; sourceTree = "<group>"; };
 		482DF0BC1B31C8E600D3A000 /* OGSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSetingViewController.h; sourceTree = "<group>"; };
 		482DF0BD1B31C8E600D3A000 /* OGSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSetingViewController.m; sourceTree = "<group>"; };
+		483B06A81B41ADAF00FDBBEF /* OGBaseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseImageView.h; sourceTree = "<group>"; };
+		483B06A91B41ADAF00FDBBEF /* OGBaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseImageView.m; sourceTree = "<group>"; };
+		483B06AB1B41ADE000FDBBEF /* GuidanceScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceScrollView.h; sourceTree = "<group>"; };
+		483B06AC1B41ADE000FDBBEF /* GuidanceScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceScrollView.m; sourceTree = "<group>"; };
+		483B06AF1B41AE2200FDBBEF /* 首页轮播1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播1.jpg"; sourceTree = "<group>"; };
+		483B06B01B41AE2200FDBBEF /* 首页轮播2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播2.jpg"; sourceTree = "<group>"; };
+		483B06B11B41AE2200FDBBEF /* 首页轮播3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播3.jpg"; sourceTree = "<group>"; };
+		483B06B51B41AECF00FDBBEF /* ConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigFile.h; sourceTree = "<group>"; };
+		483B06B61B41AECF00FDBBEF /* ConfigFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigFile.m; sourceTree = "<group>"; };
 		483B31621B3FB8760051474C /* OGSendTypeOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSendTypeOptionViewController.h; sourceTree = "<group>"; };
 		483B31631B3FB8760051474C /* OGSendTypeOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSendTypeOptionViewController.m; sourceTree = "<group>"; };
 		483B31651B3FBF640051474C /* PhotoOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoOptional.h; sourceTree = "<group>"; };
@@ -556,16 +584,6 @@
 		48B4E4F81B35419D0035A162 /* OGIAmStylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGIAmStylistViewController.m; sourceTree = "<group>"; };
 		48B4E4FA1B3541BC0035A162 /* OGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLoginViewController.h; sourceTree = "<group>"; };
 		48B4E4FB1B3541BC0035A162 /* OGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLoginViewController.m; sourceTree = "<group>"; };
-		48B4E4FD1B3542280035A162 /* OGRegisterFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterFirstViewController.h; sourceTree = "<group>"; };
-		48B4E4FE1B3542280035A162 /* OGRegisterFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterFirstViewController.m; sourceTree = "<group>"; };
-		48B4E5001B3542540035A162 /* OGRegisterSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterSecondViewController.h; sourceTree = "<group>"; };
-		48B4E5011B3542540035A162 /* OGRegisterSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterSecondViewController.m; sourceTree = "<group>"; };
-		48B4E5031B3542620035A162 /* OGRegisterLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterLastViewController.h; sourceTree = "<group>"; };
-		48B4E5041B3542620035A162 /* OGRegisterLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterLastViewController.m; sourceTree = "<group>"; };
-		48B4E5091B3542D30035A162 /* OGForgetFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGForgetFirstViewController.h; sourceTree = "<group>"; };
-		48B4E50A1B3542D30035A162 /* OGForgetFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGForgetFirstViewController.m; sourceTree = "<group>"; };
-		48B4E50C1B3542E40035A162 /* OGForgetLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGForgetLastViewController.h; sourceTree = "<group>"; };
-		48B4E50D1B3542E40035A162 /* OGForgetLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGForgetLastViewController.m; sourceTree = "<group>"; };
 		48B4E50F1B3547B80035A162 /* OGUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGUserInfoViewController.h; sourceTree = "<group>"; };
 		48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGUserInfoViewController.m; sourceTree = "<group>"; };
 		48B4E5201B3587920035A162 /* OGHomeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGHomeLayout.h; sourceTree = "<group>"; };
@@ -624,7 +642,6 @@
 		48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindViewController.m; sourceTree = "<group>"; };
 		48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyselfViewController.h; sourceTree = "<group>"; };
 		48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyselfViewController.m; sourceTree = "<group>"; };
-		48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OGLogin.storyboard; sourceTree = "<group>"; };
 		48CF9A3B1B2E78DF003BBFBF /* OGBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseTabBarController.h; sourceTree = "<group>"; };
 		48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseTabBarController.m; sourceTree = "<group>"; };
 		48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExternObject.h; sourceTree = "<group>"; };
@@ -704,6 +721,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DBE4E3F1B418E2D009DB23C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		1DC3E1AD1B3679EB00ED09B3 /* collocationImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -807,6 +831,16 @@
 				48B4E5101B3547B80035A162 /* OGUserInfoViewController.m */,
 			);
 			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		483B06AE1B41AE2200FDBBEF /* JiaShuju */ = {
+			isa = PBXGroup;
+			children = (
+				483B06AF1B41AE2200FDBBEF /* 首页轮播1.jpg */,
+				483B06B01B41AE2200FDBBEF /* 首页轮播2.jpg */,
+				483B06B11B41AE2200FDBBEF /* 首页轮播3.jpg */,
+			);
+			path = JiaShuju;
 			sourceTree = "<group>";
 		};
 		483B31691B3FD2C60051474C /* HUD */ = {
@@ -1286,6 +1320,7 @@
 		48B4E5061B35426A0035A162 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				1DBE4E3F1B418E2D009DB23C /* view */,
 				48B4E4FA1B3541BC0035A162 /* OGLoginViewController.h */,
 				48B4E4FB1B3541BC0035A162 /* OGLoginViewController.m */,
 			);
@@ -1295,12 +1330,12 @@
 		48B4E5071B3542740035A162 /* register */ = {
 			isa = PBXGroup;
 			children = (
-				48B4E4FD1B3542280035A162 /* OGRegisterFirstViewController.h */,
-				48B4E4FE1B3542280035A162 /* OGRegisterFirstViewController.m */,
-				48B4E5001B3542540035A162 /* OGRegisterSecondViewController.h */,
-				48B4E5011B3542540035A162 /* OGRegisterSecondViewController.m */,
-				48B4E5031B3542620035A162 /* OGRegisterLastViewController.h */,
-				48B4E5041B3542620035A162 /* OGRegisterLastViewController.m */,
+				1DBE4E491B419B7D009DB23C /* OGRegisterFirstViewController.h */,
+				1DBE4E4A1B419B7D009DB23C /* OGRegisterFirstViewController.m */,
+				1DBE4E4B1B419B7D009DB23C /* OGRegisterLastViewController.h */,
+				1DBE4E4C1B419B7D009DB23C /* OGRegisterLastViewController.m */,
+				1DBE4E4D1B419B7D009DB23C /* OGRegisterSecondViewController.h */,
+				1DBE4E4E1B419B7D009DB23C /* OGRegisterSecondViewController.m */,
 			);
 			name = register;
 			sourceTree = "<group>";
@@ -1308,10 +1343,10 @@
 		48B4E5081B35427F0035A162 /* forgetPassword */ = {
 			isa = PBXGroup;
 			children = (
-				48B4E5091B3542D30035A162 /* OGForgetFirstViewController.h */,
-				48B4E50A1B3542D30035A162 /* OGForgetFirstViewController.m */,
-				48B4E50C1B3542E40035A162 /* OGForgetLastViewController.h */,
-				48B4E50D1B3542E40035A162 /* OGForgetLastViewController.m */,
+				1DBE4E461B419AE3009DB23C /* OGForgetFirstViewController.h */,
+				1DBE4E471B419AE3009DB23C /* OGForgetFirstViewController.m */,
+				1DBE4E431B419A8C009DB23C /* OGForgetLastViewController.h */,
+				1DBE4E441B419A8C009DB23C /* OGForgetLastViewController.m */,
 			);
 			name = forgetPassword;
 			sourceTree = "<group>";
@@ -1363,7 +1398,7 @@
 				48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */,
 				48CF99EE1B2E724E003BBFBF /* AppDelegate.h */,
 				48CF99EF1B2E724E003BBFBF /* AppDelegate.m */,
-				48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */,
+				1DBE4E3D1B4186F3009DB23C /* OGLogin.storyboard */,
 				48CF99F41B2E724E003BBFBF /* Main.storyboard */,
 				48CF99EB1B2E724E003BBFBF /* Info.plist */,
 				48CF99EC1B2E724E003BBFBF /* main.m */,
@@ -1391,6 +1426,8 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				483B06AE1B41AE2200FDBBEF /* JiaShuju */,
+				1DBE4E521B419C8F009DB23C /* 1-勾选.png */,
 				483B31A71B40357C0051474C /* 11-添加图片.png */,
 				483B31A51B40355C0051474C /* 7-图.png */,
 				483B31A31B4035540051474C /* 7-抢单.png */,
@@ -1398,7 +1435,6 @@
 				483B31981B4033540051474C /* 15-淘订单.png */,
 				4866851C1B3EF81300D28493 /* 10-地址.png */,
 				4866851D1B3EF81300D28493 /* 10-电话.png */,
-				4AD9EDB21B3EBF6800BEF770 /* 4-1.png */,
 				4AB7A3861B3D506100AD58CC /* designerHome */,
 				48A5926E1B39876100392151 /* mapImage */,
 				484C346B1B36B43D0031306D /* mapBtnMan@2x.png */,
@@ -1449,6 +1485,10 @@
 		48CF9A1B1B2E750C003BBFBF /* Communal */ = {
 			isa = PBXGroup;
 			children = (
+				483B06AB1B41ADE000FDBBEF /* GuidanceScrollView.h */,
+				483B06AC1B41ADE000FDBBEF /* GuidanceScrollView.m */,
+				483B06A81B41ADAF00FDBBEF /* OGBaseImageView.h */,
+				483B06A91B41ADAF00FDBBEF /* OGBaseImageView.m */,
 				483B31651B3FBF640051474C /* PhotoOptional.h */,
 				483B31661B3FBF640051474C /* PhotoOptional.m */,
 				48A592D51B399F4000392151 /* DGExpandheader */,
@@ -1531,6 +1571,8 @@
 		48CF9A3E1B2E7B13003BBFBF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				483B06B51B41AECF00FDBBEF /* ConfigFile.h */,
+				483B06B61B41AECF00FDBBEF /* ConfigFile.m */,
 				48A592EA1B39B1CC00392151 /* Masonry */,
 				484376481B303F84006D9D56 /* SGFocus */,
 			);
@@ -1627,6 +1669,7 @@
 		4AB7A3861B3D506100AD58CC /* designerHome */ = {
 			isa = PBXGroup;
 			children = (
+				4AD9EDB21B3EBF6800BEF770 /* 4-1.png */,
 				4AB7A3871B3D507300AD58CC /* 2-2图1.png */,
 				4AB7A3881B3D507300AD58CC /* 2-2图2.png */,
 				4AB7A3891B3D507300AD58CC /* 2-2图3.png */,
@@ -1851,10 +1894,12 @@
 				48A592BE1B39878300392151 /* gg20.jpg in Resources */,
 				48A592AB1B39878300392151 /* gg1.jpg in Resources */,
 				4AB7A3921B3D507300AD58CC /* 2-2图4.png in Resources */,
+				1DBE4E3E1B4186F3009DB23C /* OGLogin.storyboard in Resources */,
 				48BF3A331B3AFC900024DA3A /* OGUnitCollectionViewCell.xib in Resources */,
 				1DC3E1B11B367A4300ED09B3 /* 11-banner.png in Resources */,
 				485FB4331B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib in Resources */,
 				484376B51B307C14006D9D56 /* home20.jpg in Resources */,
+				483B06B21B41AE2200FDBBEF /* 首页轮播1.jpg in Resources */,
 				4AB7A3901B3D507300AD58CC /* 2-2图2.png in Resources */,
 				484376A91B307C14006D9D56 /* home1.jpg in Resources */,
 				484376B61B307C14006D9D56 /* home3.jpg in Resources */,
@@ -1868,6 +1913,7 @@
 				4A0596731B40261C00F3035D /* search.png in Resources */,
 				484376AF1B307C14006D9D56 /* home15.jpg in Resources */,
 				484376BA1B307C14006D9D56 /* home7.jpg in Resources */,
+				483B06B41B41AE2200FDBBEF /* 首页轮播3.jpg in Resources */,
 				48BF3A451B3B15430024DA3A /* OGSendHelpTableViewCell2.xib in Resources */,
 				484376B41B307C14006D9D56 /* home2.jpg in Resources */,
 				48A592DD1B399F5900392151 /* VPStretchBaseView.xib in Resources */,
@@ -1891,13 +1937,13 @@
 				4843767C1B3065F4006D9D56 /* 发现01@2x.png in Resources */,
 				4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
-				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
 				48B4E4EE1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.xib in Resources */,
 				484376AA1B307C14006D9D56 /* home10.jpg in Resources */,
 				4AB7A3951B3D507300AD58CC /* 2-2图7.png in Resources */,
 				4AB7A3941B3D507300AD58CC /* 2-2图6.png in Resources */,
 				4843767E1B3065F4006D9D56 /* 首页01@2x.png in Resources */,
 				484376BC1B307C14006D9D56 /* home9.jpg in Resources */,
+				483B06B31B41AE2200FDBBEF /* 首页轮播2.jpg in Resources */,
 				4843767B1B3065F4006D9D56 /* 发现00@2x.png in Resources */,
 				482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */,
 				4A0596781B40263300F3035D /* 11-图2.png in Resources */,
@@ -1924,6 +1970,7 @@
 				48A592BC1B39878300392151 /* gg18.jpg in Resources */,
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
 				48A5928F1B39877100392151 /* mm13.jpg in Resources */,
+				1DBE4E531B419C8F009DB23C /* 1-勾选.png in Resources */,
 				48B4E4E21B3515800035A162 /* 3-1评论.png in Resources */,
 				4AD9EDA81B3E63C100BEF770 /* registerTextFieldBG.png in Resources */,
 				48A592921B39877100392151 /* mm16.jpg in Resources */,
@@ -1952,7 +1999,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B4E4FF1B3542280035A162 /* OGRegisterFirstViewController.m in Sources */,
 				482DF0B81B31C89F00D3A000 /* OGMYRepositoryViewController.m in Sources */,
 				483B318C1B3FE57C0051474C /* UINavigationBar+Awesome.m in Sources */,
 				4843766C1B306435006D9D56 /* OGHomeButton.m in Sources */,
@@ -1961,6 +2007,7 @@
 				482DF0921B31AEC000D3A000 /* OGFindTableViewCell.m in Sources */,
 				48BF3A491B3B17FF0024DA3A /* OGSendHelpModel.m in Sources */,
 				48BF3A271B3AF8FE0024DA3A /* OGTableSectionView.m in Sources */,
+				1DBE4E451B419A8C009DB23C /* OGForgetLastViewController.m in Sources */,
 				48B4E52A1B3588710035A162 /* OGCollectionReusableView.m in Sources */,
 				48A593061B39B1CC00392151 /* MASViewAttribute.m in Sources */,
 				485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */,
@@ -1976,6 +2023,8 @@
 				48CF9A501B2EB492003BBFBF /* DGMKAninotationView.m in Sources */,
 				4AD9EDA31B3E586E00BEF770 /* OGLookCommentTableViewCell.m in Sources */,
 				48CF9A2C1B2E76CA003BBFBF /* OGHomeViewController.m in Sources */,
+				1DBE4E511B419B7D009DB23C /* OGRegisterSecondViewController.m in Sources */,
+				1DBE4E4F1B419B7D009DB23C /* OGRegisterFirstViewController.m in Sources */,
 				48B4E5111B3547B80035A162 /* OGUserInfoViewController.m in Sources */,
 				4A0596671B40259B00F3035D /* OGDesignerHomeViewController.m in Sources */,
 				48A593081B39B1CC00392151 /* NSArray+MASAdditions.m in Sources */,
@@ -1990,8 +2039,6 @@
 				48A592DB1B399F5900392151 /* DGExpandheader.m in Sources */,
 				4AD9EDB11B3EAAA500BEF770 /* OGDemandDetailsView.m in Sources */,
 				484376871B306D0B006D9D56 /* OGCollocationOnlyViewController.m in Sources */,
-				48B4E50E1B3542E40035A162 /* OGForgetLastViewController.m in Sources */,
-				48B4E5051B3542620035A162 /* OGRegisterLastViewController.m in Sources */,
 				482DF0BB1B31C8C400D3A000 /* OGMyNeedViewController.m in Sources */,
 				483B31671B3FBF640051474C /* PhotoOptional.m in Sources */,
 				48A593091B39B1CC00392151 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -2008,8 +2055,8 @@
 				483B31871B3FD2D50051474C /* MRProgressOverlayView.m in Sources */,
 				482DF0B51B31C7B700D3A000 /* OGMyAttentionViewController.m in Sources */,
 				48B4E4D61B3511680035A162 /* OGLooSchemeViewController.m in Sources */,
-				48B4E50B1B3542D30035A162 /* OGForgetFirstViewController.m in Sources */,
 				48BF3A321B3AFC900024DA3A /* OGUnitCollectionViewCell.m in Sources */,
+				483B06AD1B41ADE000FDBBEF /* GuidanceScrollView.m in Sources */,
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
 				483B31881B3FD2D50051474C /* MRMessageInterceptor.m in Sources */,
 				48B4E4ED1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.m in Sources */,
@@ -2031,20 +2078,23 @@
 				4AD9EDA01B3E585700BEF770 /* OGLookCommentView.m in Sources */,
 				4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
+				483B06B71B41AECF00FDBBEF /* ConfigFile.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
+				1DBE4E501B419B7D009DB23C /* OGRegisterLastViewController.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
 				484C34731B37EE950031306D /* OGSchemeMenuView.m in Sources */,
 				48B4E4F91B35419D0035A162 /* OGIAmStylistViewController.m in Sources */,
+				1DBE4E481B419AE3009DB23C /* OGForgetFirstViewController.m in Sources */,
 				48B4E4F11B353D180035A162 /* OGLookStrategyLayout.m in Sources */,
 				48A593021B39B1CC00392151 /* MASCompositeConstraint.m in Sources */,
 				48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */,
 				483B31A01B4034A20051474C /* OGTaoOrderFormTableViewCell.m in Sources */,
 				48B4E4F41B3541340035A162 /* OGExperienceViewController.m in Sources */,
 				483B31841B3FD2D50051474C /* MRCircularProgressView.m in Sources */,
+				483B06AA1B41ADAF00FDBBEF /* OGBaseImageView.m in Sources */,
 				48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */,
 				485FB4211B3DA2E60010C4F1 /* OGStrategyClassViewController.m in Sources */,
 				48A592E91B39B0CF00392151 /* OGSchemeHeaderView.m in Sources */,
-				48B4E5021B3542540035A162 /* OGRegisterSecondViewController.m in Sources */,
 				48A593051B39B1CC00392151 /* MASLayoutConstraint.m in Sources */,
 				48B4E5261B3587F80035A162 /* OGHomeCollectionViewCell.m in Sources */,
 				48CF9A211B2E757D003BBFBF /* OGBaseNavigationViewController.m in Sources */,

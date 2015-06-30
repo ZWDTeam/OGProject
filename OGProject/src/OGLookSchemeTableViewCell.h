@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface OGLookSchemeTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
+@property (weak, nonatomic) IBOutlet OGBaseImageView *headerImageView;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lookCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *styleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailContentLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+@property (weak, nonatomic) IBOutlet OGBaseImageView *userImageView;
 
 @end

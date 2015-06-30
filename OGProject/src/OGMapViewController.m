@@ -72,7 +72,7 @@
         _houseLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 240, 75)];
         _houseLabel.textColor = [UIColor whiteColor];
         _houseLabel.center = CGPointMake(SCREEN_WIDTH/2.0f, 140);
-        _houseLabel.font = [UIFont boldSystemFontOfSize:18];
+        _houseLabel.font = [UIFont boldSystemFontOfSize:main_text_font];
         _houseLabel.textAlignment = NSTextAlignmentCenter;
         _houseLabel.backgroundColor = [self annotationColor:@"男"];
         _houseLabel.layer.cornerRadius = CGRectGetHeight(_houseLabel.frame)/2.0f;
@@ -185,20 +185,24 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     NSLog(@"%ld",view.tag);
-    if (_showType == MapShowTypePeople) {
-        OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
-        [self.navigationController pushViewController:DesignerVC animated:YES];
-    }else{
-        [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
-    }
+    if ([view isKindOfClass:[DGMKAninotationView class]]) {
+        if (_showType == MapShowTypePeople) {
+            OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
+            [self.navigationController pushViewController:DesignerVC animated:YES];
+        }else{
+            [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
+        }
 
+    }
 }
 
 - (UIColor *)annotationColor:(NSString *)sex{
     if ([sex isEqualToString:@"男"]) {
-        return [UIColor colorWithRed:87.0f/255.0f green:112.0f/255.0f blue:176.0f/255.0f alpha:1.0f];
+        return [UIColor colorWithRed:79.0f/255.0f green:148.0f/255.0f blue:251.0f/255.0f alpha:1.0f];
+    }else if([sex isEqualToString:@"女"]){
+        return [UIColor colorWithRed:240.0f/255.0f green:95.0f/255.0f blue:162.0f/255.0f alpha:1.0f];
     }else{
-        return [UIColor colorWithRed:245.0f/255.0f green:79.0f/255.0f blue:261.0f/255.0f alpha:1.0f];
+        return [UIColor colorWithRed:251.0f/255.0f green:192.0f/255.0f blue:79.0f/255.0f alpha:1.0f];
     }
 }
 

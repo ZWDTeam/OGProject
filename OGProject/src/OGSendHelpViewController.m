@@ -61,7 +61,7 @@
         _tableViewFootView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
         UITextView * textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 10, SCREEN_WIDTH-20, 150-20)];
         textView.backgroundColor = [UIColor whiteColor];
-        textView.font = [UIFont systemFontOfSize:16];
+        textView.font = [UIFont systemFontOfSize:main_text_font];
         textView.delegate = self;
         textView.returnKeyType = UIReturnKeyDone;
         [_tableViewFootView addSubview:textView];
@@ -237,7 +237,7 @@
     UILabel * l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
     l.text = @"mm";
     l.textColor = [UIColor orangeColor];
-    l.font = [UIFont systemFontOfSize:15];
+    l.font = [UIFont systemFontOfSize:detail_text_font];
     return l;
 }
 

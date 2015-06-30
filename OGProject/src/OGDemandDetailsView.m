@@ -20,7 +20,7 @@
     UILabel * labelAddress;
     UILabel * labelBudget;
     
-    UIImageView * imgHouseType;
+    OGBaseImageView * imgHouseType;
     
     UILabel * labelDetailedMsg;
  
@@ -41,7 +41,7 @@
         [self addSubview:scrollViewDetail];
         //灰色小条
         //灰色的破条子创建
-        UIImageView * imgTemp = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, MainView_Width, 8)];
+        OGBaseImageView * imgTemp = [[OGBaseImageView alloc]initWithFrame:CGRectMake(0, 0, MainView_Width, 8)];
         [imgTemp setBackgroundColor:Color_Brey_BG];
         [scrollViewDetail addSubview:imgTemp];
 

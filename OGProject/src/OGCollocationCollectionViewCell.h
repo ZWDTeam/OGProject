@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OGCollocationCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
+@property (weak, nonatomic) IBOutlet OGBaseImageView *contentImageView;
 
 @end
