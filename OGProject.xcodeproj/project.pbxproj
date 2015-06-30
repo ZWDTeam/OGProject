@@ -32,7 +32,7 @@
 		1DEAEE9C1B4304EE0052DD00 /* yb7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAEE921B4304EE0052DD00 /* yb7.png */; };
 		1DEAEE9D1B4304EE0052DD00 /* yb8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAEE931B4304EE0052DD00 /* yb8.png */; };
 		1DEAEE9E1B4304EE0052DD00 /* yb9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAEE941B4304EE0052DD00 /* yb9.png */; };
-		1DEAEEA01B4305540052DD00 /* OGSchemeModel2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAEE9F1B4305540052DD00 /* OGSchemeModel2.plist */; };
+		1DEAEEA01B4305540052DD00 /* OGSchemeModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAEE9F1B4305540052DD00 /* OGSchemeModel.plist */; };
 		4825B0111B42EF8C001A0D8B /* 首页轮播1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */; };
 		4825B0121B42EF8C001A0D8B /* 首页轮播2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */; };
 		4825B0131B42EF8C001A0D8B /* 首页轮播3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */; };
@@ -361,7 +361,7 @@
 		1DEAEE921B4304EE0052DD00 /* yb7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yb7.png; sourceTree = "<group>"; };
 		1DEAEE931B4304EE0052DD00 /* yb8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yb8.png; sourceTree = "<group>"; };
 		1DEAEE941B4304EE0052DD00 /* yb9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yb9.png; sourceTree = "<group>"; };
-		1DEAEE9F1B4305540052DD00 /* OGSchemeModel2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = OGSchemeModel2.plist; path = "样板图/OGSchemeModel2.plist"; sourceTree = "<group>"; };
+		1DEAEE9F1B4305540052DD00 /* OGSchemeModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = OGSchemeModel.plist; path = "样板图/OGSchemeModel.plist"; sourceTree = "<group>"; };
 		4825B00E1B42EF8B001A0D8B /* 首页轮播1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播1.jpg"; sourceTree = "<group>"; };
 		4825B00F1B42EF8B001A0D8B /* 首页轮播2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播2.jpg"; sourceTree = "<group>"; };
 		4825B0101B42EF8B001A0D8B /* 首页轮播3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "首页轮播3.jpg"; sourceTree = "<group>"; };
@@ -1478,7 +1478,7 @@
 			isa = PBXGroup;
 			children = (
 				4825B01D1B42F2FB001A0D8B /* OGSchemeModel1.plist */,
-				1DEAEE9F1B4305540052DD00 /* OGSchemeModel2.plist */,
+				1DEAEE9F1B4305540052DD00 /* OGSchemeModel.plist */,
 				48BF3A471B3B17FF0024DA3A /* OGSendHelpModel.h */,
 				48BF3A481B3B17FF0024DA3A /* OGSendHelpModel.m */,
 			);
@@ -2084,7 +2084,7 @@
 				4825B03C1B42F3DF001A0D8B /* first2.png in Resources */,
 				4825B02E1B42F322001A0D8B /* 方案4.jpeg in Resources */,
 				482DF0A21B31B65200D3A000 /* MyselfHeaderView.xib in Resources */,
-				1DEAEEA01B4305540052DD00 /* OGSchemeModel2.plist in Resources */,
+				1DEAEEA01B4305540052DD00 /* OGSchemeModel.plist in Resources */,
 				1DEAEE971B4304EE0052DD00 /* yb2.png in Resources */,
 				4825B0311B42F322001A0D8B /* 方案7.jpeg in Resources */,
 				4825B0341B42F322001A0D8B /* 方案10.jpeg in Resources */,
