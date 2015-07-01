@@ -331,6 +331,9 @@
 		4ADB15E21B437BDB00601C45 /* OGRegisterThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15E01B437BDB00601C45 /* OGRegisterThreeViewController.xib */; };
 		4ADB15E41B437D4F00601C45 /* 1-添加照片.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15E31B437D4F00601C45 /* 1-添加照片.png */; };
 		4ADB15E71B437F9D00601C45 /* MLImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15E61B437F9D00601C45 /* MLImageCrop.m */; };
+		4ADB15EC1B4386CB00601C45 /* ReservationDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15EA1B4386CB00601C45 /* ReservationDesignViewController.m */; };
+		4ADB15ED1B4386CB00601C45 /* ReservationDesignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15EB1B4386CB00601C45 /* ReservationDesignViewController.xib */; };
+		4ADB15EF1B4396AB00601C45 /* 2-3头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15EE1B4396AB00601C45 /* 2-3头像.png */; };
 		4ADEA6951B41128000FFA61D /* 9-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEA6941B41128000FFA61D /* 9-share.png */; };
 		4ADEA6981B41567E00FFA61D /* WWCommentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */; };
 /* End PBXBuildFile section */
@@ -799,6 +802,10 @@
 		4ADB15E31B437D4F00601C45 /* 1-添加照片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-添加照片.png"; sourceTree = "<group>"; };
 		4ADB15E51B437F9D00601C45 /* MLImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLImageCrop.h; sourceTree = "<group>"; };
 		4ADB15E61B437F9D00601C45 /* MLImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLImageCrop.m; sourceTree = "<group>"; };
+		4ADB15E91B4386CB00601C45 /* ReservationDesignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationDesignViewController.h; sourceTree = "<group>"; };
+		4ADB15EA1B4386CB00601C45 /* ReservationDesignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationDesignViewController.m; sourceTree = "<group>"; };
+		4ADB15EB1B4386CB00601C45 /* ReservationDesignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReservationDesignViewController.xib; sourceTree = "<group>"; };
+		4ADB15EE1B4396AB00601C45 /* 2-3头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-3头像.png"; sourceTree = "<group>"; };
 		4ADEA6941B41128000FFA61D /* 9-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-share.png"; sourceTree = "<group>"; };
 		4ADEA6961B41567E00FFA61D /* WWCommentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCommentLabel.h; sourceTree = "<group>"; };
 		4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCommentLabel.m; sourceTree = "<group>"; };
@@ -882,6 +889,7 @@
 		4825B00D1B42EF7D001A0D8B /* shuJu */ = {
 			isa = PBXGroup;
 			children = (
+				4ADB15EE1B4396AB00601C45 /* 2-3头像.png */,
 				4825B0371B42F3DF001A0D8B /* first1.png */,
 				4825B0381B42F3DF001A0D8B /* first2.png */,
 				4825B0391B42F3DF001A0D8B /* first3.png */,
@@ -1659,6 +1667,7 @@
 		48CF9A251B2E7611003BBFBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4ADB15E81B4386B600601C45 /* ReservationDesign */,
 				4ADB15C71B42AA7200601C45 /* desginerRegister */,
 				4A962E5A1B3CF7D4002C87CA /* FindDesigner */,
 				48CF9A461B2EB2AE003BBFBF /* Map */,
@@ -1911,6 +1920,16 @@
 			name = desginerRegister;
 			sourceTree = "<group>";
 		};
+		4ADB15E81B4386B600601C45 /* ReservationDesign */ = {
+			isa = PBXGroup;
+			children = (
+				4ADB15E91B4386CB00601C45 /* ReservationDesignViewController.h */,
+				4ADB15EA1B4386CB00601C45 /* ReservationDesignViewController.m */,
+				4ADB15EB1B4386CB00601C45 /* ReservationDesignViewController.xib */,
+			);
+			name = ReservationDesign;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2080,6 +2099,7 @@
 				48A5928C1B39877100392151 /* mm10.jpg in Resources */,
 				484376651B304D12006D9D56 /* 看攻略@2x.png in Resources */,
 				485FB4291B3DAABB0010C4F1 /* OGStrategyCommentTableViewCell.xib in Resources */,
+				4ADB15ED1B4386CB00601C45 /* ReservationDesignViewController.xib in Resources */,
 				4A0596771B40263300F3035D /* 11-图1.png in Resources */,
 				4825B03E1B42F3DF001A0D8B /* first4.png in Resources */,
 				4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */,
@@ -2184,6 +2204,7 @@
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,
 				484376B81B307C14006D9D56 /* home5.jpg in Resources */,
 				4ADB15DD1B43759600601C45 /* g.png in Resources */,
+				4ADB15EF1B4396AB00601C45 /* 2-3头像.png in Resources */,
 				48A592E61B39AED600392151 /* OGSchemeHeaderView.xib in Resources */,
 				48A592BC1B39878300392151 /* gg18.jpg in Resources */,
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
@@ -2264,6 +2285,7 @@
 				482DF0BE1B31C8E600D3A000 /* OGSetingViewController.m in Sources */,
 				48A593031B39B1CC00392151 /* MASConstraint.m in Sources */,
 				48A5930E1B39B46100392151 /* OGPriceLabel.m in Sources */,
+				4ADB15EC1B4386CB00601C45 /* ReservationDesignViewController.m in Sources */,
 				48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */,
 				4825B01C1B42F190001A0D8B /* OGCollecationClassifyViewController.m in Sources */,
 				483B31891B3FD2D50051474C /* MRWeakProxy.m in Sources */,

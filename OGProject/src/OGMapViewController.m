@@ -10,7 +10,7 @@
 #import "LocationHeaderView.h"
 #import "DGMKAninotationView.h"
 #import "OGMapShowTypeView.h"
-
+#import "ReservationDesignViewController.h"
 @interface OGMapViewController ()<CLLocationManagerDelegate,MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -64,8 +64,18 @@
         self.houseLabel.text = @"查看附近的体验馆";
     }
     
+    UIButton * btnTest03 = [[UIButton alloc]initWithFrame:CGRectMake(100, 400, 100, 100)];
+    [btnTest03 setBackgroundColor:[UIColor redColor]];
+    [btnTest03 setTitle:@"预约设计" forState:UIControlStateNormal];
+    [btnTest03 addTarget:self action:@selector(ReservationDesigner) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnTest03];
+    
 }
-
+-(void)ReservationDesigner{
+    ReservationDesignViewController * vc = [[ReservationDesignViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (UILabel *)houseLabel{
     if (!_houseLabel) {

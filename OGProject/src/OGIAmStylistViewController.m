@@ -10,6 +10,7 @@
 #import "OGDemandDetailsViewController.h"
 #import "OGDesignCircleViewController.h"
 #import "OGRegisterOneViewController.h"
+#import "ReservationDesignViewController.h"
 @interface OGIAmStylistViewController ()
 
 @end
@@ -49,6 +50,8 @@
     [btnTest02 addTarget:self action:@selector(goDesignerRegister) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btnTest02];
+    
+
 
 }
 
