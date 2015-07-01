@@ -7,6 +7,7 @@
 //
 
 #import "OGDesignerHomeViewController.h"
+#import "ReservationDesignViewController.h"
 
 @interface OGDesignerHomeViewController (){
     //用于处理作品风格按钮点击效果中间量
@@ -162,12 +163,15 @@
  *  预约设计
  */
 - (IBAction)subscribe:(id)sender {
+    ReservationDesignViewController * vc = [[ReservationDesignViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /**
  *  联系设计师
  */
 - (IBAction)ContactDesigner:(id)sender {
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://4000-888-186"]];
 }
 
 /**

@@ -98,6 +98,10 @@
 		483B31A61B40355C0051474C /* 7-图.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A51B40355C0051474C /* 7-图.png */; };
 		483B31A81B40357C0051474C /* 11-添加图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 483B31A71B40357C0051474C /* 11-添加图片.png */; };
 		483B31AB1B40392F0051474C /* OrderFormInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B31AA1B40392F0051474C /* OrderFormInfo.m */; };
+		48421D681B44111000781FF6 /* mySelfBackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 48421D671B44111000781FF6 /* mySelfBackImage.png */; };
+		48421D6A1B441BED00781FF6 /* nanPeopleModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48421D691B441BED00781FF6 /* nanPeopleModel.plist */; };
+		48421D6C1B441C7A00781FF6 /* nvPeopleModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48421D6B1B441C7A00781FF6 /* nvPeopleModel.plist */; };
+		48421D6E1B4424C700781FF6 /* companyModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48421D6D1B4424C700781FF6 /* companyModel.plist */; };
 		484376471B303EF8006D9D56 /* homeHeaderModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484376461B303EF8006D9D56 /* homeHeaderModel.plist */; };
 		4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764A1B303F84006D9D56 /* ScrollPageControl.m */; };
 		484376501B303F84006D9D56 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843764C1B303F84006D9D56 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -470,6 +474,10 @@
 		483B31A71B40357C0051474C /* 11-添加图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-添加图片.png"; sourceTree = "<group>"; };
 		483B31A91B40392F0051474C /* OrderFormInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFormInfo.h; sourceTree = "<group>"; };
 		483B31AA1B40392F0051474C /* OrderFormInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFormInfo.m; sourceTree = "<group>"; };
+		48421D671B44111000781FF6 /* mySelfBackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mySelfBackImage.png; sourceTree = "<group>"; };
+		48421D691B441BED00781FF6 /* nanPeopleModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nanPeopleModel.plist; sourceTree = "<group>"; };
+		48421D6B1B441C7A00781FF6 /* nvPeopleModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nvPeopleModel.plist; sourceTree = "<group>"; };
+		48421D6D1B4424C700781FF6 /* companyModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = companyModel.plist; sourceTree = "<group>"; };
 		484376461B303EF8006D9D56 /* homeHeaderModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeHeaderModel.plist; sourceTree = "<group>"; };
 		484376491B303F84006D9D56 /* ScrollPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageControl.h; sourceTree = "<group>"; };
 		4843764A1B303F84006D9D56 /* ScrollPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageControl.m; sourceTree = "<group>"; };
@@ -889,6 +897,7 @@
 		4825B00D1B42EF7D001A0D8B /* shuJu */ = {
 			isa = PBXGroup;
 			children = (
+				48421D671B44111000781FF6 /* mySelfBackImage.png */,
 				4ADB15EE1B4396AB00601C45 /* 2-3头像.png */,
 				4825B0371B42F3DF001A0D8B /* first1.png */,
 				4825B0381B42F3DF001A0D8B /* first2.png */,
@@ -1781,6 +1790,9 @@
 			isa = PBXGroup;
 			children = (
 				48A5926C1B3986E600392151 /* LoctionUserModel.plist */,
+				48421D6D1B4424C700781FF6 /* companyModel.plist */,
+				48421D691B441BED00781FF6 /* nanPeopleModel.plist */,
+				48421D6B1B441C7A00781FF6 /* nvPeopleModel.plist */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -2025,6 +2037,7 @@
 				482DF09A1B31B00300D3A000 /* 15-2.png in Resources */,
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
 				1DEAEE951B4304EE0052DD00 /* yb1.png in Resources */,
+				48421D6A1B441BED00781FF6 /* nanPeopleModel.plist in Resources */,
 				48A592B71B39878300392151 /* gg13.jpg in Resources */,
 				486685161B3EF47B00D28493 /* OGExprienceTableViewCell1.xib in Resources */,
 				483B31A61B40355C0051474C /* 7-图.png in Resources */,
@@ -2102,6 +2115,7 @@
 				4ADB15ED1B4386CB00601C45 /* ReservationDesignViewController.xib in Resources */,
 				4A0596771B40263300F3035D /* 11-图1.png in Resources */,
 				4825B03E1B42F3DF001A0D8B /* first4.png in Resources */,
+				48421D681B44111000781FF6 /* mySelfBackImage.png in Resources */,
 				4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */,
 				48A592BE1B39878300392151 /* gg20.jpg in Resources */,
 				48A592AB1B39878300392151 /* gg1.jpg in Resources */,
@@ -2140,6 +2154,7 @@
 				4843767F1B3065F4006D9D56 /* 我的00@2x.png in Resources */,
 				48A592AE1B39878300392151 /* gg4.jpg in Resources */,
 				48A592931B39877100392151 /* mm17.jpg in Resources */,
+				48421D6E1B4424C700781FF6 /* companyModel.plist in Resources */,
 				4ADB15DB1B43725C00601C45 /* checkOut.png in Resources */,
 				4ADB15D71B42B5E900601C45 /* OGRegisterTwoViewController.xib in Resources */,
 				484376681B304D12006D9D56 /* 找方案@2x.png in Resources */,
@@ -2181,6 +2196,7 @@
 				484376BC1B307C14006D9D56 /* home9.jpg in Resources */,
 				4843767B1B3065F4006D9D56 /* 发现00@2x.png in Resources */,
 				482DF0AE1B31C38000D3A000 /* 19-1性别-男.png in Resources */,
+				48421D6C1B441C7A00781FF6 /* nvPeopleModel.plist in Resources */,
 				4A0596781B40263300F3035D /* 11-图2.png in Resources */,
 				4AB7A37D1B3D0BDD00AD58CC /* 8-大头像.png in Resources */,
 				484C346A1B36B30B0031306D /* OGMapShowTypeView.xib in Resources */,

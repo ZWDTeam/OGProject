@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "OGRegisterThreeViewController.h"
-@interface OGRegisterTwoViewController : UIViewController<UITextFieldDelegate>
+#import "OGBaseViewController.h"
+
+@interface OGRegisterTwoViewController : OGBaseViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *tfUserName;
 @property (weak, nonatomic) IBOutlet UITextField *tfUserCompany;
 @property (weak, nonatomic) IBOutlet UITextField *tfStyle;

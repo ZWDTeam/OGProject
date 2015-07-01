@@ -7,6 +7,7 @@
 //
 
 #import "ReservationDesignViewController.h"
+#import "MRProgressOverlayView.h"
 
 @interface ReservationDesignViewController (){
     BOOL timeSelect;
@@ -35,8 +36,7 @@
     UITapGestureRecognizer * tapToMissKeyboard = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(missKerboard)];
     [self.view addGestureRecognizer:tapToMissKeyboard];
 
-    
-    
+
     //赋值
     
     //userName
@@ -85,7 +85,31 @@
     NSString * strContext = self.textViewContext.text;
     
     WWLog(@"用户需求内容 --%@",strContext);
+    
+    MRProgressOverlayView *progressView = [MRProgressOverlayView new];
+    progressView.titleLabelText = @"提交中...";
+    [self.navigationController.view addSubview:progressView];
+    [progressView show:YES];
+    
+    [self performBlock:^{
+        progressView.mode = MRProgressOverlayViewModeCheckmark;
+        progressView.titleLabelText = @"提交成功";
+        
+        [self performBlock:^{
+            [progressView dismiss:YES];
+            [self.navigationController popViewControllerAnimated:YES];
+        } afterDelay:0.5];
+        
+    } afterDelay:2.0];
+
 }
+
+- (void)performBlock:(void(^)())block afterDelay:(NSTimeInterval)delay {
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), block);
+}
+
+
 
 
 

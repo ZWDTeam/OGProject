@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *sexImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
 @property (weak , nonatomic) id <MyselfHeaderViewDelegate>delegate;
 
 @end

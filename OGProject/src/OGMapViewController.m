@@ -18,8 +18,15 @@
 @property (assign , nonatomic , getter = isUpdataAnnotations)BOOL updataAnnotations;
 
 @property (strong , nonatomic)NSArray * allPeoples;
+@property (strong , nonatomic)NSArray * mamPeoples;
+@property (strong , nonatomic)NSArray * womamPeoples;
+@property (strong , nonatomic)NSArray * companyPeoples;
 
 @property (strong , nonatomic)UILabel * houseLabel;
+
+@property (strong , nonatomic)CLLocation * newsLocation;
+
+@property (assign , nonatomic)NSInteger type;
 
 @end
 
@@ -28,9 +35,21 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
+        _type = -1;
+        
         self.title = @"找设计师";
         NSString * path = [[NSBundle mainBundle] pathForResource:@"LoctionUserModel" ofType:@"plist"];
         _allPeoples = [NSArray arrayWithContentsOfFile:path];
+        
+        path = [[NSBundle mainBundle] pathForResource:@"nanPeopleModel" ofType:@"plist"];
+        _mamPeoples = [NSArray arrayWithContentsOfFile:path];
+        
+        path = [[NSBundle mainBundle] pathForResource:@"nvPeopleModel" ofType:@"plist"];
+        _womamPeoples = [NSArray arrayWithContentsOfFile:path];
+        
+        path = [[NSBundle mainBundle] pathForResource:@"companyModel" ofType:@"plist"];
+        _companyPeoples = [NSArray arrayWithContentsOfFile:path];
+        
         
     }
     return self;
@@ -63,18 +82,7 @@
     }else{
         self.houseLabel.text = @"查看附近的体验馆";
     }
-    
-    UIButton * btnTest03 = [[UIButton alloc]initWithFrame:CGRectMake(100, 400, 100, 100)];
-    [btnTest03 setBackgroundColor:[UIColor redColor]];
-    [btnTest03 setTitle:@"预约设计" forState:UIControlStateNormal];
-    [btnTest03 addTarget:self action:@selector(ReservationDesigner) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:btnTest03];
-    
-}
--(void)ReservationDesigner{
-    ReservationDesignViewController * vc = [[ReservationDesignViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (UILabel *)houseLabel{
@@ -94,20 +102,34 @@
 
 
 - (void)selectedShowType:(OGMapShowTypeView *)view{
+    _type = view.selectedIndex;
     NSLog(@"%ld",view.selectedIndex);
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    _updataAnnotations = YES;
+    [self addLocations:_type];
 }
 
-- (void)addLocations:(CLLocation *)firstLocation{
+- (void)addLocations:(NSInteger)type{
     
-    CLLocationCoordinate2D cordinate = firstLocation.coordinate;
-
+    
+    CLLocationCoordinate2D cordinate = _newsLocation.coordinate;
+     NSInteger count = 0 ;
+    if (type ==0) {
+        count =_mamPeoples.count;
+    }else if(type ==1){
+        count =_womamPeoples.count;
+    }else if (type ==2){
+        count =_companyPeoples.count;
+    }else{
+        count =_allPeoples.count;
+    }
     
     if (self.isUpdataAnnotations) {
         _updataAnnotations =NO;
         
         double x =0;
         double y = 0;
-        for (int  i = 0;  i <10; i++) {
+        for (int  i = 0;  i <count; i++) {
             if (i%2) {
                 x = arc4random()%20/1000.0f;
                 y = arc4random()%13/1000.0f;
@@ -122,6 +144,7 @@
             pAnno.subtitle = @"子标题";
             pAnno.tag = i;
             [self.mapView addAnnotation:pAnno];//添加大头针
+        
         }
     }
 
@@ -131,11 +154,11 @@
 //返回定位信息
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    CLLocation * newLocation = [locations firstObject];
-    CLLocationCoordinate2D cordinate = newLocation.coordinate;
+    _newsLocation = [locations firstObject];
+    CLLocationCoordinate2D cordinate = _newsLocation.coordinate;
     
     //添加大头针
-    [self addLocations:newLocation];
+    [self addLocations:-1];
     
     //放大地图到自身的经纬度位置。
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(cordinate, 3000, 3000);
@@ -179,27 +202,49 @@
 
     
     DGMKAninotationView *newAnnotation= (DGMKAninotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    NSString * sex = _allPeoples[index][@"sex"];
     
-    if (newAnnotation == nil) {
-        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[self annotationColor:sex]];
+    NSDictionary * dic;
+    switch (_type) {
+        case 0:
+            dic = _mamPeoples[index];
+            break;
+        case 1:
+            dic = _womamPeoples[index];
+            break;
+        case 2:
+            dic = _companyPeoples[index];
+            break;
+
+            
+        default:
+            dic = _allPeoples[index];
+            break;
     }
     
+    NSString * sex = dic[@"sex"];
+
     
-    newAnnotation.headerImageView.image =[UIImage imageNamed:_allPeoples[index][@"image"]];
+//    if (newAnnotation == nil) {
+        newAnnotation=[[DGMKAninotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier withColor:[self annotationColor:sex]];
+//    }
+    
+    
+    newAnnotation.headerImageView.image =[UIImage imageNamed:dic[@"image"]];
     newAnnotation.tag = index;
     
-    newAnnotation.titleLabel.text = _allPeoples[index][@"name"];
+    newAnnotation.titleLabel.text = dic[@"name"];
+    
     return newAnnotation;
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
-    NSLog(@"%ld",view.tag);
-    if (_showType == MapShowTypePeople) {
-        OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
-        [self.navigationController pushViewController:DesignerVC animated:YES];
-    }else{
-        [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
+    if ([view isKindOfClass:[DGMKAninotationView class]]) {
+        if (_showType == MapShowTypePeople) {
+            OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
+            [self.navigationController pushViewController:DesignerVC animated:YES];
+        }else{
+            [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
+        }
     }
 
 }
@@ -207,8 +252,10 @@
 - (UIColor *)annotationColor:(NSString *)sex{
     if ([sex isEqualToString:@"男"]) {
         return [UIColor colorWithRed:87.0f/255.0f green:112.0f/255.0f blue:176.0f/255.0f alpha:1.0f];
-    }else{
+    }else if([sex isEqualToString:@"女"]){
         return [UIColor colorWithRed:245.0f/255.0f green:79.0f/255.0f blue:261.0f/255.0f alpha:1.0f];
+    }else{
+        return [UIColor colorWithRed:252.0f/255.0f green:192.0f/255.0f blue:80.0f/255.0f alpha:1.0f];
     }
 }
 

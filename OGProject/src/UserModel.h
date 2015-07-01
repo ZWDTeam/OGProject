@@ -26,4 +26,10 @@
 
 @property (strong , nonatomic)NSString * address;
 
+@property (strong , nonatomic)NSString * company;//公司
+
+@property (strong , nonatomic)NSString *year;//从业年限
+
+@property (strong , nonatomic)NSString *intro;//简介
+
 @end

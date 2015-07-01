@@ -7,6 +7,7 @@
 //
 
 #import "OGLoginViewController.h"
+#import "OGRegisterOneViewController.h"
 
 @interface OGLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *telephoneNumberView;
@@ -75,7 +76,11 @@
 {
     switch (buttonIndex) {
         case 0:
-            [self performSegueWithIdentifier:@"pushRegister" sender:nil];
+        {
+            OGRegisterOneViewController * registerVC = [[OGRegisterOneViewController alloc]init];
+            [self.navigationController pushViewController:registerVC animated:YES];
+
+        }
             break;
         case 1:
             [self performSegueWithIdentifier:@"pushRegister" sender:nil];

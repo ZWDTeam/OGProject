@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "MLImageCrop.h"
+#import "OGBaseViewController.h"
 
-@interface OGRegisterThreeViewController : UIViewController<UIImagePickerControllerDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,MLImageCropDelegate>
+@interface OGRegisterThreeViewController : OGBaseViewController<UIImagePickerControllerDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,MLImageCropDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnAddFace;
 
 @end

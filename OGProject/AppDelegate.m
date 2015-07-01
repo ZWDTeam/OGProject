@@ -25,6 +25,9 @@
     ex_userInfo.type = @"三十两厅";
     ex_userInfo.area = @"152 mm";
     ex_userInfo.address = @"岳麓区涉外花园";
+    ex_userInfo.company = @"欧工软装";
+    ex_userInfo.year = @"4年";
+    ex_userInfo.intro = @"我的简介";
     
     ex_identityType = OGIdentityTypeUser;
     

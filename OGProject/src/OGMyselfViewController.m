@@ -32,6 +32,8 @@
         
       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelectedIndex:) name:tabbar_selectedIndex_notification object:nil];
         
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelectedIndex:) name:login_notification object:nil];
+        
     }
     return self;
     
@@ -41,8 +43,16 @@
 - (void)tabBarSelectedIndex:(NSNumber *)selectedIndex{
     if (ex_identityType == OGIdentityTypeUser) {
         _items = @[@"我的关注",@"我的收藏",@"我的需求",@"设置"];
+        self.headerView.backImageView.hidden = YES;
+        self.headerView.backgroundColor = [UIColor clearColor];
+        [self.tableView reloadData];
+        
     }else if (ex_identityType == OGIdentityTypeStylist){
+        self.headerView.backImageView.hidden = NO;
+        self.headerView.backgroundColor = [UIColor blackColor];
         _items = @[@"我的作品",@"我的订单",@"我的关注",@"我的收藏",@"设置"];
+        [self.tableView reloadData];
+
     }
 }
 
@@ -101,6 +111,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     
     if (ex_identityType == OGIdentityTypeStylist && indexPath.row ==4) {
         [self performSegueWithIdentifier:@"pushSetingView" sender:indexPath];
@@ -133,7 +145,6 @@
             break;
     }
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)dealloc{

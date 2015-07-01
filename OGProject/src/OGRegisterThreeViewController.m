@@ -7,6 +7,7 @@
 //
 
 #import "OGRegisterThreeViewController.h"
+#import "MRProgressOverlayView.h"
 
 @interface OGRegisterThreeViewController (){
     UIImage * imageData;
@@ -34,11 +35,31 @@
 }
 //提交
 - (IBAction)submit:(id)sender {
-    //数据收集--图片data   已经做了压缩处理
-    /*--
-    imageUpload
-    -- */
+    
+    MRProgressOverlayView *progressView = [MRProgressOverlayView new];
+    progressView.titleLabelText = @"提交中...";
+    [self.navigationController.view addSubview:progressView];
+    [progressView show:YES];
+    
+    [self performBlock:^{
+        progressView.mode = MRProgressOverlayViewModeCheckmark;
+        progressView.titleLabelText = @"提交成功";
+        
+        [self performBlock:^{
+            [progressView dismiss:YES];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        } afterDelay:0.5];
+        
+    } afterDelay:2.0];
+    
 }
+
+- (void)performBlock:(void(^)())block afterDelay:(NSTimeInterval)delay {
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), block);
+}
+
+
 - (IBAction)addFace:(id)sender {
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"返回" destructiveButtonTitle:nil otherButtonTitles:@"相机", @"照片库", nil];
     [sheet showInView:self.view.window];

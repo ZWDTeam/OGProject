@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGBaseViewController.h"
 
-@interface OGRegisterOneViewController : UIViewController
+@interface OGRegisterOneViewController : OGBaseViewController
 @property (weak, nonatomic) IBOutlet UITextField *tfPhoneNum;
 @property (weak, nonatomic) IBOutlet UIButton *btnCaptchas;
 @property (weak, nonatomic) IBOutlet UITextField *tfCaptchas;

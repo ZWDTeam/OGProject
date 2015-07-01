@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGBaseViewController.h"
 
-@interface ReservationDesignViewController : UIViewController<UITextFieldDelegate>
+@interface ReservationDesignViewController : OGBaseViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnCheckBox01;
 @property (weak, nonatomic) IBOutlet UIButton *btnCheckBox02;
 

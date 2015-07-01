@@ -24,6 +24,7 @@
         self.title = @"个人资料";
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginOut) name:login_notification object:nil];
+        
     }
     return self;
 }
@@ -44,7 +45,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    if (ex_identityType == OGIdentityTypeUser) {
+        return 4;
+    }else{
+        if (section ==0) {
+            return 4;
+
+        }else{
+            return 5;
+        }
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,35 +95,75 @@
                 break;
         }
     }else{
-        switch (indexPath.row) {
-            case 0:{
-                cell.titleLabel.text = @"装修风格";
-                cell.detailContentLabel.text = ex_userInfo.style;
+        if (ex_identityType == OGIdentityTypeUser) {
+            switch (indexPath.row) {
+                case 0:{
+                    cell.titleLabel.text = @"装修风格";
+                    cell.detailContentLabel.text = ex_userInfo.style;
+                    
+                }
+                    break;
+                case 1:{
+                    cell.titleLabel.text = @"户型";
+                    cell.detailContentLabel.text = ex_userInfo.type;
+                    
+                }
+                    break;
+                case 2:{
+                    cell.titleLabel.text = @"面积";
+                    cell.detailContentLabel.text = ex_userInfo.area;
+                    
+                }
+                    break;
+                case 3:{
+                    cell.titleLabel.text = @"我的地址";
+                    cell.detailContentLabel.text = ex_userInfo.address;
+                    
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }else{
+        
+            switch (indexPath.row) {
+                case 0:{
+                    cell.titleLabel.text = @"设计公司";
+                    cell.detailContentLabel.text = ex_userInfo.company;
+                    
+                }
+                    break;
+                case 1:{
+                    cell.titleLabel.text = @"从业年限";
+                    cell.detailContentLabel.text = ex_userInfo.year;
+                    
+                }
+                    break;
+                case 2:{
+                    cell.titleLabel.text = @"收藏风格";
+                    cell.detailContentLabel.text = ex_userInfo.style;
+                    
+                }
+                    break;
+                case 3:{
+                    cell.titleLabel.text = @"我的地址";
+                    cell.detailContentLabel.text = ex_userInfo.address;
+                    
+                }
+                    break;
+                    
+                default:
+                {
+                    cell.titleLabel.text = @"我的简介";
+                    cell.detailContentLabel.text = ex_userInfo.intro;
 
+                }
+                    break;
             }
-                break;
-            case 1:{
-                cell.titleLabel.text = @"户型";
-                cell.detailContentLabel.text = ex_userInfo.type;
- 
-            }
-                break;
-            case 2:{
-                cell.titleLabel.text = @"面积";
-                cell.detailContentLabel.text = ex_userInfo.area;
-
-            }
-                break;
-            case 3:{
-                cell.titleLabel.text = @"我的地址";
-                cell.detailContentLabel.text = ex_userInfo.address;
-
-            }
-                break;
-                
-            default:
-                break;
         }
+
+        
     
     }
     return cell;
