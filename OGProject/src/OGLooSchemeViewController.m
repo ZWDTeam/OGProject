@@ -11,6 +11,15 @@
 #import "VPTribeSegmentedControl.h"
 #import "OGSchemeMenuView.h"
 
+#define title @"title"
+#define headerImage @"headerImage"
+#define lookCount @"lookCount"
+#define commentCount @"commentCount"
+#define type @"type"
+#define style @"style"
+#define imageName @"image"
+#define price @"price"
+
 @interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate,OGSchemeMenuViewDelegate,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong , nonatomic)UITableView * tableView1;
@@ -20,6 +29,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *rightBarBtn;
 @property (strong , nonatomic)OGSchemeMenuView * menuView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (strong , nonatomic)NSArray *arr;
+
+@property (strong , nonatomic)NSArray * arr1;
 
 @end
 
@@ -52,9 +65,25 @@
     [self.scrollView addSubview:_tableView1];
 }
 
+- (NSArray *)arr{
+    if (!_arr) {
+        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"OGSchemeModel" ofType:@"plist"];
+        _arr = [NSArray arrayWithContentsOfFile:stringPath];
+    }
+    return _arr;
+}
+
+- (NSArray *)arr1{
+    if (!_arr1) {
+        NSString * stringPath =[[NSBundle mainBundle] pathForResource:@"OGSchemeModel1" ofType:@"plist"];
+        _arr1 = [NSArray arrayWithContentsOfFile:stringPath];
+    }
+    return _arr1;
+}
+
 - (VPTribeSegmentedControl *)segmentedControl{
     if (!_segmentedControl) {
-        _segmentedControl = [[VPTribeSegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 200, 45) withItems:@[@"配图设计",@"样板图"]];
+        _segmentedControl = [[VPTribeSegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 200, 45) withItems:@[@"搭配设计",@"样板图"]];
         _segmentedControl.tintColor = [UIColor orangeColor];
         [_segmentedControl addTarget:self action:@selector(exchangeContent:)];
         
@@ -125,7 +154,13 @@
 
 #pragma  mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+
+    if (self.segmentedControl.selectedIndex ==0) {
+        return self.arr.count;
+    }else{
+        return self.arr1.count;
+    }
+
 }
 
 
@@ -134,22 +169,30 @@
     OGLookSchemeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
+    NSDictionary * dic ;
+    if (self.segmentedControl.selectedIndex ==0) {
+        dic = self.arr[indexPath.row];
+    }else{
+        dic = self.arr1[indexPath.row];
+    }
+
+    cell.priceLabel.text =[NSString stringWithFormat:@"总价格: ¥%@",dic[price]];
+    cell.commentCountLabel.text =dic[commentCount];
+    cell.lookCountLabel.text =dic[lookCount];
+    cell.titleLabel.text =dic[title];
+    cell.styleLabel.text = dic[style];
+    cell.detailContentLabel.text =dic[type];
+    cell.headerImageView.image = [UIImage imageNamed:dic[imageName]];
+    cell.userImageView.image =[UIImage imageNamed:dic[headerImage]];
     
-    cell.headerImageView.image = [UIImage imageNamed:@"home1.jpg"];
-    cell.titleLabel.text = @"欧工家装";
-    cell.styleLabel.text = @"小清新";
-    cell.detailContentLabel.text = @"美洲豹";
-    cell.userImageView.image = [UIImage imageNamed:@"mm4.jpg"];
-    cell.lookCountLabel.text = @"1023";
-    cell.commentCountLabel.text = @"342";
-    cell.priceLabel.text = @"搭配总价: ￥45300";
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 188.0f;
+    return 340.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

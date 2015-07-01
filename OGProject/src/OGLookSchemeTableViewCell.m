@@ -16,7 +16,7 @@
     self.userImageView.layer.masksToBounds = YES;
     
     CGRect rect = _headerImageView.frame;
-    rect.origin.y = rect.size.height -25;
+    rect.origin.y = rect.size.height -25+_headerImageView.frame.origin.y;
     rect.size.height = 25;
     
     UIView * view = [[UIView alloc] initWithFrame:rect];

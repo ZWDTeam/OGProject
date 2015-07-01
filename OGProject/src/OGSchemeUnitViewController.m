@@ -48,7 +48,7 @@
 
 - (UIImageView *)headerImageView{
     if (!_headerImageView) {
-        _headerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"11-banner"]];
+        _headerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.info[@"headImage"]]];
         _headerImageView.frame =CGRectMake(0, 0, SCREEN_WIDTH, 150);
         _headerImageView.contentMode = UIViewContentModeScaleAspectFill;
         _headerImageView.clipsToBounds = YES;
@@ -91,6 +91,8 @@
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
+            cell.oldPriceLabel.text = _info[@"oldPrice"];
+            cell.newsPriceLabel.text = _info[@"price"];
             return cell;
             
         }
@@ -105,6 +107,7 @@
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             }
+            cell.commentCountLabel.text = [NSString stringWithFormat:@"评价数:%@",_info[@"commentCount"]];
             return cell;
 
         }

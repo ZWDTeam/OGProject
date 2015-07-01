@@ -7,17 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OGPriceLabel.h"
 
 @class OGSchemeSecondView;
 
 @interface OGSchemeTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *areaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *styleLabel;
+@property (weak, nonatomic) IBOutlet OGPriceLabel *oldPriceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *newsPriceLabel;
 
 @end
 ////////////**************///////////////
 
 
 @interface OGSchemeSecondTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
 
 @end
@@ -36,5 +43,6 @@
 ////***********///////
 @interface OGSchemeImagesTableViewCell : UITableViewCell
 
+@property (weak , nonatomic)IBOutlet UIImageView * headerImageView;
 
 @end

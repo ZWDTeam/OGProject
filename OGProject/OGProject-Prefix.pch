@@ -27,6 +27,7 @@
 
 
 #define tabbar_selectedIndex_notification @"tabbar_selectedIndex_notification"
+#define login_notification @"login_notification"
 
 
 //屏幕适配系数-x

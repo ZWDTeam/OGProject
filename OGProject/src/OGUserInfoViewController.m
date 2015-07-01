@@ -22,6 +22,8 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"个人资料";
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginOut) name:login_notification object:nil];
     }
     return self;
 }
@@ -30,6 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableFooterView = self.footView;
+}
+
+- (void)loginOut{
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 #pragma mark - UITableViewDataSource
@@ -160,6 +166,10 @@
     UINavigationController * navigationController = [stroyboard instantiateViewControllerWithIdentifier:@"OGLoginNavigationController"];
     
     [self presentViewController:navigationController animated:YES completion:nil];
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 /*

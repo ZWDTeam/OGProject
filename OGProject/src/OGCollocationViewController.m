@@ -10,6 +10,8 @@
 #import "OGCollocationOnlyViewController.h"
 #import "OGCollocationMoreViewController.h"
 #import "VPTribeSegmentedControl.h"
+#import "OGSchemeDetailViewController.h"
+#import "OGSchemeUnitViewController.h"
 
 @interface OGCollocationViewController ()<UIScrollViewDelegate,OGCollocationOnlyViewControllerDelegate,OGCollocationMoreViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
@@ -78,9 +80,11 @@
 //切换类型
 - (void)exchangeContent:(VPTribeSegmentedControl *)sender {
     [self.contentScrollView setContentOffset:CGPointMake(sender.selectedIndex * SCREEN_WIDTH, self.contentScrollView.contentOffset.y) animated:YES];
+    
 }
 
 - (IBAction)typeClassAction:(id)sender {
+    
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -107,6 +111,14 @@
 }
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIViewController * viewController = [segue destinationViewController];
+    if ([segue.identifier isEqualToString:@"pushScheme"]) {
+        OGSchemeDetailViewController * v = (OGSchemeDetailViewController*)viewController;
+        v.info =sender;
+    }else if([segue.identifier isEqualToString:@"pushSchemeUnit"]){
+        OGSchemeUnitViewController * v = (OGSchemeUnitViewController *)viewController;
+        v.info =sender;
+    }
 
 }
 

@@ -41,6 +41,9 @@
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImageView" destination="oMh-it-kFB" id="yV2-Nw-C8c"/>
+            </connections>
             <point key="canvasLocation" x="394.5" y="353"/>
         </tableViewCell>
     </objects>

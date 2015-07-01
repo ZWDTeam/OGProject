@@ -13,6 +13,16 @@
 #import "OGCollocationCollectionViewCell.h"
 #import "OGCollocationViewController.h"
 
+#define title @"title"
+#define headerImage @"headerImage"
+#define lookCount @"lookCount"
+#define commentCount @"commentCount"
+#define type @"type"
+#define style @"style"
+#define imageName @"image"
+#define price @"price"
+
+
 NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionViewCell";
 
 
@@ -21,6 +31,8 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 @property (strong , nonatomic) SGFocusImageFrame *bannerView;
 @property (strong , nonatomic) NSMutableArray * headerDatas;
 @property (strong , nonatomic) UICollectionView * collectionView;
+@property (strong , nonatomic)NSArray *arr;
+
 @end
 
 @implementation OGCollocationMoreViewController
@@ -56,6 +68,16 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 }
 
 
+- (NSArray *)arr{
+    if (!_arr) {
+        NSString * stringPath = [[NSBundle mainBundle] pathForResource:@"OGSchemeModel1" ofType:@"plist"];
+        _arr = [NSArray arrayWithContentsOfFile:stringPath];
+    }
+    return _arr;
+}
+
+
+
 - (SGFocusImageFrame *)bannerView{
     if (!_bannerView) {
         NSMutableArray *arrItemp=[NSMutableArray new];
@@ -87,14 +109,15 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 20;
+    return self.arr.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     OGCollocationCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewMoreCellIdentifier forIndexPath:indexPath];
-    NSString * imageName = [NSString stringWithFormat:@"home%ld.jpg",indexPath.row+1];
-    cell.contentImageView.image = [UIImage imageNamed:imageName];
-    
+    NSDictionary * dic = self.arr[indexPath.row];
+    cell.headerImageView.image =[UIImage imageNamed:dic[imageName]];
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@  %@",dic[style],dic[type]];
+    cell.commentLabel.text = dic[commentCount];
     return cell;
 }
 
@@ -103,7 +126,7 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 {
     
     if ([self.delegate respondsToSelector:@selector(selectedWithInfo:viewController:)]) {
-        [self.delegate selectedWithInfo:nil viewController:self];
+        [self.delegate selectedWithInfo:self.arr[indexPath.row] viewController:self];
     }
 }
 

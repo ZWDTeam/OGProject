@@ -10,4 +10,6 @@
 #import "OGLookCommentViewController.h"
 @interface OGSchemeDetailViewController : OGBaseViewController
 
+@property (strong , nonatomic)NSDictionary * info;
+
 @end
