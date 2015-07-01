@@ -9,6 +9,7 @@
 #import "OGIAmStylistViewController.h"
 #import "OGDemandDetailsViewController.h"
 #import "OGDesignCircleViewController.h"
+#import "OGRegisterOneViewController.h"
 @interface OGIAmStylistViewController ()
 
 @end
@@ -41,6 +42,19 @@
     [btnTest01 addTarget:self action:@selector(goDesigner) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btnTest01];
+
+    UIButton * btnTest02 = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
+    [btnTest02 setBackgroundColor:[UIColor redColor]];
+    [btnTest02 setTitle:@"设计师注册" forState:UIControlStateNormal];
+    [btnTest02 addTarget:self action:@selector(goDesignerRegister) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnTest02];
+
+}
+
+-(void)goDesignerRegister{
+    OGRegisterOneViewController * registerVC = [[OGRegisterOneViewController alloc]init];
+    [self.navigationController pushViewController:registerVC animated:YES];
 }
 
 -(void)goDtial{

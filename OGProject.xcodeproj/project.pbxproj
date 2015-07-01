@@ -275,6 +275,17 @@
 		4AD9EDB11B3EAAA500BEF770 /* OGDemandDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */; };
 		4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB21B3EBF6800BEF770 /* 4-1.png */; };
 		4AD9EDB51B3EC66A00BEF770 /* 8-户型图.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */; };
+		4ADB15CB1B42AA9400601C45 /* OGRegisterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15C91B42AA9400601C45 /* OGRegisterOneViewController.m */; };
+		4ADB15CC1B42AA9400601C45 /* OGRegisterOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15CA1B42AA9400601C45 /* OGRegisterOneViewController.xib */; };
+		4ADB15D61B42B5E900601C45 /* OGRegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15D41B42B5E900601C45 /* OGRegisterTwoViewController.m */; };
+		4ADB15D71B42B5E900601C45 /* OGRegisterTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15D51B42B5E900601C45 /* OGRegisterTwoViewController.xib */; };
+		4ADB15DA1B43725C00601C45 /* checkIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15D81B43725C00601C45 /* checkIn.png */; };
+		4ADB15DB1B43725C00601C45 /* checkOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15D91B43725C00601C45 /* checkOut.png */; };
+		4ADB15DD1B43759600601C45 /* g.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15DC1B43759600601C45 /* g.png */; };
+		4ADB15E11B437BDB00601C45 /* OGRegisterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15DF1B437BDB00601C45 /* OGRegisterThreeViewController.m */; };
+		4ADB15E21B437BDB00601C45 /* OGRegisterThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15E01B437BDB00601C45 /* OGRegisterThreeViewController.xib */; };
+		4ADB15E41B437D4F00601C45 /* 1-添加照片.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADB15E31B437D4F00601C45 /* 1-添加照片.png */; };
+		4ADB15E71B437F9D00601C45 /* MLImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB15E61B437F9D00601C45 /* MLImageCrop.m */; };
 		4ADEA6951B41128000FFA61D /* 9-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEA6941B41128000FFA61D /* 9-share.png */; };
 		4ADEA6981B41567E00FFA61D /* WWCommentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */; };
 /* End PBXBuildFile section */
@@ -680,6 +691,21 @@
 		4AD9EDB01B3EAAA500BEF770 /* OGDemandDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsView.m; sourceTree = "<group>"; };
 		4AD9EDB21B3EBF6800BEF770 /* 4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-1.png"; sourceTree = "<group>"; };
 		4AD9EDB41B3EC66A00BEF770 /* 8-户型图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-户型图.png"; sourceTree = "<group>"; };
+		4ADB15C81B42AA9400601C45 /* OGRegisterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterOneViewController.h; sourceTree = "<group>"; };
+		4ADB15C91B42AA9400601C45 /* OGRegisterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterOneViewController.m; sourceTree = "<group>"; };
+		4ADB15CA1B42AA9400601C45 /* OGRegisterOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGRegisterOneViewController.xib; sourceTree = "<group>"; };
+		4ADB15D31B42B5E900601C45 /* OGRegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterTwoViewController.h; sourceTree = "<group>"; };
+		4ADB15D41B42B5E900601C45 /* OGRegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterTwoViewController.m; sourceTree = "<group>"; };
+		4ADB15D51B42B5E900601C45 /* OGRegisterTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGRegisterTwoViewController.xib; sourceTree = "<group>"; };
+		4ADB15D81B43725C00601C45 /* checkIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkIn.png; sourceTree = "<group>"; };
+		4ADB15D91B43725C00601C45 /* checkOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkOut.png; sourceTree = "<group>"; };
+		4ADB15DC1B43759600601C45 /* g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.png; sourceTree = "<group>"; };
+		4ADB15DE1B437BDB00601C45 /* OGRegisterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGRegisterThreeViewController.h; sourceTree = "<group>"; };
+		4ADB15DF1B437BDB00601C45 /* OGRegisterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGRegisterThreeViewController.m; sourceTree = "<group>"; };
+		4ADB15E01B437BDB00601C45 /* OGRegisterThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGRegisterThreeViewController.xib; sourceTree = "<group>"; };
+		4ADB15E31B437D4F00601C45 /* 1-添加照片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-添加照片.png"; sourceTree = "<group>"; };
+		4ADB15E51B437F9D00601C45 /* MLImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLImageCrop.h; sourceTree = "<group>"; };
+		4ADB15E61B437F9D00601C45 /* MLImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLImageCrop.m; sourceTree = "<group>"; };
 		4ADEA6941B41128000FFA61D /* 9-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9-share.png"; sourceTree = "<group>"; };
 		4ADEA6961B41567E00FFA61D /* WWCommentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCommentLabel.h; sourceTree = "<group>"; };
 		4ADEA6971B41567E00FFA61D /* WWCommentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCommentLabel.m; sourceTree = "<group>"; };
@@ -726,6 +752,7 @@
 		482DF08C1B31A9D100D3A000 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				4ADB15E31B437D4F00601C45 /* 1-添加照片.png */,
 				4A0596741B40263300F3035D /* 11-图1.png */,
 				4ADEA6941B41128000FFA61D /* 9-share.png */,
 				4A0596751B40263300F3035D /* 11-图2.png */,
@@ -748,6 +775,8 @@
 				482DF0971B31B00300D3A000 /* 15-2.png */,
 				482DF0981B31B00300D3A000 /* 15-3.png */,
 				482DF08D1B31A9DB00D3A000 /* 评论@2x.png */,
+				4ADB15D81B43725C00601C45 /* checkIn.png */,
+				4ADB15D91B43725C00601C45 /* checkOut.png */,
 			);
 			name = other;
 			sourceTree = "<group>";
@@ -1391,6 +1420,7 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4ADB15DC1B43759600601C45 /* g.png */,
 				483B31A71B40357C0051474C /* 11-添加图片.png */,
 				483B31A51B40355C0051474C /* 7-图.png */,
 				483B31A31B4035540051474C /* 7-抢单.png */,
@@ -1462,6 +1492,7 @@
 		48CF9A251B2E7611003BBFBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4ADB15C71B42AA7200601C45 /* desginerRegister */,
 				4A962E5A1B3CF7D4002C87CA /* FindDesigner */,
 				48CF9A461B2EB2AE003BBFBF /* Map */,
 				48CF9A361B2E7706003BBFBF /* Login */,
@@ -1695,6 +1726,24 @@
 			name = viewController;
 			sourceTree = "<group>";
 		};
+		4ADB15C71B42AA7200601C45 /* desginerRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4ADB15E51B437F9D00601C45 /* MLImageCrop.h */,
+				4ADB15E61B437F9D00601C45 /* MLImageCrop.m */,
+				4ADB15C81B42AA9400601C45 /* OGRegisterOneViewController.h */,
+				4ADB15C91B42AA9400601C45 /* OGRegisterOneViewController.m */,
+				4ADB15CA1B42AA9400601C45 /* OGRegisterOneViewController.xib */,
+				4ADB15D31B42B5E900601C45 /* OGRegisterTwoViewController.h */,
+				4ADB15D41B42B5E900601C45 /* OGRegisterTwoViewController.m */,
+				4ADB15D51B42B5E900601C45 /* OGRegisterTwoViewController.xib */,
+				4ADB15DE1B437BDB00601C45 /* OGRegisterThreeViewController.h */,
+				4ADB15DF1B437BDB00601C45 /* OGRegisterThreeViewController.m */,
+				4ADB15E01B437BDB00601C45 /* OGRegisterThreeViewController.xib */,
+			);
+			name = desginerRegister;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1799,6 +1848,7 @@
 				484376AE1B307C14006D9D56 /* home14.jpg in Resources */,
 				4A0596681B40259B00F3035D /* OGDesignerHomeViewController.xib in Resources */,
 				48A592B51B39878300392151 /* gg11.jpg in Resources */,
+				4ADB15E41B437D4F00601C45 /* 1-添加照片.png in Resources */,
 				48A592B31B39878300392151 /* gg9.jpg in Resources */,
 				482DF0991B31B00300D3A000 /* 15-1.png in Resources */,
 				4843765A1B304A9C006D9D56 /* 找设计师@2x.png in Resources */,
@@ -1818,6 +1868,7 @@
 				48A592B91B39878300392151 /* gg15.jpg in Resources */,
 				482DF0AB1B31C26900D3A000 /* mm4.jpg in Resources */,
 				48A592901B39877100392151 /* mm14.jpg in Resources */,
+				4ADB15CC1B42AA9400601C45 /* OGRegisterOneViewController.xib in Resources */,
 				484376B91B307C14006D9D56 /* home6.jpg in Resources */,
 				48A592891B39877100392151 /* mm7.jpg in Resources */,
 				484376B01B307C14006D9D56 /* home16.jpg in Resources */,
@@ -1831,6 +1882,7 @@
 				484376671B304D12006D9D56 /* 我是设计师@2x.png in Resources */,
 				48B4E5271B3587F80035A162 /* OGHomeCollectionViewCell.xib in Resources */,
 				48A592AD1B39878300392151 /* gg3.jpg in Resources */,
+				4ADB15DA1B43725C00601C45 /* checkIn.png in Resources */,
 				48B4E4DE1B3513010035A162 /* OGLookSchemeTableViewCell.xib in Resources */,
 				484376AC1B307C14006D9D56 /* home12.jpg in Resources */,
 				48A592841B39877100392151 /* mm2.jpg in Resources */,
@@ -1867,6 +1919,7 @@
 				484376801B3065F4006D9D56 /* 我的01@2x.png in Resources */,
 				4A0596731B40261C00F3035D /* search.png in Resources */,
 				484376AF1B307C14006D9D56 /* home15.jpg in Resources */,
+				4ADB15E21B437BDB00601C45 /* OGRegisterThreeViewController.xib in Resources */,
 				484376BA1B307C14006D9D56 /* home7.jpg in Resources */,
 				48BF3A451B3B15430024DA3A /* OGSendHelpTableViewCell2.xib in Resources */,
 				484376B41B307C14006D9D56 /* home2.jpg in Resources */,
@@ -1876,6 +1929,8 @@
 				4843767F1B3065F4006D9D56 /* 我的00@2x.png in Resources */,
 				48A592AE1B39878300392151 /* gg4.jpg in Resources */,
 				48A592931B39877100392151 /* mm17.jpg in Resources */,
+				4ADB15DB1B43725C00601C45 /* checkOut.png in Resources */,
+				4ADB15D71B42B5E900601C45 /* OGRegisterTwoViewController.xib in Resources */,
 				484376681B304D12006D9D56 /* 找方案@2x.png in Resources */,
 				48A592AF1B39878300392151 /* gg5.jpg in Resources */,
 				484376B21B307C14006D9D56 /* home18.jpg in Resources */,
@@ -1920,6 +1975,7 @@
 				48A592831B39877100392151 /* mm1.jpg in Resources */,
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,
 				484376B81B307C14006D9D56 /* home5.jpg in Resources */,
+				4ADB15DD1B43759600601C45 /* g.png in Resources */,
 				48A592E61B39AED600392151 /* OGSchemeHeaderView.xib in Resources */,
 				48A592BC1B39878300392151 /* gg18.jpg in Resources */,
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
@@ -2002,6 +2058,7 @@
 				48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */,
 				483B31891B3FD2D50051474C /* MRWeakProxy.m in Sources */,
 				4843768A1B306D38006D9D56 /* OGCollocationMoreViewController.m in Sources */,
+				4ADB15E71B437F9D00601C45 /* MLImageCrop.m in Sources */,
 				48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */,
 				4843764F1B303F84006D9D56 /* ScrollPageControl.m in Sources */,
 				484C340C1B366DFD0031306D /* OGOptionCityViewController.m in Sources */,
@@ -2012,11 +2069,13 @@
 				48BF3A321B3AFC900024DA3A /* OGUnitCollectionViewCell.m in Sources */,
 				4843768E1B307450006D9D56 /* OGCollocationFlowLayout.m in Sources */,
 				483B31881B3FD2D50051474C /* MRMessageInterceptor.m in Sources */,
+				4ADB15D61B42B5E900601C45 /* OGRegisterTwoViewController.m in Sources */,
 				48B4E4ED1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.m in Sources */,
 				486685151B3EF47B00D28493 /* OGExprienceTableViewCell1.m in Sources */,
 				48BF3A1E1B3AF1100024DA3A /* OGSchemeUnitTableViewCell1.m in Sources */,
 				4AD9ED9B1B3E57D500BEF770 /* OGLookCommentViewController.m in Sources */,
 				48BF3A3F1B3B15300024DA3A /* OGSendHelpTableViewCell1.m in Sources */,
+				4ADB15E11B437BDB00601C45 /* OGRegisterThreeViewController.m in Sources */,
 				48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */,
 				484376511B303F84006D9D56 /* SGFocusImageItem.m in Sources */,
 				4A0596621B40257E00F3035D /* OGDesignCircleView.m in Sources */,
@@ -2057,6 +2116,7 @@
 				48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */,
 				48B4E4E71B3530A80035A162 /* LookStrategyViewController.m in Sources */,
 				48A592C11B398E4700392151 /* OGSchemeDetailViewController.m in Sources */,
+				4ADB15CB1B42AA9400601C45 /* OGRegisterOneViewController.m in Sources */,
 				48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */,
 				4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */,
 				4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */,
