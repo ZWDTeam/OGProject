@@ -15,6 +15,7 @@
 @property (strong,nonatomic) NSTimer *countDownTimer;
 @property (assign,nonatomic) int secondsCountDown;
 @property (weak, nonatomic) IBOutlet UIButton *btnYZM;
+@property (weak, nonatomic) IBOutlet UILabel *informationLbl;
 
 @end
 
@@ -31,7 +32,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSString * headNumber = [ex_account substringToIndex:3];
+    NSString *lastNumber = [ex_account substringFromIndex:ex_account.length-4];
+    self.informationLbl.text = [NSString stringWithFormat:@"短信已发送往%@****%@，请稍等",headNumber,lastNumber];
     self.nextBarBtn.layer.cornerRadius = CGRectGetHeight(self.nextBarBtn.frame)/2.0f;
     self.nextBarBtn.layer.borderWidth = 1.0f;
     self.nextBarBtn.layer.borderColor = [UIColor whiteColor].CGColor;}

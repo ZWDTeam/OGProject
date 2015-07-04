@@ -124,9 +124,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="loginButtn" destination="t2Z-Fe-pkD" id="RE7-V1-0fd"/>
+                        <outlet property="passwordLabll" destination="q8L-YA-ns8" id="7Uj-p0-MdH"/>
                         <outlet property="passwordView" destination="f8W-Ic-3bZ" id="0e6-Y7-Wzh"/>
                         <outlet property="registerButtn" destination="NXV-9x-CeM" id="bJ1-7u-XH1"/>
                         <outlet property="stylistButton" destination="ZcC-9a-aeG" id="X6w-XF-QCo"/>
+                        <outlet property="telephoneLalbl" destination="M1K-4B-1Fe" id="P8l-st-cSN"/>
                         <outlet property="telephoneNumberView" destination="gFh-3A-ccm" id="W8K-Rk-gyX"/>
                         <segue destination="Jeg-nK-05k" kind="show" identifier="pushForgetView" id="y8a-9u-RMN"/>
                         <segue destination="zhn-mD-YgT" kind="show" identifier="pushRegister" id="jdH-U5-bho"/>
@@ -365,6 +367,7 @@
                     <connections>
                         <outlet property="btnReadprotocol" destination="ewt-nZ-t2V" id="4GX-At-5zU"/>
                         <outlet property="nextBarBtn" destination="lCb-RI-gnP" id="acS-7x-v6d"/>
+                        <outlet property="telephoneNumberLalbl" destination="xXD-6g-5ja" id="uQT-Jr-lra"/>
                         <segue destination="s6Q-da-3cm" kind="show" identifier="pushSecondRegister" id="MJ7-4r-d7W"/>
                     </connections>
                 </viewController>
@@ -438,6 +441,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnYZM" destination="uOX-AC-h3f" id="ebf-7h-FEK"/>
+                        <outlet property="informationLbl" destination="f0Y-I6-IE8" id="8QN-rL-UKn"/>
                         <outlet property="nextBarBtn" destination="YTO-ta-dT6" id="V8B-2f-i6M"/>
                         <segue destination="Ziv-ig-1uz" kind="show" identifier="pushLastView" id="Nrm-hq-siL"/>
                     </connections>

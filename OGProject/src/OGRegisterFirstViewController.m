@@ -7,6 +7,8 @@
 //
 
 #import "OGRegisterFirstViewController.h"
+#import "ConfigFile.h"
+
 
 @interface OGRegisterFirstViewController ()
 - (IBAction)pushRegisterSecondView:(id)sender;
@@ -15,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnReadprotocol;
 
 @property (assign,nonatomic) BOOL selectProtocol;
+@property (weak, nonatomic) IBOutlet UITextField *telephoneNumberLalbl;
 
 @end
 
@@ -53,7 +56,16 @@
 */
 
 - (IBAction)pushRegisterSecondView:(id)sender {
-    [self performSegueWithIdentifier:@"pushSecondRegister" sender:nil];
+    if (![ConfigFile isMobileNumber:self.telephoneNumberLalbl.text] )
+    {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入正确的电话号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+   else
+   {
+        ex_account = self.telephoneNumberLalbl.text;
+        [self performSegueWithIdentifier:@"pushSecondRegister" sender:nil];
+   }
 }
 - (IBAction)orReadProtocol:(UIButton *)sender {
     

@@ -8,12 +8,16 @@
 
 #import "OGLoginViewController.h"
 #import "OGRegisterOneViewController.h"
+#import "ConfigFile.h"
 
 @interface OGLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *telephoneNumberView;
 @property (weak, nonatomic) IBOutlet UIView *passwordView;
 @property (weak, nonatomic) IBOutlet UIButton *loginButtn;
 @property (weak, nonatomic) IBOutlet UIButton *stylistButton;
+@property (weak, nonatomic) IBOutlet UITextField *telephoneLalbl;
+@property (weak, nonatomic) IBOutlet UITextField *passwordLabll;
+
 
 @end
 
@@ -40,6 +44,8 @@
     self.stylistButton.layer.masksToBounds= YES;
     self.stylistButton.layer.cornerRadius =  3;
     
+    self.passwordLabll.secureTextEntry = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,20 +53,43 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)publicLogin:(id)sender {
+    if (![ConfigFile isMobileNumber:self.telephoneLalbl.text] )
+    {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入正确的电话号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        alert.tag = 0;
+        [alert show];
+    }
+    else
+    {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     ex_identityType = OGIdentityTypeUser;
     [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
-
+    }
     
     
 }
 - (IBAction)stylistLogin:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    ex_identityType = OGIdentityTypeStylist;
-    [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
+    
+    if (![ConfigFile isMobileNumber:self.telephoneLalbl.text] )
+    {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入正确的电话号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        alert.tag = 0;
+        [alert show];
+    }
+    else
+    {
+       
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        ex_identityType = OGIdentityTypeStylist;
+        [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
+
+    }
+    
+   
 }
 - (IBAction)pushRegisterViewController:(id)sender {
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请选择账号类型" delegate:self cancelButtonTitle:@"我是设计师" otherButtonTitles:@"我是用户", nil];
+    alert.tag = 1;
     [alert show];
     return;
 
@@ -69,11 +98,15 @@
 }
 - (IBAction)pushForgetPassword:(id)sender {
      [self performSegueWithIdentifier:@"pushForgetView" sender:nil];
+     ex_account = self.telephoneLalbl.text;
 }
 
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 {
+    if (alertView.tag==1) {
+        
+    
     switch (buttonIndex) {
         case 0:
         {
@@ -89,7 +122,7 @@
         default:
             break;
     }
-
+    }
 
 }
 /*
