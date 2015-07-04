@@ -14,4 +14,6 @@
 
 @property (weak , nonatomic)OGSendHelpViewController * sendhelpController;
 
+@property (assign , nonatomic)int showType;
+
 @end

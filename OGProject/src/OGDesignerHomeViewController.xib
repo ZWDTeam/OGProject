@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OGDesignerHomeViewController">
@@ -41,28 +41,28 @@
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOh-cq-9ZB">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" tag="10001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjm-0V-24j">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjm-0V-24j">
                                     <rect key="frame" x="10" y="10" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2SC-UE-Lr1">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2SC-UE-Lr1">
                                     <rect key="frame" x="100" y="11" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggo-bI-iXU">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggo-bI-iXU">
                                     <rect key="frame" x="190" y="11" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10007" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-58-PlN">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10007" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-58-PlN">
                                     <rect key="frame" x="190" y="72" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfu-Oi-TvX">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfu-Oi-TvX">
                                     <rect key="frame" x="280" y="11" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10008" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iU9-va-SYR">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10008" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iU9-va-SYR">
                                     <rect key="frame" x="280" y="72" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10005" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-yN-Gig">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10005" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-yN-Gig">
                                     <rect key="frame" x="10" y="72" width="87" height="58"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" tag="10006" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="475-uM-GRt">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10006" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="475-uM-GRt">
                                     <rect key="frame" x="100" y="72" width="87" height="58"/>
                                 </imageView>
                             </subviews>
@@ -100,7 +100,7 @@
                             <rect key="frame" x="0.0" y="431" width="375" height="13"/>
                             <color key="backgroundColor" red="0.94509803920000002" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-2头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-S9-6Lg">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mm1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-S9-6Lg">
                             <rect key="frame" x="14" y="150" width="102" height="102"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cindy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-Yp-mdM">
@@ -258,6 +258,6 @@
         <image name="2-1性别.png" width="18" height="26"/>
         <image name="2-2a.png" width="35" height="27"/>
         <image name="2-2b.png" width="26" height="32"/>
-        <image name="2-2头像.png" width="204" height="204"/>
+        <image name="mm1.jpg" width="200" height="200"/>
     </resources>
 </document>

@@ -12,5 +12,6 @@
 
 @interface OGDesignerHomeViewController: UIViewController
 
+@property(strong , nonatomic)NSDictionary * info;
 
 @end

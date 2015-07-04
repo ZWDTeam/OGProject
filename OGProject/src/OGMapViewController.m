@@ -238,10 +238,28 @@
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    NSInteger index = [(LocationHeaderView *)view tag];
+
     if ([view isKindOfClass:[DGMKAninotationView class]]) {
         if (_showType == MapShowTypePeople) {
             OGDesignerHomeViewController * DesignerVC = [[OGDesignerHomeViewController alloc]init];
             [self.navigationController pushViewController:DesignerVC animated:YES];
+            NSDictionary * dic;
+            switch (_type) {
+                case 0:
+                    dic = _mamPeoples[index];
+                    break;
+                case 1:
+                    dic = _womamPeoples[index];
+                    break;
+                case 2:
+                    dic = _companyPeoples[index];
+                    break;
+                default:
+                    dic = _allPeoples[index];
+                    break;
+            }
+              DesignerVC.info = dic;
         }else{
             [self performSegueWithIdentifier:@"OGExperienceDetailViewController" sender:@(view.tag)];
         }

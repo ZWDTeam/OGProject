@@ -24,7 +24,6 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"选择分类";
-        _items = @[@"一居室",@"别墅",@"复式楼",@"客厅",@"两居室"];
     }
     return self;
 }
@@ -32,6 +31,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    switch (_showType) {
+        case 2:
+            _items = @[@"一居室",@"别墅",@"复式楼",@"客厅",@"两居室"];
+
+            break;
+        case 3:
+            _items = @[@"欧美风",@"希腊风",@"中式风",@"小清晰",@"韩国风",@"泰式风"];
+
+            break;
+        case 5:
+            _items = @[@"八家湾小区",@"龙腾虎小区",@"日康小区",@"梅溪湖校区",@"湾仔小区",@"朝阳小区"];
+
+            break;
+        case 6:
+            _items = @[@"<5万",@"5万~10万",@"10万～15万",@"15万～20万",@">20万"];
+
+            break;
+
+            
+        default:
+            _items = @[@"一居室",@"别墅",@"复式楼",@"客厅",@"两居室"];
+
+            break;
+    }
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

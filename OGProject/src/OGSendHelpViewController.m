@@ -186,7 +186,7 @@
         {
             cell.contentTedtField.enabled = NO;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.contentTedtField.text  =self.model.type;
+            cell.contentTedtField.text  =self.model.style;
 
 
         }
@@ -300,6 +300,7 @@
     }
     
     [self.tableView reloadRowsAtIndexPaths:@[_selectedIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -353,6 +354,8 @@ static bool _isBegin = NO;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     OGSendTypeOptionViewController * controller =  [segue destinationViewController];
     controller.sendhelpController = self;
+    NSIndexPath * indexPath = (NSIndexPath *)sender;
+    controller.showType = (int)indexPath.row;
 
     
 }

@@ -165,6 +165,14 @@
 		485FB42E1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB42C1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib */; };
 		485FB4321B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */; };
 		485FB4331B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */; };
+		48608C501B44EB3B0074AD00 /* libPushSDK-1.8.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C4F1B44EB3B0074AD00 /* libPushSDK-1.8.3.a */; };
+		48608C521B44EC680074AD00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C511B44EC680074AD00 /* CFNetwork.framework */; };
+		48608C541B44EC7B0074AD00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C531B44EC7B0074AD00 /* CoreFoundation.framework */; };
+		48608C561B44EC840074AD00 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C551B44EC840074AD00 /* CoreTelephony.framework */; };
+		48608C581B44EC8C0074AD00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C571B44EC8C0074AD00 /* SystemConfiguration.framework */; };
+		48608C5A1B44EC930074AD00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C591B44EC930074AD00 /* CoreGraphics.framework */; };
+		48608C5C1B44EC9C0074AD00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C5B1B44EC9C0074AD00 /* Security.framework */; };
+		48608C5E1B44ECA50074AD00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48608C5D1B44ECA50074AD00 /* libz.dylib */; };
 		4866850F1B3EF20500D28493 /* OGExperienceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4866850E1B3EF20500D28493 /* OGExperienceDetailViewController.m */; };
 		486685151B3EF47B00D28493 /* OGExprienceTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 486685131B3EF47B00D28493 /* OGExprienceTableViewCell1.m */; };
 		486685161B3EF47B00D28493 /* OGExprienceTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486685141B3EF47B00D28493 /* OGExprienceTableViewCell1.xib */; };
@@ -557,6 +565,15 @@
 		485FB42F1B3DB5730010C4F1 /* OGStrategyImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGStrategyImageTableViewCell.h; sourceTree = "<group>"; };
 		485FB4301B3DB5730010C4F1 /* OGStrategyImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGStrategyImageTableViewCell.m; sourceTree = "<group>"; };
 		485FB4311B3DB5730010C4F1 /* OGStrategyImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGStrategyImageTableViewCell.xib; sourceTree = "<group>"; };
+		48608C4E1B44EB3B0074AD00 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		48608C4F1B44EB3B0074AD00 /* libPushSDK-1.8.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.3.a"; sourceTree = "<group>"; };
+		48608C511B44EC680074AD00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		48608C531B44EC7B0074AD00 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		48608C551B44EC840074AD00 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		48608C571B44EC8C0074AD00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		48608C591B44EC930074AD00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48608C5B1B44EC9C0074AD00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		48608C5D1B44ECA50074AD00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4866850D1B3EF20500D28493 /* OGExperienceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExperienceDetailViewController.h; sourceTree = "<group>"; };
 		4866850E1B3EF20500D28493 /* OGExperienceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGExperienceDetailViewController.m; sourceTree = "<group>"; };
 		486685121B3EF47B00D28493 /* OGExprienceTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExprienceTableViewCell1.h; sourceTree = "<group>"; };
@@ -824,7 +841,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48608C5E1B44ECA50074AD00 /* libz.dylib in Frameworks */,
+				48608C5C1B44EC9C0074AD00 /* Security.framework in Frameworks */,
+				48608C5A1B44EC930074AD00 /* CoreGraphics.framework in Frameworks */,
+				48608C581B44EC8C0074AD00 /* SystemConfiguration.framework in Frameworks */,
+				48608C561B44EC840074AD00 /* CoreTelephony.framework in Frameworks */,
+				48608C541B44EC7B0074AD00 /* CoreFoundation.framework in Frameworks */,
+				48608C521B44EC680074AD00 /* CFNetwork.framework in Frameworks */,
 				48CF9A4B1B2EB37B003BBFBF /* MapKit.framework in Frameworks */,
+				48608C501B44EB3B0074AD00 /* libPushSDK-1.8.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1247,15 @@
 			name = LocationCity;
 			sourceTree = "<group>";
 		};
+		48608C4D1B44EB3B0074AD00 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				48608C4E1B44EB3B0074AD00 /* APService.h */,
+				48608C4F1B44EB3B0074AD00 /* libPushSDK-1.8.3.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		486685101B3EF2CA00D28493 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1534,6 +1568,13 @@
 		48CF99DE1B2E724E003BBFBF = {
 			isa = PBXGroup;
 			children = (
+				48608C5D1B44ECA50074AD00 /* libz.dylib */,
+				48608C5B1B44EC9C0074AD00 /* Security.framework */,
+				48608C591B44EC930074AD00 /* CoreGraphics.framework */,
+				48608C571B44EC8C0074AD00 /* SystemConfiguration.framework */,
+				48608C551B44EC840074AD00 /* CoreTelephony.framework */,
+				48608C531B44EC7B0074AD00 /* CoreFoundation.framework */,
+				48608C511B44EC680074AD00 /* CFNetwork.framework */,
 				48CF99E91B2E724E003BBFBF /* OGProject */,
 				48CF9A031B2E724E003BBFBF /* OGProjectTests */,
 				48CF99E81B2E724E003BBFBF /* Products */,
@@ -1747,6 +1788,7 @@
 		48CF9A3E1B2E7B13003BBFBF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				48608C4D1B44EB3B0074AD00 /* lib */,
 				48A592EA1B39B1CC00392151 /* Masonry */,
 				484376481B303F84006D9D56 /* SGFocus */,
 			);
@@ -1992,6 +2034,11 @@
 					48CF99E61B2E724E003BBFBF = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = Y6SLB82Z3X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					48CF99FF1B2E724E003BBFBF = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -2462,6 +2509,10 @@
 				INFOPLIST_FILE = OGProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OGProject/API/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
 			};
@@ -2579,6 +2630,10 @@
 				INFOPLIST_FILE = OGProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OGProject/API/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
 			};
@@ -2594,6 +2649,10 @@
 				INFOPLIST_FILE = OGProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OGProject/API/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
 			};

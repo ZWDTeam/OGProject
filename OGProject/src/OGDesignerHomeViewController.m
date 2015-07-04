@@ -45,9 +45,19 @@
 
 @implementation OGDesignerHomeViewController
 
+- (id)init{
+    self = [super init];
+    if (self) {
+        self.title = @"设计师";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"设计师";
+    
+    self.imgFace.layer.cornerRadius = CGRectGetHeight(self.imgFace.frame)/2.0f;
+    self.imgFace.layer.masksToBounds = YES;
     
     /**
      右侧按钮--没法用xib拖
@@ -77,17 +87,32 @@
      *  创建产品信息--第一次进去默认创建第一个
      */
     [self createProductMsg];
+    
+    
+    self.imgFace.image = [UIImage imageNamed:_info[@"image"]];
+    self.labelName.text = _info[@"name"];
+
 }
 
+
+- (void)setInfo:(NSDictionary *)info{
+    _info = info;
+    self.imgFace.image = [UIImage imageNamed:info[@"image"]];
+    self.labelName.text = info[@"name"];
+}
 
 
 /**
  *  给上面8个图片赋值
  */
 -(void)setDesignerWorksPic{
+    NSString * imageName = @"mm";
+    if ([_info[@"sex"] isEqualToString:@"男"]) {
+        imageName = @"gg";
+    }
     for (int i = 1; i<9; i++) {
         UIImageView * imgTemp = (UIImageView *)[self.view viewWithTag:(10000+i)];
-        [imgTemp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"2-2图%d.png",i]]];
+        [imgTemp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@%d.jpg",imageName,i]]];
     }
 }
 
