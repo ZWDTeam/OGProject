@@ -59,7 +59,6 @@
 
 #pragma mark - SGFocusImageFrameDelegate
 - (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame tapGesItem:(NSInteger)index{
-    NSLog(@"%ld",index);
 }
 
 @end

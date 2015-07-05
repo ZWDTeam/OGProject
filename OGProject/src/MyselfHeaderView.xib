@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mySelfBackImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-bC-Xgd">
+                <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mySelfBackImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-bC-Xgd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
@@ -64,7 +64,7 @@
     </objects>
     <resources>
         <image name="mm4.jpg" width="200" height="200"/>
-        <image name="mySelfBackImage.png" width="369" height="139"/>
+        <image name="mySelfBackImage.jpg" width="369" height="139"/>
         <image name="myself_sex.png" width="47" height="20"/>
     </resources>
 </document>

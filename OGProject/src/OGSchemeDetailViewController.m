@@ -26,6 +26,10 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"整体方案";
+        
+        UIBarButtonItem * bar1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"星星"] style:UIBarButtonItemStylePlain target:nil action:nil];
+        UIBarButtonItem * bar2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"分享"] style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.rightBarButtonItems = @[bar1,bar2];
     }
     return self;
 }

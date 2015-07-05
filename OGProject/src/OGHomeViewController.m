@@ -94,7 +94,15 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     if (ex_locationCity) {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:ex_locationCity style:UIBarButtonItemStylePlain target:self action:@selector(optionCity:)];
+        UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(0, 0, 100, 30);
+        NSString * string = [NSString stringWithFormat:@" %@ v",ex_locationCity];
+        [button setTitle:string forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"定位"] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(optionCity:) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
         
     }else{
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"定位"] style:UIBarButtonItemStylePlain target:self action:@selector(optionCity:)];
