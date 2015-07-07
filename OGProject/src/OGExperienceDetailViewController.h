@@ -10,4 +10,6 @@
 
 @interface OGExperienceDetailViewController : OGBaseViewController
 
+@property (strong , nonatomic)NSDictionary * info;
+
 @end

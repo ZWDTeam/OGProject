@@ -91,6 +91,8 @@
     
     self.imgFace.image = [UIImage imageNamed:_info[@"image"]];
     self.labelName.text = _info[@"name"];
+    self.labelWorkTime.text = [NSString stringWithFormat:@"从业%@年",_info[@"year"]];
+    self.labelCompany.text = _info[@"gongSi"];
 
 }
 

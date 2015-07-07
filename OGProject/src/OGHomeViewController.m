@@ -137,7 +137,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
 
 #pragma  mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(320, 150);
+    return CGSizeMake(MainView_Width, 150);
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -177,7 +177,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
             break;
         case 2://亲体验
             
-            [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
+            [self performSegueWithIdentifier:@"pushTiyanGuan" sender:indexPath];
             break;
 
         case 3://找方案
@@ -189,7 +189,7 @@ NSString * const cellIdentifer = @"OGHomeCollectionViewCell";
         {
             UIStoryboard * stroyboard =[UIStoryboard storyboardWithName:@"OGLogin" bundle:[NSBundle mainBundle]];
             
-            UINavigationController * navigationController = [stroyboard instantiateViewControllerWithIdentifier:@"OGLoginNavigationController"];
+            UINavigationController * navigationController = [stroyboard instantiateViewControllerWithIdentifier:@"OGStylistNavigationController"];
             
             [self presentViewController:navigationController animated:YES completion:nil];
 

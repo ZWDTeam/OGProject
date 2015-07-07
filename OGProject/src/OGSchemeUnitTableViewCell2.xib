@@ -29,13 +29,21 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4-赞.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q0E-gl-Bcr">
                         <rect key="frame" x="99" y="21" width="15" height="15"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="共11个评价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFS-vg-d7X">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共11个评价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFS-vg-d7X">
                         <rect key="frame" x="277" y="18" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5tY-K0-Dfp"/>
+                            <constraint firstAttribute="width" constant="80" id="lmh-0x-oJs"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="1" green="0.40351160209999998" blue="0.22062471080000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AFS-vg-d7X" secondAttribute="bottom" constant="18" id="pA9-O5-GPC"/>
+                    <constraint firstAttribute="trailing" secondItem="AFS-vg-d7X" secondAttribute="trailing" constant="18" id="tP2-OL-C7o"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="commentCountLabel" destination="AFS-vg-d7X" id="Rfw-kq-wNd"/>

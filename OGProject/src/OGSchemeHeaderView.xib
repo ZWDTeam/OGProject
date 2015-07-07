@@ -25,18 +25,32 @@
                     <color key="textColor" red="0.83447758839999997" green="0.83447758839999997" blue="0.83447758839999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-Ev-ybQ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-Ev-ybQ">
                     <rect key="frame" x="308" y="23" width="44" height="23"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="K45-9P-hur"/>
+                        <constraint firstAttribute="height" constant="23" id="Vy6-uQ-JeY"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4-赞.png" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-by-SE8">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4-赞.png" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-by-SE8">
                     <rect key="frame" x="315" y="25" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="5Vh-Xu-XQv"/>
+                        <constraint firstAttribute="height" constant="15" id="Euo-om-cff"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BfU-by-SE8" secondAttribute="trailing" constant="45" id="8Jn-eQ-TZW"/>
+                <constraint firstAttribute="trailing" secondItem="Oel-Ev-ybQ" secondAttribute="trailing" constant="23" id="EO6-mO-Sge"/>
+                <constraint firstAttribute="bottom" secondItem="Oel-Ev-ybQ" secondAttribute="bottom" constant="24" id="If3-nR-oE4"/>
+                <constraint firstAttribute="bottom" secondItem="BfU-by-SE8" secondAttribute="bottom" constant="30" id="KtC-ek-7uI"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="headerImageView" destination="xGM-Qd-yhn" id="Ch9-8D-Pai"/>

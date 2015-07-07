@@ -11,6 +11,7 @@
 
 @interface ReservationDesignViewController (){
     BOOL timeSelect;
+    int _showDateType;
 }
 
 @end
@@ -114,9 +115,20 @@
 
 
 #pragma mark - TimeSelect
+//选择时间
 - (IBAction)selectTime:(UIButton * )sender {
+    _showDateType = 0;
+    self.datePicker.datePickerMode =UIDatePickerModeTime;
     self.maskView.hidden = NO;
     self.datePicker.tag = sender.tag+10000;
+}
+
+//选择日期
+- (IBAction)optionDate:(UIButton *)sender {
+    _showDateType = 1;
+    self.maskView.hidden = NO;
+    self.datePicker.datePickerMode =UIDatePickerModeDate;
+
 }
 
 - (IBAction)cancle:(id)sender {
@@ -124,13 +136,25 @@
 }
 - (IBAction)enter:(id)sender {
     self.maskView.hidden = YES;
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm"];
-    NSDate *selected = [self.datePicker date];
-    NSString *currentDateStr = [dateFormatter stringFromDate:selected];
     
-    UIButton * btnTemp = (UIButton *)[self.view viewWithTag:self.datePicker.tag-10000];
-    [btnTemp setTitle:currentDateStr forState:UIControlStateNormal];
+    if (_showDateType) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSDate *selected = [self.datePicker date];
+        NSString *currentDateStr = [dateFormatter stringFromDate:selected];
+        self.dateTextField.text = currentDateStr;
+        
+    }else{
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"HH:mm"];
+        NSDate *selected = [self.datePicker date];
+        NSString *currentDateStr = [dateFormatter stringFromDate:selected];
+        
+        UIButton * btnTemp = (UIButton *)[self.view viewWithTag:self.datePicker.tag-10000];
+        [btnTemp setTitle:currentDateStr forState:UIControlStateNormal];
+
+    }
+    
 }
 
 #pragma mark - setAction

@@ -254,7 +254,7 @@ static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
             }
     }
     _pageControl.currentPage = page;
-    titleLable.text =[NSString stringWithFormat:@"  %@",[(SGFocusImageItem*)imageItems[page] title]];
+    titleLable.text =[NSString stringWithFormat:@"  %@",[(SGFocusImageItem*)imageItems[page+1] title]];
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {

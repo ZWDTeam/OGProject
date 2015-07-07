@@ -8,9 +8,12 @@
 
 #import "OGStrategyClassViewController.h"
 #import "OGLookSchemeTableViewCell.h"
+#import "OGStrategyDetailViewController.h"
 
 @interface OGStrategyClassViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong , nonatomic)NSArray * items;
 
 @end
 
@@ -21,6 +24,8 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"软装攻略";
+        NSString * path = [[NSBundle mainBundle] pathForResource:@"strategyModel" ofType:@"plist"];
+        _items = [NSArray arrayWithContentsOfFile:path];
     }
     return self;
 }
@@ -35,7 +40,7 @@
 
 #pragma  mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return _items.count;
 }
 
 
@@ -47,14 +52,14 @@
         cell.detailContentLabel.hidden  = YES;
         cell.styleLabel.textColor = [UIColor grayColor];
     }
-    
-    cell.headerImageView.image = [UIImage imageNamed:@"home1.jpg"];
-    cell.titleLabel.text = @"欧工家装";
-    cell.styleLabel.text = @"2015-06-23";//时间label
-    cell.userImageView.image = [UIImage imageNamed:@"mm4.jpg"];
-    cell.lookCountLabel.text = @"1023";
-    cell.commentCountLabel.text = @"342";
-    cell.priceLabel.text = @"搭配总价: ￥45300";
+    NSDictionary * dic = _items[indexPath.row];
+    cell.headerImageView.image = [UIImage imageNamed:dic[@"contentImage"]];
+    cell.titleLabel.text = dic[@"name"];
+    cell.styleLabel.text = dic[@"time"];//时间label
+    cell.userImageView.image = [UIImage imageNamed:dic[@"headerImage"]];
+    cell.lookCountLabel.text = [NSString stringWithFormat:@"%d",arc4random()%1024];
+    cell.commentCountLabel.text = [NSString stringWithFormat:@"%d",arc4random()%1024];
+    cell.priceLabel.text = dic[@"title"];
     return cell;
 }
 
@@ -80,8 +85,9 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    OGStrategyDetailViewController * viewController = [segue destinationViewController];
+    NSIndexPath * indexPath = sender;
+    viewController.info = _items[indexPath.row];
 }
 
 

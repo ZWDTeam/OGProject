@@ -10,6 +10,7 @@
 #import "OGLookSchemeTableViewCell.h"
 #import "VPTribeSegmentedControl.h"
 #import "OGSchemeMenuView.h"
+#import "OGSchemeDetailViewController.h"
 
 #define title @"title"
 #define headerImage @"headerImage"
@@ -21,7 +22,7 @@
 #define price @"price"
 
 @interface OGLooSchemeViewController ()<UITableViewDataSource,UITableViewDelegate,OGSchemeMenuViewDelegate,UIScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)  UITableView *tableView;
 @property (strong , nonatomic)UITableView * tableView1;
 @property (strong , nonatomic)NSMutableArray * schemes;
 @property (strong , nonatomic)VPTribeSegmentedControl * segmentedControl;
@@ -49,6 +50,7 @@
     self.tpyeSegmentedControl.isExchangeItemColor = YES;
     self.tpyeSegmentedControl.selectedIndex = 0;
     [self.tpyeSegmentedControl addTarget:self action:@selector(exchaneSortType:)];
+
     
     self.rightBarBtn.layer.cornerRadius = CGRectGetHeight(self.rightBarBtn.frame)/2.0f;
     self.rightBarBtn.layer.borderWidth = 1.0f;
@@ -57,12 +59,26 @@
     self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH *2.0f, 0);
     
     
-    CGRect rect = _scrollView.bounds;
+    CGRect rect = self.view.bounds;
+    rect.size.height -=64+self.tpyeSegmentedControl.frame.size.height;
+    _tableView = [[UITableView alloc] initWithFrame:rect];
+    _tableView.delegate =self;
+    _tableView.dataSource =self;
+    [self.scrollView addSubview:_tableView];
+
+    
+    
     rect.origin.x = SCREEN_WIDTH;
     _tableView1 = [[UITableView alloc] initWithFrame:rect];
     _tableView1.delegate =self;
     _tableView1.dataSource =self;
     [self.scrollView addSubview:_tableView1];
+}
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
+
 }
 
 - (NSArray *)arr{
@@ -204,14 +220,24 @@
     [super didReceiveMemoryWarning];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"pushSchemeDetailView"]) {
+        OGSchemeDetailViewController * v = [segue destinationViewController];
+        NSIndexPath * indexPath = sender;
+        NSDictionary * dic ;
+        if (self.segmentedControl.selectedIndex ==0) {
+            dic = self.arr[indexPath.row];
+        }else{
+            dic = self.arr1[indexPath.row];
+        }
+
+        v.info = dic;
+    }
 }
-*/
+
 
 @end

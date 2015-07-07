@@ -31,16 +31,16 @@ NSString * const collectionCellIdentifier = @"OGLookStrategyCollectionViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _array = @[@{@"title":@"中式复古风",
-                 @"image":@"home1.jpg"},
+                 @"image":@"中式风格.jpg"},
                @{@"title":@"欧式格局",
                  @"image":@"home2.jpg"},
-               @{@"title":@"美式瑞丽风",
-                 @"image":@"home3.jpg"},
+               @{@"title":@"美式乡村",
+                 @"image":@"美式乡村.jpg"},
                @{@"title":@"法式风情",
-                 @"image":@"home4.jpg"},
-               @{@"title":@"泰式风情",
+                 @"image":@"法式风情.jpg"},
+               @{@"title":@"后现代",
                  @"image":@"home5.jpg"},
-                @{@"title":@"日式格调",
+                @{@"title":@"现代风格",
                    @"image":@"home6.jpg"},];
     
     OGLookStrategyLayout * layout =[OGLookStrategyLayout new];

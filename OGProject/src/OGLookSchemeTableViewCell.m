@@ -24,6 +24,7 @@
     [self.contentView insertSubview:view aboveSubview:_headerImageView];
 }
 
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

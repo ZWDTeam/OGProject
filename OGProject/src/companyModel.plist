@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>gg5.jpg</string>
+		<string>火车头.PNG</string>
 		<key>gongSi</key>
-		<string>环球装饰</string>
+		<string>火车头</string>
 		<key>zhiWu</key>
 		<string>首席设计师</string>
 		<key>qianMing</key>
@@ -18,17 +18,17 @@
 		<key>fengSi</key>
 		<string>1.5万</string>
 		<key>year</key>
-		<string>3</string>
+		<string>10</string>
 		<key>sex</key>
 		<string>公司</string>
 		<key>name</key>
-		<string>欧工</string>
+		<string>火车头</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>gg15.jpg</string>
+		<string>皇家雄鹰.PNG</string>
 		<key>gongSi</key>
-		<string>环球装饰</string>
+		<string>皇家雄鹰</string>
 		<key>zhiWu</key>
 		<string>首席设计师</string>
 		<key>qianMing</key>
@@ -40,17 +40,17 @@
 		<key>fengSi</key>
 		<string>1.5万</string>
 		<key>year</key>
-		<string>3</string>
+		<string>5</string>
 		<key>sex</key>
 		<string>公司</string>
 		<key>name</key>
-		<string>大禹设计</string>
+		<string>皇家雄鹰</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mm11.jpg</string>
+		<string>皇冠.PNG</string>
 		<key>gongSi</key>
-		<string>环球装饰</string>
+		<string>皇冠</string>
 		<key>zhiWu</key>
 		<string>首席设计师</string>
 		<key>qianMing</key>
@@ -62,17 +62,17 @@
 		<key>fengSi</key>
 		<string>1.5万</string>
 		<key>year</key>
-		<string>3</string>
+		<string>7</string>
 		<key>sex</key>
 		<string>公司</string>
 		<key>name</key>
-		<string>欧朋装修</string>
+		<string>皇冠</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mm11.jpg</string>
+		<string>厚泽.PNG</string>
 		<key>gongSi</key>
-		<string>环球装饰</string>
+		<string>厚泽</string>
 		<key>zhiWu</key>
 		<string>首席设计师</string>
 		<key>qianMing</key>
@@ -88,13 +88,13 @@
 		<key>sex</key>
 		<string>公司</string>
 		<key>name</key>
-		<string>华夏软装</string>
+		<string>厚泽</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mm11.jpg</string>
+		<string>黑石区.PNG</string>
 		<key>gongSi</key>
-		<string>环球装饰</string>
+		<string>黑石区</string>
 		<key>zhiWu</key>
 		<string>首席设计师</string>
 		<key>qianMing</key>
@@ -106,11 +106,99 @@
 		<key>fengSi</key>
 		<string>1.5万</string>
 		<key>year</key>
-		<string>3</string>
+		<string>13</string>
 		<key>sex</key>
 		<string>公司</string>
 		<key>name</key>
-		<string>南都设计</string>
+		<string>黑石区</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>建筑工.PNG</string>
+		<key>gongSi</key>
+		<string>建筑工</string>
+		<key>zhiWu</key>
+		<string>设计总监</string>
+		<key>qianMing</key>
+		<string>最前沿的时尚潮流设计</string>
+		<key>shanChang</key>
+		<string>欧式风格</string>
+		<key>city</key>
+		<string>上海</string>
+		<key>fengSi</key>
+		<string>2万</string>
+		<key>year</key>
+		<string>12</string>
+		<key>sex</key>
+		<string>公司</string>
+		<key>name</key>
+		<string>建筑工</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>酒庄.PNG</string>
+		<key>gongSi</key>
+		<string>酒庄</string>
+		<key>zhiWu</key>
+		<string>设计总监</string>
+		<key>qianMing</key>
+		<string>最前沿的时尚潮流设计</string>
+		<key>shanChang</key>
+		<string>欧式风格</string>
+		<key>city</key>
+		<string>上海</string>
+		<key>fengSi</key>
+		<string>2万</string>
+		<key>year</key>
+		<string>9</string>
+		<key>sex</key>
+		<string>公司</string>
+		<key>name</key>
+		<string>酒庄</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>职业设手.PNG</string>
+		<key>gongSi</key>
+		<string>职业设手</string>
+		<key>zhiWu</key>
+		<string>设计总监</string>
+		<key>qianMing</key>
+		<string>最前沿的时尚潮流设计</string>
+		<key>shanChang</key>
+		<string>欧式风格</string>
+		<key>city</key>
+		<string>上海</string>
+		<key>fengSi</key>
+		<string>2万</string>
+		<key>year</key>
+		<string>14</string>
+		<key>sex</key>
+		<string>公司</string>
+		<key>name</key>
+		<string>米豆</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>职业设手.PNG</string>
+		<key>gongSi</key>
+		<string>职业设手</string>
+		<key>zhiWu</key>
+		<string>设计总监</string>
+		<key>qianMing</key>
+		<string>最前沿的时尚潮流设计</string>
+		<key>shanChang</key>
+		<string>欧式风格</string>
+		<key>city</key>
+		<string>上海</string>
+		<key>fengSi</key>
+		<string>2万</string>
+		<key>year</key>
+		<string>20</string>
+		<key>sex</key>
+		<string>公司</string>
+		<key>name</key>
+		<string>职业设手</string>
 	</dict>
 </array>
 </plist>

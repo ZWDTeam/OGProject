@@ -103,7 +103,9 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if ([keyPath isEqualToString:@"frame"]) {
-        self.collectionView.frame = self.view.bounds;
+        CGRect rect =self.collectionView.frame;
+        rect.size.height = self.view.frame.size.height;
+        self.collectionView.frame = rect;
     }
 }
 

@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnWoman;
 @property (weak, nonatomic) IBOutlet UILabel *labelUserPhone;
 
+@property (weak, nonatomic) IBOutlet UITextField *dateTextField;
 
 
 @property (weak, nonatomic) IBOutlet UIView *maskView;

@@ -43,7 +43,7 @@
     [super viewDidLoad];
     self.tableView.tableHeaderView = self.headerImageView;
     self.tableView.tableFooterView = self.footView;
-    self.footView.text = @"自盐城国家高新区正式挂牌后，盐都区加快对接“中国制造2015”规划纲要，突出发展新产业、新业态、新模式、新技术“四新”经济，紧盯深圳手机产业项目抱团转移机遇，加快智能终端（手机）产业园等平台建设，推动项目加快落户，目前，已签约落户智能终端（手机）产业研究院、华宇彩晶、泰奇科技、西特新能源、富勤精密电子等项目。";
+    self.footView.text = @"";
     [self.footView sizeToFit];
 
 }
@@ -98,7 +98,7 @@
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             }
-            cell.titleLabel.text = @"开福区芙蓉北路伍家岭南111号";
+            cell.titleLabel.text = self.info[@"address"];
             cell.headerImageView.image = [UIImage imageNamed:@"10-地址"];
             return cell;
         }
@@ -113,7 +113,7 @@
                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
                 
             }
-            cell.titleLabel.text = self.tel;
+            cell.titleLabel.text = self.info[@"tel"];
             cell.headerImageView.image = [UIImage imageNamed:@"10-电话"];
             return cell;
         }
@@ -145,14 +145,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row ==1) {
-        NSString * tel = [NSString stringWithFormat:@"tel://%@",self.tel];
+        NSString * tel = [NSString stringWithFormat:@"tel://%@",self.info[@"tel"]];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:tel]];
     }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     OGTableSectionView * view = self.sectionView;
-    view.titleLabel.text = @"伍家岭南软装体验馆";
+    view.titleLabel.text = self.info[@"address"];
     
     return view;
 }

@@ -16,6 +16,8 @@
 @interface OGStrategyDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong , nonatomic)NSArray * comments;
+
 @property (strong , nonatomic)VPStretchBaseView * header;
 
 @end
@@ -26,6 +28,16 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.title = @"攻略详情";
+        _comments = @[@{@"image"   :@"mm4.jpg",
+                        @"content" :@"感觉说的挺有道理的",
+                        @"name"    :@"ben"},
+                      @{@"image"   :@"gg4.jpg",
+                        @"content" :@"我比较喜欢这种调调!!!",
+                        @"name"    :@"大康"},
+                      @{@"image"   :@"mm14.jpg",
+                        @"content" :@"不晓得多钱钱可以拿下😄",
+                        @"name"    :@"小敏"},
+                      ];
     }
     return self;
 }
@@ -33,22 +45,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
     VPStretchBaseView * view = [[[NSBundle mainBundle] loadNibNamed:@"VPStretchBaseView" owner:self options:nil] lastObject];
-    view.headerImageView.image = [UIImage imageNamed:@"mm14.jpg"];
+    view.image = [UIImage imageNamed:_info[@"contentImage"]];
+    CGRect rect = view.frame;
+    rect.size.width = MainView_Width;
+    view.frame = rect;
     
     _header = [DGExpandheader expandWithScrollView:_tableView expandView:view];
+
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
 }
 
 
+- (void)viewDidLayoutSubviews{
+
+}
+
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2 +3;
+    return 2 +_comments.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -58,9 +76,11 @@
             OGStrategyTitleTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
             if (cell == nil) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }
             
-            cell.contentLabel.text = @"匆匆那年（电影《匆匆那年》主题曲\n 作词：林夕 \n作曲：梁翘柏 \n演唱：王菲 \n匆匆那年我们 \n究竟说了几遍 再见之后再拖延 \n 可惜谁有没有 爱过不是一场 \n七情上面的雄辩匆匆那年我们 \n 一时匆忙撂下  \n 难以承受的诺言 只有等别人兑现";
+            cell.contentLabel.text =_info[@"content"];
+            cell.titleLabel.text = _info[@"title"];
             return cell;
 
         }
@@ -70,6 +90,8 @@
             OGStrategyImageTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
             if (cell == nil) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
             }
             return cell;
 
@@ -82,15 +104,19 @@
             break;
     }
     
+    //评论信息
     static NSString * identifier = @"OGStrategyCommentTableViewCell";
     OGStrategyCommentTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     }
     
-    cell.contentLabel.text = @"匆匆那年（电影《匆匆那年》主题曲 作词：林夕 作曲：梁翘柏演唱：王菲 匆匆那年我们 究竟说了几遍 再见之后再拖延 可惜谁有没有 爱过不是一场 七情上面的雄辩匆匆那年我们 一时匆忙撂下 难以承受的诺言 只有等别人兑现";
-    cell.headerImageView.image = [UIImage imageNamed:@"mm5.jpg"];
-    cell.nameLabel.text = @"迪哥";
+    NSDictionary * dic = _comments[indexPath.row-2];
+    cell.contentLabel.text = dic[@"content"];
+    cell.headerImageView.image = [UIImage imageNamed:dic[@"image"]];
+    cell.nameLabel.text = dic[@"name"];
     return cell;
     
 }

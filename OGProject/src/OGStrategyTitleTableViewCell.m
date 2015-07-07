@@ -12,7 +12,7 @@
 @implementation OGStrategyTitleTableViewCell
 
 - (void)awakeFromNib {
-    _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 83, SCREEN_WIDTH - 25, 30)];
+    _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 40, SCREEN_WIDTH - 25, 30)];
     _contentLabel.textColor = [UIColor grayColor];
     _contentLabel.font =[UIFont systemFontOfSize:15];
     _contentLabel.numberOfLines = 0;
@@ -31,7 +31,7 @@
     _contentLabel.frame =rect1;
     
     rect1 = self.frame;
-    rect1.size.height = rect.size.height + 100;
+    rect1.size.height = rect.size.height + 60;
     self.frame = rect1;
 }
 

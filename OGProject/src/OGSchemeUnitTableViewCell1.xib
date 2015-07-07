@@ -13,9 +13,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-p4-IKA">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-p4-IKA">
                         <rect key="frame" x="282" y="16" width="81" height="28"/>
                         <color key="backgroundColor" red="1" green="0.40351160208617498" blue="0.2206247107844681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="ZQy-HP-50d"/>
+                            <constraint firstAttribute="width" constant="81" id="kUb-XZ-mAG"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="点击购买">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,6 +48,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7AJ-p4-IKA" secondAttribute="trailing" constant="12" id="9ZG-fd-QKu"/>
+                    <constraint firstAttribute="bottom" secondItem="7AJ-p4-IKA" secondAttribute="bottom" constant="15" id="slV-zb-6uP"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="newsPriceLabel" destination="h1r-Io-coM" id="BbS-dW-szm"/>

@@ -88,51 +88,13 @@
    
 }
 - (IBAction)pushRegisterViewController:(id)sender {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请选择账号类型" delegate:self cancelButtonTitle:@"我是设计师" otherButtonTitles:@"我是用户", nil];
-    alert.tag = 1;
-    [alert show];
-    return;
-
-
-    
+    [self performSegueWithIdentifier:@"pushRegister" sender:nil];
 }
+
+
 - (IBAction)pushForgetPassword:(id)sender {
      [self performSegueWithIdentifier:@"pushForgetView" sender:nil];
      ex_account = self.telephoneLalbl.text;
 }
-
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
-{
-    if (alertView.tag==1) {
-        
-    
-    switch (buttonIndex) {
-        case 0:
-        {
-            OGRegisterOneViewController * registerVC = [[OGRegisterOneViewController alloc]init];
-            [self.navigationController pushViewController:registerVC animated:YES];
-
-        }
-            break;
-        case 1:
-            [self performSegueWithIdentifier:@"pushRegister" sender:nil];
-            break;
-            
-        default:
-            break;
-    }
-    }
-
-}
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

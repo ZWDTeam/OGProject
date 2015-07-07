@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,7 +13,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivw-dD-nPO">
-                        <rect key="frame" x="-8" y="0.0" width="391" height="143"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="中小户型经典优雅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nE-nF-Ne0">
                                 <rect key="frame" x="16" y="17" width="359" height="22"/>
@@ -84,15 +83,13 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="143" id="bT9-90-dfU"/>
-                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="Ivw-dD-nPO" secondAttribute="trailing" constant="-16" id="TS2-af-baH"/>
-                    <constraint firstItem="Ivw-dD-nPO" firstAttribute="top" secondItem="OMe-kc-vFI" secondAttribute="topMargin" constant="-8" id="cQf-2u-R6M"/>
-                    <constraint firstItem="Ivw-dD-nPO" firstAttribute="leading" secondItem="OMe-kc-vFI" secondAttribute="leadingMargin" constant="-16" id="lj9-Dc-N4d"/>
+                    <constraint firstAttribute="trailing" secondItem="Ivw-dD-nPO" secondAttribute="trailing" id="KyZ-kT-1IH"/>
+                    <constraint firstAttribute="bottom" secondItem="Ivw-dD-nPO" secondAttribute="bottom" constant="14" id="Mk0-16-Adc"/>
+                    <constraint firstItem="Ivw-dD-nPO" firstAttribute="leading" secondItem="OMe-kc-vFI" secondAttribute="leading" id="auM-7C-y8T"/>
+                    <constraint firstItem="Ivw-dD-nPO" firstAttribute="top" secondItem="OMe-kc-vFI" secondAttribute="top" id="nQC-3g-BXQ"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,7 +100,7 @@
                 <outlet property="styleLabel" destination="StW-qe-MzK" id="CF3-p0-HKB"/>
                 <outlet property="typeLabel" destination="bZJ-B4-8EN" id="OXy-5D-SAY"/>
             </connections>
-            <point key="canvasLocation" x="301.5" y="396"/>
+            <point key="canvasLocation" x="192.5" y="402"/>
         </tableViewCell>
     </objects>
 </document>

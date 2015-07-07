@@ -15,6 +15,7 @@
                 <outlet property="btnMan" destination="bFi-qm-jk3" id="2G7-Fk-5YU"/>
                 <outlet property="btnWoman" destination="wrS-6q-ADH" id="73f-Lf-rtD"/>
                 <outlet property="datePicker" destination="Sny-Ti-roB" id="Vgy-55-1mu"/>
+                <outlet property="dateTextField" destination="Jx3-dE-jZO" id="i8l-76-9NV"/>
                 <outlet property="imgUserFace" destination="EwT-36-75j" id="FpS-HT-VqX"/>
                 <outlet property="labelUserName" destination="2D4-DD-1TA" id="wQ0-b6-hWW"/>
                 <outlet property="labelUserPhone" destination="Hq1-sY-LLS" id="E88-nU-97n"/>
@@ -29,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-eI-3Dv">
-                    <rect key="frame" x="24" y="109" width="20" height="20"/>
+                    <rect key="frame" x="24" y="155" width="20" height="20"/>
                     <color key="backgroundColor" red="1" green="0.38823529410000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="g.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,19 +40,19 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上午:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hi-y9-0dT">
-                    <rect key="frame" x="54" y="108" width="42" height="21"/>
+                    <rect key="frame" x="54" y="154" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcs-Mf-QEk">
-                    <rect key="frame" x="214" y="108" width="19" height="21"/>
+                    <rect key="frame" x="214" y="154" width="19" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" tag="10001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQH-T5-wbq">
-                    <rect key="frame" x="99" y="101" width="108" height="35"/>
+                    <rect key="frame" x="99" y="147" width="108" height="35"/>
                     <color key="backgroundColor" red="0.96919331180000001" green="0.79422828749999996" blue="0.24391789050000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="09:04">
@@ -66,7 +67,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="10002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwH-0K-6cc">
-                    <rect key="frame" x="239" y="101" width="108" height="35"/>
+                    <rect key="frame" x="239" y="147" width="108" height="35"/>
                     <color key="backgroundColor" red="0.96919331180000001" green="0.79422828749999996" blue="0.24391789050000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="10:50">
@@ -81,7 +82,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR3-T7-FDz">
-                    <rect key="frame" x="24" y="165" width="20" height="20"/>
+                    <rect key="frame" x="24" y="211" width="20" height="20"/>
                     <color key="backgroundColor" red="0.792156862745098" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,19 +92,19 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下午:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXf-zy-RaR">
-                    <rect key="frame" x="54" y="164" width="42" height="21"/>
+                    <rect key="frame" x="54" y="210" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McW-fg-esc">
-                    <rect key="frame" x="214" y="164" width="19" height="21"/>
+                    <rect key="frame" x="214" y="210" width="19" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" tag="10003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doC-lj-YBQ">
-                    <rect key="frame" x="99" y="157" width="108" height="35"/>
+                    <rect key="frame" x="99" y="203" width="108" height="35"/>
                     <color key="backgroundColor" red="0.74509803921568629" green="0.7686274509803922" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="09:04">
@@ -118,7 +119,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="10004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-0c-44A">
-                    <rect key="frame" x="239" y="157" width="108" height="35"/>
+                    <rect key="frame" x="239" y="203" width="108" height="35"/>
                     <color key="backgroundColor" red="0.74509803921568629" green="0.76862745098039209" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="10:50">
@@ -133,14 +134,14 @@
                     </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="请输入您的需求" translatesAutoresizingMaskIntoConstraints="NO" id="Hu9-rD-Btl">
-                    <rect key="frame" x="15" y="220" width="345" height="128"/>
+                    <rect key="frame" x="15" y="266" width="345" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8t-h7-F1b">
-                    <rect key="frame" x="15" y="220" width="345" height="128"/>
+                    <rect key="frame" x="15" y="266" width="345" height="128"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -150,61 +151,99 @@
                     </connections>
                 </textView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-3头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="EwT-36-75j">
-                    <rect key="frame" x="24" y="373" width="31" height="31"/>
+                    <rect key="frame" x="24" y="419" width="31" height="31"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D4-DD-1TA">
-                    <rect key="frame" x="63" y="378" width="189" height="21"/>
+                    <rect key="frame" x="63" y="424" width="189" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.1137254902" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFi-qm-jk3">
-                    <rect key="frame" x="218" y="378" width="22" height="22"/>
+                    <rect key="frame" x="218" y="424" width="22" height="22"/>
                     <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                     <state key="normal" image="checkIn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="先生" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-zN-yJV">
-                    <rect key="frame" x="241" y="378" width="42" height="21"/>
+                    <rect key="frame" x="241" y="424" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrS-6q-ADH">
-                    <rect key="frame" x="287" y="378" width="22" height="22"/>
+                    <rect key="frame" x="287" y="424" width="22" height="22"/>
                     <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                     <state key="normal" image="checkOut.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女士" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-jf-t00">
-                    <rect key="frame" x="310" y="378" width="42" height="21"/>
+                    <rect key="frame" x="310" y="424" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chI-va-OHf">
-                    <rect key="frame" x="15" y="419" width="345" height="56"/>
+                    <rect key="frame" x="15" y="465" width="345" height="56"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArT-WS-khn">
+                    <rect key="frame" x="25" y="481" width="25" height="25"/>
+                    <state key="normal" image="预约电话.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="联系方式：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08Q-qw-rzv">
-                    <rect key="frame" x="32" y="436" width="86" height="21"/>
+                    <rect key="frame" x="54" y="482" width="76" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-sY-LLS">
-                    <rect key="frame" x="110" y="436" width="225" height="21"/>
+                    <rect key="frame" x="138" y="482" width="197" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.44705882349999998" green="0.45098039220000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="选择预约设计:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-fq-Xp4">
+                    <rect key="frame" x="21" y="94" width="94" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2015-06-07" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jx3-dE-jZO">
+                    <rect key="frame" x="123" y="91" width="186" height="30"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc9-fl-wCf">
+                    <rect key="frame" x="317" y="87" width="35" height="35"/>
+                    <state key="normal" image="日历.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="optionDate:" destination="-1" eventType="touchUpInside" id="ktO-jG-U88"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTx-gQ-iB2">
+                    <rect key="frame" x="15" y="529" width="345" height="125"/>
+                    <string key="text">预约成功——四重好礼等你拿
+1、套餐优惠价格
+2、2000元现金卷
+3、免费设计量房
+4、免费精品礼物相送</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-NH-B6i">
-                    <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFQ-RB-aCT">
-                            <rect key="frame" x="0.0" y="400" width="375" height="205"/>
+                            <rect key="frame" x="0.0" y="397" width="375" height="205"/>
                             <subviews>
                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sny-Ti-roB">
                                     <rect key="frame" x="0.0" y="43" width="375" height="162"/>
@@ -257,5 +296,7 @@
         <image name="checkIn.png" width="22" height="22"/>
         <image name="checkOut.png" width="22" height="22"/>
         <image name="g.png" width="32" height="32"/>
+        <image name="日历.png" width="59" height="58"/>
+        <image name="预约电话.png" width="56" height="55"/>
     </resources>
 </document>

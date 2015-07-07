@@ -21,7 +21,7 @@ NSString * const cellRowIdentifier = @"OGUnitCollectionViewCell";
 
 - (id)initWithDelegate:(id)delegate withMembers:(NSArray *)members{
     _flowLayout =[UICollectionViewFlowLayout new];
-    _flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH - 30)/2.0f,125);
+    _flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH - kPercenX_scale(30))/2.0f,125);
     _flowLayout.sectionInset = UIEdgeInsetsMake(0, 10, 5, 10);
     _flowLayout.minimumInteritemSpacing = 5;
     _flowLayout.minimumLineSpacing = 0;
@@ -60,8 +60,8 @@ NSString * const cellRowIdentifier = @"OGUnitCollectionViewCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     OGUnitCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellRowIdentifier forIndexPath:indexPath];
-    cell.headerImageView.image = [UIImage imageNamed:@"11-banner"];
-    cell.titleLabel.text = @"迪哥";
+    cell.headerImageView.image = [UIImage imageNamed:_members[indexPath.row]];
+    cell.titleLabel.text = @"欧珀";
     return cell;
 }
 

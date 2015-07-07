@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *commentCountLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *lookCountLabel;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControll;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "OGStrategyImageTableViewCell.h"
 #import "OGBaseViewController.h"
-@interface OGStrategyImageTableViewCell()
+@interface OGStrategyImageTableViewCell()<UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *contetnScrollView;
 
@@ -21,17 +21,16 @@
 - (void)awakeFromNib {
 
     self.titleBackView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    self.contetnScrollView.delegate = self;
     
-    NSString * pathString = [[NSBundle mainBundle] pathForResource:@"homeHeaderModel" ofType:@"plist"];
-    NSArray * array = [NSArray arrayWithContentsOfFile:pathString];
-    _contents  = [[NSMutableArray alloc] initWithArray:array];
-    [_contents addObject:array[0]];
-    [_contents insertObject:array[array.count-1] atIndex:0];
-    
+}
+
+- (void)layoutSubviews{
     float x = 0;
-    for (NSDictionary * dic in _contents) {
+    int imageNum = arc4random()%17+1;
+    for (int i = 0; i <3; i++) {
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, 0, self.contetnScrollView.bounds.size.width, self.contetnScrollView.bounds.size.height)];
-        imageView.image  = [UIImage imageNamed:dic[@"imageString"]];
+        imageView.image  = [UIImage imageNamed:[NSString stringWithFormat:@"home%d.jpg",imageNum+i]];
         imageView.userInteractionEnabled = YES;
         
         int index = x/imageView.bounds.size.width;
@@ -41,10 +40,12 @@
         self.contetnScrollView.contentSize = CGSizeMake(x+imageView.bounds.size.width, 0);
         
         x += imageView.bounds.size.width;
-
     }
-    
-    
+
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    self.pageControll.currentPage = scrollView.contentOffset.x/scrollView.frame.size.width;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

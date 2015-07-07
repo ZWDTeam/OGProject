@@ -11,5 +11,6 @@
 @interface OGStrategyTitleTableViewCell : UITableViewCell
 
 @property (strong , nonatomic) UILabel * contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

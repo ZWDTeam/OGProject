@@ -34,6 +34,13 @@
         UIBarButtonItem * bar2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"分享"] style:UIBarButtonItemStylePlain target:nil action:nil];
         self.navigationItem.rightBarButtonItems = @[bar1,bar2];
 
+        if (!self.info) {
+            self.info = @{@"headImage":@"home5.jpg",
+                          @"oldPrice" :@"32142",
+                          @"price"    :@"29999",
+                          @"commentCount":@"213"};
+        }
+
     }
     return self;
 }
@@ -42,8 +49,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+    
     self.tableView.tableHeaderView = self.headerImageView;
     self.tableView.tableFooterView = self.tableViewFootView;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,7 +78,7 @@
 
 - (OGUnitCollectionView *)tableViewFootView{
     if (!_tableViewFootView) {
-        _tableViewFootView = [[OGUnitCollectionView alloc] initWithDelegate:self withMembers:@[@"",@"",@"",@""]];
+        _tableViewFootView = [[OGUnitCollectionView alloc] initWithDelegate:self withMembers:@[@"dp1.png",@"dp2.png",@"dp3.png",@"dp4.png"]];
     }
     return _tableViewFootView;
 }

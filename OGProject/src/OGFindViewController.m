@@ -88,7 +88,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (ex_identityType == OGIdentityTypeUser) {
-        [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
+        if (indexPath.row ==0) {
+            [self performSegueWithIdentifier:@"pushMapViewController" sender:indexPath];
+
+        }else{
+            [self performSegueWithIdentifier:@"pushTiyanGuan" sender:indexPath];
+
+        }
     }else{
         if (indexPath.row == 0) {
             OGDesignCircleViewController * DesignCircleVC = [[OGDesignCircleViewController alloc]init];

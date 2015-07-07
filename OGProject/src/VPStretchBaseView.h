@@ -10,7 +10,4 @@
 
 @interface VPStretchBaseView : UIImageView
 
-@property (strong, nonatomic) UIImageView *headerImageView;
-
-
 @end

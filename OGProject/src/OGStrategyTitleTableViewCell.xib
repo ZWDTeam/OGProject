@@ -14,16 +14,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLO-ot-QAM">
-                        <rect key="frame" x="8" y="8" width="359" height="81"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLO-ot-QAM">
+                        <rect key="frame" x="8" y="8" width="359" height="27"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="81" id="ssf-HG-hPz"/>
+                            <constraint firstAttribute="height" constant="27" id="ssf-HG-hPz"/>
                         </constraints>
-                        <string key="text">越装就越觉得审美疲劳
-抱歉这个月关注的朋友，一直很忙
-也改晒晒我的阶段成果了</string>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -33,6 +30,9 @@
                     <constraint firstItem="CLO-ot-QAM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="v5O-3I-T8u"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="CLO-ot-QAM" id="3ib-T0-6ge"/>
+            </connections>
             <point key="canvasLocation" x="332.5" y="362.5"/>
         </tableViewCell>
     </objects>

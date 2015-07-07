@@ -38,7 +38,11 @@
     [super viewDidLoad];
     
     VPStretchBaseView * view = [[[NSBundle mainBundle] loadNibNamed:@"VPStretchBaseView" owner:self options:nil] lastObject];
-    view.headerImageView.image = [UIImage imageNamed:self.info[@"image"]];
+    view.image = [UIImage imageNamed:self.info[@"image"]];
+    CGRect rect = view.frame;
+    rect.size.width = MainView_Width;
+    view.frame = rect;
+
     
   _header = [DGExpandheader expandWithScrollView:_tableView expandView:view];
     

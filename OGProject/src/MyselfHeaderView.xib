@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mySelfBackImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-bC-Xgd">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mySelfBackImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-bC-Xgd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
@@ -41,6 +41,7 @@
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Dhw-GF-wbZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="Ci4-OY-rUm"/>
                 <constraint firstItem="pZU-kW-bHm" firstAttribute="top" secondItem="Dhw-GF-wbZ" secondAttribute="bottom" constant="17" id="E33-FM-utZ"/>
                 <constraint firstItem="kCb-bC-Xgd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GAH-Z2-bck"/>
                 <constraint firstItem="pZU-kW-bHm" firstAttribute="leading" secondItem="Dhw-GF-wbZ" secondAttribute="leading" id="HSu-9K-apn"/>
@@ -50,7 +51,6 @@
                 <constraint firstItem="kCb-bC-Xgd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r27-hT-oE9"/>
                 <constraint firstItem="gVf-1a-m6N" firstAttribute="leading" secondItem="pZU-kW-bHm" secondAttribute="trailing" constant="1" id="w5Y-YE-atb"/>
                 <constraint firstAttribute="trailing" secondItem="kCb-bC-Xgd" secondAttribute="trailing" id="x3o-Bf-ULd"/>
-                <constraint firstAttribute="centerY" secondItem="Dhw-GF-wbZ" secondAttribute="centerY" constant="17" id="xQJ-5n-Y9j"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

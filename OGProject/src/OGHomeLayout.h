@@ -25,11 +25,11 @@
 
 @interface OGHomeLayout : UICollectionViewFlowLayout
 {
-    float x;
+    double x;
     
-    float leftY;
+    double leftY;
     
-    float rightY;
+    double rightY;
     
     bool _isRight;
 }

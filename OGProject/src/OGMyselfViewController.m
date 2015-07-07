@@ -77,6 +77,7 @@
 - (MyselfHeaderView *)headerView{
     if (!_headerView) {
         _headerView = [[[NSBundle mainBundle] loadNibNamed:@"MyselfHeaderView" owner:self options:nil] lastObject];
+        _headerView.frame =CGRectMake(0, 0, MainView_Width, 170);
         _headerView.delegate =self;
     }
     return _headerView;
