@@ -1060,17 +1060,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-58-xds">
-                                <rect key="frame" x="16" y="75" width="339" height="152"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-58-xds">
+                                <rect key="frame" x="18" y="75" width="339" height="152"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="DtI-wr-mIT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="Hcj-zQ-199" id="rsS-Ez-rsn"/>
                                 </connections>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-81-hk8">
-                                <rect key="frame" x="16" y="242" width="339" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-81-hk8">
+                                <rect key="frame" x="18" y="242" width="339" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="联系方式:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iux-rX-SaF">
                                         <rect key="frame" x="15" y="12" width="82" height="21"/>
@@ -1078,22 +1081,39 @@
                                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVY-CW-5RN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVY-CW-5RN">
                                         <rect key="frame" x="105" y="8" width="226" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="iyp-z6-sbg"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="欢迎您提供宝贵的意见和建议,我们客服会尽快和您联系." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-oo-E7z">
-                                <rect key="frame" x="20" y="15" width="339" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎您提供宝贵的意见和建议,我们客服会尽快和您联系." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-oo-E7z">
+                                <rect key="frame" x="18" y="15" width="339" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="fGV-4b-p3M"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509799999999" green="0.89019607840000003" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dz3-58-xds" secondAttribute="trailing" constant="18" id="5VQ-JJ-CaG"/>
+                            <constraint firstItem="MVF-81-hk8" firstAttribute="top" secondItem="Dz3-58-xds" secondAttribute="bottom" constant="15" id="CrV-oG-ge2"/>
+                            <constraint firstItem="MVF-81-hk8" firstAttribute="leading" secondItem="psA-hp-gkT" secondAttribute="leading" constant="18" id="GCB-mu-YfA"/>
+                            <constraint firstItem="0Cf-oo-E7z" firstAttribute="top" secondItem="XIV-Pi-8fN" secondAttribute="bottom" constant="15" id="LtO-Vl-D3R"/>
+                            <constraint firstAttribute="trailing" secondItem="MVF-81-hk8" secondAttribute="trailing" constant="18" id="aBo-FR-eDF"/>
+                            <constraint firstItem="Dz3-58-xds" firstAttribute="leading" secondItem="psA-hp-gkT" secondAttribute="leading" constant="18" id="aFZ-xS-FPj"/>
+                            <constraint firstItem="0Cf-oo-E7z" firstAttribute="leading" secondItem="psA-hp-gkT" secondAttribute="leading" constant="18" id="fCs-un-pi4"/>
+                            <constraint firstAttribute="trailing" secondItem="0Cf-oo-E7z" secondAttribute="trailing" constant="18" id="iTp-9F-TLJ"/>
+                            <constraint firstItem="Dz3-58-xds" firstAttribute="top" secondItem="0Cf-oo-E7z" secondAttribute="bottom" constant="2" id="tI4-dO-amz"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="0mT-j8-ld2">
