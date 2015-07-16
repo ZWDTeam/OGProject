@@ -13,16 +13,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-da-KQ6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-da-KQ6">
                         <rect key="frame" x="8" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="YTU-A9-rek"/>
+                            <constraint firstAttribute="height" constant="40" id="rHx-gB-KIU"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVT-Cp-ir4">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVT-Cp-ir4">
                         <rect key="frame" x="56" y="19" width="282" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4Fh-cF-zh7"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dfv-da-KQ6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JaE-VR-rjI"/>
+                    <constraint firstItem="VVT-Cp-ir4" firstAttribute="leading" secondItem="dfv-da-KQ6" secondAttribute="trailing" constant="8" id="T2E-Ku-OsS"/>
+                    <constraint firstItem="dfv-da-KQ6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VVE-xh-TsN"/>
+                    <constraint firstItem="VVT-Cp-ir4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="ldZ-ms-O7F"/>
+                    <constraint firstAttribute="trailing" secondItem="VVT-Cp-ir4" secondAttribute="trailing" constant="37" id="mjd-PH-Yoj"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="headerImageView" destination="dfv-da-KQ6" id="6zr-Po-vFf"/>

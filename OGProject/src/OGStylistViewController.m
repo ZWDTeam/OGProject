@@ -47,6 +47,10 @@
     self.passwordLabll.secureTextEntry = YES;
     
 }
+- (IBAction)dismissAction:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:login_notification object:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

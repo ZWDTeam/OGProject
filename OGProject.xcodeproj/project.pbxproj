@@ -156,6 +156,14 @@
 		484C346F1B36B43D0031306D /* mapBtnWoman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484C346C1B36B43D0031306D /* mapBtnWoman@2x.png */; };
 		484C34701B36B43D0031306D /* mapBtnCompany@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484C346D1B36B43D0031306D /* mapBtnCompany@2x.png */; };
 		484C34731B37EE950031306D /* OGSchemeMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C34721B37EE950031306D /* OGSchemeMenuView.m */; };
+		484FF3D11B5247B200400E4C /* 设置.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3CC1B5247B200400E4C /* 设置.png */; };
+		484FF3D21B5247B200400E4C /* 我的订单.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3CD1B5247B200400E4C /* 我的订单.png */; };
+		484FF3D31B5247B200400E4C /* 我的关注.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3CE1B5247B200400E4C /* 我的关注.png */; };
+		484FF3D41B5247B200400E4C /* 我的收藏.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3CF1B5247B200400E4C /* 我的收藏.png */; };
+		484FF3D51B5247B200400E4C /* 我的作品.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3D01B5247B200400E4C /* 我的作品.png */; };
+		484FF3D71B5249C500400E4C /* 我的需求.png in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3D61B5249C500400E4C /* 我的需求.png */; };
+		484FF3DA1B524A4800400E4C /* OGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FF3D91B524A4800400E4C /* OGAlertView.m */; };
+		484FF3DC1B524A5700400E4C /* OGAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484FF3DB1B524A5700400E4C /* OGAlertView.xib */; };
 		485CFCFB1B4AD12E002F8496 /* strategyModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485CFCFA1B4AD12E002F8496 /* strategyModel.plist */; };
 		485CFD091B4ADFD6002F8496 /* 黑石区.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 485CFCFE1B4ADFD6002F8496 /* 黑石区.PNG */; };
 		485CFD0A1B4ADFD6002F8496 /* 厚泽.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 485CFCFF1B4ADFD6002F8496 /* 厚泽.PNG */; };
@@ -316,6 +324,10 @@
 		48E246411B4C15E4001061A2 /* OGTiYanGuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2463F1B4C15E4001061A2 /* OGTiYanGuanTableViewCell.m */; };
 		48E246421B4C15E4001061A2 /* OGTiYanGuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E246401B4C15E4001061A2 /* OGTiYanGuanTableViewCell.xib */; };
 		48E246441B4C1807001061A2 /* 电话白色.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E246431B4C1807001061A2 /* 电话白色.png */; };
+		48E246461B4C3B3E001061A2 /* TYanGuan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48E246451B4C3B3E001061A2 /* TYanGuan.plist */; };
+		48E2464B1B4C46BB001061A2 /* tyg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48E246481B4C46BB001061A2 /* tyg1.jpg */; };
+		48E2464C1B4C46BB001061A2 /* tyg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48E246491B4C46BB001061A2 /* tyg2.jpg */; };
+		48E2464D1B4C46BB001061A2 /* tyg3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48E2464A1B4C46BB001061A2 /* tyg3.jpg */; };
 		4A05965A1B40250C00F3035D /* OGDemandDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0596591B40250C00F3035D /* OGDemandDetailsViewController.m */; };
 		4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A05965C1B40257E00F3035D /* OGDesignCircleTableViewCell.m */; };
 		4A0596621B40257E00F3035D /* OGDesignCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A05965E1B40257E00F3035D /* OGDesignCircleView.m */; };
@@ -567,6 +579,15 @@
 		484C346D1B36B43D0031306D /* mapBtnCompany@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapBtnCompany@2x.png"; sourceTree = "<group>"; };
 		484C34711B37EE950031306D /* OGSchemeMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGSchemeMenuView.h; sourceTree = "<group>"; };
 		484C34721B37EE950031306D /* OGSchemeMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGSchemeMenuView.m; sourceTree = "<group>"; };
+		484FF3CC1B5247B200400E4C /* 设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置.png"; sourceTree = "<group>"; };
+		484FF3CD1B5247B200400E4C /* 我的订单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的订单.png"; sourceTree = "<group>"; };
+		484FF3CE1B5247B200400E4C /* 我的关注.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的关注.png"; sourceTree = "<group>"; };
+		484FF3CF1B5247B200400E4C /* 我的收藏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的收藏.png"; sourceTree = "<group>"; };
+		484FF3D01B5247B200400E4C /* 我的作品.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的作品.png"; sourceTree = "<group>"; };
+		484FF3D61B5249C500400E4C /* 我的需求.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的需求.png"; sourceTree = "<group>"; };
+		484FF3D81B524A4800400E4C /* OGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGAlertView.h; sourceTree = "<group>"; };
+		484FF3D91B524A4800400E4C /* OGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGAlertView.m; sourceTree = "<group>"; };
+		484FF3DB1B524A5700400E4C /* OGAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGAlertView.xib; sourceTree = "<group>"; };
 		485CFCFA1B4AD12E002F8496 /* strategyModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = strategyModel.plist; sourceTree = "<group>"; };
 		485CFCFE1B4ADFD6002F8496 /* 黑石区.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黑石区.PNG"; sourceTree = "<group>"; };
 		485CFCFF1B4ADFD6002F8496 /* 厚泽.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "厚泽.PNG"; sourceTree = "<group>"; };
@@ -802,6 +823,10 @@
 		48E2463F1B4C15E4001061A2 /* OGTiYanGuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGTiYanGuanTableViewCell.m; sourceTree = "<group>"; };
 		48E246401B4C15E4001061A2 /* OGTiYanGuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGTiYanGuanTableViewCell.xib; sourceTree = "<group>"; };
 		48E246431B4C1807001061A2 /* 电话白色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电话白色.png"; sourceTree = "<group>"; };
+		48E246451B4C3B3E001061A2 /* TYanGuan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TYanGuan.plist; sourceTree = "<group>"; };
+		48E246481B4C46BB001061A2 /* tyg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyg1.jpg; sourceTree = "<group>"; };
+		48E246491B4C46BB001061A2 /* tyg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyg2.jpg; sourceTree = "<group>"; };
+		48E2464A1B4C46BB001061A2 /* tyg3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyg3.jpg; sourceTree = "<group>"; };
 		4A0596581B40250C00F3035D /* OGDemandDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDemandDetailsViewController.h; sourceTree = "<group>"; };
 		4A0596591B40250C00F3035D /* OGDemandDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGDemandDetailsViewController.m; sourceTree = "<group>"; };
 		4A05965B1B40257E00F3035D /* OGDesignCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGDesignCircleTableViewCell.h; sourceTree = "<group>"; };
@@ -1133,6 +1158,7 @@
 		483B31AC1B4039380051474C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				48E246451B4C3B3E001061A2 /* TYanGuan.plist */,
 				483B31A91B40392F0051474C /* OrderFormInfo.h */,
 				483B31AA1B40392F0051474C /* OrderFormInfo.m */,
 			);
@@ -1692,6 +1718,13 @@
 		48CF9A151B2E73E1003BBFBF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				484FF3D61B5249C500400E4C /* 我的需求.png */,
+				484FF3CC1B5247B200400E4C /* 设置.png */,
+				484FF3CD1B5247B200400E4C /* 我的订单.png */,
+				484FF3CE1B5247B200400E4C /* 我的关注.png */,
+				484FF3CF1B5247B200400E4C /* 我的收藏.png */,
+				484FF3D01B5247B200400E4C /* 我的作品.png */,
+				48E246471B4C46BB001061A2 /* TYanGuanImage */,
 				48E246431B4C1807001061A2 /* 电话白色.png */,
 				4860C29F1B4BB77200D51EC2 /* lunbo5.jpg */,
 				4860C2A01B4BB77200D51EC2 /* lunbo6.jpg */,
@@ -1771,6 +1804,9 @@
 				48B4E4CC1B3508B90035A162 /* DGSegmentControl */,
 				48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */,
 				48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */,
+				484FF3D81B524A4800400E4C /* OGAlertView.h */,
+				484FF3D91B524A4800400E4C /* OGAlertView.m */,
+				484FF3DB1B524A5700400E4C /* OGAlertView.xib */,
 			);
 			name = Communal;
 			sourceTree = "<group>";
@@ -1897,6 +1933,17 @@
 				48421D6B1B441C7A00781FF6 /* nvPeopleModel.plist */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		48E246471B4C46BB001061A2 /* TYanGuanImage */ = {
+			isa = PBXGroup;
+			children = (
+				48E246481B4C46BB001061A2 /* tyg1.jpg */,
+				48E246491B4C46BB001061A2 /* tyg2.jpg */,
+				48E2464A1B4C46BB001061A2 /* tyg3.jpg */,
+			);
+			name = TYanGuanImage;
+			path = ../TYanGuanImage;
 			sourceTree = "<group>";
 		};
 		4A0596691B4025BC00F3035D /* DesignCircle */ = {
@@ -2134,15 +2181,19 @@
 				4825B02F1B42F322001A0D8B /* 方案5.jpeg in Resources */,
 				4AB7A3811B3D0E1200AD58CC /* 2-2头像.png in Resources */,
 				48A5928A1B39877100392151 /* mm8.jpg in Resources */,
+				484FF3DC1B524A5700400E4C /* OGAlertView.xib in Resources */,
 				48A592B21B39878300392151 /* gg8.jpg in Resources */,
+				48E2464B1B4C46BB001061A2 /* tyg1.jpg in Resources */,
 				484C346F1B36B43D0031306D /* mapBtnWoman@2x.png in Resources */,
 				4AB7A3911B3D507300AD58CC /* 2-2图3.png in Resources */,
 				1DEAEE891B43000E0052DD00 /* dp9.png in Resources */,
+				484FF3D71B5249C500400E4C /* 我的需求.png in Resources */,
 				48A592961B39877100392151 /* mm20.jpg in Resources */,
 				485FB42E1B3DB28C0010C4F1 /* OGStrategyTitleTableViewCell.xib in Resources */,
 				482DF09B1B31B00300D3A000 /* 15-3.png in Resources */,
 				482DF09A1B31B00300D3A000 /* 15-2.png in Resources */,
 				484376831B3065F4006D9D56 /* 分享@2x.png in Resources */,
+				48E2464C1B4C46BB001061A2 /* tyg2.jpg in Resources */,
 				1DEAEE951B4304EE0052DD00 /* yb1.png in Resources */,
 				48421D6A1B441BED00781FF6 /* nanPeopleModel.plist in Resources */,
 				48A592B71B39878300392151 /* gg13.jpg in Resources */,
@@ -2268,8 +2319,11 @@
 				484376AF1B307C14006D9D56 /* home15.jpg in Resources */,
 				4ADB15E21B437BDB00601C45 /* OGRegisterThreeViewController.xib in Resources */,
 				484376BA1B307C14006D9D56 /* home7.jpg in Resources */,
+				484FF3D21B5247B200400E4C /* 我的订单.png in Resources */,
+				48E246461B4C3B3E001061A2 /* TYanGuan.plist in Resources */,
 				48BF3A451B3B15430024DA3A /* OGSendHelpTableViewCell2.xib in Resources */,
 				484376B41B307C14006D9D56 /* home2.jpg in Resources */,
+				484FF3D41B5247B200400E4C /* 我的收藏.png in Resources */,
 				48A592DD1B399F5900392151 /* VPStretchBaseView.xib in Resources */,
 				4AB7A3851B3D111000AD58CC /* 2-2b.png in Resources */,
 				484C346E1B36B43D0031306D /* mapBtnMan@2x.png in Resources */,
@@ -2342,6 +2396,7 @@
 				48CF99F61B2E724E003BBFBF /* Main.storyboard in Resources */,
 				48CF99FB1B2E724E003BBFBF /* LaunchScreen.xib in Resources */,
 				1DC3E1B31B367DEF00ED09B3 /* 4-赞.png in Resources */,
+				48E2464D1B4C46BB001061A2 /* tyg3.jpg in Resources */,
 				485CFD1D1B4AEB11002F8496 /* 美式乡村.jpg in Resources */,
 				48A592831B39877100392151 /* mm1.jpg in Resources */,
 				484376B71B307C14006D9D56 /* home4.jpg in Resources */,
@@ -2350,8 +2405,10 @@
 				4ADB15EF1B4396AB00601C45 /* 2-3头像.png in Resources */,
 				48A592E61B39AED600392151 /* OGSchemeHeaderView.xib in Resources */,
 				48A592BC1B39878300392151 /* gg18.jpg in Resources */,
+				484FF3D11B5247B200400E4C /* 设置.png in Resources */,
 				482DF0931B31AEC000D3A000 /* OGFindTableViewCell.xib in Resources */,
 				1DEAEE981B4304EE0052DD00 /* yb3.png in Resources */,
+				484FF3D51B5247B200400E4C /* 我的作品.png in Resources */,
 				48A5928F1B39877100392151 /* mm13.jpg in Resources */,
 				48B4E4E21B3515800035A162 /* 3-1评论.png in Resources */,
 				4AD9EDA81B3E63C100BEF770 /* registerTextFieldBG.png in Resources */,
@@ -2362,6 +2419,7 @@
 				48A5928B1B39877100392151 /* mm9.jpg in Resources */,
 				485CFD101B4ADFD6002F8496 /* 米豆.PNG in Resources */,
 				4AD9EDA61B3E5BC600BEF770 /* 3-1头像.png in Resources */,
+				484FF3D31B5247B200400E4C /* 我的关注.png in Resources */,
 				48CF99F81B2E724E003BBFBF /* Images.xcassets in Resources */,
 				48B4E4E11B3515800035A162 /* 3-1查看.png in Resources */,
 				48A592B01B39878300392151 /* gg6.jpg in Resources */,
@@ -2469,6 +2527,7 @@
 				4A0596611B40257E00F3035D /* OGDesignCircleTableViewCell.m in Sources */,
 				4825B0411B42F5B8001A0D8B /* ConfigFile.m in Sources */,
 				48A592DC1B399F5900392151 /* VPStretchBaseView.m in Sources */,
+				484FF3DA1B524A4800400E4C /* OGAlertView.m in Sources */,
 				48B4E5221B3587920035A162 /* OGHomeLayout.m in Sources */,
 				482DF09F1B31B57C00D3A000 /* MyselfHeaderView.m in Sources */,
 				484C34731B37EE950031306D /* OGSchemeMenuView.m in Sources */,

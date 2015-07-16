@@ -1019,7 +1019,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OJV-tt-5Ce">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OJV-tt-5Ce">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -1029,6 +1029,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LM3-Mc-FBW" firstAttribute="top" secondItem="OJV-tt-5Ce" secondAttribute="bottom" id="6Ux-20-G9r"/>
+                            <constraint firstItem="OJV-tt-5Ce" firstAttribute="top" secondItem="907-vE-70C" secondAttribute="top" id="T1D-Mn-QOm"/>
+                            <constraint firstAttribute="trailing" secondItem="OJV-tt-5Ce" secondAttribute="trailing" id="cT7-5U-mcF"/>
+                            <constraint firstItem="OJV-tt-5Ce" firstAttribute="leading" secondItem="907-vE-70C" secondAttribute="leading" id="fr4-hK-LZG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="附件的体验馆" id="HAa-bP-OkT">
                         <barButtonItem key="rightBarButtonItem" image="定位.png" id="de0-Mb-N0G">
@@ -1038,6 +1044,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="OJV-tt-5Ce" id="JQg-Yy-9Fd"/>
@@ -1151,10 +1158,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2xR-bQ-suk"/>
+        <segue reference="2Tp-ic-065"/>
         <segue reference="odq-vW-z1B"/>
         <segue reference="XaJ-mE-BV0"/>
         <segue reference="6q4-xn-bTn"/>
         <segue reference="TIh-7c-Cye"/>
-        <segue reference="6Kq-hO-rgl"/>
     </inferredMetricsTieBreakers>
 </document>

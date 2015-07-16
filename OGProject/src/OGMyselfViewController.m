@@ -60,6 +60,7 @@
     if (ex_identityType == OGIdentityTypeUser) {
         
         _items = @[@"我的关注",@"我的收藏",@"我的需求",@"设置"];
+
     }else{
         _items = @[@"我的作品",@"我的订单",@"我的关注",@"我的收藏",@"设置"];
     }
@@ -102,6 +103,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.titleLabel.text = self.items[indexPath.row];
+    cell.headerImageView.image = [UIImage imageNamed:self.items[indexPath.row]];
     
     return cell;
 }

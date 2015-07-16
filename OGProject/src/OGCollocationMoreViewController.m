@@ -40,6 +40,7 @@ NSString *const collectionViewMoreCellIdentifier = @"OGCollocationCollectionView
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     NSString * pathString = [[NSBundle mainBundle] pathForResource:@"homeHeaderModel" ofType:@"plist"];
     NSArray * array = [NSArray arrayWithContentsOfFile:pathString];
     _headerDatas  = [[NSMutableArray alloc] initWithArray:array];

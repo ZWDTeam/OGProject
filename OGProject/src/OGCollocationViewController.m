@@ -51,7 +51,7 @@
     
     OGCollocationOnlyViewController * onlyViewController = [[OGCollocationOnlyViewController alloc] init];
     [self addChildViewController:onlyViewController];
-    CGRect rect = onlyViewController.view.frame;
+    CGRect rect = self.contentScrollView.frame;
     rect.size.height -= 64;
     onlyViewController.view.frame = rect;
 
@@ -61,7 +61,7 @@
     OGCollocationMoreViewController * moreViewController = [[OGCollocationMoreViewController alloc] init];
     moreViewController.delegate =self;
     [self addChildViewController:moreViewController];
-    rect = moreViewController.view.frame;
+    rect = self.contentScrollView.frame;
     rect.origin.x = SCREEN_WIDTH;
     rect.size.height -= 64;
     moreViewController.view.frame = rect;

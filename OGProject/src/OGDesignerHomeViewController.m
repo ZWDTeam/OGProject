@@ -56,9 +56,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.imgFace.layer.cornerRadius = CGRectGetHeight(self.imgFace.frame)/2.0f;
-    self.imgFace.layer.masksToBounds = YES;
-    
     /**
      右侧按钮--没法用xib拖
      */
@@ -101,6 +98,12 @@
     _info = info;
     self.imgFace.image = [UIImage imageNamed:info[@"image"]];
     self.labelName.text = info[@"name"];
+}
+
+- (void)viewDidLayoutSubviews{
+    self.imgFace.layer.cornerRadius = 7.0f;
+    self.imgFace.layer.masksToBounds = YES;
+
 }
 
 

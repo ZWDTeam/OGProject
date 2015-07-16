@@ -7,6 +7,7 @@
 //
 
 #import "OGDemandDetailsView.h"
+#import "OGAlertView.h"
 
 @implementation OGDemandDetailsView{
     UILabel * labelTitle;
@@ -71,6 +72,7 @@
         btnGrabSingle.layer.cornerRadius =  5;
         [btnGrabSingle setTitle:@"抢单" forState:UIControlStateNormal];
         [btnGrabSingle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [btnGrabSingle addTarget:self action:@selector(qiangdan) forControlEvents:UIControlEventTouchUpInside];
         
         [scrollViewDetail addSubview:btnGrabSingle];
         
@@ -305,6 +307,11 @@
     
     [scrollViewDetail setContentSize:CGSizeMake(MainView_Width, CGRectGetMaxY(labelDetailedMsg.frame)+10)];
     
+}
+
+- (void)qiangdan{
+    OGAlertView * alertView = [[OGAlertView alloc] init];
+    [alertView show];
 }
 
 @end

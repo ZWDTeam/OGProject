@@ -43,7 +43,7 @@
     [super viewDidLoad];
     self.tableView.tableHeaderView = self.headerImageView;
     self.tableView.tableFooterView = self.footView;
-    self.footView.text = @"";
+    self.footView.text = @"国际欧工以“为改变中国室内环境而不懈努力”为核心的企业使命，以“做最值得尊敬与信赖的整体软装”为宗旨，以有别于传统商业的O2O模式，致力于为设计师、软装企业、房地产等行业服务，专注于为别墅、会所、样板房、精装房和酒店等提供服务。让销售更简单、让设计风格模块化，这是我们的目标，也是我们正在做的，即集案例搜索、模拟搭配、产品展示、在线交易于一体的软装数据库平台，利用遍及全国的设计师团队和丰富的产品线资源，将终端客户与厂家直接对接，形成厂家、设计师、终端三点一线的软装产业链平台。这样就大幅度降低了成本，提高了产品性价比。";
     [self.footView sizeToFit];
 
 }
@@ -126,6 +126,8 @@
             OGExprienceTableViewCell2 * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
             if (cell == nil) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil] lastObject];
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
             }
             cell.payRangeLabel.text = @"长沙市 二环内";
             cell.styleLabel.text = @"复古清新风";

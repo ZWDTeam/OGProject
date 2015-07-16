@@ -18,6 +18,18 @@
 @end
 
 @implementation OGTiYanGuanViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        NSString * path = [[NSBundle mainBundle] pathForResource:@"TYanGuan" ofType:@"plist"];
+        
+        _items = [NSArray arrayWithContentsOfFile:path];
+
+    }
+    return self;
+}
+
 - (IBAction)locationAction:(id)sender {
 }
 
@@ -25,6 +37,7 @@
     [super viewDidLoad];
     self.tableView.tableFooterView = [[UIView alloc] init];
 
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -37,10 +50,12 @@
     OGTiYanGuanTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:indentifier owner:self options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     NSDictionary * dic = _items[indexPath.row];
     
     cell.headerImageView.image =[UIImage imageNamed:dic[@"image"]];
+    cell.titleLabel.text = dic[@"companyName"];
     cell.telLabel.text = dic[@"tel"];
     cell.cityLabel.text = dic[@"area"];
     cell.cityDetailLabel.text =dic[@"address"];
@@ -55,7 +70,10 @@
     [self performSegueWithIdentifier:@"pushDetailView" sender:indexPath];
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+    return CGRectGetHeight(cell.frame);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

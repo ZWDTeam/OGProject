@@ -10,13 +10,15 @@
 
 @implementation OGHomeLayout
 
+#define layoutKPercenX_scale(value) (value /(375.0f/[UIScreen mainScreen].bounds.size.width))
+
 
 
 -(void)prepareLayout
 {
     [super prepareLayout];
     
-    self.sectionInset=UIEdgeInsetsMake(5,7, 5,7);
+    self.sectionInset=UIEdgeInsetsMake(layoutKPercenX_scale(5.0),kPercenX_scale(7.0), 5,7);
     
     
     
