@@ -204,7 +204,6 @@
 		48A592831B39877100392151 /* mm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A5926F1B39877100392151 /* mm1.jpg */; };
 		48A592841B39877100392151 /* mm2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592701B39877100392151 /* mm2.jpg */; };
 		48A592851B39877100392151 /* mm3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592711B39877100392151 /* mm3.jpg */; };
-		48A592861B39877100392151 /* mm4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592721B39877100392151 /* mm4.jpg */; };
 		48A592871B39877100392151 /* mm5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592731B39877100392151 /* mm5.jpg */; };
 		48A592881B39877100392151 /* mm6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592741B39877100392151 /* mm6.jpg */; };
 		48A592891B39877100392151 /* mm7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A592751B39877100392151 /* mm7.jpg */; };
@@ -261,6 +260,7 @@
 		48A593091B39B1CC00392151 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A592FE1B39B1CC00392151 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		48A5930A1B39B1CC00392151 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A593001B39B1CC00392151 /* View+MASAdditions.m */; };
 		48A5930E1B39B46100392151 /* OGPriceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A5930D1B39B46100392151 /* OGPriceLabel.m */; };
+		48A9F41A1B5F8E83000AB343 /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A9F4191B5F8E83000AB343 /* OGLogin.storyboard */; };
 		48B4E4CF1B3508D30035A162 /* VPTribeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4CE1B3508D30035A162 /* VPTribeSegmentedControl.m */; };
 		48B4E4D61B3511680035A162 /* OGLooSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4D51B3511680035A162 /* OGLooSchemeViewController.m */; };
 		48B4E4DC1B3512B00035A162 /* OGLookSchemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4E4DB1B3512B00035A162 /* OGLookSchemeTableViewCell.m */; };
@@ -313,7 +313,6 @@
 		48CF9A2F1B2E76D9003BBFBF /* OGCollocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A2E1B2E76D9003BBFBF /* OGCollocationViewController.m */; };
 		48CF9A321B2E76E6003BBFBF /* OGFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */; };
 		48CF9A351B2E76F6003BBFBF /* OGMyselfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */; };
-		48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */; };
 		48CF9A3D1B2E78DF003BBFBF /* OGBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */; };
 		48CF9A431B2EA1AE003BBFBF /* OGExternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A421B2EA1AE003BBFBF /* OGExternObject.m */; };
 		48CF9A491B2EB2CA003BBFBF /* OGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF9A481B2EB2CA003BBFBF /* OGMapViewController.m */; };
@@ -714,6 +713,7 @@
 		48A593011B39B1CC00392151 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		48A5930C1B39B46100392151 /* OGPriceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGPriceLabel.h; sourceTree = "<group>"; };
 		48A5930D1B39B46100392151 /* OGPriceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGPriceLabel.m; sourceTree = "<group>"; };
+		48A9F4191B5F8E83000AB343 /* OGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OGLogin.storyboard; sourceTree = "<group>"; };
 		48B4E4CD1B3508D30035A162 /* VPTribeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTribeSegmentedControl.h; sourceTree = "<group>"; };
 		48B4E4CE1B3508D30035A162 /* VPTribeSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTribeSegmentedControl.m; sourceTree = "<group>"; };
 		48B4E4D41B3511680035A162 /* OGLooSchemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLooSchemeViewController.h; sourceTree = "<group>"; };
@@ -805,7 +805,6 @@
 		48CF9A311B2E76E6003BBFBF /* OGFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGFindViewController.m; sourceTree = "<group>"; };
 		48CF9A331B2E76F6003BBFBF /* OGMyselfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMyselfViewController.h; sourceTree = "<group>"; };
 		48CF9A341B2E76F6003BBFBF /* OGMyselfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMyselfViewController.m; sourceTree = "<group>"; };
-		48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OGLogin.storyboard; sourceTree = "<group>"; };
 		48CF9A3B1B2E78DF003BBFBF /* OGBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGBaseTabBarController.h; sourceTree = "<group>"; };
 		48CF9A3C1B2E78DF003BBFBF /* OGBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGBaseTabBarController.m; sourceTree = "<group>"; };
 		48CF9A411B2EA1AE003BBFBF /* OGExternObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGExternObject.h; sourceTree = "<group>"; };
@@ -1690,7 +1689,7 @@
 				48CF99F91B2E724E003BBFBF /* LaunchScreen.xib */,
 				48CF99EE1B2E724E003BBFBF /* AppDelegate.h */,
 				48CF99EF1B2E724E003BBFBF /* AppDelegate.m */,
-				48CF9A391B2E77BB003BBFBF /* OGLogin.storyboard */,
+				48A9F4191B5F8E83000AB343 /* OGLogin.storyboard */,
 				48CF99F41B2E724E003BBFBF /* Main.storyboard */,
 				48CF99EB1B2E724E003BBFBF /* Info.plist */,
 				48CF99EC1B2E724E003BBFBF /* main.m */,
@@ -2135,7 +2134,7 @@
 		48CF99DF1B2E724E003BBFBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "钟伟迪";
 				TargetAttributes = {
 					48CF99E61B2E724E003BBFBF = {
@@ -2249,7 +2248,6 @@
 				4860C2A21B4BB77200D51EC2 /* lunbo5.jpg in Resources */,
 				48A592B11B39878300392151 /* gg7.jpg in Resources */,
 				484376BB1B307C14006D9D56 /* home8.jpg in Resources */,
-				48A592861B39877100392151 /* mm4.jpg in Resources */,
 				4AD9EDB31B3EBF6800BEF770 /* 4-1.png in Resources */,
 				4860C2A41B4BB77200D51EC2 /* lunbo4.jpg in Resources */,
 				4A0596711B40261100F3035D /* 9-评论.png in Resources */,
@@ -2335,6 +2333,7 @@
 				4ADB15DB1B43725C00601C45 /* checkOut.png in Resources */,
 				4ADB15D71B42B5E900601C45 /* OGRegisterTwoViewController.xib in Resources */,
 				484376681B304D12006D9D56 /* 找方案@2x.png in Resources */,
+				48A9F41A1B5F8E83000AB343 /* OGLogin.storyboard in Resources */,
 				4825B02C1B42F322001A0D8B /* 方案2.jpeg in Resources */,
 				48A592AF1B39878300392151 /* gg5.jpg in Resources */,
 				484376B21B307C14006D9D56 /* home18.jpg in Resources */,
@@ -2364,7 +2363,6 @@
 				4825B02B1B42F322001A0D8B /* 方案1.jpeg in Resources */,
 				4AB7A37F1B3D0C6C00AD58CC /* 2-1性别.png in Resources */,
 				482DF08E1B31A9DB00D3A000 /* 评论@2x.png in Resources */,
-				48CF9A3A1B2E77BB003BBFBF /* OGLogin.storyboard in Resources */,
 				48E246421B4C15E4001061A2 /* OGTiYanGuanTableViewCell.xib in Resources */,
 				48B4E4EE1B353B7F0035A162 /* OGLookStrategyCollectionViewCell.xib in Resources */,
 				484376AA1B307C14006D9D56 /* home10.jpg in Resources */,
@@ -2636,7 +2634,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2647,6 +2645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
@@ -2657,7 +2656,7 @@
 					"$(PROJECT_DIR)/OGProject/API/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 			};
 			name = "ad hoc distribution";
 		};
@@ -2719,7 +2718,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2757,7 +2756,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2768,6 +2767,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
@@ -2778,7 +2778,7 @@
 					"$(PROJECT_DIR)/OGProject/API/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 			};
 			name = Debug;
 		};
@@ -2787,6 +2787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hunan Qi Neng Science and Technology Co., Ltd. (Y6SLB82Z3X)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OGProject/OGProject-Prefix.pch";
 				INFOPLIST_FILE = OGProject/Info.plist;
@@ -2797,7 +2798,7 @@
 					"$(PROJECT_DIR)/OGProject/API/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9121b362-e741-4b48-88da-7c9a2aa30c8a";
+				PROVISIONING_PROFILE = "2655741d-edf6-49f6-83e0-4b728ae47459";
 			};
 			name = Release;
 		};

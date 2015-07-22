@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G3K-cN-22S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G3K-cN-22S">
     <dependencies>
-<<<<<<< HEAD
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-=======
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
->>>>>>> origin/master
     </dependencies>
     <scenes>
         <!--Base Navigation View Controller-->
@@ -260,12 +254,8 @@
                                 <rect key="frame" x="24" y="318" width="326" height="50"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.75294117650000003" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-<<<<<<< HEAD
-                                    <constraint firstAttribute="height" constant="50" id="9Lo-a1-1U4"/>
-=======
                                     <constraint firstAttribute="width" constant="326" id="lZA-iK-qfR"/>
                                     <constraint firstAttribute="height" constant="50" id="yIM-t1-PSk"/>
->>>>>>> origin/master
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="登录">
@@ -276,58 +266,6 @@
                                     <action selector="stylistLogin:" destination="44e-xX-NiQ" eventType="touchUpInside" id="gWY-Jy-nJl"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有账号，" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-Yh-wj4">
-                                <rect key="frame" x="95" y="444" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="PNs-RT-pbZ"/>
-                                    <constraint firstAttribute="height" constant="21" id="wvY-t0-eQp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.52941176469999995" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0G-Bl-nuy">
-                                <rect key="frame" x="188" y="444" width="79" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="2S1-lU-w5A"/>
-                                    <constraint firstAttribute="width" constant="79" id="Ta9-lS-6Zm"/>
-                                </constraints>
-                                <state key="normal" title="免费注册">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushRegisterViewController:" destination="44e-xX-NiQ" eventType="touchUpInside" id="Yld-Cd-dms"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="g0G-Bl-nuy" firstAttribute="top" secondItem="4D7-6M-pNS" secondAttribute="bottom" constant="76" id="61Q-J7-NfJ"/>
-                            <constraint firstItem="4D7-6M-pNS" firstAttribute="top" secondItem="5df-WW-PC5" secondAttribute="bottom" constant="33" id="ELH-XH-774"/>
-                            <constraint firstItem="yFQ-Zv-bI7" firstAttribute="top" secondItem="LSi-wm-X79" secondAttribute="bottom" constant="1" id="Je4-MA-htd"/>
-                            <constraint firstItem="4D7-6M-pNS" firstAttribute="leading" secondItem="b1p-rl-rZn" secondAttribute="leadingMargin" constant="8" id="Kvp-G0-9o5"/>
-                            <constraint firstItem="g0G-Bl-nuy" firstAttribute="centerY" secondItem="0A9-Yh-wj4" secondAttribute="centerY" id="MZu-Uh-ERs"/>
-                            <constraint firstAttribute="trailing" secondItem="yFQ-Zv-bI7" secondAttribute="trailing" constant="13" id="RVl-Zs-3VT"/>
-                            <constraint firstItem="LSi-wm-X79" firstAttribute="leading" secondItem="b1p-rl-rZn" secondAttribute="leading" constant="12" id="Rlv-4a-Y3x"/>
-                            <constraint firstItem="5df-WW-PC5" firstAttribute="top" secondItem="yFQ-Zv-bI7" secondAttribute="bottom" constant="10" id="TBu-q3-ZzI"/>
-                            <constraint firstItem="yFQ-Zv-bI7" firstAttribute="leading" secondItem="b1p-rl-rZn" secondAttribute="leading" constant="12" id="VID-w6-NWL"/>
-                            <constraint firstItem="LSi-wm-X79" firstAttribute="top" secondItem="TVJ-Vk-Q9v" secondAttribute="bottom" constant="50" id="aQo-Iu-Wzg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4D7-6M-pNS" secondAttribute="trailing" constant="9" id="bzq-cn-Cg5"/>
-                            <constraint firstAttribute="centerX" secondItem="g0G-Bl-nuy" secondAttribute="centerX" multiplier="0.82" id="cuG-3w-kai"/>
-                            <constraint firstItem="g0G-Bl-nuy" firstAttribute="leading" secondItem="0A9-Yh-wj4" secondAttribute="trailing" constant="8" id="eLs-I7-Bjt"/>
-                            <constraint firstItem="5df-WW-PC5" firstAttribute="trailing" secondItem="b1p-rl-rZn" secondAttribute="trailingMargin" id="nJO-am-Mak"/>
-                            <constraint firstAttribute="trailing" secondItem="LSi-wm-X79" secondAttribute="trailing" constant="13" id="yHF-vL-1wP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="我是设计师" id="VOc-wC-P5j">
-                        <barButtonItem key="leftBarButtonItem" title="取消" id="Iih-LK-7tp">
-                            <connections>
-                                <action selector="dismissAction:" destination="44e-xX-NiQ" id="4Q7-ty-iX4"/>
-                            </connections>
-                        </barButtonItem>
-=======
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9od-Ws-fbL">
                                 <rect key="frame" x="45" y="381" width="285" height="147"/>
                                 <subviews>
@@ -370,8 +308,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="我是设计师" id="VOc-wC-P5j">
-                        <barButtonItem key="leftBarButtonItem" title="取消" id="gaG-nQ-RiF"/>
->>>>>>> origin/master
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="gaG-nQ-RiF">
+                            <connections>
+                                <action selector="dismissAction:" destination="44e-xX-NiQ" id="4r1-Im-f5S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -911,8 +852,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ROp-7h-Nn9"/>
         <segue reference="bT1-PP-ySC"/>
+        <segue reference="ROp-7h-Nn9"/>
         <segue reference="4I1-Ov-3L7"/>
     </inferredMetricsTieBreakers>
 </document>
